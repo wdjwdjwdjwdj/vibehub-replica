@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "kind": "T2-implementation-contract",
+  "sourceUrl": "https://vibe-hub.org/en/html",
+  "screenshotsAsImplementationSource": false,
+  "evidenceReviewed": {
+    "domTopology": true,
+    "computedStyles": true,
+    "interactionStates": true,
+    "responsiveStates": true,
+    "assetsAndFonts": true
+  },
+  "global": {
+    "fonts": [
+      "-apple-system, BlinkMacSystemFont, PingFang SC, Helvetica Neue, Microsoft YaHei, sans-serif",
+      "Georgia, Songti SC, Noto Serif SC, SimSun, serif",
+      "ui-monospace, SFMono-Regular, Consolas, monospace"
+    ],
+    "colors": [
+      "--brand: #3559d8",
+      "--brand-hover: #2a46b4",
+      "--text: #18181b",
+      "--text-2: #52525b",
+      "--text-3: #686e79",
+      "--bg: #ffffff",
+      "--bg-soft: #fafafa",
+      "--border: #e4e4e7",
+      "--green: #287947",
+      "--red: #b94046"
+    ],
+    "spacing": [
+      "sticky navigation height: 60px desktop / 108px mobile",
+      "main content horizontal padding: 32px desktop / 10px mobile",
+      "detail hero to practice cadence measured in initial desktop/mobile cases",
+      "teaching section gap: 40px desktop/mobile source contract"
+    ],
+    "scrollModel": "native"
+  },
+  "sections": [
+    {
+      "id": "global-navigation",
+      "selector": "nav.nav",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "mixed",
+      "trigger": "route links, community menu, language, theme color, color mode and search",
+      "computedEvidenceCaseIds": ["initial--1440x900", "initial--390x844", "survey-skip--1440x900", "survey-skip--390x844"],
+      "states": ["initial", "survey-skip"],
+      "assets": [
+        {
+          "source": "https://vibe-hub.org/assets/vh-logo-v4-tight.png",
+          "localPath": "public/assets/vh-logo.png",
+          "rights": "Existing source-derived local QA asset; independent redistribution requires final brand asset replacement or rights confirmation."
+        }
+      ],
+      "responsive": {
+        "desktop": "60px sticky single-row navigation with logo, links, search, language, theme and partner entry",
+        "mobile": "108px sticky two-row navigation; secondary desktop-only partner entry is hidden"
+      }
+    },
+    {
+      "id": "survey",
+      "selector": "section.source-survey",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "click",
+      "trigger": "skip button or survey option",
+      "computedEvidenceCaseIds": ["initial--1440x900", "survey-skip--1440x900", "initial--390x844", "survey-skip--390x844"],
+      "states": ["initial", "survey-skip"],
+      "assets": [],
+      "responsive": {
+        "desktop": "fixed lower-right survey panel, 400px wide",
+        "mobile": "source survey remains a fixed panel when shown; local QA may suppress it after the compatible persistence key is set"
+      }
+    },
+    {
+      "id": "detail-hero",
+      "selector": "#detail-hero",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "scroll",
+      "trigger": "native wheel/scroll through the hero",
+      "computedEvidenceCaseIds": ["initial--1440x900", "hero-scroll--1440x900", "initial--390x844", "hero-scroll--390x844"],
+      "states": ["initial", "hero-scroll"],
+      "assets": [
+        {
+          "source": "https://vibe-hub.org/audio/pronunciations/html.mp3",
+          "localPath": "public/assets/html.mp3",
+          "rights": "Source pronunciation asset is evidence-only; independent deployment requires a permitted local replacement or removal."
+        }
+      ],
+      "responsive": {
+        "desktop": "916px content hero inside the detail shell; lead and native Demo follow the source vertical cadence",
+        "mobile": "370px content hero at x=10; previous/next pills, lead and Demo retain the measured source sequence"
+      }
+    },
+    {
+      "id": "quick-check",
+      "selector": "section.lesson-practice",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "click",
+      "trigger": "select one of three radio answer labels",
+      "computedEvidenceCaseIds": ["initial--1440x900", "quick-answer--1440x900", "initial--390x844", "quick-answer--390x844"],
+      "states": ["initial", "quick-answer"],
+      "assets": [],
+      "responsive": {
+        "desktop": "source practice panel follows the Demo with a 916px content width",
+        "mobile": "single-column 370px practice panel follows the Demo without horizontal overflow"
+      }
+    },
+    {
+      "id": "agent-prompt",
+      "selector": "section.lesson-agent-prompt",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "static",
+      "trigger": "read and copy the Agent prompt from the detail page",
+      "computedEvidenceCaseIds": ["initial--1440x900", "initial--390x844"],
+      "states": ["initial"],
+      "assets": [],
+      "responsive": {
+        "desktop": "source prompt card follows Quick Check with measured 916px width",
+        "mobile": "prompt card wraps within 370px and preserves readable line length"
+      }
+    },
+    {
+      "id": "usage",
+      "selector": "main > section:nth-of-type(4)",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "scroll",
+      "trigger": "native scroll to the usage teaching section",
+      "computedEvidenceCaseIds": ["initial--1440x900", "hero-scroll--1440x900", "initial--390x844", "hero-scroll--390x844"],
+      "states": ["initial", "hero-scroll"],
+      "assets": [],
+      "responsive": {
+        "desktop": "two-column source usage content with measured section spacing",
+        "mobile": "single-column source usage content with 1654.5px measured height for HTML"
+      }
+    },
+    {
+      "id": "anatomy",
+      "selector": "main > section:nth-of-type(5)",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "click",
+      "trigger": "anatomy part buttons reveal the selected part",
+      "computedEvidenceCaseIds": ["initial--1440x900", "initial--390x844"],
+      "states": ["initial", "quick-answer"],
+      "assets": [],
+      "responsive": {
+        "desktop": "source anatomy visual and four explanatory cards in the measured desktop grid",
+        "mobile": "source anatomy visual followed by the measured responsive card grid"
+      }
+    },
+    {
+      "id": "variants",
+      "selector": "main > section:nth-of-type(6)",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "click",
+      "trigger": "choose a semantic HTML variant",
+      "computedEvidenceCaseIds": ["initial--1440x900", "initial--390x844"],
+      "states": ["initial", "quick-answer"],
+      "assets": [],
+      "responsive": {
+        "desktop": "four variant choices remain in the source horizontal teaching layout",
+        "mobile": "variant choices use the measured single-column source cadence"
+      }
+    },
+    {
+      "id": "typical-use-cases",
+      "selector": "section.scenes",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "click",
+      "trigger": "select one of four working contexts and run its local action",
+      "computedEvidenceCaseIds": ["initial--1440x900", "hero-scroll--1440x900", "initial--390x844", "hero-scroll--390x844"],
+      "states": ["initial", "hero-scroll"],
+      "assets": [],
+      "responsive": {
+        "desktop": "four source scene cards are shown in the measured vertical collection",
+        "mobile": "four scene cards retain the source collection height and no horizontal overflow"
+      }
+    },
+    {
+      "id": "selector-recommendation",
+      "selector": "section.selector-recommendation",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "click",
+      "trigger": "open the Selector Pro recommendation card",
+      "computedEvidenceCaseIds": ["initial--1440x900", "initial--390x844"],
+      "states": ["initial", "survey-skip"],
+      "assets": [],
+      "responsive": {
+        "desktop": "916px recommendation card with source action preview",
+        "mobile": "370px recommendation card with measured 421.1px height"
+      }
+    },
+    {
+      "id": "references-footer",
+      "selector": "section.references-section",
+      "targetFile": "src/main.jsx",
+      "interactionModel": "static",
+      "trigger": "read source references and footer links",
+      "computedEvidenceCaseIds": ["initial--1440x900", "initial--390x844"],
+      "states": ["initial"],
+      "assets": [],
+      "responsive": {
+        "desktop": "references sit above the source footer with two linked reading items",
+        "mobile": "references wrap to one column and stay within the viewport"
+      }
+    }
+  ]
+}

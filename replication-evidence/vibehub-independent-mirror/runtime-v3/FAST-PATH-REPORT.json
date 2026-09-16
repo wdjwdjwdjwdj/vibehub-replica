@@ -1,0 +1,39 @@
+{
+  "url": "https://vibe-hub.org/en/html",
+  "projectRoot": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-mirror",
+  "runRoot": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-mirror\\runtime-v3",
+  "runVersion": 3,
+  "startedAt": "2026-09-16T12:04:10.747Z",
+  "steps": [
+    {
+      "name": "capture",
+      "exitCode": 0,
+      "milliseconds": 10384
+    },
+    {
+      "name": "extract",
+      "exitCode": 0,
+      "milliseconds": 174
+    },
+    {
+      "name": "manifest",
+      "exitCode": 0,
+      "milliseconds": 105
+    },
+    {
+      "name": "bootstrap-replay",
+      "exitCode": 0,
+      "milliseconds": 2242
+    },
+    {
+      "name": "runtime-verification",
+      "exitCode": 2,
+      "milliseconds": 7306
+    }
+  ],
+  "machineRuntimePassed": false,
+  "visualAcceptancePassed": "pending",
+  "blockedAt": "runtime-verification",
+  "failureCode": "RUNTIME_INTERACTION_GEOMETRY_OR_VISUAL",
+  "finishedAt": "2026-09-16T12:04:30.959Z"
+}

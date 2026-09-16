@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "sourceUrl": "https://vibe-hub.org/en/html",
+  "finalUrl": "https://vibe-hub.org/en/html",
+  "capturedAt": "2026-09-16T12:04:21.109Z",
+  "sourceVersionEvidence": {
+    "entrySha256": "88f86645d2662e980ac7019d1f1811368ed39fa25bbd623edd06c5c12ab5d905",
+    "harSha256": "ffced566a8e423e1c220a82d795a9dad733fd7a0da1e1d61ba2b8714d62a03fd",
+    "resources": 41
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720,
+    "dpr": 1
+  },
+  "environment": {
+    "nodePlatform": "win32",
+    "nodeArch": "x64",
+    "browser": {
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/143.0.7499.4 Safari/537.36",
+      "platform": "Win32",
+      "language": "zh-CN",
+      "languages": [
+        "zh-CN"
+      ],
+      "timezone": "Asia/Shanghai",
+      "devicePixelRatio": 1,
+      "screen": {
+        "width": 1280,
+        "height": 720,
+        "colorDepth": 24
+      },
+      "reducedMotion": false,
+      "colorScheme": "light",
+      "webglRenderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "webglVendor": "Google Inc. (Google)"
+    }
+  },
+  "selector": "section[id]",
+  "scenes": [
+    {
+      "id": "detail-hero",
+      "title": "HTML"
+    }
+  ],
+  "scrollMode": "native-scroll",
+  "stateProtocol": "viewport + DPR + position/transform + captureTime + animationPolicy + audioState + sourceVersion",
+  "animationPolicy": "time-window",
+  "audioState": "unknown",
+  "activatedInteractions": [],
+  "fixedUI": [],
+  "acceptance": {
+    "machineRuntimePassed": "required",
+    "geometryPassed": "not-configured",
+    "visualAcceptancePassed": "pending-user-judgment"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "pattern": "^https://www\\.(google-analytics|google)\\.com/g/collect(?:\\?|$)",
+    "reason": "Third-party Google Analytics collection POST; it is not part of the page's visual or user-facing interaction behavior and is unavailable during offline replay."
+  },
+  {
+    "pattern": "^https://www\\.googletagmanager\\.com/td\\?",
+    "reason": "Third-party Google Tag Manager tracking pixel; it carries analytics telemetry only and is not part of the page's visual or user-facing interaction behavior."
+  }
+]

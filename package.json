@@ -1,0 +1,39 @@
+{
+  "name": "vibehub-replica",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:e2e": "playwright test tests/vibehub.spec.js",
+    "test:routes": "node scripts/route-smoke.mjs",
+    "test:terms": "node scripts/term-render-smoke.mjs",
+    "test:demos": "node scripts/demo-family-audit.mjs",
+    "test:catalog": "node scripts/catalog-mini-smoke.mjs",
+    "test:header": "node scripts/header-shell-smoke.mjs",
+    "test:courses": "node scripts/course-render-smoke.mjs",
+    "test:courses:mobile": "node scripts/course-mobile-smoke.mjs",
+    "test:lab": "node scripts/lab-render-smoke.mjs",
+    "test:practice": "node scripts/practice-render-smoke.mjs",
+    "test:special": "node scripts/special-detail-geometry-smoke.mjs",
+    "audit:original:sitemap": "node scripts/audit-original-sitemap.mjs",
+    "audit:page-parity": "node scripts/audit-page-parity.mjs",
+    "audit:anti-ai": "node scripts/audit-anti-ai-parity.mjs",
+    "audit:extended": "node scripts/audit-extended-parity.mjs",
+    "audit:topic-parity": "node scripts/audit-topic-parity.mjs",
+    "audit:changelog": "node scripts/audit-changelog-parity.mjs",
+    "scrape:course": "node scripts/scrape-product-course.mjs",
+    "scrape:practice": "node scripts/scrape-practice.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

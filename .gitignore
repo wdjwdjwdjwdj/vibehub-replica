@@ -1,0 +1,17 @@
+node_modules/
+dist/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+
+# 原站抓包文件：体积大（单个 5-6MB）且包含第三方站点完整响应内容，仅本地留档
+*.har
+
+# 本地预览日志与 Playwright 缓存
+preview.log
+.playwright/
+
+# 工作区内部笔记（AI 协作记录，含项目内部约定，不对外公开）
+.workbuddy/

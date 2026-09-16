@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "kind": "website-replication-route-lock",
+  "createdAt": "2026-09-16T10:09:42.321Z",
+  "sourceUrl": "https://vibe-hub.org/",
+  "project": "vibehub-independent",
+  "goal": "hybrid",
+  "carrier": "dom",
+  "authorized": true,
+  "route": "T1_THEN_T2",
+  "allowedOperations": [
+    "t1",
+    "t2"
+  ],
+  "paths": {
+    "root": "E:\\vibe coding\\网站复刻\\replication-evidence",
+    "t1": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-mirror",
+    "t2": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-editable",
+    "effect": null,
+    "source": null,
+    "discover": null
+  },
+  "isolation": {
+    "sharedWritableDirectory": false,
+    "t1ReadOnlyAfterFreeze": true,
+    "t2MayReadT1": true,
+    "t2MayWriteT1": false,
+    "effectMayWriteT1": false
+  },
+  "gates": {
+    "t1AcceptanceRequiredForT2": true,
+    "t1AcceptanceRequiredForEffect": false,
+    "routeChangeRequiresNewRoot": true
+  }
+}
