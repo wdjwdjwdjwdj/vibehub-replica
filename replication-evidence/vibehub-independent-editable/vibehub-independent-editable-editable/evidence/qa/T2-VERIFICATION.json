@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "kind": "T2-editable-verification",
   "baseline": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-editable\\vibehub-independent-editable-editable\\evidence\\baseline\\EDITABLE-BASELINE.json",
-  "localBase": "http://127.0.0.1:5173",
-  "checkedAt": "2026-09-16T12:23:12.222Z",
+  "localBase": "http://127.0.0.1:5174",
+  "checkedAt": "2026-09-17T16:28:54.391Z",
   "maxDiff": 0.01,
   "cases": [
     {
       "id": "initial--1440x900",
-      "localUrl": "http://127.0.0.1:5173/en/html",
+      "localUrl": "http://127.0.0.1:5174/en/html",
       "dimensionMatch": true,
-      "differentPixels": 276502,
-      "mismatchRatio": 0.03785790177006659,
+      "differentPixels": 278204,
+      "mismatchRatio": 0.038090934980722045,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -21,10 +21,10 @@
     },
     {
       "id": "hero-scroll--1440x900",
-      "localUrl": "http://127.0.0.1:5173/en/html",
+      "localUrl": "http://127.0.0.1:5174/en/html",
       "dimensionMatch": true,
-      "differentPixels": 268612,
-      "mismatchRatio": 0.036777624430424115,
+      "differentPixels": 280894,
+      "mismatchRatio": 0.0384592424640729,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -34,10 +34,10 @@
     },
     {
       "id": "survey-skip--1440x900",
-      "localUrl": "http://127.0.0.1:5173/en/html",
+      "localUrl": "http://127.0.0.1:5174/en/html",
       "dimensionMatch": true,
-      "differentPixels": 265415,
-      "mismatchRatio": 0.036339899886084825,
+      "differentPixels": 267094,
+      "mismatchRatio": 0.036569783999298985,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -47,10 +47,10 @@
     },
     {
       "id": "quick-answer--1440x900",
-      "localUrl": "http://127.0.0.1:5173/en/html",
+      "localUrl": "http://127.0.0.1:5174/en/html",
       "dimensionMatch": true,
-      "differentPixels": 284489,
-      "mismatchRatio": 0.038951460085874516,
+      "differentPixels": 284755,
+      "mismatchRatio": 0.03898788008236943,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -60,10 +60,10 @@
     },
     {
       "id": "initial--390x844",
-      "localUrl": "http://127.0.0.1:5173/en/html",
-      "dimensionMatch": true,
-      "differentPixels": 217385,
-      "mismatchRatio": 0.08897006159575992,
+      "localUrl": "http://127.0.0.1:5174/en/html",
+      "dimensionMatch": false,
+      "differentPixels": 2443350,
+      "mismatchRatio": 1,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -73,10 +73,10 @@
     },
     {
       "id": "hero-scroll--390x844",
-      "localUrl": "http://127.0.0.1:5173/en/html",
-      "dimensionMatch": true,
-      "differentPixels": 215277,
-      "mismatchRatio": 0.08810731168273067,
+      "localUrl": "http://127.0.0.1:5174/en/html",
+      "dimensionMatch": false,
+      "differentPixels": 2443350,
+      "mismatchRatio": 1,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -86,10 +86,10 @@
     },
     {
       "id": "survey-skip--390x844",
-      "localUrl": "http://127.0.0.1:5173/en/html",
-      "dimensionMatch": true,
-      "differentPixels": 215474,
-      "mismatchRatio": 0.08818793869073199,
+      "localUrl": "http://127.0.0.1:5174/en/html",
+      "dimensionMatch": false,
+      "differentPixels": 2443350,
+      "mismatchRatio": 1,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],
@@ -99,10 +99,10 @@
     },
     {
       "id": "quick-answer--390x844",
-      "localUrl": "http://127.0.0.1:5173/en/html",
-      "dimensionMatch": true,
-      "differentPixels": 217904,
-      "mismatchRatio": 0.0891824748807989,
+      "localUrl": "http://127.0.0.1:5174/en/html",
+      "dimensionMatch": false,
+      "differentPixels": 2443350,
+      "mismatchRatio": 1,
       "passed": false,
       "diagnostics": {
         "consoleErrors": [],

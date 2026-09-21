@@ -1,0 +1,108 @@
+// VibeHub 后端数据模型
+//
+// 数据库策略：
+//   本地开发 = SQLite（零依赖，改 provider 一行即可切生产）
+//   生产环境 = PostgreSQL 16
+// 为了让切换无痛，这里刻意避开 PG 专有特性：不用 enum、不用数组、不用 Json 类型。
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // 生产环境改为 "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================
+// Better Auth 所需的认证表（model 名必须与库期望一致）
+// 不手写字段顺序或用例，均由 Better Auth 的 Prisma 适配器驱动
+// ============================================================
+
+model User {
+  id            String   @id
+  name          String
+  email         String   @unique
+  emailVerified Boolean  @default(false)
+  image         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @default(now()) @updatedAt
+
+  sessions  Session[]
+  accounts  Account[]
+  favorites UserFavorite[]
+  practices PracticeRecord[]
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @default(now()) @updatedAt
+
+  @@index([userId])
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @default(now()) @updatedAt
+
+  @@index([identifier])
+}
+
+// ============================================================
+// 业务表
+// ============================================================
+
+/// 云端收藏：一个用户对一个术语。复合主键天然去重，无需额外唯一索引
+model UserFavorite {
+  userId    String
+  termId    String
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, termId])
+  @@index([userId, createdAt])
+}
+
+/// 练习记录：只追加、不修改。同步语义是"取最近 N 条"，因此不存在并发冲突
+model PracticeRecord {
+  id        String   @id @default(cuid())
+  userId    String
+  termId    String
+  correct   Boolean
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}

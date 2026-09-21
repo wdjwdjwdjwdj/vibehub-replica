@@ -1,0 +1,175 @@
+{
+  "frontend": {
+    "route": "/en/topics/frontend",
+    "originalTotal": 44045,
+    "localTotal": 43925,
+    "mismatched": [
+      {
+        "id": "spring",
+        "orig": 302,
+        "local": 262,
+        "inline": "262px"
+      },
+      {
+        "id": "fade",
+        "orig": 302,
+        "local": 262,
+        "inline": "262px"
+      },
+      {
+        "id": "keyframe",
+        "orig": 302,
+        "local": 262,
+        "inline": "(none)"
+      }
+    ]
+  },
+  "backend": {
+    "route": "/en/topics/backend",
+    "originalTotal": 27689,
+    "localTotal": 26949,
+    "mismatched": [
+      {
+        "id": "http-status-code",
+        "orig": 329,
+        "local": 181,
+        "inline": "(none)"
+      },
+      {
+        "id": "ip-address",
+        "orig": 329,
+        "local": 181,
+        "inline": "(none)"
+      },
+      {
+        "id": "websocket",
+        "orig": 329,
+        "local": 181,
+        "inline": "(none)"
+      },
+      {
+        "id": "stack-trace",
+        "orig": 329,
+        "local": 181,
+        "inline": "(none)"
+      },
+      {
+        "id": "timeout",
+        "orig": 329,
+        "local": 181,
+        "inline": "(none)"
+      }
+    ]
+  },
+  "product": {
+    "route": "/en/topics/product",
+    "originalTotal": 8300,
+    "localTotal": 8084,
+    "mismatched": [
+      {
+        "id": "technical-debt",
+        "orig": 289,
+        "local": 181,
+        "inline": "(none)"
+      },
+      {
+        "id": "prototype",
+        "orig": 289,
+        "local": 181,
+        "inline": "(none)"
+      }
+    ]
+  },
+  "stack": {
+    "route": "/en/topics/stack",
+    "originalTotal": 0,
+    "localTotal": 6413,
+    "mismatched": []
+  },
+  "ai": {
+    "route": "/en/topics/ai",
+    "originalTotal": 13395,
+    "localTotal": 12936,
+    "mismatched": [
+      {
+        "id": "multimodal",
+        "orig": 367,
+        "local": 298,
+        "inline": "298px"
+      },
+      {
+        "id": "rag",
+        "orig": 367,
+        "local": 298,
+        "inline": "(none)"
+      },
+      {
+        "id": "fine-tuning",
+        "orig": 367,
+        "local": 298,
+        "inline": "(none)"
+      },
+      {
+        "id": "reasoning-model",
+        "orig": 298,
+        "local": 154,
+        "inline": "(none)"
+      },
+      {
+        "id": "context-engineering",
+        "orig": 289,
+        "local": 325,
+        "inline": "325px"
+      },
+      {
+        "id": "token",
+        "orig": 289,
+        "local": 325,
+        "inline": "325px"
+      },
+      {
+        "id": "context-window",
+        "orig": 289,
+        "local": 325,
+        "inline": "325px"
+      },
+      {
+        "id": "agent-memory",
+        "orig": 262,
+        "local": 154,
+        "inline": "(none)"
+      },
+      {
+        "id": "temperature",
+        "orig": 262,
+        "local": 154,
+        "inline": "(none)"
+      }
+    ]
+  },
+  "git": {
+    "route": "/en/topics/git",
+    "originalTotal": 5967,
+    "localTotal": 5298,
+    "mismatched": [
+      {
+        "id": "merge-conflict",
+        "orig": 377,
+        "local": 154,
+        "inline": "(none)"
+      },
+      {
+        "id": "remote-repository",
+        "orig": 377,
+        "local": 154,
+        "inline": "(none)"
+      },
+      {
+        "id": "reset-revert",
+        "orig": 377,
+        "local": 154,
+        "inline": "(none)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Regex in Product Management Explained | VibeHub",
+    "h1": "Regex",
+    "height": 2284,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 337.1
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 934,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1306,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1651,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1822,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Regex Copy as Markdown Copied ← → Regex You might say AI gave me a regex I cannot read. Should I use it? A notation describing what text to match, used to find and validate text·When validating phone numbers, emails, or filtering text in forms, a regular expression uses symbolic patterns to describe what the text should look like, such as \\d for digits and + for one or more. You do not have to write complex expressions from scratch, but you should be able to read what they accept and reject, and test them with real examples. Know first Validation Regex One regex: click inputs and see pass or reject Validation rule /^\\d+$/ 13800138000 Pass +86 138 Reject abc Reject (empty) Reject Selected: 13800138000 → passes because the whole string is digits Acceptance must cover rejects: inputs that should be rejected—spaces, letters, empty values—must be confirmed rejected. Three things to read in a regex Common symbol meanings: \\d is one digit, + is one or more, ^ and $ match the who",
+    "errors": []
+  },
+  "local": {
+    "title": "Regex in Product Management Explained | VibeHub",
+    "h1": "Regex",
+    "height": 2286.1,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-regex-stage",
+        "y": 551,
+        "height": 337.1
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 934,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1306,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1651,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1822,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Regex Copy as Markdown Copied ← → Regex YOU MIGHT SAY AI gave me a regex I cannot read. Should I use it? A notation describing what text to match, used to find and validate text · When validating phone numbers, emails, or filtering text in forms, a regular expression uses symbolic patterns to describe what the text should look like, such as \\d for digits and + for one or more. You do not have to write complex expressions from scratch, but you should be able to read what they accept and reject, and test them with real examples. Know first Validation Regex One regex: click inputs and see pass or reject Pattern /^(\\\\d+)$/ 13800138000 Pass +86 138 Reject abc Reject (empty) Reject Value 13800138000 is accepted because the pattern matches digits only. A pattern is a boundary: test representative values before trusting it with real input. Three things to read in a regex Read the situation: When validating phone numbers, emails, or filtering text in forms, a regular expression us",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

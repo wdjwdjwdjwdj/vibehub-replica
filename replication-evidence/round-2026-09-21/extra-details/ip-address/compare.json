@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "IP Address in Web Development Explained | VibeHub",
+    "h1": "IP Address",
+    "height": 2314.4,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 318.7
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 916,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1312,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1681,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1852,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › IP Address Copy as Markdown Copied ← → IP Address You might say Why can I open the page on my computer but others cannot? The numeric address of each device on the internet, used to route data to its destination·Local development addresses like 127.0.0.1 or localhost point exclusively to your current machine, paired with a port for each service. When a site works locally but fails on a coworker's device, you have likely shared a loopback address instead of a LAN or public IP; public deployment is required for open internet access. Know first Port IP Address IP Who can reach each kind of address localhost:3000 192.168.1.20:3000 203.0.113.7 localhost:3000 127.0.0.1 · Only this machine can reach it localhost means this very computer; a colleague using this address reaches their own machine. Listening scope and address type are separate: if the service listens on localhost only, the LAN address fails too. Address scope decides who can reach it 127.0.0.1: only this machine: lo",
+    "errors": []
+  },
+  "local": {
+    "title": "IP Address in Web Development Explained | VibeHub",
+    "h1": "IP Address",
+    "height": 2316.5,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-ip-stage",
+        "y": 551,
+        "height": 318.8
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 916,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1313,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1681,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1852,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › IP Address Copy as Markdown Copied ← → IP Address YOU MIGHT SAY Why can I open the page on my computer but others cannot? The numeric address of each device on the internet, used to route data to its destination · Local development addresses like 127.0.0.1 or localhost point exclusively to your current machine, paired with a port for each service. When a site works locally but fails on a coworker's device, you have likely shared a loopback address instead of a LAN or public IP; public deployment is required for open internet access. Know first Port IP Address Who can reach each kind of address localhost:3000 192.168.1.20:3000 203.0.113.7 localhost:3000 127.0.0.1 · Only this machine can reach it localhost means this very computer; a colleague using this address reaches their own machine. Listening scope and address type are separate: if the service listens on localhost only, the LAN address fails too. Address scope decides who can reach it 127.0.0.1: only this machine: loc",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

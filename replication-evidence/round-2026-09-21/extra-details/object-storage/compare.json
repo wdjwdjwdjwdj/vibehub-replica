@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Object Storage in Web Development Explained | VibeHub",
+    "h1": "Object Storage",
+    "height": 2495.6,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1057,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1454,
+        "height": 344
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1838,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2034,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Object Storage Copy as Markdown Copied ← → Object Storage You might say Where do user-uploaded profile pictures actually go? A cloud storage service specialized in whole objects like images, videos, and files, accessed by link·When saving user avatars or attachments, the file payload goes to object storage while the database retains only its URL, owner ID, and status metadata. Databases excel at querying structured records, and stuffing binary files into rows degrades performance; splitting them is standard engineering practice. Know first Database Object Storage One cover image, two parts, stored separately Upload the cover Database record Page reads it Where the two parts of one cover image are stored Upload cover.png cover file stored whole in object storage object storage returns an address database field does not hold the file Evidence Files are stored and served by link, not in database fields After upload you get an address; the file itself stays in object storage.",
+    "errors": []
+  },
+  "local": {
+    "title": "Object Storage in Web Development Explained | VibeHub",
+    "h1": "Object Storage",
+    "height": 2497.7,
+    "sections": [
+      {
+        "className": "extra-concept-stage special-section learning-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1057,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1454,
+        "height": 344
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1838,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2034,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Object Storage Copy as Markdown Copied ← → Object Storage YOU MIGHT SAY Where do user-uploaded profile pictures actually go? A cloud storage service specialized in whole objects like images, videos, and files, accessed by link · When saving user avatars or attachments, the file payload goes to object storage while the database retains only its URL, owner ID, and status metadata. Databases excel at querying structured records, and stuffing binary files into rows degrades performance; splitting them is standard engineering practice. Know first Database Object Storage One cover image, two parts, stored separately Upload the cover Database record Page reads it Where the two parts of one cover image are stored Upload cover.png cover file stored whole in object storage object storage returns an address database field does not hold the file EVIDENCE Files are stored and served by link, not in database fields After upload you get an address; the file itself stays in object storag",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

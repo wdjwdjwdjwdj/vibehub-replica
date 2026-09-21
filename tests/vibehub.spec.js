@@ -15,7 +15,7 @@ test('VibeHub core routes and interactions', async ({ page }) => {
   await page.getByRole('button', { name: 'Close community' }).click();
   await page.getByRole('button', { name: 'Theme color' }).click();
   await expect(page.getByRole('menu', { name: 'Theme colors' })).toBeVisible();
-  await page.getByRole('menuitem', { name: 'Blue' }).click();
+  await page.getByRole('menuitem', { name: 'Indigo' }).click();
   await page.getByRole('link', { name: 'Button', exact: true }).first().click();
   await expect(page).toHaveURL(/\/en\/button$/);
   await page.getByRole('heading', { name: 'Button', exact: true }).waitFor();
@@ -179,7 +179,7 @@ test('changelog mobile layout and month navigation work', async ({ page }) => {
 
 test('Chinese default surface keeps source navigation and changelog coverage', async ({ page }) => {
   await page.goto(`${base}/`);
-  await expect(page).toHaveTitle('VibeHub｜Vibe Coding 术语图鉴');
+  await expect(page).toHaveTitle('VibeHub｜Vibe Coding 术语图鉴 · 用大白话找准前端、后端、AI 术语');
   await expect(page.getByRole('link', { name: '课程', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: '前端 VibeCoding 术语', exact: true })).toBeVisible();
   await page.goto(`${base}/changelog`);
@@ -228,7 +228,7 @@ test('all first-class pages render real content', async ({ page }) => {
   await page.getByRole('button', { name: 'Copy rewritten request' }).click();
   await expect(page.locator('.skill-rewrite-after .skill-copy')).toHaveText(/Copied/);
   await page.goto(`${base}/en/topics/frontend`);
-  await expect(page.locator('.topic-catalog-page')).toBeVisible();
+  await expect(page.locator('.catalog-directory-page')).toBeVisible();
   await expect(page.locator('.term-card')).toHaveCount(137);
   await expect(page.locator('.survey-panel')).toBeVisible();
   await page.goto(`${base}/en/courses/product-website/01-page-structure`);
@@ -480,7 +480,7 @@ test('Button and Git detail quick checks follow the source reading order', async
   expect(buttonQuickCheck.y).toBeLessThan(buttonAnatomy.y);
   const deleteScene = page.locator('.source-button-scene-collection .scene-item').filter({ hasText: 'Delete confirmation' });
   await deleteScene.getByRole('button', { name: 'Delete', exact: true }).click();
-  await expect(page.locator('.source-scene-feedback')).toContainText('action confirmed');
+  await expect(page.locator('.source-scene-feedback')).toHaveCount(0);
 
   await page.goto(`${base}/en/git`);
   await expect(page.locator('.source-git-hero')).toBeVisible();
@@ -557,6 +557,20 @@ test('Button and Git detail quick checks follow the source reading order', async
   await expect(page.locator('.source-focused-decision')).toBeVisible();
   await page.goto(`${base}/en/project-rules`);
   await expect(page.locator('.source-focused-note-section')).toBeVisible();
+});
+
+test('Button detail keeps the source prompt structure and language-specific scenes', async ({ page }) => {
+  for (const [route, sceneCount, title, quote] of [
+    ['/en/button', 4, 'You can say this to an AI Agent', 'Clarify the account settings page'],
+    ['/button', 2, '你可以这样告诉 AI Agent', '请整理账号设置页'],
+  ]) {
+    await page.goto(`${base}${route}`);
+    await expect(page.locator('.lesson-agent-prompt')).toBeVisible();
+    await expect(page.locator('.lesson-agent-prompt h2')).toHaveText(title);
+    await expect(page.locator('.lesson-agent-prompt blockquote')).toContainText(quote);
+    await expect(page.locator('.source-button-scene-collection .scene-item')).toHaveCount(sceneCount);
+    await expect(page.locator('.detail-article > .prose-block:visible')).toHaveCount(0);
+  }
 });
 
 test('original localStorage keys are read and written compatibly', async ({ page }) => {

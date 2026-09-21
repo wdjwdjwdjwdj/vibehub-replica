@@ -1,0 +1,69 @@
+{
+  "survey_visible_initial": true,
+  "t600": {
+    "visible": false,
+    "text": "One quick question | Where did you first hear about VibeHub? | Choose the closest match. | Bilibili | Douyin | Xiaohongshu | X | GitHub | WeChat Channels | Other",
+    "optionsDisabled": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "optionsAriaBusy": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "optionsAttr": [
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      },
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      },
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      },
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      },
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      },
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      },
+      {
+        "cls": "source-survey-option",
+        "dis": true,
+        "busy": null
+      }
+    ],
+    "hasThanks": false
+  },
+  "t2000": {
+    "gone": true
+  },
+  "t4000": {
+    "gone": true
+  }
+}

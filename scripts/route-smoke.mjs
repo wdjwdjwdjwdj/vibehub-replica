@@ -1,7 +1,8 @@
 import { catalogData } from '../src/catalogData.js';
+import { extraItemsByTopic } from '../src/termExtras.js';
 
 const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
-const terms = Object.values(catalogData).flatMap((groups) => groups.flatMap((group) => group.items)).map((item) => item.length === 4 ? item[0] : item[2] || item[0]);
+const terms = [...Object.values(catalogData).flatMap((groups) => groups.flatMap((group) => group.items)).map((item) => item.length === 4 ? item[0] : item[2] || item[0]), ...Object.values(extraItemsByTopic).flatMap((items) => items.map((item) => item[0]))].filter((id, index, list) => list.indexOf(id) === index);
 const chapterSlugs = ['page-structure', 'visual-direction', 'hero-cta', 'content-structure', 'evidence-pricing-faq', 'layout-surface', 'form-and-interaction', 'responsive', 'delivery-and-agent'];
 const courseRoutes = ['/courses/product-website', ...chapterSlugs.map((slug, index) => `/courses/product-website/${String(index + 1).padStart(2, '0')}-${slug}`)].flatMap((route) => [route, `/en${route}`]);
 const gitChapterSlugs = ['01-working-tree-and-commit', '02-diff-and-gitignore', '03-branch-and-head', '04-merge-and-conflicts', '05-remote-and-collaboration', '06-restore-and-stash'];

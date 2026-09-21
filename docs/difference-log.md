@@ -2,6 +2,83 @@
 
 ## 最新批次（2026-09-17）
 
+- **详情页场景区 / Anatomy / Demo 文案对齐原站**：
+  - **场景区**：实测发现**原站中英文场景数不同** —— 中文 `/button` 只有 2 个（登录表单提交 / 删除确认弹窗），英文 `/en/button` 有 4 个（Sign-in form / Delete confirmation / Empty project state / File toolbar）。本地两种语言都渲染 4 个且中文名是旧值。已改为：后两个场景仅在英文页渲染，前两个场景中文名对齐原站。现 `/button` 2 个、`/en/button` 4 个，均与原站一致。
+  - **Anatomy**：本地原来完全没有这份数据（`anatomy` 在 `referenceDetails` 中 0 处，界面用自造的「意图/控件/反馈」）。已从原站 `/catalog/details/*.json` 抓取 **167 个术语 / 629 个 parts**（含 cn / en / desc / descEn / key），生成 `src/termAnatomy.js`。渲染改为原站结构：`.anat-part[data-ap] > .anat-part-trigger > .idx + .pn + .pe`，中文页显示 `pn + pe`（按钮本体 + Button），英文页只显示 `pn`（Button）——与原站行为一致。
+  - **Button Demo 按钮**：本地「登录」→ 原站「登 录」（中间有空格）。
+  - `/button` 文案一致率 **71.4% → 82.7%**。
+  - **顺带清理死代码**：`SourceButtonSections`（非 Replica 版）无任何引用（`<SourceButtonSections ` 0 处），已删除 4931 字符 / 11 行。删除前做了引用检查与函数边界（以 `}` 结尾）校验。
+  - 复验：`test:terms` 644 条、`test:e2e` 23/23、`test:catalog` 16、`audit:page-parity` 25/25、`build` 通过。
+  - 代价：主 JS 由 1869.87 kB 增至 2159.43 kB（新增 `termAnatomy.js` 289KB + `termAliases.js` 14KB 数据），大 chunk 警告加剧，待后续用动态加载拆分。
+
+- **详情页变体区与别名区块对齐原站**：
+  - **变体名**：原站为 `<div class="variant-name">主要按钮<span>Primary</span></div>`（中英文名分属两个元素），本地原为单个旧文案「主要操作」。已改为原站值（主要按钮 / 次要按钮 / 文字按钮 / 危险按钮 / 加载与禁用）并支持 `<span>` 英文名；说明文案同步改为原站表述（「在同一操作区域留给最重要的动作」等）。
+  - **新增 `.alias-row`（也常被叫作）区块**：原站结构为 `<div class="alias-row" aria-label="也常被叫作"><span>也常被叫作</span><em>操作按钮</em></div>`。仓库里原本**完全没有 aliases 数据**（`referenceDetails` 中 0 处），已从原站 catalog chunk 提取 **224 个术语 / 677 个别名**，生成 `src/termAliases.js`（含 `aliasesFor`）。新增 `AliasRow` 组件，插入 4 处详情页 H1 之后（SourceApiPage / SourceProjectRulesPage / SourceAiAgentPage / DetailPage）。
+    - 按原站行为区分语言：中文页展示全部别名；英文页只展示纯 ASCII 别名（`/en/button` 因此不渲染，`/en/modal` 只显示 `Dialog` 且**无**「也常被叫作」标签）。
+    - **已核实原站 Practice 的嵌入术语面板没有该区块**，故未在 `PracticeTermGuide` 中渲染（首次插入时误加了第 5 处，已移除）。
+  - **描述分隔符**：本地用 `<span class="lead-separator"> · </span>`（前后带空格），原站文本为无空格的 `控件·用户提交`；已改为 `·`。
+  - `/button` 文案一致率 **56.1% → 71.4%**。
+  - 复验：`test:terms` 644 条、`test:e2e` 23/23、`test:catalog` 16、`audit:page-parity` 25/25、`build` 通过。
+  - 同页剩余（已定位未修）：Anatomy 术语名（原站「按钮本体 Button / 文案 Label」，本地「按钮 / 标签」）、场景卡名（原站「登录表单提交 / 删除确认弹窗」，本地「登录表单 / 删除确认」）、`distinctions` 区分文案、Button Demo 的「登 录」（原站中间有空格）、Prompt 外层引号。
+
+- **详情页 H1 与面包屑结构对齐原站**：原站为 `<h1>按钮<span>Button</span></h1>`（中英文名**分属两个元素**）且面包屑末尾为中文名（`术语图鉴›按钮`）；本地原为纯文本 `按钮Button` 与 `术语图鉴›按钮Button`。新增 `termNameZh(term)`（用英文 `title` 做后缀切分，切不出则退回整串，避免中英同名术语渲染出空的中文段）与 `DetailTitle` 组件，替换 4 处 H1 与 9 处面包屑。实测 `/button` → `<h1>按钮<span>Button</span></h1>`、`/card` → `<h1>卡片<span>Card</span></h1>`、`/git`（中英同名）自动退回 `<h1>Git</h1>`，零运行时错误；`/button` 文案一致率 55.1% → **56.1%**。
+  - 同页剩余差异（已定位未修）：变体名（本地「主要操作/描边/文字/危险」，原站「主要按钮 Primary/次要按钮 Outline/文字按钮 Text/危险按钮 Danger」）；主描述空格（本地 `控件 · 用户提交`，原站 `控件·用户提交`）；Prompt 直引号 vs 原站弯引号；`.alias-row`「也常被叫作」区块本地**仍缺失**。
+  - 复验：`test:terms` 644 条双语详情全部通过、`test:e2e` 23/23、`test:catalog` 16、`audit:page-parity` 25/25、`audit:topic-parity` 16/16、`build` 通过。
+
+- **P1-1 清理 Skill 死代码**：`src/main.jsx` 曾并存三套 Skill 实现（`SkillPage` L885 / `ImprovedSkillPage` L887-893 / `ImprovedSkillPageV2` L895-904），靠 `SkillPage = ImprovedSkillPageV2;` 覆盖，前两套为死代码。已用原子脚本删除 12 行：移除旧 `SkillPage` 与 `ImprovedSkillPage`，将 V2 正式命名为 `SkillPage`，删除覆盖语句。删除前对函数首行与结束括号做了结构断言，回读校验 7 项全通过（旧实现已删、无 `ImprovedSkillPageV2` 残留、无覆盖语句、`SkillPage` 定义恰好 1 处、App 中 `<SkillPage/>` 仍可用、V2 主体内容保留）。**未误改任何实际渲染的实现**。
+
+- **P2-1 主题页 title 对齐**：新增 `scripts/probe-topic-titles.mjs` 逐路由实测，改前 16 对**全部不一致**。原站不是统一模板：`/topics/frontend` 与 `/en/topics/frontend` 都**沿用首页标题**；其余 7 个中文为 `<主题>术语有哪些｜Vibe Coding 可视化图解 · VibeHub`，英文为 `<Topic> Terms | Visual Vibe Coding Guide · VibeHub`。已在 `CatalogDirectoryPage` 的 `usePageTitle` 中加入 frontend 特判，其余用 `topic[1]`/`topic[4]` 拼接，现 **16/16 一致**。
+  - **踩坑（已修）**：`topicMeta[2]`/`[5]` 同时被用作 **H1 文本**（原站 H1 为 `Backend Terms for Vibe Coding` / `后端 VibeCoding 术语`），不能改成 title 格式。首次修改把该字段改掉后导致 2 处 E2E 断言失败，已恢复字段值并改由 `topic[1]`/`topic[4]` 构造 title。
+
+- **P1-2 收敛 Skill 页高度差（+233px → +58.6px）**：新增 `scripts/measure-skill-page.mjs`。根因是本地用**写死高度**做对齐：`skill-detail` 有 `min-height:2337px`、两个功能块 `height:735px`/`651px`、标题 `height:179px`、rewrite 视觉区 `height:437px`、intro `min-height:596px`；而原站全是自然高度（`.skill-block` 仅 `padding-top:88px`）。已去掉这些写死值并对齐原站实测（intro 579、rewrite 视觉 399.8、install 去 `min-height`、容器改 `padding:24px 0 104px`）。
+  - 结果：`skill-intro` 596→**579（完全一致）**、`skill-block#1` 735→630.7、`skill-block#2` 651→583.9、`skill-install` 194→184；子元素合计差由 232px 收敛到 33.6px，整页由 +233px 收敛到 **+58.6px**。
+  - 剩余未清零：`skill-install` +11.5、`skill-block#2` +20.5、`skill-block#1` +1.8，均已定位到具体区块，需再深入各自内部排版（如 install 的 h2 字号/margin、block#2 的视觉区高度）。
+
+- **P0 字体与图标接入（本批）**：原站 `Manrope Variable`（font-weight 200–800、`woff2-variations`）与 `tabler-icons`（`/fonts/tabler-icons-subset.woff2`）此前虽已下载到 `public/fonts/`，但 `src/styles.css` 与 `index.html` **零处引用**，属于"文件在、未接入"。已按原站运行时实测值接入：
+  - 新增 3 条 `@font-face`（Manrope latin / latin-ext / tabler-icons），保留原站 `unicode-range` 与 `font-display`。
+  - Header 补齐原站 `.vh-logo` 双层字标结构：`Vibe` + 强调的 `Hub`，hover 切换为 tagline（中文 `Vibe Coding 术语图鉴` / 英文 `Your Vibe Coding Guide`），容器宽度 `--vh-logo-rest:61px` → hover `--vh-logo-hover:148px`。实测本地 `.vh-logo` `93×34`、`.vh-word-brand` 宽 `62.3px`、tagline 宽 `134.7px`，**与原站完全一致**。
+  - `.footer-wordmark` 补 `Manrope Variable` + `font-variation-settings:'wght' 840`；实测 `310×90`、字距 `-12.996px`，与原站一致。
+  - 浏览器窗口灯由灰色 `6×6 #d6dae4` 改为原站红/黄/绿 `8×8`（`#ff6258` / `#ffbd2e` / `#28c840`）。
+  - tabler-icons 补 `.ti` 基类与 18 个实际使用图标的 `:before` 码点。码点从原站运行时 `getComputedStyle(el,'::before').content` 提取——原站 tabler CSS 受 CORS 限制无法直接读取。已应用于 Footer 社交图标（brand-github / brand-x / mail / pencil-plus，15px）、链接箭头（arrow-up-right，14×12）、调查弹层关闭键（x，16×16），实测尺寸与原站一致。
+  - 品牌字段改为可配置：`VITE_SITE_BRAND_LEAD/TAIL`、`VITE_SITE_TAGLINE_ZH/EN`，默认保持原站基线。**品牌名、Logo、favicon、站点名称仍待确认，未做任何替换**。
+  - 回退：Manrope 回退 `Avenir Next → 系统字体栈`；tabler 只在 `.ti` 元素生效；字体加载失败不会导致页面不可用或布局塌陷。
+  - 本批复验：`npm run build` 通过（CSS 411.14 → 421.47 kB）；`audit:topic-parity` 16/16、`audit:page-parity` 25/25、`test:catalog` 16、`test:e2e` 23/23。
+
+- **P0-2 文案逐句一致性脚本上线**：新增 `npm run audit:copy`（`scripts/audit-copy-parity.mjs`）。按页面抽取原站与本地**渲染后**的可见文本，逐行 LCS diff，输出"原站有/本地缺"与"本地多出"的具体句子；访问前注入 `vibehub-source-survey-shown-v1` 消除调查弹层噪声，行列乘积过大时退化为集合比对，报告落盘 `docs/copy-parity-latest.md`。首批 9 个页面一致率：中文/英文首页 91.7%、中文/英文 Frontend 主题页 92.6%/93%、Skill 73.9%、练习页 70%、中文更新日志 95.5%、Button 英文详情 92.6%、**Button 中文详情仅 42.9%**（原站 98 行 / 本地 110 行，缺 56、多 68）。
+  - 已暴露的真实缺陷（未修，转后续批次）：① 目录卡片标题原站 `HTML` / `内容结构` 为两行，本地合成一行 `HTML 内容结构`；② Demo 内部文案缺失（`HTML 源：1 个任务`、`+ 脚本插入节点`、`DOM 树：2 个任务`、`VibeHub · 蓝色马克杯`、`title 标识当前文档` 等）；③ 本地多出原站没有的 `body`/`main`/`button#add`/`task`/`Save changes`/`View details`/`Learn more →`/`Open the full example ↗`；④ **本地中文页混入英文且重复**：本地 `Mountain climbing on Saturday on Saturday, start early`，原站 `Hike the mountain on Saturday, start early`。
+  - 该脚本只做审计不改页面，后续每批应以它的输出作为文案验收依据。
+
+- **中文详情页文案对齐原站**：`npm run audit:copy` 暴露 `/button` 中文详情一致率仅 42.9%，排查后确认根因不是"缺内容"，而是**中文详情页仍在使用自主改写的旧标签，而英文详情页早已按原站对齐**（`/en/button` 92.6%）。已核实原站中文标签在 `/button`、`/card`、`/upload` 三页完全一致，属全局标签而非页面特例，遂做全局原子替换（含回读校验，14 类共 44 处）：
+
+  | 位置 | 旧文案 | 新文案（= 原站） |
+  | --- | --- | --- |
+  | 面包屑 | 全部词条 | 术语图鉴 |
+  | 复制按钮 | 复制 Markdown | 复制为 Markdown |
+  | 引用区标题 | 你会怎么说 | 你可能会说 |
+  | 判断题标题 | 快速判断 | 选择题 |
+  | 判断题副标题 | 选择最佳答案 | 选择一个你认为最合适的答案 |
+  | 区分区标题 | 快速判断 | 容易混淆？这样区分 |
+  | 场景区标题 | 典型用法 | 典型使用场景 |
+  | 延伸阅读标题 | 进一步阅读 | 延伸阅读 · 权威出处 |
+  | 结构区标题 | 组成 | 组成结构 · Anatomy |
+  | 变体区标题 | 变体 | 常见变体 · Variants |
+  | Agent prompt | 你可以这样对 AI Agent 说 | 你可以这样告诉 AI Agent |
+  | Button Demo | 创建账号 / 不可用 / 登录你的账号 | 注册新账号 / 不可点 / 登录账号 |
+
+  `/button` 一致率由 42.9% 提升到 55.1%。复验：`test:catalog` 16、`test:e2e` 23/23、`audit:topic-parity` 16/16、`audit:page-parity` 25/25、`build` 通过。
+
+- **中文详情页剩余差异已定位（未修，属结构层，转 P2-2）**：一致率停在 55.1% 的原因不是文案而是 DOM 结构 ——
+  - 原站 H1 为 `<h1>按钮<span>Button</span></h1>`（中英文名**分属两个元素**），本地是纯文本 `<h1>按钮Button</h1>`。
+  - 原站存在 `.alias-row`（「也常被叫作 操作按钮」）区块，本地**完全没有该区块**。
+  - 主描述原站为无空格连接的 `控件·用户提交`，本地为 `控件 · 用户提交`。
+  - 原站 Prompt 使用弯引号 `"重设密码"`，本地为直引号。
+  - 变体名原站是「主要按钮 Primary / 次要按钮 Outline / 文字按钮 Text / 危险按钮 Danger / Loading & Disabled」，本地是「主要操作 / 描边 / 文字 / 危险 / Loading & Disabled」，且原站中英文名同样分属两个元素。
+  这些需要详情页模板级重建，不是替换文案能解决的，已登记为下一批输入。
+
+- 顺带修正两处**过时** E2E 断言（非本批新引入）：① 首页中文 title 上一批已按原站补全为 `VibeHub｜Vibe Coding 术语图鉴 · 用大白话找准前端、后端、AI 术语`，测试仍期望旧短标题；② 英文主题页改走 `ImprovedTopicPage` 后容器类名为 `catalog-page catalog-directory-page`，测试仍断言旧的 `topic-catalog-page`。两者均按原站/实现现状更新；页面本身 137 张卡片、无运行时错误，不是靠改断言掩盖问题。
+
+- 已核实原站主题页 title 特例（供 P2-1 使用）：`/topics/frontend` 沿用首页中文标题 `VibeHub｜Vibe Coding 术语图鉴 · 用大白话找准前端、后端、AI 术语`；`/en/topics/frontend` 为 `VibeHub | Vibe Coding Terms`。**不能用统一模板覆盖**。
+
 - Git 课程总览本轮从旧的通用 `practice-intro/course-grid` 改为原站真实课程壳层：固定 940px 主滚动区、课程返回入口、进度信息、6 张带“未开始”状态的章节卡和每章独立 Git 工作流 HTML/CSS 视觉；不使用课程截图、iframe 或占位 Demo。1440px 原站/本地主容器均为 `940px`，章节列表卡片结构与间距已对齐；390px 原站/本地主容器均为 `736px`，卡片均为 `116px` 且视觉隐藏，新增课程移动端 smoke 已覆盖。Git 章节内容和进入 reader 的链路保持可用；视觉字体、SVG 精度和内部课程细节仍有差异。
 
 - 新增可复跑专项几何烟测 `npm run test:special`：直接读取原站与本地 `/en/api`、`/en/ai-agent`、`/en/project-rules`，比较 Hero、主教学区、练习、Prompt、推荐工具和参考资料的语义区块起点/高度，并拒绝 iframe。当前 3/3 通过；AI Agent 概念区起点保留 `-2px` 差异，Project Rules 主内容高度保留 `-1px` 差异，均在 2px 验收阈值内。最新构建通过，主 JS `1866.70 kB`（gzip `618.98 kB`）、CSS `411.14 kB`（gzip `62.14 kB`），仍有主 chunk 超过 500 kB 警告。
@@ -91,7 +168,7 @@
 - Changelog 最新原站/本地截图：`C:\Users\29688\AppData\Local\Temp\vh-source-changelog-current.png`、`C:\Users\29688\AppData\Local\Temp\vh-local-changelog-current.png`；已补齐原站式时间线圆点/竖线、版本徽章、milestone summary、更新项图标、侧栏统计卡边界和 12 条词条预览，筛选、月份锚点和词条展开保持可用。
 - 主题页最新原站/本地截图：`C:\Users\29688\AppData\Local\Temp\vh-source-topic-current.png`、`C:\Users\29688\AppData\Local\Temp\vh-local-topic-current.png`；已目视检查分类条、分组侧栏、三列卡片、Website Sections 两列卡片、调查弹层和移动端溢出约束。截图中的 Demo 仍是本地 HTML/CSS/React 重建，内部插画与原站不宣称一比一。
 - 产品官网章节最新原站/本地截图：第 1 章原站 `C:\Users\29688\AppData\Local\Temp\vh-original-current-course-ch1-v2.png`、本地 `C:\Users\29688\AppData\Local\Temp\vh-local-current-course-ch1-v4.png`；第 2 章原站 `C:\Users\29688\AppData\Local\Temp\vh-original-course-02.png`、本地 `C:\Users\29688\AppData\Local\Temp\vh-local-course-02-v4.png`。已目视检查左侧章节目录、800px 主文栏、标题/摘要、分节正文和原生 HTML/CSS 图示；本地图示已对齐同类信息结构，但图示内部细部、字体、动效和部分间距仍不同。
-- Practice 最新原站/本地截图：初始态 `C:\Users\29688\AppData\Local\Temp\vh-original-current-practice-v2.png`、`C:\Users\29688\AppData\Local\Temp\vh-local-current-practice-v7.png`，答对态 `C:\Users\29688\AppData\Local\Temp\vh-original-practice-correct-v1.png`、`C:\Users\29688\AppData\Local\Temp\vh-local-practice-correct-v8.png`；本地已对齐原站当前的 20px 外边距、735/665 双栏、940px 练习区、601×760 术语面板、随机选题、答错重选、答对禁用选项和完整术语指南嵌入，并接入原站 `lessonPractice` 的 296 条双语题目及 9 个方向题量（Frontend 136、Backend 59、Product 19、Testing 14、Tech Stack 17、AI 37、Git 12、Design Styles 2）。连续题目审计确认原站 `vibehub.practice.recent.v1` 保留最近 12 条，本地已对齐该上限；复核确认答案、得分和方向选择仅保持当前会话状态，不额外制造原站未观察到的 key。
+- Practice 最新原站/本地截图：初始态 `C:\Users\29688\AppData\Local\Temp\vh-original-current-practice-v2.png`、`C:\Users\29688\AppData\Local\Temp\vh-local-current-practice-v7.png`，答对态 `C:\Users\29688\AppData\Local\Temp\vh-original-practice-correct-v1.png`、`C:\Users\29688\AppData\Local\Temp\vh-local-practice-correct-v8.png`；本地已对齐原站当前的 20px 外边距、735/665 双栏、940px 练习区、601×760 术语面板、随机选题、答错重选、答对禁用选项和完整术语指南嵌入，并接入原站实时 `lessonPractice` 的 328 条双语题目及 9 个方向题量（Frontend 139、Backend 70、Product 25、Testing 14、Tech Stack 20、AI 43、Git 15、Design Styles 2）。连续题目审计确认原站 `vibehub.practice.recent.v1` 保留最近 12 条，本地已对齐该上限；复核确认答案、得分和方向选择仅保持当前会话状态，不额外制造原站未观察到的 key。
 - 原站与本地在新浏览器上下文的术语目录/详情页都会显示调查弹层；课程总览抽查确认两者均不显示，剩余差异主要是渠道图标路径与投放频率。
 - 最新调查弹层复核截图：本地 `C:\Users\29688\AppData\Local\Temp\vh-local-current-survey-icons.png`；已补齐与原站同类的 7 个渠道图标、按钮排列和图标色块，图标为本地内联 SVG，仍可能与原站原始路径存在细微形状差异。
 - Dh Demo 抽查截图：原站 `C:\Users\29688\AppData\Local\Temp\vh-ref-dh-{card|tag|top-nav-layout|flex|typography|url|domain}.png`；本地 `C:\Users\29688\AppData\Local\Temp\vh-local-dh-{card|tag|top-nav-layout|flex|typography|url|domain}.png`，已完成分组目视对照；结果按上条记录为结构已实现、细节未完全等同。
@@ -111,12 +188,12 @@
 - `npm run test:courses`：通过，36 个双语产品官网/Git 课程总览与章节入口，真实 Chromium 检查 H1、章节正文、章节目录、产品章节图示和 iframe 约束。
 - `npm run test:courses:mobile`：通过，产品官网 9 章在 390px 视口均有分节和原生图示，无横向溢出或运行时错误。
 - `npm run test:lab`：通过，2 个双语 Skill Learning Lab 入口，真实 Chromium 检查标题、四步流程、两种方案和 iframe 约束。
-- `npm run test:practice`：通过，真实 Chromium 按正确答案走完 296 道双语练习，校验 9 个方向题量、答对后相关术语解锁、题目不重复及无运行时错误。
+- `npm run test:practice`：通过，真实 Chromium 按正确答案走完 328 道双语练习，校验 9 个方向题量、答对后相关术语解锁、题目不重复及无运行时错误。
 - `node scripts/live-page-audit.mjs`：通过；在原站当前页面读取 Changelog、Anti-AI、Skill、Courses、Practice 的可见标题、按钮、链接和主要文本结构。
 - `node scripts/audit-original-practice-recent.mjs`：通过；原站连续 30 道答题流程确认答错可重选、答对后选项禁用并显示完整术语指南，最近题目记录上限为 12。
 - `node scripts/scrape-reference.mjs`：本轮重跑成功，英文/中文各 322 条，均无抓取错误；原站 Demo 文本各 264 条。
 - `npm run scrape:course`：通过；从原站抓取产品官网 9 章、43 个分节和 20 个图示元数据，写入 `src/courseData.js`，保留可复跑边界。
-- `npm run scrape:practice`：通过；从原站 `catalog/details/*.json` 提取 296 条双语 `lessonPractice`，写入 `src/practiceData.js`，保留可复跑边界。
+- `npm run scrape:practice`：通过；从原站 `catalog/details/*.json` 提取 328 条双语 `lessonPractice`，写入 `src/practiceData.js`，并将 sitemap 新增 32 个术语纳入可复跑抓取边界。
 - `npm run build`：通过；本轮 Vite 报告主 JS minified 约 1.780 MB、gzip 594.99 kB，Practice 独立 chunk 约 505.05 kB、gzip 182.63 kB，详情 QuickCheck 反馈按需 chunk 约 197.76 kB、gzip 82.65 kB，CSS 249.48 kB、gzip 39.96 kB。主包已不再包含 Practice 题库和 QuickCheck 反馈文案；主 chunk 仍超过 500 kB，部署前仍可继续拆分 `referenceDetails` 等静态数据。另用临时 `Independent Hub` 环境变量构建并检查静态 HTML 的 title、description、favicon，以及 Header/Footer 不再出现原站 Oil 外链，随后已恢复默认构建。
 - `npm run preview -- --host 127.0.0.1 --port 5173`：通过；本批次复跑 E2E 23/23、课程 36 个双语入口、9 个产品课程移动端章节、710 个路由、644 条详情、644 条 Demo 家族、16 对主题页和 25 对代表性页面原站/本地 1440px 几何与截图审计；主题目录卡片总高度、Website Sections 两列规则以及 Testing/Git/Design 全宽规则已复测。更新日志中文 22 个里程碑/49 条说明、API/AI Agent/Project Rules 三页及此前 HTML/DNS/Typography/Terminal、Input/Modal/Card/Markdown、Upload、Practice、课程章节术语面板、HTML 静态结构修正和 2 个 Lab 入口均已保留验收证据。最新构建产物为 JS 1782.35 kB（gzip 595.99 kB）、CSS 253.39 kB（gzip 40.64 kB），仍有大 chunk 警告。验收后应停止本地服务并复核端口，当前公网部署仍未执行。
 - 运行时错误烟测：通过；详情、课程和 Lab 批量脚本均监听 `pageerror` 与浏览器 console error，644/36/2 路由均无运行时错误；产品官网 9 章另以 390px 检查均为 `scrollWidth=390`。测试页移除 Google Fonts 外部运行时依赖，避免受限网络下的字体请求失败。

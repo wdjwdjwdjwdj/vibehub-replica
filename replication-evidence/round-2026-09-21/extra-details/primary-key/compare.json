@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Primary Key in Web Development Explained | VibeHub",
+    "h1": "Primary Key",
+    "height": 2431.2,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1057,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1429,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1798,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1969,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Primary Key Copy as Markdown Copied ← → Primary Key You might say AI said to update this record by id. Where does that id come from? The field in a table used to uniquely identify each row·When modifying records or linking across tables, you must rely on a uniquely valued primary key to pinpoint the target row. Names and emails can duplicate or change, making them unsafe as definitive anchors; basing updates and deletions on primary keys prevents accidentally touching adjacent rows. Know first Database Primary Key ID Which column uniquely identifies a row Locate by id Locate by email Orders link to users Which column uniquely identifies a row users table · two rows share an email id = 7 identifies exactly one row id = 8 another row with the same email name / email can repeat; cannot locate uniquely Evidence Only the primary key column has distinct values Updating by id affects exactly one row; updating by email changes both rows. Why a primary key must be unique Locate on",
+    "errors": []
+  },
+  "local": {
+    "title": "Primary Key in Web Development Explained | VibeHub",
+    "h1": "Primary Key",
+    "height": 2433.3,
+    "sections": [
+      {
+        "className": "extra-concept-stage special-section learning-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1057,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1429,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1798,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1969,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Primary Key Copy as Markdown Copied ← → Primary Key YOU MIGHT SAY AI said to update this record by id. Where does that id come from? The field in a table used to uniquely identify each row · When modifying records or linking across tables, you must rely on a uniquely valued primary key to pinpoint the target row. Names and emails can duplicate or change, making them unsafe as definitive anchors; basing updates and deletions on primary keys prevents accidentally touching adjacent rows. Know first Database Primary Key Which column uniquely identifies a row Locate by id Locate by email Orders link to users Which column uniquely identifies a row users table · two rows share an email id = 7 identifies exactly one row id = 8 another row with the same email name / email can repeat; cannot locate uniquely EVIDENCE Only the primary key column has distinct values Updating by id affects exactly one row; updating by email changes both rows. Why a primary key must be unique Locate one",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

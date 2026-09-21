@@ -1,0 +1,72 @@
+{
+  "taskId": "TASK-001-survey-submit",
+  "sourceUrl": "https://vibe-hub.org/en/html",
+  "capturedAt": "2026-09-20T16:18:36.239Z",
+  "environment": {
+    "viewport": "1440x900",
+    "locale": "en-US",
+    "colorScheme": "light",
+    "browser": "chromium"
+  },
+  "initial": {
+    "visible": true,
+    "exists": true,
+    "optionCount": 7,
+    "disabled": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "ariaBusy": null,
+    "panelText": "One quick question Where did you first hear about VibeHub? Choose the closest match. Bilibili Douyin Xiaohongshu X GitHub WeChat Channels Other"
+  },
+  "after200ms": {
+    "visible": true,
+    "exists": true,
+    "optionCount": 7,
+    "disabled": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "ariaBusy": "true",
+    "panelText": "One quick question Where did you first hear about VibeHub? Choose the closest match. Bilibili Douyin Xiaohongshu X GitHub WeChat Channels Other"
+  },
+  "after600ms": {
+    "visible": true,
+    "exists": true,
+    "optionCount": 7,
+    "disabled": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "ariaBusy": "true",
+    "panelText": "One quick question Where did you first hear about VibeHub? Choose the closest match. Bilibili Douyin Xiaohongshu X GitHub WeChat Channels Other"
+  },
+  "after1800ms": {
+    "visible": false,
+    "exists": false,
+    "optionCount": 0,
+    "disabled": [],
+    "ariaBusy": null,
+    "panelText": ""
+  },
+  "diagnostics": {
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedResponses": []
+  }
+}

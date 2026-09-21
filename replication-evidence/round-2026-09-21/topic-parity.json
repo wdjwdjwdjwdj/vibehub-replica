@@ -1,0 +1,2026 @@
+[
+  {
+    "sourceRoute": "/en/topics/frontend",
+    "localRoute": "/en/topics/frontend",
+    "source": {
+      "title": "VibeHub | Vibe Coding Terms",
+      "h1": "Frontend Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 18110
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 18110
+      },
+      "cardSelector": ".card",
+      "cardCount": 140,
+      "cardHeightTotal": 44045,
+      "cardMin": 262,
+      "cardMax": 456,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "586px 586px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1855
+        },
+        {
+          "x": 216,
+          "y": 2209,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 2536,
+          "width": 1192,
+          "height": 2154
+        },
+        {
+          "x": 216,
+          "y": 4755,
+          "width": 1192,
+          "height": 2863
+        },
+        {
+          "x": 216,
+          "y": 7683,
+          "width": 1192,
+          "height": 1214
+        },
+        {
+          "x": 216,
+          "y": 8962,
+          "width": 1192,
+          "height": 906
+        },
+        {
+          "x": 216,
+          "y": 9933,
+          "width": 1192,
+          "height": 2358
+        },
+        {
+          "x": 216,
+          "y": 12356,
+          "width": 1192,
+          "height": 1172
+        },
+        {
+          "x": 216,
+          "y": 13593,
+          "width": 1192,
+          "height": 1214
+        },
+        {
+          "x": 216,
+          "y": 14872,
+          "width": 1192,
+          "height": 315
+        },
+        {
+          "x": 216,
+          "y": 15252,
+          "width": 1192,
+          "height": 1254
+        },
+        {
+          "x": 216,
+          "y": 16572,
+          "width": 1192,
+          "height": 611
+        },
+        {
+          "x": 216,
+          "y": 17247,
+          "width": 1192,
+          "height": 827
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "VibeHub | Vibe Coding Terms",
+      "h1": "Frontend Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 18110
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 18110
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 140,
+      "cardHeightTotal": 44045,
+      "cardMin": 262,
+      "cardMax": 456,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "586px 586px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1855
+        },
+        {
+          "x": 216,
+          "y": 2209,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 2536,
+          "width": 1192,
+          "height": 2154
+        },
+        {
+          "x": 216,
+          "y": 4755,
+          "width": 1192,
+          "height": 2863
+        },
+        {
+          "x": 216,
+          "y": 7683,
+          "width": 1192,
+          "height": 1214
+        },
+        {
+          "x": 216,
+          "y": 8962,
+          "width": 1192,
+          "height": 906
+        },
+        {
+          "x": 216,
+          "y": 9933,
+          "width": 1192,
+          "height": 2358
+        },
+        {
+          "x": 216,
+          "y": 12356,
+          "width": 1192,
+          "height": 1172
+        },
+        {
+          "x": 216,
+          "y": 13593,
+          "width": 1192,
+          "height": 1214
+        },
+        {
+          "x": 216,
+          "y": 14872,
+          "width": 1192,
+          "height": 315
+        },
+        {
+          "x": 216,
+          "y": 15252,
+          "width": 1192,
+          "height": 1254
+        },
+        {
+          "x": 216,
+          "y": 16572,
+          "width": 1192,
+          "height": 611
+        },
+        {
+          "x": 216,
+          "y": 17247,
+          "width": 1192,
+          "height": 827
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/frontend",
+    "localRoute": "/topics/frontend",
+    "source": {
+      "title": "VibeHub｜Vibe Coding 术语图鉴 · 用大白话找准前端、后端、AI 术语",
+      "h1": "前端 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 16944
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 16944
+      },
+      "cardSelector": ".card",
+      "cardCount": 140,
+      "cardHeightTotal": 40746,
+      "cardMin": 236,
+      "cardMax": 456,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "586px 586px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1787
+        },
+        {
+          "x": 216,
+          "y": 2141,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 2468,
+          "width": 1192,
+          "height": 1995
+        },
+        {
+          "x": 216,
+          "y": 4528,
+          "width": 1192,
+          "height": 2626
+        },
+        {
+          "x": 216,
+          "y": 7219,
+          "width": 1192,
+          "height": 1109
+        },
+        {
+          "x": 216,
+          "y": 8393,
+          "width": 1192,
+          "height": 827
+        },
+        {
+          "x": 216,
+          "y": 9284,
+          "width": 1192,
+          "height": 2253
+        },
+        {
+          "x": 216,
+          "y": 11602,
+          "width": 1192,
+          "height": 1066
+        },
+        {
+          "x": 216,
+          "y": 12733,
+          "width": 1192,
+          "height": 1109
+        },
+        {
+          "x": 216,
+          "y": 13907,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 14234,
+          "width": 1192,
+          "height": 1186
+        },
+        {
+          "x": 216,
+          "y": 15485,
+          "width": 1192,
+          "height": 558
+        },
+        {
+          "x": 216,
+          "y": 16108,
+          "width": 1192,
+          "height": 800
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "VibeHub｜Vibe Coding 术语图鉴 · 用大白话找准前端、后端、AI 术语",
+      "h1": "前端 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 16944
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 16944
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 140,
+      "cardHeightTotal": 40746,
+      "cardMin": 236,
+      "cardMax": 456,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "586px 586px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1787
+        },
+        {
+          "x": 216,
+          "y": 2141,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 2468,
+          "width": 1192,
+          "height": 1995
+        },
+        {
+          "x": 216,
+          "y": 4528,
+          "width": 1192,
+          "height": 2626
+        },
+        {
+          "x": 216,
+          "y": 7219,
+          "width": 1192,
+          "height": 1109
+        },
+        {
+          "x": 216,
+          "y": 8393,
+          "width": 1192,
+          "height": 827
+        },
+        {
+          "x": 216,
+          "y": 9284,
+          "width": 1192,
+          "height": 2253
+        },
+        {
+          "x": 216,
+          "y": 11602,
+          "width": 1192,
+          "height": 1066
+        },
+        {
+          "x": 216,
+          "y": 12733,
+          "width": 1192,
+          "height": 1109
+        },
+        {
+          "x": 216,
+          "y": 13907,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 14234,
+          "width": 1192,
+          "height": 1186
+        },
+        {
+          "x": 216,
+          "y": 15485,
+          "width": 1192,
+          "height": 558
+        },
+        {
+          "x": 216,
+          "y": 16108,
+          "width": 1192,
+          "height": 800
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/backend",
+    "localRoute": "/en/topics/backend",
+    "source": {
+      "title": "Backend Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Backend Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 10501
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 10501
+      },
+      "cardSelector": ".card",
+      "cardCount": 73,
+      "cardHeightTotal": 27689,
+      "cardMin": 329,
+      "cardMax": 432,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1441
+        },
+        {
+          "x": 216,
+          "y": 1794,
+          "width": 1192,
+          "height": 1198
+        },
+        {
+          "x": 216,
+          "y": 3057,
+          "width": 1192,
+          "height": 1198
+        },
+        {
+          "x": 216,
+          "y": 4320,
+          "width": 1192,
+          "height": 2054
+        },
+        {
+          "x": 216,
+          "y": 6439,
+          "width": 1192,
+          "height": 783
+        },
+        {
+          "x": 216,
+          "y": 7288,
+          "width": 1192,
+          "height": 3177
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Backend Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Backend Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 10501
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 10501
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 73,
+      "cardHeightTotal": 27689,
+      "cardMin": 329,
+      "cardMax": 432,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1441
+        },
+        {
+          "x": 216,
+          "y": 1794,
+          "width": 1192,
+          "height": 1198
+        },
+        {
+          "x": 216,
+          "y": 3057,
+          "width": 1192,
+          "height": 1198
+        },
+        {
+          "x": 216,
+          "y": 4320,
+          "width": 1192,
+          "height": 2054
+        },
+        {
+          "x": 216,
+          "y": 6439,
+          "width": 1192,
+          "height": 783
+        },
+        {
+          "x": 216,
+          "y": 7288,
+          "width": 1192,
+          "height": 3177
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/backend",
+    "localRoute": "/topics/backend",
+    "source": {
+      "title": "后端术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "后端 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 9769
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 9769
+      },
+      "cardSelector": ".card",
+      "cardCount": 73,
+      "cardHeightTotal": 25535,
+      "cardMin": 302,
+      "cardMax": 406,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1346
+        },
+        {
+          "x": 216,
+          "y": 1700,
+          "width": 1192,
+          "height": 1156
+        },
+        {
+          "x": 216,
+          "y": 2921,
+          "width": 1192,
+          "height": 1093
+        },
+        {
+          "x": 216,
+          "y": 4078,
+          "width": 1192,
+          "height": 1896
+        },
+        {
+          "x": 216,
+          "y": 6039,
+          "width": 1192,
+          "height": 704
+        },
+        {
+          "x": 216,
+          "y": 6808,
+          "width": 1192,
+          "height": 2924
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "后端术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "后端 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 9769
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 9769
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 73,
+      "cardHeightTotal": 25535,
+      "cardMin": 302,
+      "cardMax": 406,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1346
+        },
+        {
+          "x": 216,
+          "y": 1700,
+          "width": 1192,
+          "height": 1156
+        },
+        {
+          "x": 216,
+          "y": 2921,
+          "width": 1192,
+          "height": 1093
+        },
+        {
+          "x": 216,
+          "y": 4078,
+          "width": 1192,
+          "height": 1896
+        },
+        {
+          "x": 216,
+          "y": 6039,
+          "width": 1192,
+          "height": 704
+        },
+        {
+          "x": 216,
+          "y": 6808,
+          "width": 1192,
+          "height": 2924
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/product",
+    "localRoute": "/en/topics/product",
+    "source": {
+      "title": "Product Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Product Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3542
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3542
+      },
+      "cardSelector": ".card",
+      "cardCount": 25,
+      "cardHeightTotal": 8300,
+      "cardMin": 289,
+      "cardMax": 380,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 650
+        },
+        {
+          "x": 216,
+          "y": 1004,
+          "width": 1192,
+          "height": 1372
+        },
+        {
+          "x": 216,
+          "y": 2441,
+          "width": 1192,
+          "height": 1065
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Product Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Product Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3542
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3542
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 25,
+      "cardHeightTotal": 8300,
+      "cardMin": 289,
+      "cardMax": 380,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 650
+        },
+        {
+          "x": 216,
+          "y": 1004,
+          "width": 1192,
+          "height": 1372
+        },
+        {
+          "x": 216,
+          "y": 2441,
+          "width": 1192,
+          "height": 1065
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/product",
+    "localRoute": "/topics/product",
+    "source": {
+      "title": "产品术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "产品 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3310
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3310
+      },
+      "cardSelector": ".card",
+      "cardCount": 25,
+      "cardHeightTotal": 7663,
+      "cardMin": 262,
+      "cardMax": 354,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 576
+        },
+        {
+          "x": 216,
+          "y": 930,
+          "width": 1192,
+          "height": 1293
+        },
+        {
+          "x": 216,
+          "y": 2288,
+          "width": 1192,
+          "height": 986
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "产品术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "产品 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3310
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3310
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 25,
+      "cardHeightTotal": 7663,
+      "cardMin": 262,
+      "cardMax": 354,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 576
+        },
+        {
+          "x": 216,
+          "y": 930,
+          "width": 1192,
+          "height": 1293
+        },
+        {
+          "x": 216,
+          "y": 2288,
+          "width": 1192,
+          "height": 986
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/testing",
+    "localRoute": "/en/topics/testing",
+    "source": {
+      "title": "Testing Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Testing Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2498
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2498
+      },
+      "cardSelector": ".card",
+      "cardCount": 14,
+      "cardHeightTotal": 5876,
+      "cardMin": 403,
+      "cardMax": 429,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 2174
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Testing Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Testing Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2498
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2498
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 14,
+      "cardHeightTotal": 5876,
+      "cardMin": 403,
+      "cardMax": 429,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 2174
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/testing",
+    "localRoute": "/topics/testing",
+    "source": {
+      "title": "测试术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "测试 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2325
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2325
+      },
+      "cardSelector": ".card",
+      "cardCount": 14,
+      "cardHeightTotal": 5389,
+      "cardMin": 377,
+      "cardMax": 414,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 2000
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "测试术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "测试 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2325
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2325
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 14,
+      "cardHeightTotal": 5389,
+      "cardMin": 377,
+      "cardMax": 414,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 2000
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/technology",
+    "localRoute": "/en/topics/stack",
+    "source": {
+      "title": "Tech Stack Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Tech Stack Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3180
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3180
+      },
+      "cardSelector": ".card",
+      "cardCount": 20,
+      "cardHeightTotal": 6493,
+      "cardMin": 262,
+      "cardMax": 395,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1145
+        },
+        {
+          "x": 216,
+          "y": 1499,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 1826,
+          "width": 1192,
+          "height": 611
+        },
+        {
+          "x": 216,
+          "y": 2502,
+          "width": 1192,
+          "height": 289
+        },
+        {
+          "x": 216,
+          "y": 2855,
+          "width": 1192,
+          "height": 289
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Tech Stack Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Tech Stack Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3180
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3180
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 20,
+      "cardHeightTotal": 6493,
+      "cardMin": 262,
+      "cardMax": 395,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1145
+        },
+        {
+          "x": 216,
+          "y": 1499,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 1826,
+          "width": 1192,
+          "height": 611
+        },
+        {
+          "x": 216,
+          "y": 2502,
+          "width": 1192,
+          "height": 289
+        },
+        {
+          "x": 216,
+          "y": 2855,
+          "width": 1192,
+          "height": 289
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/technology",
+    "localRoute": "/topics/stack",
+    "source": {
+      "title": "技术栈术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "技术栈 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3048
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3048
+      },
+      "cardSelector": ".card",
+      "cardCount": 20,
+      "cardHeightTotal": 6118,
+      "cardMin": 262,
+      "cardMax": 368,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1093
+        },
+        {
+          "x": 216,
+          "y": 1446,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 1773,
+          "width": 1192,
+          "height": 584
+        },
+        {
+          "x": 216,
+          "y": 2423,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 2750,
+          "width": 1192,
+          "height": 262
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "技术栈术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "技术栈 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3048
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3048
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 20,
+      "cardHeightTotal": 6118,
+      "cardMin": 262,
+      "cardMax": 368,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1093
+        },
+        {
+          "x": 216,
+          "y": 1446,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 1773,
+          "width": 1192,
+          "height": 584
+        },
+        {
+          "x": 216,
+          "y": 2423,
+          "width": 1192,
+          "height": 262
+        },
+        {
+          "x": 216,
+          "y": 2750,
+          "width": 1192,
+          "height": 262
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/ai",
+    "localRoute": "/en/topics/ai",
+    "source": {
+      "title": "AI Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "AI Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6488
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6488
+      },
+      "cardSelector": ".card",
+      "cardCount": 43,
+      "cardHeightTotal": 13395,
+      "cardMin": 262,
+      "cardMax": 382,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1087
+        },
+        {
+          "x": 216,
+          "y": 1441,
+          "width": 1192,
+          "height": 919
+        },
+        {
+          "x": 216,
+          "y": 2425,
+          "width": 1192,
+          "height": 571
+        },
+        {
+          "x": 216,
+          "y": 3061,
+          "width": 1192,
+          "height": 906
+        },
+        {
+          "x": 216,
+          "y": 4031,
+          "width": 1192,
+          "height": 1025
+        },
+        {
+          "x": 216,
+          "y": 5121,
+          "width": 1192,
+          "height": 597
+        },
+        {
+          "x": 216,
+          "y": 5783,
+          "width": 1192,
+          "height": 315
+        },
+        {
+          "x": 216,
+          "y": 6163,
+          "width": 1192,
+          "height": 289
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "AI Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "AI Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6488
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6488
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 43,
+      "cardHeightTotal": 13395,
+      "cardMin": 262,
+      "cardMax": 382,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1087
+        },
+        {
+          "x": 216,
+          "y": 1441,
+          "width": 1192,
+          "height": 919
+        },
+        {
+          "x": 216,
+          "y": 2425,
+          "width": 1192,
+          "height": 571
+        },
+        {
+          "x": 216,
+          "y": 3061,
+          "width": 1192,
+          "height": 906
+        },
+        {
+          "x": 216,
+          "y": 4031,
+          "width": 1192,
+          "height": 1025
+        },
+        {
+          "x": 216,
+          "y": 5121,
+          "width": 1192,
+          "height": 597
+        },
+        {
+          "x": 216,
+          "y": 5783,
+          "width": 1192,
+          "height": 315
+        },
+        {
+          "x": 216,
+          "y": 6163,
+          "width": 1192,
+          "height": 289
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/ai",
+    "localRoute": "/topics/ai",
+    "source": {
+      "title": "AI术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "AI VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6133
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6133
+      },
+      "cardSelector": ".card",
+      "cardCount": 43,
+      "cardHeightTotal": 12616,
+      "cardMin": 236,
+      "cardMax": 367,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1030
+        },
+        {
+          "x": 216,
+          "y": 1383,
+          "width": 1192,
+          "height": 867
+        },
+        {
+          "x": 216,
+          "y": 2315,
+          "width": 1192,
+          "height": 518
+        },
+        {
+          "x": 216,
+          "y": 2898,
+          "width": 1192,
+          "height": 864
+        },
+        {
+          "x": 216,
+          "y": 3827,
+          "width": 1192,
+          "height": 943
+        },
+        {
+          "x": 216,
+          "y": 4835,
+          "width": 1192,
+          "height": 571
+        },
+        {
+          "x": 216,
+          "y": 5470,
+          "width": 1192,
+          "height": 289
+        },
+        {
+          "x": 216,
+          "y": 5824,
+          "width": 1192,
+          "height": 273
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "AI术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "AI VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6133
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 6133
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 43,
+      "cardHeightTotal": 12616,
+      "cardMin": 236,
+      "cardMax": 367,
+      "gridTemplates": [
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px",
+        "384px 384px 384px"
+      ],
+      "gridRects": [
+        {
+          "x": 216,
+          "y": 289,
+          "width": 1192,
+          "height": 1030
+        },
+        {
+          "x": 216,
+          "y": 1383,
+          "width": 1192,
+          "height": 867
+        },
+        {
+          "x": 216,
+          "y": 2315,
+          "width": 1192,
+          "height": 518
+        },
+        {
+          "x": 216,
+          "y": 2898,
+          "width": 1192,
+          "height": 864
+        },
+        {
+          "x": 216,
+          "y": 3827,
+          "width": 1192,
+          "height": 943
+        },
+        {
+          "x": 216,
+          "y": 4835,
+          "width": 1192,
+          "height": 571
+        },
+        {
+          "x": 216,
+          "y": 5470,
+          "width": 1192,
+          "height": 289
+        },
+        {
+          "x": 216,
+          "y": 5824,
+          "width": 1192,
+          "height": 273
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/git",
+    "localRoute": "/en/topics/git",
+    "source": {
+      "title": "Git Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Git Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2393
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2393
+      },
+      "cardSelector": ".card",
+      "cardCount": 15,
+      "cardHeightTotal": 5967,
+      "cardMin": 377,
+      "cardMax": 403,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 2068
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Git Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Git Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2393
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2393
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 15,
+      "cardHeightTotal": 5967,
+      "cardMin": 377,
+      "cardMax": 403,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 2068
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/git",
+    "localRoute": "/topics/git",
+    "source": {
+      "title": "Git术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "Git VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2287
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2287
+      },
+      "cardSelector": ".card",
+      "cardCount": 15,
+      "cardHeightTotal": 5655,
+      "cardMin": 377,
+      "cardMax": 377,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 1963
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Git术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "Git VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2287
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 2287
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 15,
+      "cardHeightTotal": 5655,
+      "cardMin": 377,
+      "cardMax": 377,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 1963
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/en/topics/design",
+    "localRoute": "/en/topics/design",
+    "source": {
+      "title": "Design Styles Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Design Styles Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3609
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3609
+      },
+      "cardSelector": ".card",
+      "cardCount": 24,
+      "cardHeightTotal": 9438,
+      "cardMin": 377,
+      "cardMax": 403,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 3284
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "Design Styles Terms | Visual Vibe Coding Guide · VibeHub",
+      "h1": "Design Styles Terms for Vibe Coding",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3609
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3609
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 24,
+      "cardHeightTotal": 9438,
+      "cardMin": 377,
+      "cardMax": 403,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 3284
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  },
+  {
+    "sourceRoute": "/topics/design",
+    "localRoute": "/topics/design",
+    "source": {
+      "title": "设计风格术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "设计风格 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3451
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3451
+      },
+      "cardSelector": ".card",
+      "cardCount": 24,
+      "cardHeightTotal": 8967,
+      "cardMin": 350,
+      "cardMax": 377,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 3126
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    },
+    "local": {
+      "title": "设计风格术语有哪些｜Vibe Coding 可视化图解 · VibeHub",
+      "h1": "设计风格 VibeCoding 术语",
+      "main": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3451
+      },
+      "layout": {
+        "x": 0,
+        "y": 60,
+        "width": 1440,
+        "height": 3451
+      },
+      "cardSelector": ".term-card",
+      "cardCount": 24,
+      "cardHeightTotal": 8967,
+      "cardMin": 350,
+      "cardMax": 377,
+      "gridTemplates": [
+        "445.328px 445.328px 445.344px"
+      ],
+      "gridRects": [
+        {
+          "x": 32,
+          "y": 289,
+          "width": 1376,
+          "height": 3126
+        }
+      ],
+      "iframeCount": 0,
+      "errorText": false,
+      "errors": []
+    }
+  }
+]

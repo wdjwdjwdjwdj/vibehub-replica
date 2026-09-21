@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Dependency in Software Development Explained | VibeHub",
+    "h1": "Dependency",
+    "height": 2544,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 392.5
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 990,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1386,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1755,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1951,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Dependency Copy as Markdown Copied ← → Dependency You might say I just downloaded the project and it reports a missing module. Is the code broken? Code packages written by others that a project needs; they must be installed before the project runs·Cloning a repo downloads only the package.json manifest, not the packages themselves; running directly throws 'Cannot find module'. Running an install command fetches third-party code packages into your local folder before the project can boot; swapping machines or pulling new code requires repeating this step. Know first npm Dependency From clone to start: when dependencies enter the project Just cloned Install dependencies Start the project my-first-page/ No node_modules yet package.json Records which packages are needed src/ node_modules/ Does not exist Terminal $ npm start Error: Cannot find module 'react' Dependencies are not installed yet The list is there but not the packages: install before starting For a missing module,",
+    "errors": []
+  },
+  "local": {
+    "title": "Dependency in Software Development Explained | VibeHub",
+    "h1": "Dependency",
+    "height": 2546,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-dep-stage",
+        "y": 551,
+        "height": 392.5
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 990,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1386,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1755,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1951,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Dependency Copy as Markdown Copied ← → Dependency YOU MIGHT SAY I just downloaded the project and it reports a missing module. Is the code broken? Code packages written by others that a project needs; they must be installed before the project runs · Cloning a repo downloads only the package.json manifest, not the packages themselves; running directly throws 'Cannot find module'. Running an install command fetches third-party code packages into your local folder before the project can boot; swapping machines or pulling new code requires repeating this step. Know first npm Dependency From clone to start: when dependencies enter the project Just cloned Install dependencies Start the project my-first-page/ No node_modules yet package.json Records which packages are needed src/ node_modules/ Does not exist Terminal $ npm start Error: Cannot find module 'react' Dependencies are not installed yet The list is there but not the packages: install before starting For a missing modul",
+    "errors": []
+  },
+  "heightDelta": 2
+}

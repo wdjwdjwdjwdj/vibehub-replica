@@ -13,6 +13,10 @@ const counts = { catalog: 0, dh: 0, reference: 0, advanced: 0, other: 0 };
 
 for (const route of routes) {
   await page.goto(`${base}${route}`, { waitUntil: 'domcontentloaded' });
+  // React mounts after the document shell; wait for the route's heading so
+  // this audit measures the rendered demo family instead of the empty shell.
+  await page.waitForSelector('h1', { state: 'attached', timeout: 10000 });
+  await page.waitForTimeout(120);
   const result = await page.evaluate(() => {
     const stage = document.querySelector('.demo-shell, .reference-stage');
     const className = stage?.className || '';

@@ -1,0 +1,318 @@
+{
+  "scrollHeight": {
+    "original": 5075,
+    "local": 5073
+  },
+  "pixelThreshold": 12,
+  "pixelGate": 1,
+  "sections": {
+    "original": {
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 60,
+        "text": "Vibe Hub Your Vibe Coding Guide Terms Practice AI Slop Updates Skill Community ⌕ English Oil",
+        "html": 2666
+      },
+      "topbar": {
+        "x": 250,
+        "y": 88,
+        "w": 940,
+        "h": 49,
+        "text": "All entries › HTML Copy as Markdown Copied",
+        "html": 1639
+      },
+      "hero": {
+        "x": 262,
+        "y": 149,
+        "w": 916,
+        "h": 505,
+        "text": "HTML You might say The code AI wrote has a bunch of angle brackets and English words. What are those for? Describe the structure and meaning of a web page·HTML organizes a page into headings, paragraphs, links, forms, images, and other meaningful elements. CSS controls appearance and JavaScript adds behavior. Choosing the right element improves accessibility, keyboard behavior, search, and maintenance. <html> <head> Meta information <body> <h1> Title <p> Paragraph <a> Link → Xiaoli's homepage I like hiking and taking pictures. View my photo album →",
+        "html": 1928
+      },
+      "lessons": {
+        "x": 262,
+        "y": 696,
+        "w": 916,
+        "h": 494,
+        "text": "Quick check Choose the best answer An article's main heading is only enlarged generic text, and View source is a clickable generic container. How should this be fixed? A Put the heading and source action into one image and make the whole image clickable B Use appropriate HTML heading and link elements for the structure and navigation C Keep the generic containers and only increase the size and color contrast You can say this to an AI Agent “ Review this article's HTML structure: use the correct heading element for the page title, a real link for View source, and buttons for actions. Preserve the visual styling and verify every link and button with a keyboard.",
+        "html": 1815
+      },
+      "usage": {
+        "x": 262,
+        "y": 1236,
+        "w": 916,
+        "h": 1473,
+        "text": "When to use it Build page structure A project report for people to read Clear headings, highlights, images, and sections Help readers quickly scan for what matters to them. HTML turns content into a reading experience. Mark headings and sections 🔒 report.example.com/launch New product launch report Open page Send a URL and anyone can view it in a browser. Create forms and links with native behavior ▶ Video ↗ Link Fill out form A page can provide interactive elements such as media, links, and forms. Give content machine-readable meaning # Launch plan - Launch this week → Launch plan · Launch this week When NOT to use it Use generic div elements for every role <div> card The content that follows may still be inside this element… A missing </div> makes the DOM structure differ from what you expect. Choose tags only for their default appearance <b><i>text</b></i> The tags overlap improperly",
+        "html": 4622
+      },
+      "anatomy": {
+        "x": 262,
+        "y": 2794,
+        "w": 916,
+        "h": 364,
+        "text": "<a href=\"https://vibe.guide\">Click to see</a> 1 Opening Tag Add angle brackets to the tag name to tell the browser \"Start here\" 2 Attribute Additional information written in the start tag, such as link address and image path 3 Content The part between the two pairs of angle brackets, only change this part when modifying the copy. 4 Closing Tag An extra slash tells the browser \"end here\"",
+        "html": 1624
+      },
+      "variants": {
+        "x": 262,
+        "y": 3245,
+        "w": 916,
+        "h": 187,
+        "text": "div <div> … </div> Use it to organize content and layout when there are no more appropriate semantic tags Headings & p <h1> <p> Titles and paragraphs, the skeleton of the article Link & Image <a> <img> a jumps to the URL, img posts the picture Button & Input <button> <input> Interactive parts that can be clicked and filled on the page",
+        "html": 1341
+      },
+      "scenes": {
+        "x": 262,
+        "y": 3472,
+        "w": 916,
+        "h": 870,
+        "text": "Typical use cases Page document Help me make a personal homepage Okay, here is your index.html: <h1>Xiaoli's homepage</h1> <p>I like climbing mountains and taking pictures. </p> <a href=\"/photos\">View my photo album</a> Article view-source:https://my-first-page.vercel.app 1 <h1>Xiaoli’s homepage</h1> 2 <p>I like hiking and taking pictures. </p> 3 <a href=\"/photos\">View my photo album</a> Form Xiaoli's homepage I like hiking and taking pictures. View my photo album → <h1>…</h1> <p>…</p> <a>…</a> Navigation Common tag recognition <div> Universal container <p> Paragraph <a> Link <img> Picture <button> Button <input> Input box",
+        "html": 6452
+      },
+      "selector": {
+        "x": 262,
+        "y": 4382,
+        "w": 916,
+        "h": 266,
+        "text": "Recommended tool Web fine-tuning tool · Selector Pro Select page elements for precise AI edits Click a button, text, or card, note the change, then copy its exact location to AI. Open Selector Pro website ↗ your-site.com Button · Get started Use a smaller radius Button · Get started Copied for AI",
+        "html": 1638
+      },
+      "references": {
+        "x": 262,
+        "y": 4688,
+        "w": 916,
+        "h": 144,
+        "text": "Further reading Structuring content with HTML MDN ↗ HTML: HyperText Markup Language MDN ↗",
+        "html": 660
+      },
+      "footer": {
+        "x": 0,
+        "y": 4952,
+        "w": 1440,
+        "h": 123,
+        "text": "oil oil 欧呦 oiloil.org GitHub @oil-oil X x.com/I_am_oil_oil RED Xiaohongshu oil on Xiaohongshu Email zhihuang.oiloil@gmail.com Term suggestions Submit a suggestion",
+        "html": 2979
+      },
+      "survey": {
+        "x": 1016,
+        "y": 4643,
+        "w": 400,
+        "h": 408,
+        "text": "One quick question Where did you first hear about VibeHub? Choose the closest match. Bilibili Douyin Xiaohongshu X GitHub WeChat Channels Other",
+        "html": 11308
+      },
+      "__scrollHeight": 5075
+    },
+    "local": {
+      "nav": {
+        "x": 0,
+        "y": 0,
+        "w": 1440,
+        "h": 60,
+        "text": "Vibe Hub Your Vibe Coding Guide Terms Practice AI Slop Updates Skill Community ⌕ English Oil",
+        "html": 1908
+      },
+      "topbar": {
+        "x": 250,
+        "y": 88,
+        "w": 940,
+        "h": 49,
+        "text": "All entries › HTML Copy as Markdown Copied",
+        "html": 1592
+      },
+      "hero": {
+        "x": 262,
+        "y": 149,
+        "w": 916,
+        "h": 505,
+        "text": "HTML You might say The code AI wrote has a bunch of angle brackets and English words. What are those for? Describe the structure and meaning of a web page·HTML organizes a page into headings, paragraphs, links, forms, images, and other meaningful elements. CSS controls appearance and JavaScript adds behavior. Choosing the right element improves accessibility, keyboard behavior, search, and maintenance. <html> <head> Meta information <body> <h1> Title <p> Paragraph <a> Link → Xiaoli's homepage I like hiking and taking pictures. View my photo album →",
+        "html": 1909
+      },
+      "lessons": {
+        "x": 262,
+        "y": 696,
+        "w": 916,
+        "h": 494,
+        "text": "Quick check Choose the best answer An article's main heading is only enlarged generic text, and View source is a clickable generic container. How should this be fixed? A Put the heading and source action into one image and make the whole image clickable B Use appropriate HTML heading and link elements for the structure and navigation C Keep the generic containers and only increase the size and color contrast You can say this to an AI Agent “ Review this article's HTML structure: use the correct heading element for the page title, a real link for View source, and buttons for actions. Preserve the visual styling and verify every link and button with a keyboard.",
+        "html": 1815
+      },
+      "usage": {
+        "x": 262,
+        "y": 1236,
+        "w": 916,
+        "h": 1473,
+        "text": "When to use it Build page structure A project report for people to read Clear headings, highlights, images, and sections Help readers quickly scan for what matters to them. HTML turns content into a reading experience. Mark headings and sections 🔒 report.example.com/launch New product launch report Open page Send a URL and anyone can view it in a browser. Create forms and links with native behavior ▶ Video ↗ Link Fill out form A page can provide interactive elements such as media, links, and forms. Give content machine-readable meaning # Launch plan - Launch this week → Launch plan · Launch this week When NOT to use it Use generic div elements for every role <div> card The content that follows may still be inside this element… A missing </div> makes the DOM structure differ from what you expect. Choose tags only for their default appearance <b><i>text</b></i> The tags overlap improperly",
+        "html": 4776
+      },
+      "anatomy": {
+        "x": 262,
+        "y": 2794,
+        "w": 916,
+        "h": 364,
+        "text": "<a href=\"https://vibe.guide\">Click to see</a> 1 Opening Tag Add angle brackets to the tag name to tell the browser \"Start here\" 2 Attribute Additional information written in the start tag, such as link address and image path 3 Content The part between the two pairs of angle brackets, only change this part when modifying the copy. 4 Closing Tag An extra slash tells the browser \"end here\"",
+        "html": 1624
+      },
+      "variants": {
+        "x": 262,
+        "y": 3245,
+        "w": 916,
+        "h": 187,
+        "text": "div <div> … </div> Use it to organize content and layout when there are no more appropriate semantic tags Headings & p <h1> <p> Titles and paragraphs, the skeleton of the article Link & Image <a> <img> a jumps to the URL, img posts the picture Button & Input <button> <input> Interactive parts that can be clicked and filled on the page",
+        "html": 1373
+      },
+      "scenes": {
+        "x": 262,
+        "y": 3472,
+        "w": 916,
+        "h": 870,
+        "text": "Typical use cases Page document Help me make a personal homepage Okay, here is your index.html: <h1>Xiaoli's homepage</h1> <p>I like climbing mountains and taking pictures. </p> <a href=\"/photos\">View my photo album</a> Article view-source:https://my-first-page.vercel.app 1 <h1>Xiaoli’s homepage</h1> 2 <p>I like hiking and taking pictures. </p> 3 <a href=\"/photos\">View my photo album</a> Form Xiaoli's homepage I like hiking and taking pictures. View my photo album → <h1>…</h1> <p>…</p> <a>…</a> Navigation Common tag recognition <div> Universal container <p> Paragraph <a> Link <img> Picture <button> Button <input> Input box",
+        "html": 6523
+      },
+      "selector": {
+        "x": 262,
+        "y": 4382,
+        "w": 916,
+        "h": 266,
+        "text": "Recommended tool Web fine-tuning tool · Selector Pro Select page elements for precise AI edits Click a button, text, or card, note the change, then copy its exact location to AI. Open Selector Pro website ↗ your-site.com Button · Get started Use a smaller radius Button · Get started Copied for AI",
+        "html": 1638
+      },
+      "references": {
+        "x": 262,
+        "y": 4688,
+        "w": 916,
+        "h": 144,
+        "text": "Further reading Structuring content with HTML MDN ↗ HTML: HyperText Markup Language MDN ↗",
+        "html": 644
+      },
+      "footer": {
+        "x": 0,
+        "y": 4950,
+        "w": 1440,
+        "h": 123,
+        "text": "oil oil 欧呦 oiloil.org GitHub @oil-oil X x.com/I_am_oil_oil RED Xiaohongshu oil on Xiaohongshu Email zhihuang.oiloil@gmail.com Term suggestions Submit a suggestion",
+        "html": 2461
+      },
+      "survey": {
+        "x": 1016,
+        "y": 4641,
+        "w": 400,
+        "h": 408,
+        "text": "One quick question Where did you first hear about VibeHub? Choose the closest match. Bilibili Douyin Xiaohongshu X GitHub WeChat Channels Other",
+        "html": 11487
+      },
+      "__scrollHeight": 5073
+    }
+  },
+  "pixels": {
+    "nav": {
+      "sizeA": "1440x60",
+      "sizeB": "1440x60",
+      "sizeMatch": true,
+      "diffPixels": 2776,
+      "totalPixels": 86400,
+      "mismatchRatio": 3.213,
+      "pass": false
+    },
+    "topbar": {
+      "sizeA": "940x49",
+      "sizeB": "940x49",
+      "sizeMatch": true,
+      "diffPixels": 0,
+      "totalPixels": 46060,
+      "mismatchRatio": 0,
+      "pass": true
+    },
+    "hero": {
+      "sizeA": "916x505",
+      "sizeB": "916x505",
+      "sizeMatch": true,
+      "diffPixels": 1385,
+      "totalPixels": 462580,
+      "mismatchRatio": 0.2994,
+      "pass": true
+    },
+    "lessons": {
+      "sizeA": "916x495",
+      "sizeB": "916x495",
+      "sizeMatch": true,
+      "diffPixels": 0,
+      "totalPixels": 453420,
+      "mismatchRatio": 0,
+      "pass": true
+    },
+    "usage": {
+      "sizeA": "916x1474",
+      "sizeB": "916x1474",
+      "sizeMatch": true,
+      "diffPixels": 2300,
+      "totalPixels": 1350184,
+      "mismatchRatio": 0.1703,
+      "pass": true
+    },
+    "anatomy": {
+      "sizeA": "916x365",
+      "sizeB": "916x365",
+      "sizeMatch": true,
+      "diffPixels": 0,
+      "totalPixels": 334340,
+      "mismatchRatio": 0,
+      "pass": true
+    },
+    "variants": {
+      "sizeA": "916x188",
+      "sizeB": "916x188",
+      "sizeMatch": true,
+      "diffPixels": 0,
+      "totalPixels": 172208,
+      "mismatchRatio": 0,
+      "pass": true
+    },
+    "scenes": {
+      "sizeA": "916x871",
+      "sizeB": "916x871",
+      "sizeMatch": true,
+      "diffPixels": 2300,
+      "totalPixels": 797836,
+      "mismatchRatio": 0.2883,
+      "pass": true
+    },
+    "selector": {
+      "sizeA": "916x268",
+      "sizeB": "916x268",
+      "sizeMatch": true,
+      "diffPixels": 61,
+      "totalPixels": 245488,
+      "mismatchRatio": 0.0248,
+      "pass": true
+    },
+    "references": {
+      "sizeA": "916x145",
+      "sizeB": "916x145",
+      "sizeMatch": true,
+      "diffPixels": 0,
+      "totalPixels": 132820,
+      "mismatchRatio": 0,
+      "pass": true
+    },
+    "footer": {
+      "sizeA": "1440x124",
+      "sizeB": "1440x124",
+      "sizeMatch": true,
+      "diffPixels": 169,
+      "totalPixels": 178560,
+      "mismatchRatio": 0.0946,
+      "pass": true
+    },
+    "survey": {
+      "sizeA": "400x408",
+      "sizeB": "400x408",
+      "sizeMatch": true,
+      "diffPixels": 60,
+      "totalPixels": 163200,
+      "mismatchRatio": 0.0368,
+      "pass": true
+    }
+  }
+}

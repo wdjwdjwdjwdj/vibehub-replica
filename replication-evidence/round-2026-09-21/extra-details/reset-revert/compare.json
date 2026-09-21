@@ -1,0 +1,41 @@
+{
+  "source": {
+    "title": "Git Reset & Revert Explained | VibeHub",
+    "h1": "Reset & Revert",
+    "height": 4600.2,
+    "sections": [
+      {
+        "className": "lesson-practice",
+        "y": 873,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1241,
+        "height": 125.3
+      }
+    ],
+    "text": "All entries › Reset & Revert Copy as Markdown Copied ← → Reset & Revert You might say I just committed the wrong thing. How do I undo it? Two ways to undo committed work: reset moves the branch pointer, revert adds an opposite commit·When a faulty commit exists only locally, reset moves the branch pointer backward to cleanly discard or unstage it; if that commit has already been pushed to a shared remote, use revert to append an offsetting commit instead. revert preserves collaborative history intact, whereas reset alters where the current branch pointer points. Know first Commit Push Reset Revert main Reset back to here git reset --hard HEAD~1 Reset moves the branch pointer back to a commit, so later commits disappear from this line. For commits already pushed, use git revert instead of rewriting history. Quick check Choose the best answer A commit that accidentally added debug code was pushed and pulled by a teammate. What is the safest way to undo it? A Reset the commit locally, the",
+    "errors": []
+  },
+  "local": {
+    "title": "Git Reset & Revert Explained | VibeHub",
+    "h1": "Reset & Revert",
+    "height": 4594.1,
+    "sections": [
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 873,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1241,
+        "height": 125
+      }
+    ],
+    "text": "All entries › Reset & Revert Copy as Markdown Copied ← → Reset & Revert YOU MIGHT SAY I just committed the wrong thing. How do I undo it? Two ways to undo committed work: reset moves the branch pointer, revert adds an opposite commit · When a faulty commit exists only locally, reset moves the branch pointer backward to cleanly discard or unstage it; if that commit has already been pushed to a shared remote, use revert to append an offsetting commit instead. revert preserves collaborative history intact, whereas reset alters where the current branch pointer points. Know first Commit Push Reset Revert main Reset moves the pointer; revert adds an opposite commit. git reset --hard HEAD~1 · git revert a1b2c3d Choose reset only for local history; use revert once teammates may have pulled the commit. Quick check Choose the best answer A commit that accidentally added debug code was pushed and pulled by a teammate. What is the safest way to undo it? A Reset the commit locally, then force push ",
+    "errors": []
+  },
+  "heightDelta": -6.1
+}

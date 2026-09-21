@@ -1,0 +1,164 @@
+[
+  {
+    "key": "skill",
+    "hostX": 460.52,
+    "hostW": 74.61,
+    "textStart": null,
+    "kids": [
+      {
+        "tag": "i",
+        "cls": "ti ti-ai-agent",
+        "x": 471.52,
+        "w": 17.11,
+        "h": 17,
+        "fs": "17px",
+        "ml": "0px",
+        "mr": "0px"
+      },
+      {
+        "tag": "span",
+        "cls": "",
+        "x": 495.63,
+        "w": 28.5,
+        "h": 20,
+        "fs": "14px",
+        "ml": "0px",
+        "mr": "0px"
+      }
+    ]
+  },
+  {
+    "key": "community",
+    "hostX": 539.13,
+    "hostW": 127.25,
+    "textStart": null,
+    "kids": [
+      {
+        "tag": "svg",
+        "cls": "",
+        "x": 550.13,
+        "w": 16,
+        "h": 16,
+        "fs": "14px",
+        "ml": "0px",
+        "mr": "0px"
+      },
+      {
+        "tag": "span",
+        "cls": "nav-community-label",
+        "x": 573.13,
+        "w": 82.25,
+        "h": 20,
+        "fs": "14px",
+        "ml": "0px",
+        "mr": "0px"
+      }
+    ]
+  },
+  {
+    "key": "lang",
+    "hostX": 1148.36,
+    "hostW": 77,
+    "textStart": null,
+    "kids": [
+      {
+        "tag": "span",
+        "cls": "",
+        "x": 1157.36,
+        "w": 47,
+        "h": 20,
+        "fs": "13px",
+        "ml": "0px",
+        "mr": "0px"
+      },
+      {
+        "tag": "i",
+        "cls": "",
+        "x": 1209.12,
+        "w": 8.49,
+        "h": 8.49,
+        "fs": "13px",
+        "ml": "0px",
+        "mr": "0px"
+      }
+    ]
+  },
+  {
+    "key": "oil",
+    "hostX": 1345.36,
+    "hostW": 62.64,
+    "textStart": 1380.36,
+    "kids": [
+      {
+        "tag": "img",
+        "cls": "",
+        "x": 1354.36,
+        "w": 20,
+        "h": 20,
+        "fs": "13px",
+        "ml": "0px",
+        "mr": "0px"
+      }
+    ]
+  },
+  {
+    "key": "theme",
+    "hostX": 1241.36,
+    "hostW": 28,
+    "textStart": null,
+    "kids": []
+  },
+  {
+    "key": "colormode",
+    "hostX": 1285.36,
+    "hostW": 44,
+    "textStart": null,
+    "kids": [
+      {
+        "tag": "svg",
+        "cls": "",
+        "x": 1297.36,
+        "w": 20,
+        "h": 20,
+        "fs": "15px",
+        "ml": "0px",
+        "mr": "0px"
+      }
+    ]
+  },
+  {
+    "key": "search",
+    "hostX": 772.36,
+    "hostW": 360,
+    "textStart": null,
+    "kids": [
+      {
+        "tag": "span",
+        "cls": "search-icon",
+        "x": 785.36,
+        "w": 9.11,
+        "h": 25.5,
+        "fs": "15px",
+        "ml": "0px",
+        "mr": "0px"
+      },
+      {
+        "tag": "input",
+        "cls": "",
+        "x": 802.47,
+        "w": 316.89,
+        "h": 19,
+        "fs": "13px",
+        "ml": "0px",
+        "mr": "0px"
+      }
+    ]
+  },
+  {
+    "key": "navitem",
+    "hostX": 147,
+    "hostW": 64.66,
+    "textStart": 158,
+    "kids": []
+  }
+]

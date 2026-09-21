@@ -11,7 +11,18 @@ test-results/
 
 # 本地预览日志与 Playwright 缓存
 preview.log
+# 本地临时文件与内部会话记录
+.pi/
+.tmp_*
+.mem_append_run.txt
+# 构建产物（dist 的 QA 变体）
+dist-vibehub-qa/
+# 开发用一次性脚本与中间输出
+scripts/tmp-*
+scripts/html-detail-classes.txt
 .playwright/
+.qa-temp/
+.research-build-*/
 
 # 工作区内部笔记（AI 协作记录，含项目内部约定，不对外公开）
 .workbuddy/

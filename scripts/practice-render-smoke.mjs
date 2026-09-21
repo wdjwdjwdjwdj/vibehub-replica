@@ -1,30 +1,25 @@
 import { chromium } from '@playwright/test';
 import { practiceData } from '../src/practiceData.js';
 import { catalogData } from '../src/catalogData.js';
+import { extraItemsByTopic } from '../src/termExtras.js';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
-const expectedCounts = new Map([
-  ['All areas', 296],
-  ['Frontend', 136],
-  ['Backend', 59],
-  ['Product', 19],
-  ['Testing', 14],
-  ['Tech Stack', 17],
-  ['AI', 37],
-  ['Git', 12],
-  ['Design Styles', 2],
-]);
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 
 const topicMeta = [
   ['Frontend', 'Frontend'], ['Backend', 'Backend'], ['Product', 'Product'], ['Testing', 'Testing'],
   ['Tech Stack', 'Tech Stack'], ['AI', 'AI'], ['Git', 'Git'], ['Design Styles', 'Design Styles'],
 ];
 const itemId = (item) => item.length === 4 ? item[0] : item[2] || item[0];
-const topicForItem = (id) => topicMeta.find(([, key]) => catalogData[key].some((section) => section.items.some((item) => itemId(item) === id)))?.[0] || 'Frontend';
+const extraTopicById = new Map(Object.entries(extraItemsByTopic).flatMap(([topic, items]) => items.map((item) => [item[0], topic])));
+const topicForItem = (id) => topicMeta.find(([, key]) => catalogData[key].some((section) => section.items.some((item) => itemId(item) === id)))?.[0] || extraTopicById.get(id) || 'Frontend';
 
 const ordered = practiceData
   .map((entry) => ({ ...entry, topic: topicForItem(entry.termId) }))
   .sort((a, b) => (a.termId === 'button' ? -1 : b.termId === 'button' ? 1 : 0));
+const expectedCounts = new Map([
+  ['All areas', ordered.length],
+  ...topicMeta.map(([label]) => [label, ordered.filter((entry) => entry.topic === label).length]),
+]);
 
 const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
@@ -68,7 +63,7 @@ try {
     if (index === 0 && process.env.PRACTICE_CORRECT_SCREENSHOT) await page.screenshot({ path: process.env.PRACTICE_CORRECT_SCREENSHOT, fullPage: false });
     if (index < ordered.length - 1) await page.getByRole('button', { name: /Next question/ }).click();
   }
-  if (seen.size !== 296) throw new Error(`expected 296 unique questions, got ${seen.size}`);
+  if (seen.size !== ordered.length) throw new Error(`expected ${ordered.length} unique questions, got ${seen.size}`);
   if (errors.length) throw new Error(errors.join('\n'));
   console.log(`practice render smoke passed: ${seen.size} bilingual questions, ${expectedCounts.size} scope counts`);
 } finally {

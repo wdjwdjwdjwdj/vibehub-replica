@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Semantic HTML in Web Development Explained | VibeHub",
+    "h1": "Semantic HTML",
+    "height": 2323.1,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 580,
+        "height": 371.9
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 998,
+        "height": 162.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1321,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1665,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1861,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Semantic HTML Copy as Markdown Copied ← → Semantic HTML You might say The SEO check says my page is missing an H1. What does that mean? HTML tags that mark each section's role in the document, such as headings, lists, and navigation·When structuring a web page, semantic HTML tags indicate the structural role of each piece of content, such as H1 for the main heading, nav for navigation, and ul for lists. While enlarging text with CSS changes its visual weight, screen readers and search engines rely on tags to understand relationships. A page usually has one H1, and headings should descend in sequence without skipping levels. Know first HTML Semantic HTML A page's heading levels: click a section to see its tag example.com H1 H2 H3 H1 The page's main heading: usually only one per page The outline is read by tags, not by font size Levels descend: H1 → H2 → H3, no skipped levels Biggest font size does not mean highest level: heading tags express structure, visual size is only ",
+    "errors": []
+  },
+  "local": {
+    "title": "Semantic HTML in Web Development Explained | VibeHub",
+    "h1": "Semantic HTML",
+    "height": 2325.2,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-sem-stage",
+        "y": 580,
+        "height": 371.9
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 998,
+        "height": 162.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1321,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1665,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1861,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Semantic HTML Copy as Markdown Copied ← → Semantic HTML YOU MIGHT SAY The SEO check says my page is missing an H1. What does that mean? HTML tags that mark each section's role in the document, such as headings, lists, and navigation · When structuring a web page, semantic HTML tags indicate the structural role of each piece of content, such as H1 for the main heading, nav for navigation, and ul for lists. While enlarging text with CSS changes its visual weight, screen readers and search engines rely on tags to understand relationships. A page usually has one H1, and headings should descend in sequence without skipping levels. Know first HTML Semantic HTML A page's heading levels: click a section to see its tag example.com H1 Page title H2 Section H3 Subsection H1 Page title Use one H1 for the page topic, then nest H2 and H3 sections in order. Screen readers can announce the outline. Search engines receive meaningful structure. Semantic tags communicate structure; visual s",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

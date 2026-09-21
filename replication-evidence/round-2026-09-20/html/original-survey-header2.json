@@ -1,0 +1,46 @@
+{
+  "header_candidates": [
+    {
+      "tag": "NAV",
+      "cls": "nav",
+      "txt": "VibeHubYour Vibe Coding GuideTermsPracti"
+    },
+    {
+      "tag": "DIV",
+      "cls": "nav-left",
+      "txt": "VibeHubYour Vibe Coding GuideTermsPracti"
+    },
+    {
+      "tag": "DIV",
+      "cls": "nav-primary",
+      "txt": "TermsPracticeAI SlopUpdatesSkillCommunit"
+    },
+    {
+      "tag": "A",
+      "cls": "nav-primary-item is-current",
+      "txt": "Terms"
+    },
+    {
+      "tag": "A",
+      "cls": "nav-skill-link",
+      "txt": "Skill"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "nav-primary-item nav-community-entry",
+      "txt": "Community"
+    },
+    {
+      "tag": "SPAN",
+      "cls": "nav-community-label",
+      "txt": "Community"
+    },
+    {
+      "tag": "DIV",
+      "cls": "nav-right",
+      "txt": "⌕EnglishOil"
+    }
+  ],
+  "site_header_html": "(none)",
+  "survey_error": "page.locator(...).outerHTML is not a function"
+}

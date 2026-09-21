@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "HTTP Status Code in Web Development Explained | VibeHub",
+    "h1": "HTTP Status Code",
+    "height": 2665.2,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 460.8
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1058,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1455,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1823,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2019,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › HTTP Status Code Copy as Markdown Copied ← → HTTP Status Code You might say The page opens to a 404 error. Did I write the wrong link, or was the deployment incomplete? A three-digit answer from the server about a request: success, redirect, a request problem, or a server failure·When a page fails to load, 404 indicates a missing route, 400 flags invalid request parameters, and 500 signals an unhandled server crash. Vague UI toasts like 'Load failed' often obscure the root cause, whereas the three-digit HTTP status code in the Network panel tells you immediately which end to debug. Know first HTTP Deployment Status Code The same page problem, with the status code pointing to which side to check 404 500 401 200 example.com/save GET /old-page 404 The server has no such resource POST /save 500 The server failed while handling it GET /dashboard 401 The identity was not accepted GET /home 200 This request succeeded 500 · The server failed while handling it Server Check server ",
+    "errors": []
+  },
+  "local": {
+    "title": "HTTP Status Code in Web Development Explained | VibeHub",
+    "h1": "HTTP Status Code",
+    "height": 2667.2,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-http-status-stage",
+        "y": 551,
+        "height": 460.8
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1058,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1455,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1823,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2019,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › HTTP Status Code Copy as Markdown Copied ← → HTTP Status Code YOU MIGHT SAY The page opens to a 404 error. Did I write the wrong link, or was the deployment incomplete? A three-digit answer from the server about a request: success, redirect, a request problem, or a server failure · When a page fails to load, 404 indicates a missing route, 400 flags invalid request parameters, and 500 signals an unhandled server crash. Vague UI toasts like 'Load failed' often obscure the root cause, whereas the three-digit HTTP status code in the Network panel tells you immediately which end to debug. Know first HTTP Deployment HTTP Status Code The same page problem, with the status code pointing to which side to check 404 500 401 200 example.com/old-page GET /old-page 404 The server has no such resource POST /save 500 The server failed while handling it GET /dashboard 401 The identity was not accepted GET /home 200 This request succeeded 404 · The server has no such resource Request Selec",
+    "errors": []
+  },
+  "heightDelta": 2
+}

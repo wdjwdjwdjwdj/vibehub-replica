@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Scope Creep in Product Management Explained | VibeHub",
+    "h1": "Scope Creep",
+    "height": 2310,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 338.8
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 936,
+        "height": 186.8
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1308,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1677,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1848,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Scope Creep Copy as Markdown Copied ← → Scope Creep You might say I asked for one button change and AI touched five files. Is that normal? Continuously adding unplanned requirements during a project, making it unfinished or repeatedly late·During development, continuously tacking on unplanned requests without evaluation causes deliverable size to balloon and deadlines to slip. In AI pair programming, scope creep often surfaces when asking for a button color change and the agent refactors several unrelated files; control it by specifying strict boundaries and pruning out-of-scope edits. Know first MVP Scope Creep In one change, what belongs to the agreed scope Color only Also touched shadow and font size You only asked for Make the login button brand blue → ✓ Change the login button color In scope · Change the card shadow Untouched · Change the title font size Untouched One change at a time: clear scope, and acceptance only checks the button color. How scope creep drags a ",
+    "errors": []
+  },
+  "local": {
+    "title": "Scope Creep in Product Management Explained | VibeHub",
+    "h1": "Scope Creep",
+    "height": 2312.1,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo scope-scene",
+        "y": 551,
+        "height": 338.8
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 936,
+        "height": 186.8
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1308,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1677,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1848,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Scope Creep Copy as Markdown Copied ← → Scope Creep YOU MIGHT SAY I asked for one button change and AI touched five files. Is that normal? Continuously adding unplanned requirements during a project, making it unfinished or repeatedly late · During development, continuously tacking on unplanned requests without evaluation causes deliverable size to balloon and deadlines to slip. In AI pair programming, scope creep often surfaces when asking for a button color change and the agent refactors several unrelated files; control it by specifying strict boundaries and pruning out-of-scope edits. Know first MVP Scope Creep In one change, what belongs to the agreed scope Color only Also touched shadow and font size You only asked for Make the login button brand blue → What shipped ✓ Change the login button color × Change the card shadow × Change the title font size A small, explicit request gives the agent a boundary it can verify. How scope creep drags a project down Read the situ",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

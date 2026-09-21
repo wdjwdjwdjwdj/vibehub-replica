@@ -1,7 +1,10 @@
 import { writeFile } from 'node:fs/promises';
 import { catalogData } from '../src/catalogData.js';
+import { extraItemsByTopic } from '../src/termExtras.js';
 
-const ids = Object.values(catalogData).flatMap((sections) => sections.flatMap((section) => section.items.map((item) => item.length === 4 ? item[0] : item[2] || item[0])));
+const catalogIds = Object.values(catalogData).flatMap((sections) => sections.flatMap((section) => section.items.map((item) => item.length === 4 ? item[0] : item[2] || item[0])));
+const extraIds = Object.values(extraItemsByTopic).flatMap((items) => items.map((item) => item[0]));
+const ids = [...new Set([...catalogIds, ...extraIds])];
 const results = [];
 const batchSize = 10;
 

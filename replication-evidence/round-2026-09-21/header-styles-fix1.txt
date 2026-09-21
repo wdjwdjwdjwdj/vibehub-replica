@@ -1,0 +1,47 @@
+?? .site-header: 原站缺失
+?? .header-inner: 原站缺失
+===== .search-box =====
+  __rect: orig[360x36@772,12] != local[360x36@780,12]
+  minHeight: orig[0px] != local[auto]
+  maxWidth: orig[none] != local[360px]
+  padding: orig[0px 12px] != local[0px 11px]
+  margin: orig[0px] != local[0px 0px 0px 113.531px]
+  color: orig[rgb(24, 24, 27)] != local[rgb(82, 82, 91)]
+  backgroundColor: orig[color(srgb 1 1 1 / 0.94)] != local[rgba(0, 0, 0, 0)]
+  borderRadius: orig[999px] != local[18px]
+  outline: orig[rgb(24, 24, 27) none 3px] != local[rgb(82, 82, 91) none 3px]
+===== .search-icon =====
+  __rect: orig[9x26@785,17] != local[9x26@792,17]
+  color: orig[rgb(104, 110, 121)] != local[rgb(82, 82, 91)]
+  border: orig[0px none rgb(104, 110, 121)] != local[0px none rgb(82, 82, 91)]
+  borderTop: orig[0px none rgb(104, 110, 121)] != local[0px none rgb(82, 82, 91)]
+  borderBottom: orig[0px none rgb(104, 110, 121)] != local[0px none rgb(82, 82, 91)]
+  outline: orig[rgb(104, 110, 121) none 3px] != local[rgb(82, 82, 91) none 3px]
+?? .language-button: 原站缺失
+?? .main-nav: 原站缺失
+?? .main-nav a: 原站缺失
+?? .skill-link: 原站缺失
+?? .community-button: 原站缺失
+?? .theme-color-button: 原站缺失
+?? .icon-button: 原站缺失
+?? .oil-link: 原站缺失
+===== .vh-logo =====
+  fontSize: orig[15px] != local[16px]
+  fontWeight: orig[400] != local[800]
+  lineHeight: orig[25.5px] != local[27.2px]
+  letterSpacing: orig[0.1px] != local[-0.72px]
+  color: orig[rgb(0, 0, 238)] != local[rgb(24, 24, 27)]
+  border: orig[0px none rgb(0, 0, 238)] != local[0px none rgb(24, 24, 27)]
+  borderTop: orig[0px none rgb(0, 0, 238)] != local[0px none rgb(24, 24, 27)]
+  borderBottom: orig[0px none rgb(0, 0, 238)] != local[0px none rgb(24, 24, 27)]
+  outline: orig[rgb(0, 0, 238) none 3px] != local[rgb(24, 24, 27) none 3px]
+===== .vh-logo-mark =====
+  fontSize: orig[15px] != local[16px]
+  fontWeight: orig[400] != local[800]
+  lineHeight: orig[25.5px] != local[27.2px]
+  letterSpacing: orig[0.1px] != local[-0.72px]
+  color: orig[rgb(0, 0, 238)] != local[rgb(24, 24, 27)]
+  border: orig[0px none rgb(0, 0, 238)] != local[0px none rgb(24, 24, 27)]
+  borderTop: orig[0px none rgb(0, 0, 238)] != local[0px none rgb(24, 24, 27)]
+  borderBottom: orig[0px none rgb(0, 0, 238)] != local[0px none rgb(24, 24, 27)]
+  outline: orig[rgb(0, 0, 238) none 3px] != local[rgb(24, 24, 27) none 3px]

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Prefers Reduced Motion in Web Design Explained | VibeHub",
+    "h1": "Prefers Reduced Motion",
+    "height": 2421.3,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 410.2
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1007,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1379,
+        "height": 344
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1763,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1959,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Prefers Reduced Motion Copy as Markdown Copied ← → Prefers Reduced Motion You might say Someone has the system's reduce motion setting on and my page animations still run. Should I handle it? Reading the system's reduce motion setting and disabling or reducing animation accordingly·When visitors turn on 'Reduce Motion' in their system settings, wide movements, parallax scrolling, and continuous spinning animations on the page should pause or reduce to subtle fades. This accommodates people prone to motion sickness; verify by flipping the system setting once to see whether page animations adapt. Know first Animation Prefers-reduced-motion Toggle the system switch and watch the page respond System: motion on System: reduce motion example.com Carousel banner Card one Card two Card three Loading indicator and decorative motion both running Reduce motion: off Carousel banner: auto-cycling Card sliding: normal Loading indicator: normal Acceptance: toggle the system setting once",
+    "errors": []
+  },
+  "local": {
+    "title": "Prefers Reduced Motion in Web Design Explained | VibeHub",
+    "h1": "Prefers Reduced Motion",
+    "height": 2423.4,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-rm-stage",
+        "y": 551,
+        "height": 410.2
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1007,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1379,
+        "height": 344
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1763,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1959,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Prefers Reduced Motion Copy as Markdown Copied ← → Prefers Reduced Motion YOU MIGHT SAY Someone has the system's reduce motion setting on and my page animations still run. Should I handle it? Reading the system's reduce motion setting and disabling or reducing animation accordingly · When visitors turn on 'Reduce Motion' in their system settings, wide movements, parallax scrolling, and continuous spinning animations on the page should pause or reduce to subtle fades. This accommodates people prone to motion sickness; verify by flipping the system setting once to see whether page animations adapt. Know first Animation Prefers Reduced Motion Toggle the system switch and watch the page respond System: motion on System: reduce motion example.com New project created Carousel Cards Loading Loading… Motion enabled Keep information and controls available in both modes. Reduce decorative movement, not the task itself. Accessibility means honoring the system preference without hidi",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

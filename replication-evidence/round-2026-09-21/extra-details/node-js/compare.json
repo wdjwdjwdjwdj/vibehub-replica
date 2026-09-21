@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Node.js Programming Language Explained | VibeHub",
+    "h1": "Node.js",
+    "height": 2482.5,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 380
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 977,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1349,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1718,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1889,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Node.js Copy as Markdown Copied ← → Node.js You might say The terminal says command not found: node. Why can't my project run? The environment that lets JavaScript run directly on a computer, and the runtime behind build tools and AI dev tools·When running build scripts or starting modern web projects in a terminal, Node.js provides the runtime that executes JavaScript outside a browser. Beyond handling web page clicks, JavaScript runs server APIs and dev tools via Node.js; project warnings like 'requires Node 18+' mean you must verify your local runtime version first. Know first JavaScript Node node The same .js file, run by a browser and by Node.js Open the .js file in a browser Run with node in a terminal Check the local version script.js const fs = require(\"fs\"); const files = fs.readdirSync(\"./data\"); console.log(`Read ${files.length} item(s)`); → file:///Users/you/project/script.js const fs = require(\"fs\"); const files = fs.readdirSync(\"./data\"); console.log(`Read $",
+    "errors": []
+  },
+  "local": {
+    "title": "Node.js Programming Language Explained | VibeHub",
+    "h1": "Node.js",
+    "height": 2484.5,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-node-stage",
+        "y": 551,
+        "height": 380
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 977,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1349,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1718,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1889,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Node.js Copy as Markdown Copied ← → Node.js YOU MIGHT SAY The terminal says command not found: node. Why can't my project run? The environment that lets JavaScript run directly on a computer, and the runtime behind build tools and AI dev tools · When running build scripts or starting modern web projects in a terminal, Node.js provides the runtime that executes JavaScript outside a browser. Beyond handling web page clicks, JavaScript runs server APIs and dev tools via Node.js; project warnings like 'requires Node 18+' mean you must verify your local runtime version first. Know first JavaScript Node.js The same .js file, run by a browser and by Node.js Open the .js file in a browser Run with node in a terminal Check the local version script.js const fs = require(\"fs\"); const files = fs.readdirSync(\"./data\"); console.log(`Read ${files.length} item(s)`); → file:///Users/you/project/script.js const fs = require(\"fs\"); const files = fs.readdirSync(\"./data\"); console.log(`Read $",
+    "errors": []
+  },
+  "heightDelta": 2
+}

@@ -1,0 +1,41 @@
+{
+  "source": {
+    "title": "Git Remote Repository Explained | VibeHub",
+    "h1": "Remote Repository",
+    "height": 4659.3,
+    "sections": [
+      {
+        "className": "lesson-practice",
+        "y": 873,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1217,
+        "height": 125.3
+      }
+    ],
+    "text": "All entries › Remote Repository Copy as Markdown Copied ← → Remote Repository You might say My commits only exist on my computer. How can others see them? Another copy of the same repository, usually in the cloud, used to sync work and collaborate·Commits created on your local computer only become visible to teammates or build systems once pushed to a remote repository hosted in the cloud (such as GitHub). origin is the standard nickname for the default remote; commands like clone, push, and pull synchronize history between your local copy and this shared hub. Know first Push Remote origin Local repository my-first-page push ↑ pull ↓ origin github.com/you/my-first-page git push origin main A remote repository is another copy of the same repository. You push local commits; others pull to see them; new remote changes come back to you with a pull. Quick check Choose the best answer git push origin main is rejected with fetch first. What should happen next? A Run git pull first, merge the ",
+    "errors": []
+  },
+  "local": {
+    "title": "Git Remote Repository Explained | VibeHub",
+    "h1": "Remote Repository",
+    "height": 4666.8,
+    "sections": [
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 873,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1217,
+        "height": 125
+      }
+    ],
+    "text": "All entries › Remote Repository Copy as Markdown Copied ← → Remote Repository YOU MIGHT SAY My commits only exist on my computer. How can others see them? Another copy of the same repository, usually in the cloud, used to sync work and collaborate · Commits created on your local computer only become visible to teammates or build systems once pushed to a remote repository hosted in the cloud (such as GitHub). origin is the standard nickname for the default remote; commands like clone, push, and pull synchronize history between your local copy and this shared hub. Know first Push Remote origin 💻 Local repository my-first-page push ↑ ↔ pull ↓ ☁ origin github.com/you/my-first-page A remote is another copy of the repository Push publishes local commits; pull brings the shared history back before you continue. Quick check Choose the best answer git push origin main is rejected with fetch first. What should happen next? A Run git pull first, merge the remote changes and resolve any conflict,",
+    "errors": []
+  },
+  "heightDelta": 7.5
+}

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Temperature in AI Explained | VibeHub",
+    "h1": "Temperature",
+    "height": 2503,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 400.5
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 998,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1370,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1738,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1910,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Temperature Copy as Markdown Copied ← → Temperature You might say Why does AI answer the same question differently every time? A parameter controlling how random the answer is: lower values are steadier, higher values more varied·Getting different formats from the exact same prompt usually means the temperature is set too high. Keep it low for strict JSON schemas, code generation, or stable classifications, and raise it for creative brainstorming; it adjusts sampling randomness rather than making the model smarter. Know first Prompt Temperature Adjust one parameter and watch the same question three times Low 0.0 · Highly stable Mid 0.7 · Natural balance High 1.2 · Creative exploration Test prompt (unchanged) “Write a short slogan for a to-do list app” temperature = 0 · Deterministic Run 1 Less clutter, more focus. Run 2 Less clutter, more focus. Run 3 Less clutter, more focus. All 3 runs are identical: highly predictable, ideal for code, JSON, and structured extraction. H",
+    "errors": []
+  },
+  "local": {
+    "title": "Temperature in AI Explained | VibeHub",
+    "h1": "Temperature",
+    "height": 2506.1,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo temp-scene",
+        "y": 551,
+        "height": 401
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 998,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1370,
+        "height": 329
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1739,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1911,
+        "height": 90
+      }
+    ],
+    "text": "All entries › Temperature Copy as Markdown Copied ← → Temperature YOU MIGHT SAY Why does AI answer the same question differently every time? A parameter controlling how random the answer is: lower values are steadier, higher values more varied · Getting different formats from the exact same prompt usually means the temperature is set too high. Keep it low for strict JSON schemas, code generation, or stable classifications, and raise it for creative brainstorming; it adjusts sampling randomness rather than making the model smarter. Know first Prompt Sampling Temperature Adjust one parameter and watch the same question three times Low 0.0 · Highly stable Mid 0.7 · Natural balance High 1.2 · Creative exploration SAME PROMPT Explain a quiet Sunday morning in one sentence. Only temperature changes. 1 Less clutter, more focus. The answer stays close to the known pattern. 2 Clear and direct, with a little variation. The structure is stable but less repetitive. 3 Try a surprising angle with a ",
+    "errors": []
+  },
+  "heightDelta": 3.1
+}

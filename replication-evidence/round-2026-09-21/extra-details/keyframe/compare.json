@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Keyframe Web Animation Explained | VibeHub",
+    "h1": "Keyframe",
+    "height": 2340.4,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 417.9
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1015,
+        "height": 186.8
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1363,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1707,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1878,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Keyframe Copy as Markdown Copied ← → Keyframe You might say Make the logo rotate continuously. AI says to use keyframes? The state points you specify in an animation; the system fills in everything in between·When creating spinning icons or pulsing buttons, keyframes let you specify styles at milestones like 0%, 50%, and 100%, and the browser fills in the stages in between. Unlike basic transitions that only handle start-and-end states, keyframes define multiple steps, making them ideal for looping or multi-phase animations. Know first Transition Keyframe @keyframes Which state points the keyframes specify Transition: two states Keyframes: multi-state loop Looping animation.css @keyframes spin { 0% { rotate: 0deg } 50% { rotate: 180deg } 100% { rotate: 360deg } } .spin { animation: spin 2s infinite } 0% · 0 50% · 180 100% · 360 Bolded percentages are the state points you specify; unwritten positions are filled in automatically. Keyframes versus transitions A transition ha",
+    "errors": []
+  },
+  "local": {
+    "title": "Keyframe Web Animation Explained | VibeHub",
+    "h1": "Keyframe",
+    "height": 2342.4,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-kf-stage",
+        "y": 551,
+        "height": 417.9
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1015,
+        "height": 186.8
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1363,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1707,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1878,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Keyframe Copy as Markdown Copied ← → Keyframe YOU MIGHT SAY Make the logo rotate continuously. AI says to use keyframes? The state points you specify in an animation; the system fills in everything in between · When creating spinning icons or pulsing buttons, keyframes let you specify styles at milestones like 0%, 50%, and 100%, and the browser fills in the stages in between. Unlike basic transitions that only handle start-and-end states, keyframes define multiple steps, making them ideal for looping or multi-phase animations. Know first Transition Keyframe Which state points the keyframes specify Transition: two states Keyframes: multi-state loop Hover to move between states transition .card { transition: transform .2s; } .card:hover { transform: translateY(-4px); } start → end → finish Use a transition for a simple state change; use keyframes when the timeline has several named steps. Keyframes versus transitions Read the situation: When creating spinning icons or pulsi",
+    "errors": []
+  },
+  "heightDelta": 2
+}

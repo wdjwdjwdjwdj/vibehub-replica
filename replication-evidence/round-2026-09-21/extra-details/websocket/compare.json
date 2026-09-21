@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "WebSocket in Web Development Explained | VibeHub",
+    "h1": "WebSocket",
+    "height": 2384,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 580,
+        "height": 344.1
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 970,
+        "height": 186.8
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1342,
+        "height": 344
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1726,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1922,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › WebSocket Copy as Markdown Copied ← → WebSocket You might say How does a chat room receive new messages in real time? A connection that stays open, letting both sides send messages at any time·When building live chat or real-time collaborative editing, the client and server need to stay connected. Standard HTTP requests open and close for each question and answer; WebSocket stays open after connecting so either side can send messages at any time. Because persistent connections can drop on network glitches, they typically include heartbeat checks and auto-reconnect logic. Know first HTTP WebSocket Ordinary requests versus WebSocket connections Ordinary request WebSocket Your page ？ ？ 1 Ask again each time; messages arriving within the interval wait for the next round Server Messages arriving within the polling interval are delayed; shorter intervals cost more requests. Where message delay comes from in each Ordinary requests have fixed delay: Messages arriving within the p",
+    "errors": []
+  },
+  "local": {
+    "title": "WebSocket in Web Development Explained | VibeHub",
+    "h1": "WebSocket",
+    "height": 2386.2,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-ws-stage",
+        "y": 580,
+        "height": 344.2
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 970,
+        "height": 186.8
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1342,
+        "height": 344
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1726,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1922,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › WebSocket Copy as Markdown Copied ← → WebSocket YOU MIGHT SAY How does a chat room receive new messages in real time? A connection that stays open, letting both sides send messages at any time · When building live chat or real-time collaborative editing, the client and server need to stay connected. Standard HTTP requests open and close for each question and answer; WebSocket stays open after connecting so either side can send messages at any time. Because persistent connections can drop on network glitches, they typically include heartbeat checks and auto-reconnect logic. Know first HTTP WebSocket Ordinary requests versus WebSocket connections Ordinary request WebSocket Your page ??1Ask again each time; messages arriving within the interval wait for the next round Server Messages arriving within the polling interval are delayed; shorter intervals cost more requests. Where message delay comes from in each Ordinary requests have fixed delay: Messages arriving within the po",
+    "errors": []
+  },
+  "heightDelta": 2.2
+}

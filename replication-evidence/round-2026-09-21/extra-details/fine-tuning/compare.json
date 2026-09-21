@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Fine-tuning in AI Explained | VibeHub",
+    "h1": "Fine-tuning",
+    "height": 2582.8,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 440.3
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1038,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1434,
+        "height": 319.7
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1794,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1989,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Fine-tuning Copy as Markdown Copied ← → Fine-tuning You might say Can I train a model that only knows my product? Retraining a model with your own data so it answers more consistently the way you want·When an AI must consistently adopt a specialized brand voice or output a proprietary domain syntax, fine-tuning bakes those patterns into the model itself. It requires structured dataset preparation and retraining costs, so start with prompt examples first and consider fine-tuning only when prompts fall short. Know first Prompt Fine-tuning Making AI answer your way: how to choose among three paths Use polite tone with friendly greetings Answers must follow internal API specs updated last week Strict proprietary legal formatting where prompts repeatedly fail 1 Prompt Layer Change input text · Model untouched Recommended choice Zero cost · Instant 2 Knowledge Store (RAG) Dynamic retrieval · Model unchanged 3 Model Weights (Fine-Tuning) Retrain internal weights · Custom model P",
+    "errors": []
+  },
+  "local": {
+    "title": "Fine-tuning in AI Explained | VibeHub",
+    "h1": "Fine-tuning",
+    "height": 2585.1,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo ft-scene",
+        "y": 551,
+        "height": 440.3
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1038,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1434,
+        "height": 319.7
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1794,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1990,
+        "height": 90
+      }
+    ],
+    "text": "All entries › Fine-tuning Copy as Markdown Copied ← → Fine-tuning YOU MIGHT SAY Can I train a model that only knows my product? Retraining a model with your own data so it answers more consistently the way you want · When an AI must consistently adopt a specialized brand voice or output a proprietary domain syntax, fine-tuning bakes those patterns into the model itself. It requires structured dataset preparation and retraining costs, so start with prompt examples first and consider fine-tuning only when prompts fall short. Know first Prompt Model Fine-tuning Making AI answer your way: how to choose among three paths Use polite tone with friendly greetings Answers must follow internal API specs updated last week Strict proprietary legal formatting where prompts repeatedly fail 1 Prompt Layer Change input text Model untouched Recommended choice / Zero cost · Instant 2 Knowledge Store (RAG) Dynamic retrieval Model unchanged Keep knowledge fresh 3 Model Weights (Fine-Tuning) Retrain intern",
+    "errors": []
+  },
+  "heightDelta": 2.3
+}

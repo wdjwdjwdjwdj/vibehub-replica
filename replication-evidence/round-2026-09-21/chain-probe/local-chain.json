@@ -1,0 +1,112 @@
+[
+  {
+    "tag": "strong",
+    "cls": "",
+    "fontSize": "11.5px",
+    "lineHeight": "14.95px",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "680"
+  },
+  {
+    "tag": "span",
+    "cls": "footer-social-copy",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "a",
+    "cls": "footer-social-link ",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "nav",
+    "cls": "footer-socials",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "div",
+    "cls": "site-footer-content",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "div",
+    "cls": "site-footer-shell",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "footer",
+    "cls": "site-footer",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "div",
+    "cls": "app ",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "div",
+    "cls": "",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "body",
+    "cls": "",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  },
+  {
+    "tag": "html",
+    "cls": "",
+    "fontSize": "16px",
+    "lineHeight": "normal",
+    "letterSpacing": "normal",
+    "color": "rgb(52, 57, 73)",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"PingFang SC\", ",
+    "fontWeight": "400"
+  }
+]

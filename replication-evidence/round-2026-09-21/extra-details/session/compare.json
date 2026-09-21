@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Session in Web Development Explained | VibeHub",
+    "h1": "Session",
+    "height": 2406.9,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1057,
+        "height": 186.8
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1429,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1774,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1945,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Session Copy as Markdown Copied ← → Session You might say After signing in, why does the page stay signed in after refresh? State the server keeps for one person's continuous use, recognizing them by an identifier in a cookie·Remaining logged in after a page refresh happens because the browser automatically attaches a session cookie to every request, allowing the server to recognize the authenticated user. Once a session expires or gets cleared, the user must log in again—a lifecycle boundary rather than an authentication error. Know first Authentication Session From sign-in to expiry: how a session recognizes the same person Sign-in succeeds Still signed in after refresh Session expires From sign-in to expiry: how a session recognizes the same person Enter credentials credentials verified server creates session_7 browser stores the identifier Evidence The server creates session state for this person After sign-in, the server starts keeping state for this person. What a s",
+    "errors": []
+  },
+  "local": {
+    "title": "Session in Web Development Explained | VibeHub",
+    "h1": "Session",
+    "height": 2409,
+    "sections": [
+      {
+        "className": "extra-concept-stage special-section learning-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1057,
+        "height": 186.8
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1429,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1774,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1945,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Session Copy as Markdown Copied ← → Session YOU MIGHT SAY After signing in, why does the page stay signed in after refresh? State the server keeps for one person's continuous use, recognizing them by an identifier in a cookie · Remaining logged in after a page refresh happens because the browser automatically attaches a session cookie to every request, allowing the server to recognize the authenticated user. Once a session expires or gets cleared, the user must log in again—a lifecycle boundary rather than an authentication error. Know first Authentication Session From sign-in to expiry: how a session recognizes the same person Sign-in succeeds Still signed in after refresh Session expires From sign-in to expiry: how a session recognizes the same person Enter credentials credentials verified server creates session_7 browser stores the identifier EVIDENCE The server creates session state for this person After sign-in, the server starts keeping state for this person. What a",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Persona in Product Management Explained | VibeHub",
+    "h1": "Persona",
+    "height": 2352.6,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 580,
+        "height": 352.6
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 979,
+        "height": 162.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1326,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1695,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1891,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Persona Copy as Markdown Copied ← → Persona You might say Who is this page actually written for? A specific person concentrating a target user's key traits, goals, and scenarios, used to align judgment·When planning a product or writing landing page copy, a persona distills typical user needs, frustrations, and context into a named individual. Having an aligned persona gives the team a common reference when deciding the headline or prioritizing features. It serves as an actionable hypothesis for alignment, which is refined through real user conversations. Know first User Story Persona The same page, written for different personas Alex, freelance designer Chen, enterprise buyer Alex, freelance designer Target user persona Goal Win more client work Concern Cannot code → example.com A professional site even if you cannot code Addresses her concern: possible without technical skill When the persona changes, the first line of copy should change: who it is written for decides w",
+    "errors": []
+  },
+  "local": {
+    "title": "Persona in Product Management Explained | VibeHub",
+    "h1": "Persona",
+    "height": 2354.7,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo persona-scene",
+        "y": 580,
+        "height": 352.6
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 979,
+        "height": 162.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1326,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1695,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1891,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Persona Copy as Markdown Copied ← → Persona YOU MIGHT SAY Who is this page actually written for? A specific person concentrating a target user's key traits, goals, and scenarios, used to align judgment · When planning a product or writing landing page copy, a persona distills typical user needs, frustrations, and context into a named individual. Having an aligned persona gives the team a common reference when deciding the headline or prioritizing features. It serves as an actionable hypothesis for alignment, which is refined through real user conversations. Know first User Story Persona The same page, written for different personas Alex, freelance designer Chen, enterprise buyer Alex, freelance designer Target user persona Goal Win more client work Concern Cannot code → example.com A professional site even if you cannot code Addresses her concern: possible without technical skill When the persona changes, the first line of copy should change: who it is written for decides",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

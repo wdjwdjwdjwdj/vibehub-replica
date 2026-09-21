@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Timeout in Web Development Explained | VibeHub",
+    "h1": "Timeout",
+    "height": 2490.1,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 511,
+        "height": 403.6
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 960,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1357,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1726,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1897,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Timeout Copy as Markdown Copied ← → Timeout You might say I clicked save and it spins forever, then says the request timed out. Is it the network or the server? The maximum time to wait for a result before giving up and reporting failure·When a save action spins and ends in 'Request timed out', the client has reached its wait limit and given up, which does not necessarily mean the request failed to arrive or the server crashed. Diagnosing failures requires distinguishing whether an operation timed out, was rejected by a rate limit, or failed immediately due to invalid inputs. Know first HTTP Rate Limit Change one wait limit and watch this request succeed or fail Limit 3s Limit 10s Limit 30s Save note Move the weekly meeting to Thursday afternoon. Save failed: request timed out The page gave up after reaching the limit Timeline for this request The response arrives at 12s Limit 3s Response 12s The limit comes before the response: the page reports a timeout, but the request",
+    "errors": []
+  },
+  "local": {
+    "title": "Timeout in Web Development Explained | VibeHub",
+    "h1": "Timeout",
+    "height": 2492.3,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-timeout-stage",
+        "y": 511,
+        "height": 403.7
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 961,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1357,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1726,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1897,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Timeout Copy as Markdown Copied ← → Timeout YOU MIGHT SAY I clicked save and it spins forever, then says the request timed out. Is it the network or the server? The maximum time to wait for a result before giving up and reporting failure · When a save action spins and ends in 'Request timed out', the client has reached its wait limit and given up, which does not necessarily mean the request failed to arrive or the server crashed. Diagnosing failures requires distinguishing whether an operation timed out, was rejected by a rate limit, or failed immediately due to invalid inputs. Know first HTTP Rate Limit Timeout Change one wait limit and watch this request succeed or fail Limit 3s Limit 10s Limit 30s Save note Move the weekly meeting to Thursday afternoon. Save failed: request timed outThe page gave up after reaching the limit Timeline for this requestThe response arrives at 12s Limit 3sResponse 12s The limit comes before the response: the page reports a timeout, but the ",
+    "errors": []
+  },
+  "heightDelta": 2.2
+}

@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Stack Trace in Web Development Explained | VibeHub",
+    "h1": "Stack Trace",
+    "height": 2714.1,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 534.2
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1132,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1503,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1872,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2068,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Stack Trace Copy as Markdown Copied ← → Stack Trace You might say The terminal printed a long error. Which line should I send to the AI? The position list printed when a program fails, ordered from the failure point back to the entry·When a program crashes and prints a red error in the terminal, the stack trace lists nested function calls leading up to the failure. While the top frame is where execution halted, identifying the first frame that belongs to your own business files points directly to where the bug should be fixed. Know first Terminal Stack Trace Click each frame to see which line of your code it points to Terminal $ node save.js save.js:24 return items.map((row) => row); ^ TypeError: Cannot read properties of undefined (reading 'map') Your file at loadRows (save.js:24:21) Your file at handleSave (save.js:5:20) Runtime at processTicksAndRejections (node:internal/…) save.js Line 24 4 function handleSave(request) { 5 const items = loadRows(request.file); 6 retur",
+    "errors": []
+  },
+  "local": {
+    "title": "Stack Trace in Web Development Explained | VibeHub",
+    "h1": "Stack Trace",
+    "height": 2716.1,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-stack-stage",
+        "y": 551,
+        "height": 534.2
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1131,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1503,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1872,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2068,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Stack Trace Copy as Markdown Copied ← → Stack Trace YOU MIGHT SAY The terminal printed a long error. Which line should I send to the AI? The position list printed when a program fails, ordered from the failure point back to the entry · When a program crashes and prints a red error in the terminal, the stack trace lists nested function calls leading up to the failure. While the top frame is where execution halted, identifying the first frame that belongs to your own business files points directly to where the bug should be fixed. Know first Terminal Stack Trace Click each frame to see which line of your code it points to Terminal $ node save.js save.js:24 return items.map((row) => row); ^ TypeError: Cannot read properties of undefined (reading 'map') Your file at loadRows (save.js:24:21) Your file at handleSave (save.js:5:20) Runtime at processTicksAndRejections (node:internal/…) save.js Line 24 4 function handleSave(request) { 5 const items = loadRows(request.file); 6 ret",
+    "errors": []
+  },
+  "heightDelta": 2
+}

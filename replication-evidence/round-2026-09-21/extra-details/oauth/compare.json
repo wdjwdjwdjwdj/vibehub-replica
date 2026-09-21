@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "OAuth in Web Development Explained | VibeHub",
+    "h1": "OAuth",
+    "height": 2655.6,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 580,
+        "height": 460
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1086,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1483,
+        "height": 344
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1867,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2062,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › OAuth Copy as Markdown Copied ← → OAuth You might say How do I add a sign in with WeChat button to the page? An industry-standard protocol letting users authorize sign-in with an existing account (WeChat, Google) instead of registering a new password·When a user clicks 'Sign in with Google', the browser redirects to Google's consent screen and returns with an authorization token. OAuth lets websites verify identities without ever handling third-party passwords; developers configure redirect callback URLs, while the app maintains internal records matching foreign accounts. Know first Authentication OAuth Self-registration and third-party authorization: two sign-in paths Self-registration Third-party authorization Both coexist Self-registration and third-party authorization: two sign-in paths Enter email and password user remembers a new password site stores the account cost one more password per site Evidence Credentials live on this site Self-registration: users remember ",
+    "errors": []
+  },
+  "local": {
+    "title": "OAuth in Web Development Explained | VibeHub",
+    "h1": "OAuth",
+    "height": 2657.7,
+    "sections": [
+      {
+        "className": "extra-concept-stage special-section learning-section",
+        "y": 580,
+        "height": 460
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1086,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1483,
+        "height": 344
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1867,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2062,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › OAuth Copy as Markdown Copied ← → OAuth YOU MIGHT SAY How do I add a sign in with WeChat button to the page? An industry-standard protocol letting users authorize sign-in with an existing account (WeChat, Google) instead of registering a new password · When a user clicks 'Sign in with Google', the browser redirects to Google's consent screen and returns with an authorization token. OAuth lets websites verify identities without ever handling third-party passwords; developers configure redirect callback URLs, while the app maintains internal records matching foreign accounts. Know first Authentication OAuth Self-registration and third-party authorization: two sign-in paths Self-registration Third-party authorization Both coexist Self-registration and third-party authorization: two sign-in paths Enter email and password user remembers a new password site stores the account cost one more password per site EVIDENCE Credentials live on this site Self-registration means users re",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

@@ -1,0 +1,457 @@
+{
+  "scrollHeight": 18517,
+  "bodyWidth": 1440,
+  "main": {
+    "x": 0,
+    "y": 59,
+    "width": 1440,
+    "height": 18120.65625,
+    "top": 59,
+    "right": 1440,
+    "bottom": 18179.65625,
+    "left": 0
+  },
+  "headers": [
+    {
+      "tag": "HEADER",
+      "cls": "site-header",
+      "text": "VibeHubYour Vibe Coding GuideTermsPracticeAI SlopUpdatesSkillCommunity⌕EnglishOil",
+      "r": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 60,
+        "top": 0,
+        "right": 1440,
+        "bottom": 60,
+        "left": 0
+      }
+    },
+    {
+      "tag": "H1",
+      "cls": "",
+      "text": "Frontend Terms for Vibe Coding",
+      "r": {
+        "x": 216,
+        "y": 187,
+        "width": 1192,
+        "height": 35.65625,
+        "top": 187,
+        "right": 1408,
+        "bottom": 222.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Web Basics",
+      "r": {
+        "x": 216,
+        "y": 240.65625,
+        "width": 105.109375,
+        "height": 34,
+        "top": 240.65625,
+        "right": 321.109375,
+        "bottom": 274.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Buttons & Links",
+      "r": {
+        "x": 216,
+        "y": 2160.65625,
+        "width": 148.84375,
+        "height": 34,
+        "top": 2160.65625,
+        "right": 364.84375,
+        "bottom": 2194.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Forms",
+      "r": {
+        "x": 216,
+        "y": 2487.65625,
+        "width": 58.359375,
+        "height": 34,
+        "top": 2487.65625,
+        "right": 274.359375,
+        "bottom": 2521.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Content",
+      "r": {
+        "x": 216,
+        "y": 4707.65625,
+        "width": 75.046875,
+        "height": 34,
+        "top": 4707.65625,
+        "right": 291.046875,
+        "bottom": 4741.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Dialogs & Feedback",
+      "r": {
+        "x": 216,
+        "y": 7639.65625,
+        "width": 185.90625,
+        "height": 34,
+        "top": 7639.65625,
+        "right": 401.90625,
+        "bottom": 7673.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Navigation",
+      "r": {
+        "x": 216,
+        "y": 8920.65625,
+        "width": 103.125,
+        "height": 34,
+        "top": 8920.65625,
+        "right": 319.125,
+        "bottom": 8954.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Website Sections",
+      "r": {
+        "x": 216,
+        "y": 9892.65625,
+        "width": 158.890625,
+        "height": 34,
+        "top": 9892.65625,
+        "right": 374.890625,
+        "bottom": 9926.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Page Layouts",
+      "r": {
+        "x": 216,
+        "y": 12317.65625,
+        "width": 123.453125,
+        "height": 34,
+        "top": 12317.65625,
+        "right": 339.453125,
+        "bottom": 12351.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "CSS Layout",
+      "r": {
+        "x": 216,
+        "y": 13553.65625,
+        "width": 103.640625,
+        "height": 34,
+        "top": 13553.65625,
+        "right": 319.640625,
+        "bottom": 13587.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Typography",
+      "r": {
+        "x": 216,
+        "y": 14834.65625,
+        "width": 112.515625,
+        "height": 34,
+        "top": 14834.65625,
+        "right": 328.515625,
+        "bottom": 14868.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Visual Styling",
+      "r": {
+        "x": 216,
+        "y": 15214.65625,
+        "width": 124.609375,
+        "height": 34,
+        "top": 15214.65625,
+        "right": 340.609375,
+        "bottom": 15248.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Motion",
+      "r": {
+        "x": 216,
+        "y": 16534.65625,
+        "width": 69.21875,
+        "height": 34,
+        "top": 16534.65625,
+        "right": 285.21875,
+        "bottom": 16568.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "H2",
+      "cls": "",
+      "text": "Pointer",
+      "r": {
+        "x": 216,
+        "y": 17210.65625,
+        "width": 67.21875,
+        "height": 34,
+        "top": 17210.65625,
+        "right": 283.21875,
+        "bottom": 17244.65625,
+        "left": 216
+      }
+    },
+    {
+      "tag": "HEADER",
+      "cls": "source-survey-header",
+      "text": "One quick questionWhere did you first hear about VibeHub?Choose the closest match.",
+      "r": {
+        "x": 0,
+        "y": 18194.65625,
+        "width": 1440,
+        "height": 153,
+        "top": 18194.65625,
+        "right": 1440,
+        "bottom": 18347.65625,
+        "left": 0
+      }
+    }
+  ],
+  "sections": [
+    {
+      "cls": "category-strip",
+      "id": "",
+      "r": {
+        "x": 32,
+        "y": 81,
+        "width": 1376,
+        "height": 60,
+        "top": 81,
+        "right": 1408,
+        "bottom": 141,
+        "left": 32
+      }
+    },
+    {
+      "cls": "term-section section-web-basics",
+      "id": "web-basics",
+      "r": {
+        "x": 216,
+        "y": 240.65625,
+        "width": 1192,
+        "height": 1902,
+        "top": 240.65625,
+        "right": 1408,
+        "bottom": 2142.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-buttons-links",
+      "id": "buttons-links",
+      "r": {
+        "x": 216,
+        "y": 2160.65625,
+        "width": 1192,
+        "height": 309,
+        "top": 2160.65625,
+        "right": 1408,
+        "bottom": 2469.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-forms",
+      "id": "forms",
+      "r": {
+        "x": 216,
+        "y": 2487.65625,
+        "width": 1192,
+        "height": 2202,
+        "top": 2487.65625,
+        "right": 1408,
+        "bottom": 4689.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-content",
+      "id": "content",
+      "r": {
+        "x": 216,
+        "y": 4707.65625,
+        "width": 1192,
+        "height": 2914,
+        "top": 4707.65625,
+        "right": 1408,
+        "bottom": 7621.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-dialogs-feedback",
+      "id": "dialogs-feedback",
+      "r": {
+        "x": 216,
+        "y": 7639.65625,
+        "width": 1192,
+        "height": 1263,
+        "top": 7639.65625,
+        "right": 1408,
+        "bottom": 8902.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-navigation",
+      "id": "navigation",
+      "r": {
+        "x": 216,
+        "y": 8920.65625,
+        "width": 1192,
+        "height": 954,
+        "top": 8920.65625,
+        "right": 1408,
+        "bottom": 9874.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-website-sections",
+      "id": "website-sections",
+      "r": {
+        "x": 216,
+        "y": 9892.65625,
+        "width": 1192,
+        "height": 2407,
+        "top": 9892.65625,
+        "right": 1408,
+        "bottom": 12299.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-page-layouts",
+      "id": "page-layouts",
+      "r": {
+        "x": 216,
+        "y": 12317.65625,
+        "width": 1192,
+        "height": 1218,
+        "top": 12317.65625,
+        "right": 1408,
+        "bottom": 13535.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-css-layout",
+      "id": "css-layout",
+      "r": {
+        "x": 216,
+        "y": 13553.65625,
+        "width": 1192,
+        "height": 1263,
+        "top": 13553.65625,
+        "right": 1408,
+        "bottom": 14816.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-typography",
+      "id": "typography",
+      "r": {
+        "x": 216,
+        "y": 14834.65625,
+        "width": 1192,
+        "height": 362,
+        "top": 14834.65625,
+        "right": 1408,
+        "bottom": 15196.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-visual-styling",
+      "id": "visual-styling",
+      "r": {
+        "x": 216,
+        "y": 15214.65625,
+        "width": 1192,
+        "height": 1302,
+        "top": 15214.65625,
+        "right": 1408,
+        "bottom": 16516.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-motion",
+      "id": "motion",
+      "r": {
+        "x": 216,
+        "y": 16534.65625,
+        "width": 1192,
+        "height": 658,
+        "top": 16534.65625,
+        "right": 1408,
+        "bottom": 17192.65625,
+        "left": 216
+      }
+    },
+    {
+      "cls": "term-section section-pointer",
+      "id": "pointer",
+      "r": {
+        "x": 216,
+        "y": 17210.65625,
+        "width": 1192,
+        "height": 873,
+        "top": 17210.65625,
+        "right": 1408,
+        "bottom": 18083.65625,
+        "left": 216
+      }
+    }
+  ],
+  "links": 169,
+  "buttons": 162,
+  "errors": []
+}

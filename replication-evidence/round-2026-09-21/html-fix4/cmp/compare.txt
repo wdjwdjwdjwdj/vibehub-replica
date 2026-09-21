@@ -1,0 +1,86 @@
+scrollHeight  original=5075  local=5075  delta=0
+pixel diff    threshold=12  gate=1%
+
+===== nav =====
+  geom  original x0 y0 1440x60
+  geom  local    x0 y0 1440x60   Δy=0 Δh=0
+  htmlLen original=2666 local=2199
+  text  IDENTICAL
+  pixel 4.027%  (1440x60 vs 1440x60)  diffPixels=3479/86400  FAIL
+
+===== topbar =====
+  geom  original x250 y88 940x49
+  geom  local    x250 y88 940x49   Δy=0 Δh=0
+  htmlLen original=1639 local=1592
+  text  IDENTICAL
+  pixel 0.000%  (940x49 vs 940x49)  diffPixels=0/46060  PASS
+
+===== hero =====
+  geom  original x262 y149 916x505
+  geom  local    x262 y149 916x505   Δy=0 Δh=0
+  htmlLen original=1928 local=1909
+  text  IDENTICAL
+  pixel 0.299%  (916x505 vs 916x505)  diffPixels=1385/462580  PASS
+
+===== lessons =====
+  geom  original x262 y696 916x494
+  geom  local    x262 y696 916x494   Δy=0 Δh=0
+  htmlLen original=1815 local=1815
+  text  IDENTICAL
+  pixel 0.000%  (916x495 vs 916x495)  diffPixels=0/453420  PASS
+
+===== usage =====
+  geom  original x262 y1236 916x1473
+  geom  local    x262 y1236 916x1473   Δy=0 Δh=0
+  htmlLen original=4622 local=4776
+  text  IDENTICAL
+  pixel 0.228%  (916x1474 vs 916x1474)  diffPixels=3077/1350184  PASS
+
+===== anatomy =====
+  geom  original x262 y2794 916x364
+  geom  local    x262 y2794 916x364   Δy=0 Δh=0
+  htmlLen original=1624 local=1624
+  text  IDENTICAL
+  pixel 0.000%  (916x365 vs 916x365)  diffPixels=0/334340  PASS
+
+===== variants =====
+  geom  original x262 y3245 916x187
+  geom  local    x262 y3245 916x187   Δy=0 Δh=0
+  htmlLen original=1341 local=1373
+  text  IDENTICAL
+  pixel 0.000%  (916x188 vs 916x188)  diffPixels=0/172208  PASS
+
+===== scenes =====
+  geom  original x262 y3472 916x870
+  geom  local    x262 y3472 916x870   Δy=0 Δh=0
+  htmlLen original=6452 local=6523
+  text  IDENTICAL
+  pixel 0.386%  (916x871 vs 916x871)  diffPixels=3077/797836  PASS
+
+===== selector =====
+  geom  original x262 y4382 916x266
+  geom  local    x262 y4382 916x266   Δy=0 Δh=0
+  htmlLen original=1638 local=1638
+  text  IDENTICAL
+  pixel 0.025%  (916x268 vs 916x268)  diffPixels=61/245488  PASS
+
+===== references =====
+  geom  original x262 y4688 916x144
+  geom  local    x262 y4688 916x144   Δy=0 Δh=0
+  htmlLen original=660 local=644
+  text  IDENTICAL
+  pixel 0.000%  (916x145 vs 916x145)  diffPixels=0/132820  PASS
+
+===== footer =====
+  geom  original x0 y4952 1440x123
+  geom  local    x0 y4952 1440x123   Δy=0 Δh=0
+  htmlLen original=2979 local=2461
+  text  IDENTICAL
+  pixel 0.095%  (1440x124 vs 1440x124)  diffPixels=169/178560  PASS
+
+===== survey =====
+  geom  original x1016 y4643 400x408
+  geom  local    x1016 y4643 400x408   Δy=0 Δh=0
+  htmlLen original=11308 local=11487
+  text  IDENTICAL
+  pixel 0.031%  (400x408 vs 400x408)  diffPixels=50/163200  PASS

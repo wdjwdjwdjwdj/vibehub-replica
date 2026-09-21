@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Event Tracking in Product Management Explained | VibeHub",
+    "h1": "Event Tracking",
+    "height": 2291.7,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 329.4
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 927,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1299,
+        "height": 319.7
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1658,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1830,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Event Tracking Copy as Markdown Copied ← → Event Tracking You might say I want to know whether anyone actually clicks this button. Recording points placed at key actions that send what users did to an analytics tool·To understand how a key feature or call-to-action button performs, we send an event record with action names and parameters to an analytics platform when an action occurs. Event tracking captures concrete user interactions rather than simple page loads; actions without configured tracking events leave no record in analytics dashboards. Know first Conversion Funnel Event Tracking Click once, and how the event record reaches the backend example.com Start trial Not clicked yet → Analytics backend Waiting for events Event — Source — Count 0 Click the button: events record actions that actually happened; no click means no data. What tracking goes through Place events at key points: Write one line of recording code at key actions like button clicks and form submits,",
+    "errors": []
+  },
+  "local": {
+    "title": "Event Tracking in Product Management Explained | VibeHub",
+    "h1": "Event Tracking",
+    "height": 2293.8,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo track-scene",
+        "y": 551,
+        "height": 329.4
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 927,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1299,
+        "height": 319.7
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1658,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1830,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Event Tracking Copy as Markdown Copied ← → Event Tracking YOU MIGHT SAY I want to know whether anyone actually clicks this button. Recording points placed at key actions that send what users did to an analytics tool · To understand how a key feature or call-to-action button performs, we send an event record with action names and parameters to an analytics platform when an action occurs. Event tracking captures concrete user interactions rather than simple page loads; actions without configured tracking events leave no record in analytics dashboards. Know first Conversion Funnel Event Tracking Click once, and how the event record reaches the backend example.com Start trial Not clicked yet → Analytics backend Waiting for events Event — Source — Count 0 Click the button: events record actions that actually happened; no click means no data. What tracking goes through Read the situation: To understand how a key feature or call-to-action button performs, we send an event record",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

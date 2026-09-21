@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "kind": "T2-preflight",
-  "checkedAt": "2026-09-16T12:12:06.543Z",
+  "checkedAt": "2026-09-17T16:20:42.873Z",
   "baseline": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-editable\\vibehub-independent-editable-editable\\evidence\\baseline\\EDITABLE-BASELINE.json",
-  "baselineSha256": "e57464b8d808f2e44b4ca453aa01f5019c36ee2e18bd6824f17a498af87aef5e",
+  "baselineSha256": "0fc5878d426bcadf4d0953c3c402bda2e2d54ffdc4d7d4d04e07e6b26857d357",
   "implementationContract": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-editable\\vibehub-independent-editable-editable\\T2-IMPLEMENTATION-CONTRACT.json",
   "implementationContractSha256": "5c63eb6fa71602db46b1bdd55db75021b005c0a7c2a53d09c8b6c1dfeb66de58",
   "targetRoot": "E:\\vibe coding\\网站复刻\\replication-evidence\\vibehub-independent-editable\\vibehub-independent-editable-editable",

@@ -33,7 +33,7 @@
 | 其余 93 个专用详情 Demo（基础 Web、网络/部署、产品方法、AI、配置/工具链） | 已实现 | 按原站 `demoClass` 与 `demoText` 分为 catalog technical/foundation/product/AI/tool 面板；`test:demos` 全量 644 路由拒绝通用 fallback，HTML/DNS/Provider/User Story/AI Basics 另有结构 E2E |
 | 59 个原站无 `demoText` 详情 Demo | 已实现 | 按保存链路、布局拆解、记录变更和步骤化证据分流；`test:terms` 强制检查每条详情存在 Demo |
 | Quick check | 已实现 | 原站题目/答案/反馈结构；页面会话内可重选，刷新后清空答案；Button/Git 已验证位于 Demo 后、正文知识区块前 |
-| Practice | 已实现并验证 | 296 条真实双语题库、随机选题、12 条最近题目记录、9 个方向及原站题量筛选、答错可重选、答对后禁用选项并嵌入完整术语指南、下一题；仅最近题目按原站 key 持久化，答案/得分/方向为当前会话状态 |
+| Practice | 已实现并验证 | 328 条真实双语题库、随机选题、12 条最近题目记录、9 个方向及原站题量筛选、答错可重选、答对后禁用选项并嵌入完整术语指南、下一题；仅最近题目按原站 key 持久化，答案/得分/方向为当前会话状态 |
 | AI Slop 分类锚点与原生卡片 | 已实现并验证 | 中文 25 条、英文 18 条；分类按钮滚动到三组条目，卡片链接可达，预览为本地 HTML/CSS，不使用 iframe/整页截图 |
 | Changelog 月份定位、All/Updates/New Terms 筛选、词条展开 | 已实现并验证 | 原站结构复核；Playwright 断言筛选、milestone summary、Show all、移动端无溢出和月份跳转 |
 | 课程总览、Git 章节入口与移动端滚动容器 | 已实现并验证 | 产品官网/Git 双语总览使用源站课程壳层；6 个 Git 章节卡、返回入口、从第一章开始和章节 reader 链路可用，`test:courses` 与 `test:courses:mobile` 覆盖桌面/390px 移动端 |

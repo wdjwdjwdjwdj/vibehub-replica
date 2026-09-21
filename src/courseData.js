@@ -399,7 +399,9 @@ export const courseData = [
   }
 ];
 
-export const courseById = Object.fromEntries(courseData.map((course) => [course.id, course]));
+const __courseById = Object.create(null);
+for (const __c of courseData) __courseById[__c.id] = __c;
+export const courseById = __courseById;
 
 export const gitCourseData = [
   [

@@ -1,4 +1,5 @@
 import { chromium } from 'playwright';
+import fs from 'node:fs';
 
 const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
 const browser = await chromium.launch({ headless: true });
@@ -7,10 +8,10 @@ const checks = [
   { route: '/topics/frontend', expected: ['stack-window', 'fc-component', 'fc-state', 'md-demo', 'html-demo', 'wf-css-card'] },
   { route: '/en/topics/backend', expected: ['dom-demo', 'dns-demo', 'url-demo', 'http-demo', 'wf-cookie-card', 'https-demo'], allExpected: ['dom-demo', 'dns-demo', 'url-demo', 'http-demo', 'wf-cookie-card', 'https-demo', 'cdn-demo', 'fc-port', 'fc-redirect'] },
   { route: '/topics/backend', expected: ['dom-demo', 'dns-demo', 'url-demo', 'http-demo', 'wf-cookie-card', 'https-demo'], allExpected: ['dom-demo', 'dns-demo', 'url-demo', 'http-demo', 'wf-cookie-card', 'https-demo', 'cdn-demo', 'fc-port', 'fc-redirect'] },
-  { route: '/en/topics/ai', expected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-context', 'ai-token'], allExpected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-context', 'ai-token', 'ai-window'] },
-  { route: '/topics/ai', expected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-context', 'ai-token'], allExpected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-context', 'ai-token', 'ai-window'] },
-  { route: '/en/topics/product', expected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-prd', 'product-discovery'], allExpected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-prd', 'product-discovery', 'product-mvp'] },
-  { route: '/topics/product', expected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-prd', 'product-discovery'], allExpected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-prd', 'product-discovery', 'product-mvp'] },
+  { route: '/en/topics/ai', expected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-rag', 'ai-fine-tuning'], allExpected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-rag', 'ai-fine-tuning', 'ai-reasoning'] },
+  { route: '/topics/ai', expected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-rag', 'ai-fine-tuning'], allExpected: ['ai-basics', 'ai-hallucination', 'ai-vibe', 'ai-multimodal', 'ai-rag', 'ai-fine-tuning', 'ai-reasoning'] },
+  { route: '/en/topics/product', expected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-persona', 'product-prd'], allExpected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-persona', 'product-prd', 'product-discovery', 'product-mvp'] },
+  { route: '/topics/product', expected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-persona', 'product-prd'], allExpected: ['product-story', 'product-use-case', 'product-flow', 'product-journey', 'product-persona', 'product-prd', 'product-discovery', 'product-mvp'] },
   { route: '/en/topics/testing', expected: ['testing-acceptance', 'testing-case', 'testing-unit', 'testing-integration', 'testing-contract', 'testing-e2e'] },
   { route: '/topics/testing', expected: ['testing-acceptance', 'testing-case', 'testing-unit', 'testing-integration', 'testing-contract', 'testing-e2e'] },
   { route: '/en/topics/stack', expected: ['stack-terminal-preview', 'stack-devtools-preview', 'stack-npm-preview', 'stack-build-preview', 'stack-ci-preview', 'stack-lint-preview'] },
@@ -54,5 +55,7 @@ for (const { route, expected, allExpected } of checks) {
 }
 
 await browser.close();
+fs.mkdirSync('replication-evidence/round-2026-09-21', { recursive: true });
+fs.writeFileSync('replication-evidence/round-2026-09-21/catalog-mini-smoke.json', JSON.stringify({ base, checked: checks.length, failures }, null, 2));
 if (failures.length) { console.error(JSON.stringify(failures, null, 2)); process.exit(1); }
 console.log(`catalog mini smoke passed: ${checks.length} localized topic surfaces`);

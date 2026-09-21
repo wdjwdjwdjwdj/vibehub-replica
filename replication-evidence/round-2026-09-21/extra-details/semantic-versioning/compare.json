@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Semantic Versioning in Software Development Explained | VibeHub",
+    "h1": "Semantic Versioning",
+    "height": 2583.4,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 431.9
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1029,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1426,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1794,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1990,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Semantic Versioning Copy as Markdown Copied ← → Semantic Versioning You might say AI asks me to upgrade a dependency from 18 to 19. Should I just do it? A versioning convention where major.minor.patch numbers express the impact of a change·Version identifiers like \"react\": \"^18.3.1\" convey clear risk levels: patch numbers mean backwards-compatible fixes, minor numbers introduce features, and major bumps warn of breaking architectural changes. Checking which segment shifts helps you evaluate upgrade hazards before blindly bumping numbers across breaking releases. Know first npm SemVer Click a segment to see what changing it means for risk 1 Patch +1 2 Minor +1 3 Major +1 package.json { \"dependencies\": { \"react\": \"^18.3.1\" } } ^18.3.1: minor and patch updates are allowed; it never jumps to 19 by itself 18.3.1 → 18.3.2 Low risk Usually a fix that does not change existing usage. Run a check after upgrading. Semantic versioning announces a change's impact with three segments: ",
+    "errors": []
+  },
+  "local": {
+    "title": "Semantic Versioning in Software Development Explained | VibeHub",
+    "h1": "Semantic Versioning",
+    "height": 2585.4,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo wf-stage wf-semver-stage",
+        "y": 551,
+        "height": 431.9
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1029,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1426,
+        "height": 328.6
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1794,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1990,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Semantic Versioning Copy as Markdown Copied ← → Semantic Versioning YOU MIGHT SAY AI asks me to upgrade a dependency from 18 to 19. Should I just do it? A versioning convention where major.minor.patch numbers express the impact of a change · Version identifiers like \"react\": \"^18.3.1\" convey clear risk levels: patch numbers mean backwards-compatible fixes, minor numbers introduce features, and major bumps warn of breaking architectural changes. Checking which segment shifts helps you evaluate upgrade hazards before blindly bumping numbers across breaking releases. Know first npm Semantic Versioning Click a segment to see what changing it means for risk 1 Patch +1 2 Minor +1 3 Major +1 package.json { \"dependencies\": { \"react\": \"^18.3.1\" } } ^18.3.1: minor and patch updates are allowed; it never jumps to 19 by itself 18.3.1 → 18.3.2 Low risk Usually a fix that does not change existing usage. Run a check after upgrading. Semantic versioning announces a change's impact with t",
+    "errors": []
+  },
+  "heightDelta": 2
+}

@@ -1,0 +1,62 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "targets": [
+    {
+      "name": "source",
+      "initial": {
+        "cards": 140,
+        "categoryButtons": 22,
+        "surveyVisible": true,
+        "scrollHeight": 18293
+      },
+      "surveyAfterClose": 0,
+      "backend": {
+        "path": "/en/topics/backend",
+        "h1": "Backend Terms for Vibe Coding",
+        "cards": 73
+      },
+      "favorite": {
+        "ariaPressed": "true",
+        "storageKeys": [
+          "vibehub:favorites"
+        ]
+      },
+      "firstCard": {
+        "href": "/en/frontend",
+        "path": "/en/frontend",
+        "h1": "Frontend"
+      },
+      "errors": []
+    },
+    {
+      "name": "local",
+      "initial": {
+        "cards": 140,
+        "categoryButtons": 22,
+        "surveyVisible": true,
+        "scrollHeight": 18293
+      },
+      "surveyAfterClose": 0,
+      "backend": {
+        "path": "/en/topics/backend",
+        "h1": "Backend Terms for Vibe Coding",
+        "cards": 73
+      },
+      "favorite": {
+        "ariaPressed": "true",
+        "storageKeys": [
+          "vibehub:favorites"
+        ]
+      },
+      "firstCard": {
+        "href": "/en/frontend",
+        "path": "/en/frontend",
+        "h1": "Frontend"
+      },
+      "errors": []
+    }
+  ]
+}

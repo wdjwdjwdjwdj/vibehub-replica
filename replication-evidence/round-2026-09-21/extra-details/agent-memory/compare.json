@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Agent Memory in AI Explained | VibeHub",
+    "h1": "Agent Memory",
+    "height": 2438.7,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 443
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1040,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1437,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1805,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1977,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Agent Memory Copy as Markdown Copied ← → Agent Memory You might say I have to restate my requirements in every new conversation. So annoying. A mechanism that lets an Agent remember your preferences, project conventions, and past conclusions across sessions·Instead of repeating constraints like 'use Tailwind' and 'never edit this folder' in every new chat, memory mechanisms and project rule files let new sessions inherit them automatically. Chat history vanishes once a session closes, while team-wide technical rules remain most reliable in committed rule files. Know first Conversation History Agent Memory One preference, three locations, different results Chat session only Project rules (AGENTS.md) Agent Memory Yesterday's instruction in session 1: “In this project, never edit shared component Navbar.tsx.” Lost when closed Today's new chat (Session 2) You (no repeated rules) Please add a search box to the top right of the page. AI Agent Done! I added the search box direct",
+    "errors": []
+  },
+  "local": {
+    "title": "Agent Memory in AI Explained | VibeHub",
+    "h1": "Agent Memory",
+    "height": 2441.4,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo memory-scene",
+        "y": 551,
+        "height": 443
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1040,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1437,
+        "height": 329
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1806,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1977,
+        "height": 90
+      }
+    ],
+    "text": "All entries › Agent Memory Copy as Markdown Copied ← → Agent Memory YOU MIGHT SAY I have to restate my requirements in every new conversation. So annoying. A mechanism that lets an Agent remember your preferences, project conventions, and past conclusions across sessions · Instead of repeating constraints like 'use Tailwind' and 'never edit this folder' in every new chat, memory mechanisms and project rule files let new sessions inherit them automatically. Chat history vanishes once a session closes, while team-wide technical rules remain most reliable in committed rule files. Know first Conversation History Persistent Agent Memory One preference, three locations, different results Chat session only Project rules (AGENTS.md) Agent Memory PREFERENCE Never auto-edit shared components. Expires when this chat ends. NEW CHAT · NAVBAR.TSX I do not know yesterday’s preference and edit Navbar.tsx. Preference lost Memory is useful only when its scope and lifetime match the preference. How long ",
+    "errors": []
+  },
+  "heightDelta": 2.7
+}

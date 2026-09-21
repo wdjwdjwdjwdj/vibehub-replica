@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "RAG in AI Explained | VibeHub",
+    "h1": "RAG",
+    "height": 2549.6,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 447.1
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1044,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1416,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1785,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1956,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › RAG Copy as Markdown Copied ← → RAG You might say I want AI to answer only from our company docs. How do I set that up? Finding relevant content from your own material before answering, so the model answers from it·When answering from company handbooks or policies, the system retrieves matching passages first and hands them to the model with your prompt. Updating the docs immediately updates future answers without retraining; anything missing from the docs must be acknowledged rather than invented. Know first Context Window Retrieval-Augmented Generation Change one passage, and the answer changes immediately Old docs (v1.0) New docs (v2.0 updated) refund-policy.md Policy v1.0 Knowledge base doc content: Section 3: Custom items are made-to-order and non-refundable once sold. Matched: §3 “Custom items are non-refundable” Retrieve snippet & inject into prompt → Grounded AI response User query Can I return the custom phone case I bought yesterday? AI response According to Ref",
+    "errors": []
+  },
+  "local": {
+    "title": "RAG in AI Explained | VibeHub",
+    "h1": "RAG",
+    "height": 2552.2,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo rag-scene",
+        "y": 551,
+        "height": 447.1
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1044,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1416,
+        "height": 329
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1785,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1957,
+        "height": 90
+      }
+    ],
+    "text": "All entries › RAG Copy as Markdown Copied ← → RAG YOU MIGHT SAY I want AI to answer only from our company docs. How do I set that up? Finding relevant content from your own material before answering, so the model answers from it · When answering from company handbooks or policies, the system retrieves matching passages first and hands them to the model with your prompt. Updating the docs immediately updates future answers without retraining; anything missing from the docs must be acknowledged rather than invented. Know first Context Window Retrieval-Augmented Generation Change one passage, and the answer changes immediately Old docs (v1.0) New docs (v2.0 updated) RETRIEVED SOURCE refund-policy.md Policy v1.0 Custom items are non-refundable. → GROUNDED ANSWER Can I get a refund for a custom item? Matched §3: custom items are non-refundable. The answer follows the retrieved snippet. Retrieve the relevant material first, then generate from what was found. What happens in one RAG answer Re",
+    "errors": []
+  },
+  "heightDelta": 2.6
+}

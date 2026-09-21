@@ -1,0 +1,10 @@
+    0 5070 x   0 w1440 div mt=0px mb=0px pos=static 
+    0 5070 x   0 w1440 div.app mt=0px mb=0px pos=static 
+   60 4887 x 230 w 980 main.detail-page.vh-html-replica mt=0px mb=0px pos=relative 
+  149 4680 x 262 w 916 div.detail-body.detail-entry-html mt=0px mb=0px pos=static 
+ 4685  144 x 262 w 916 section.references-section mt=8px mb=0px pos=static 
+ 4731   98 x 262 w 916 div.reference-list mt=0px mb=40px pos=static 
+ 4784   45 x 262 w 916 a.reference-link mt=0px mb=0px pos=static 
+ 4947  123 x   0 w1440 footer.site-footer mt=0px mb=0px pos=relative 
+ 4948  122 x  32 w1376 div.site-footer-shell mt=0px mb=0px pos=static 
+ 4948  122 x  32 w1376 div.site-footer-content mt=0px mb=0px pos=static 

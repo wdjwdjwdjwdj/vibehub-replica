@@ -1,4 +1,10 @@
 const englishItems = {
+  '2026-09-20': [
+    'Added 32 core technical terms across AI foundations, backend data, web essentials, and product planning with Git. Each term includes interactive diagrams, practice questions, and practical AI prompts.',
+    'Understand AI and backend data workflows through intuitive diagrams: see how RAG retrieves updated policies on the fly, observe how prompt injection executes hidden text, and learn the split between object storage and database URLs.',
+    'Walk through multi-screen flows interactively with clickable prototypes. For Git conflicts, review both sides, remove markers, and commit cleanly; learn when to reset local commits versus reverting shared ones.',
+    'Clear troubleshooting and planning guidelines: read stack traces from bottom to find app code, distinguish 401 unauthorized from 403 forbidden, and set clear task boundaries so AI agents do not touch unrelated files.'
+  ],
   '2026-09-13': [
     'Refactored the Product Website course into 9 focused chapters covering page structure, design tokens, hero CTA, layouts, pricing, spacing, forms, mobile responsive, and launch acceptance checklist.',
     'Streamlined chapter titles and introductions across all courses, removing rhetorical filler to make learning objectives clear at a glance.',
@@ -43,8 +49,14 @@ const englishItems = {
 };
 
 const chineseItems = {
+  '2026-09-20': [
+    '新增 32 个核心技术术语，涵盖 AI 模型与运维、后端与数据、Web 基础以及产品规划与 Git 协作，配有交互图解、实操练习与向 AI Agent 表达的需求示例。',
+    '通过直观图解理解 AI 与后端数据机制：对照查看文档更新后 RAG 怎样现场检索最新依据作答，模拟评论区隐藏指令被模型执行的 Prompt 注入场景，以及对象存储与数据库读写分离的分工。',
+    '在原型走查中连续点击验证多页面操作流程；在 Git 冲突时学习核对两边改动、删掉冲突标记并重新提交的完整步骤，并分清未推送时用 reset 回退、已共享时用 revert 对冲的适用场景。',
+    '梳理常见排错与规划判断：从日志底部自底向上定位第一处业务代码，区分 401 未登录与 403 无权限，并在向 AI 下达任务时明确改动边界，防止越界修改不相干文件。'
+  ],
   '2026-09-13': [
-    '重构《从零做一个产品官网》实战课程，精炼为 9 章核心内容，聚焦页面结构、设计变量、首屏与行动、功能排版、真实证据与定价、间距防遮挡、按钮与表单、手机适配和上线走查清单。',
+    '重构《从零做一个产品官网》实战课程，精炼为 9 章核心内容，聚焦页面结构、设计变量、首屏与行动、功能排版、真实证据与定价、间距防遮挡、按钮与表单、手机适配与上线走查清单。',
     '优化全部课程的章节标题与目录导言，去除了生硬设问和冗余修饰，方便在目录中直观了解每一章能学到什么、解决什么问题。',
     '精简课程中的 AI 协作指引，帮助初学者用自然的日常语言向 AI 描述模块化修改需求，并在完成后进行直观验收。'
   ],

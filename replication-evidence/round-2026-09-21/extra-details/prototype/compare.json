@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Prototype in Product Management Explained | VibeHub",
+    "h1": "Prototype",
+    "height": 2499.3,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 463.7
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1061,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1457,
+        "height": 344
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1841,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2037,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Prototype Copy as Markdown Copied ← → Prototype You might say Make a clickable prototype to confirm the flow before writing code. A clickable model of the interface used to walk through and validate a flow, not production code·Before writing production code, building key screens into a clickable interactive mockup lets the team verify user paths and transition logic. A prototype demonstrates relationships between pages using mock or placeholder data; walking through it early uncovers missing steps and branch errors before engineering effort is wasted. Know first Wireframe Prototype Wireframe, clickable prototype, and finished product Wireframe Clickable Prototype Product 1. Pick Time Active Simulated: Wed 14:00 - 15:00 Next: Info → 2. Enter Info Simulated: Name and Notes Next: Confirm → 3. Success Simulated: Booking #B-104 Restart ↺ Clickable Prototype：Validate flow Pages can be clicked through: where branches go and how to return; data is simulated. Align user flows with",
+    "errors": []
+  },
+  "local": {
+    "title": "Prototype in Product Management Explained | VibeHub",
+    "h1": "Prototype",
+    "height": 2501.4,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo proto-scene",
+        "y": 551,
+        "height": 463.7
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1061,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1457,
+        "height": 344
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1841,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2037,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Prototype Copy as Markdown Copied ← → Prototype YOU MIGHT SAY Make a clickable prototype to confirm the flow before writing code. A clickable model of the interface used to walk through and validate a flow, not production code · Before writing production code, building key screens into a clickable interactive mockup lets the team verify user paths and transition logic. A prototype demonstrates relationships between pages using mock or placeholder data; walking through it early uncovers missing steps and branch errors before engineering effort is wasted. Know first Wireframe Prototype Wireframe, clickable prototype, and finished product Wireframe Clickable Prototype Product 1. Pick Time Active Simulated: Wed 14:00 - 15:00 Next: Info → 2. Enter Info Simulated: Name and Notes Next: Confirm → 3. Success Simulated: Booking #B-104 Restart ↺ Clickable Prototype: Validate flow Pages can be clicked through; data is simulated. Align user flows with a clickable prototype before writ",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

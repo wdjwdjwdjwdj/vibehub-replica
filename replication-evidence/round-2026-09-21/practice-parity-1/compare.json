@@ -1,0 +1,114 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "targets": [
+    {
+      "name": "source",
+      "url": "/en/practice",
+      "title": "Frontend Visual Practice | VibeHub",
+      "h1": "provider: OpenRouter, model: deepseek-v4-flash. Who is the model provider we connect to?",
+      "scrollHeight": 1029,
+      "rects": {
+        "main": {
+          "x": 0,
+          "y": 60,
+          "width": 1440,
+          "height": 846
+        },
+        ".practice-question-layout": {
+          "x": 20,
+          "y": 60,
+          "width": 1400,
+          "height": 846
+        },
+        ".practice-answer-panel": {
+          "x": 20,
+          "y": 60,
+          "width": 734.984375,
+          "height": 846
+        },
+        ".practice-detail-column": {
+          "x": 754.984375,
+          "y": 60,
+          "width": 665,
+          "height": 846
+        },
+        ".practice-run-head": {
+          "x": 786.65625,
+          "y": 80,
+          "width": 601.65625,
+          "height": 36
+        },
+        ".practice-term-panel": {
+          "x": 786.65625,
+          "y": 134,
+          "width": 601.65625,
+          "height": 744
+        },
+        "footer": {
+          "x": 0,
+          "y": 906,
+          "width": 1440,
+          "height": 123
+        }
+      },
+      "optionCount": 3,
+      "errors": []
+    },
+    {
+      "name": "local",
+      "url": "/en/practice",
+      "title": "Frontend Visual Practice | VibeHub",
+      "h1": "Support records show repeated questions about refund windows and data security. How should the site FAQ organize them?",
+      "scrollHeight": 1029,
+      "rects": {
+        "main": {
+          "x": 0,
+          "y": 60,
+          "width": 1440,
+          "height": 846
+        },
+        ".practice-question-layout": {
+          "x": 20,
+          "y": 60,
+          "width": 1400,
+          "height": 846
+        },
+        ".practice-answer-panel": {
+          "x": 20,
+          "y": 60,
+          "width": 735,
+          "height": 846
+        },
+        ".practice-detail-column": {
+          "x": 755,
+          "y": 60,
+          "width": 665,
+          "height": 846
+        },
+        ".practice-run-head": {
+          "x": 786.671875,
+          "y": 80,
+          "width": 601.65625,
+          "height": 36
+        },
+        ".practice-term-panel": {
+          "x": 786.671875,
+          "y": 134,
+          "width": 601.65625,
+          "height": 744
+        },
+        "footer": {
+          "x": 0,
+          "y": 906,
+          "width": 1440,
+          "height": 123
+        }
+      },
+      "optionCount": 3,
+      "errors": []
+    }
+  ]
+}

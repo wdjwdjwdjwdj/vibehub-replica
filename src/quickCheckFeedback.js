@@ -3550,5 +3550,389 @@ export const quickCheckFeedback = {
       "Black and gold is only the memorable surface result; without symmetry and geometric motifs, more gold is still not Art Deco.",
       "Long curves and plant forms belong to Art Nouveau; Art Deco uses symmetrical geometry, the opposite shape language."
     ]
+  },
+  "http-status-code": {
+    "zh": [
+      "500 表示服务器处理请求时自己出错，证据在服务端；页面提示文字不能替代状态码做这个判断。",
+      "500 不是“请求没送到”，而是服务器处理失败；重试可能掩盖真实故障，应先看服务端日志。",
+      "提示文字由前端决定显示什么，不代表问题出在前端；500 已经指出责任一侧是服务器。"
+    ],
+    "en": [
+      "500 means the server failed while handling the request, so the evidence lives server-side. The page message cannot replace the status code.",
+      "500 means the server failed to process the request, not that it never arrived. Retrying can hide the real failure.",
+      "The page decides what text to show; it does not decide which side failed. 500 already points to the server."
+    ]
+  },
+  "stack-trace": {
+    "zh": [
+      "栈顶可能是 Node 或第三方库的内部调用；自己文件里的帧才对应你写的代码，是排查的起点。",
+      "最上面一帧只是出错时正在执行的函数，可能属于运行环境内部，与你的代码无关。",
+      "完整报错可以一起发给 AI，但自己先指出自己文件的那一帧，能确认 AI 的修改落在正确位置。"
+    ],
+    "en": [
+      "The top frame can be Node or a third-party library internals. A frame in your own file corresponds to code you wrote and is where investigation starts.",
+      "The topmost frame is just the function running when it failed; it can belong to the runtime and have nothing to do with your code.",
+      "Sending the full trace to AI is fine, but identifying your own file's frame first confirms AI fixes the right location."
+    ]
+  },
+  "timeout": {
+    "zh": [
+      "超时只发生在等待的一端：页面按上限放弃了，不取消服务器正在进行的处理，数据随后仍会被写入。",
+      "日志显示处理正常完成且数据已写入，崩溃与观察到的结果不符。",
+      "服务端日志里有这次请求的记录，说明请求已经到达并正在被处理。"
+    ],
+    "en": [
+      "A timeout happens only on the waiting side: the page gave up after its limit without cancelling the server, which finished and wrote the data later.",
+      "The logs show the request completed normally and the data was written, which contradicts a crash.",
+      "The server log contains this request, proving it arrived and was being processed."
+    ]
+  },
+  "object-storage": {
+    "zh": [
+      "对。文件走对象存储，结构化文字走数据库，两处靠地址字段关联。",
+      "大文件进库会让查询、备份和迁移都变慢；应按内容类型分工。",
+      "本地存储只在这一台设备上，换设备或清缓存就没了。"
+    ],
+    "en": [
+      "Correct. Files go to object storage, structured text to the database, and the two are linked by an address field.",
+      "Large files in the database slow queries, backups, and migration; separate by content type.",
+      "Local storage exists only on this device; it is gone after switching devices or clearing cache."
+    ]
+  },
+  "primary-key": {
+    "zh": [
+      "对。相同邮箱对应多行时，按邮箱更新会改到多行；主键才能唯一定位。",
+      "改错行意味着改了别人的资料；定位必须唯一。",
+      "删除数据是危险操作；先弄清为什么重复，再决定合并还是修正，而不是直接删。"
+    ],
+    "en": [
+      "Correct. When identical emails map to multiple rows, updating by email changes several rows; only the primary key locates one.",
+      "Editing the wrong row edits someone else's data; location must be unique.",
+      "Deleting data is dangerous; find out why duplicates exist and decide to merge or fix, not delete."
+    ]
+  },
+  "session": {
+    "zh": [
+      "对。短有效期会让用户频繁重新登录；调整有效期或支持记住登录可以改善。",
+      "能登录说明密码是对的；问题是登录状态保持不住。",
+      "数据库故障会有更广泛的报错，不只是定时要求重新登录。"
+    ],
+    "en": [
+      "Correct. A short lifetime makes users re-sign-in frequently; adjusting the lifetime or supporting remember-me helps.",
+      "Being able to sign in proves the password is right; the issue is that the signed-in state does not persist.",
+      "A database outage causes broader failures, not just periodic re-sign-in prompts."
+    ]
+  },
+  "oauth": {
+    "zh": [
+      "对。两种方式解决同一件事的不同路径；并存时都要能创建和识别同一个用户。",
+      "网站仍需自己的用户记录来识别“是谁”；OAuth 只负责授权确认这一步。",
+      "OAuth 的意义正是网站不接触第三方密码；授权后只拿到结果，不拿到密码。"
+    ],
+    "en": [
+      "Correct. The two are different paths to the same goal; when coexisting, both must create and recognize the same user.",
+      "The site still needs its own user records to identify who is who; OAuth only handles the authorization confirmation step.",
+      "The point of OAuth is that the site never touches third-party passwords; after authorization it only gets the result."
+    ]
+  },
+  "webhook": {
+    "zh": [
+      "对。事件驱动，几乎无延迟；要防重复通知并确认来源真实。",
+      "轮询有间隔延迟，且大部分查询没有新支付，浪费请求。",
+      "人工介入体验差且不可扩展；自动化才是这类需求的正解。"
+    ],
+    "en": [
+      "Correct. Event-driven with almost no delay; guard against duplicate notifications and verify the source.",
+      "Polling adds interval delay, and most checks find no new payment, wasting requests.",
+      "Manual handling is a poor experience and does not scale; automation is the right answer here."
+    ]
+  },
+  "http-methods": {
+    "zh": [
+      "对。GET 是读取语义：浏览器、代理都可能重发它；有副作用的操作要用 POST 或 DELETE。",
+      "弹窗拦不住刷新、后退和重试；方法语义错才是根因。",
+      "状态码只描述结果，改它不改变“GET 会被重发”的事实。"
+    ],
+    "en": [
+      "Correct. GET carries read semantics: browsers and proxies may resend it; side-effecting operations should use POST or DELETE.",
+      "A dialog cannot stop refresh, back, or retry; the method semantics are the root cause.",
+      "A status code only describes the result; changing it does not change that GET gets resent."
+    ]
+  },
+  "ip-address": {
+    "zh": [
+      "对。localhost 是每台电脑对自己的称呼；同事访问需要局域网地址或公网地址。",
+      "localhost 在同事电脑上指向他自己，访问不到你的服务。",
+      "端口只是同一设备上的入口，没有 IP 或域名无法定位到哪台设备。"
+    ],
+    "en": [
+      "Correct. localhost is each machine's name for itself; a colleague needs a LAN or public address.",
+      "localhost on the colleague's machine points at themselves, not your service.",
+      "A port is only an entry on one device; without an IP or domain, no device can be located."
+    ]
+  },
+  "websocket": {
+    "zh": [
+      "对。高频轮询既费请求又有最长一秒的延迟；WebSocket 让消息到达即推送。",
+      "每秒一轮意味着平均半秒延迟，且绝大多数查询没有新消息。",
+      "页面容量与消息到达速度无关；问题在获取消息的方式。"
+    ],
+    "en": [
+      "Correct. High-frequency polling wastes requests and adds up to a second of delay; WebSocket pushes messages as they arrive.",
+      "One-second rounds mean up to a second of average delay, and most checks find nothing.",
+      "Page capacity is unrelated to message arrival speed; the issue is how messages are fetched."
+    ]
+  },
+  "merge-conflict": {
+    "zh": [
+      "对。冲突已经写在文件里：保留正确内容、移除全部标记、git add 后提交，合并才算完成。",
+      "同样的两处改动再合一次还会冲突；先弄清两边意图，才能决定保留什么。",
+      "删除文件会丢掉两边的改动，应保留文件并处理其中的冲突区。"
+    ],
+    "en": [
+      "Correct. The conflict is written into the file: keep the right content, remove all markers, git add, and commit for the merge to finish.",
+      "Merging the same two changes again produces the same conflict. Understand both sides first to decide what to keep.",
+      "Deleting the file discards both sides' changes. Keep the file and resolve the conflict inside it."
+    ]
+  },
+  "remote-repository": {
+    "zh": [
+      "远程有你没有的提交。先拉取合并、解决冲突，推送才不会覆盖别人的工作。",
+      "强推会抹掉远程上别人的提交，协作项目里是危险操作。",
+      "换远程地址只是换了一份副本，原来的协作关系和历史会分裂。"
+    ],
+    "en": [
+      "The remote has commits you do not have. Pull, merge, and resolve conflicts before pushing so you do not overwrite others' work.",
+      "A force push erases commits others pushed to the remote; it is dangerous in shared projects.",
+      "A different remote is just another copy; the original collaboration and history split apart."
+    ]
+  },
+  "reset-revert": {
+    "zh": [
+      "对。revert 不改写已有历史，同事拉取反向提交后，两边历史保持一致。",
+      "强推会改写远程历史，同事本地会冲突，且已消失的提交难以找回。",
+      "删文件可能丢掉该提交里的正常改动；应先看清提交内容再决定撤销方式。"
+    ],
+    "en": [
+      "Correct. Revert does not rewrite history, so after pulling the opposite commit both sides keep the same history.",
+      "A force push rewrites remote history; teammates' copies conflict and the dropped commit is hard to recover.",
+      "Deleting the file may drop legitimate changes from that commit. Inspect the commit before choosing an undo method."
+    ]
+  },
+  "node-js": {
+    "zh": [
+      "对。npm 和构建工具都运行在 Node.js 上；没有它，项目命令无法执行。版本也要满足项目要求。",
+      "报错说的是本机缺少 node 这个程序，与项目文件是否完整无关。",
+      "浏览器只运行页面里的脚本，不能替代项目需要的 Node.js 运行环境。"
+    ],
+    "en": [
+      "Correct. npm and build tools run on top of Node.js; without it project commands cannot execute. The version also needs to meet the project requirement.",
+      "The error says this machine lacks the node program; it has nothing to do with whether the project files are complete.",
+      "A browser runs only page scripts; it cannot replace the Node.js runtime the project needs."
+    ]
+  },
+  "dependency": {
+    "zh": [
+      "对。克隆下来的项目通常不含依赖本身，只含记录；先安装再运行是正常流程。",
+      "报错说明依赖没装，不是代码写错；删代码会破坏功能。",
+      "Node.js 存在时，先装项目依赖；node 本身缺失会有不同的报错（command not found）。"
+    ],
+    "en": [
+      "Correct. A cloned project usually contains the dependency records, not the packages themselves. Installing first is the normal flow.",
+      "The error says dependencies are missing, not that the code is wrong; removing imports breaks the feature.",
+      "When Node.js exists, install the project's dependencies first; a missing node itself produces a different error (command not found)."
+    ]
+  },
+  "semantic-versioning": {
+    "zh": [
+      "对。主版本变化可能包含破坏性改动；发布说明列出改动清单，是升级前必须看的材料。",
+      "版本号新不等于兼容；跨主版本可能让原有代码失效。",
+      "长期不升级会积累安全和兼容问题；应按需、按发布说明升级。"
+    ],
+    "en": [
+      "Correct. A major version change can include breaking changes; the release notes list them and are required reading before upgrading.",
+      "A newer number does not mean compatible; a major bump can invalidate existing code.",
+      "Never upgrading accumulates security and compatibility problems; upgrade deliberately based on release notes."
+    ]
+  },
+  "rag": {
+    "zh": [
+      "对。RAG 每次现场检索，文档更新后答案立即跟着变，无需重新训练。",
+      "微调成本高、周期长，且模型学的是“知识”而不是“每次查最新”，文档频繁更新时不适合。",
+      "文档多了会超出上下文上限，且每次重复付费；RAG 只取相关段落更可控。"
+    ],
+    "en": [
+      "Correct. RAG retrieves at answer time, so doc updates change answers immediately without retraining.",
+      "Fine-tuning is costly and slow, and it bakes knowledge in rather than checking the latest each time—unsuited to frequent doc updates.",
+      "Large docs exceed the context limit and are paid for repeatedly; RAG takes only relevant passages."
+    ]
+  },
+  "prompt-injection": {
+    "zh": [
+      "对。第三方内容里的指令不是你的命令；读取资料与执行动作要分开，敏感操作还要收紧权限。",
+      "邮件是别人写的内容，不等于你的指令；执行它等于让攻击者替你下令。",
+      "拒绝总结过于保守；关键是区分“读内容”和“执行指令”，而不是不读。"
+    ],
+    "en": [
+      "Correct. Instructions inside third-party content are not your commands; reading material and performing actions must stay separate, and sensitive actions need tighter permissions.",
+      "The email is content written by someone else, not your instruction; following it lets the attacker order through you.",
+      "Refusing to read is overly conservative; the key is separating reading content from executing instructions, not refusing to read."
+    ]
+  },
+  "temperature": {
+    "zh": [
+      "对。低温让输出更稳定可预测，再配合结构化输出约定，格式才可能固定下来。",
+      "高温度让输出更多变，固定格式的任务会变得更不稳定。",
+      "长度限制回答写多长，与格式是否稳定无关。"
+    ],
+    "en": [
+      "Correct. A low temperature makes output stable and predictable; combined with a structured-output contract, the format can hold.",
+      "A high temperature makes output more varied, which destabilizes fixed-format tasks.",
+      "The length limit controls how long the answer is, not whether the format stays stable."
+    ]
+  },
+  "fine-tuning": {
+    "zh": [
+      "对。风格类需求通常先用提示词加示例解决；微调成本高，应作为提示词不够时的下一步。",
+      "提示词加示例已经能处理大部分风格需求；直接微调成本高且不一定比提示词稳。",
+      "换模型不针对你的风格要求；风格仍需要提示词或微调来约束。"
+    ],
+    "en": [
+      "Correct. Style needs are usually handled with prompts plus examples first; fine-tuning is costly and should be the next step when prompts fall short.",
+      "Prompts with examples already cover most style needs; fine-tuning directly is costly and not necessarily steadier.",
+      "Switching models does not target your style requirement; style still needs prompts or fine-tuning."
+    ]
+  },
+  "reasoning-model": {
+    "zh": [
+      "对。描述清楚减少模型猜测；复杂多步任务换推理模型能提高准确率，但等待更久。",
+      "随机重试不解决多步推理错误；先澄清信息，再考虑换模型类型。",
+      "高温度让输出更多变，与提高推理深度无关；复杂任务需要的是更强的推理而非随机性。"
+    ],
+    "en": [
+      "Correct. Clear descriptions reduce guessing; for complex multi-step tasks a reasoning model improves accuracy but waits longer.",
+      "Random retries do not fix multi-step reasoning errors; clarify the information first, then consider switching model type.",
+      "A high temperature adds variation, not reasoning depth; complex tasks need stronger reasoning, not randomness."
+    ]
+  },
+  "agent-memory": {
+    "zh": [
+      "对。项目规则随项目存在，每次新对话都会加载，不依赖你是否记得重说。",
+      "对话里的说明只在本轮有效；忘记重说时约束就失效了。",
+      "记忆机制可以帮忙，但项目级约定写进规则更可检查、可共享；两者可以配合。"
+    ],
+    "en": [
+      "Correct. Project rules travel with the project and load into every new conversation, without relying on you restating them.",
+      "Chat instructions last only for that conversation; forgetting to restate removes the constraint.",
+      "Memory can help, but project-level conventions belong in rules where they are checkable and shareable; the two can work together."
+    ]
+  },
+  "scope-creep": {
+    "zh": [
+      "对。越界改动让验收目标失焦；还原后明确范围，一次只改一件事。",
+      "未评估的改动可能破坏其他页面；保留等于默许范围继续扩大。",
+      "颜色修改本身是要做的；只还原越界部分即可，不必推倒重来。"
+    ],
+    "en": [
+      "Correct. Out-of-scope edits blur the acceptance target; revert them and state the scope so one change stays one change.",
+      "Unevaluated changes can break other pages; keeping them tacitly allows the scope to keep growing.",
+      "The color change was the actual task; revert only the out-of-scope parts instead of starting over."
+    ]
+  },
+  "technical-debt": {
+    "zh": [
+      "对。债要可见：记下位置和影响，再按交付节奏决定还债时机，而不是每次凭感觉。",
+      "每次改动都牵连五处，改漏就出错；不处理的债会持续收利息。",
+      "无差别全面重写风险高；应按影响范围和优先级分批还债，而不是推倒重做。"
+    ],
+    "en": [
+      "Correct. Debt must be visible: record its location and impact, then choose a payoff time by delivery rhythm rather than by feel each time.",
+      "Every change touches five places and missing one causes errors; unpaid debt keeps accruing.",
+      "An undifferentiated full rewrite is high-risk; pay off debt in batches by impact and priority instead."
+    ]
+  },
+  "persona": {
+    "zh": [
+      "对。画像把分歧变成可对照的具体假设；先对齐本次服务谁，再谈功能取舍。",
+      "同时服务两个画像会让文案和功能都失去焦点，两个人群都服务不好。",
+      "目标用户是业务判断；AI 可以帮你写画像，但依据要来自真实了解。"
+    ],
+    "en": [
+      "Correct. A persona turns disagreement into a concrete comparable assumption; align on this round's user before feature tradeoffs.",
+      "Serving two personas at once makes copy and features lose focus and serves neither well.",
+      "The target user is a business judgment; AI can help write the persona, but the basis must come from real understanding."
+    ]
+  },
+  "prototype": {
+    "zh": [
+      "对。原型用最低成本验证流程；跳过它直接写代码，流程错了就要改实现。",
+      "没对齐就实现两条，成本翻倍且都可能是错的。",
+      "线框图点不动，走查不出分支和返回路径的问题。"
+    ],
+    "en": [
+      "Correct. A prototype validates flow at the lowest cost; skipping it means flow mistakes require changing implementation.",
+      "Building two flows before alignment doubles cost and both may be wrong.",
+      "A wireframe cannot be clicked, so branches and return paths cannot be walked through."
+    ]
+  },
+  "event-tracking": {
+    "zh": [
+      "对。先有埋点才有数据；自己点一次并核对后台，是验证埋点生效的最直接方式。",
+      "停留时长不能替代点击记录；没有埋点就没有点击数据。",
+      "用户自述不可靠且无法持续统计；埋点记录的是真实动作。"
+    ],
+    "en": [
+      "Correct. No tracking means no data; clicking once and verifying the backend is the most direct way to confirm tracking works.",
+      "Time on page cannot replace click records; without tracking there is no click data.",
+      "Self-reports are unreliable and cannot be tracked continuously; events record real actions."
+    ]
+  },
+  "regex": {
+    "zh": [
+      "对。\\d 是数字，+ 是一个以上；带加号或空格的号码会被拒绝。",
+      "它只匹配纯数字；+86、空格、横线都会匹配失败。",
+      "开头的 ^ 和结尾的 $ 要求整串都是数字，不是任意文字。"
+    ],
+    "en": [
+      "Correct. \\d is a digit and + means one or more; numbers with plus signs or spaces are rejected.",
+      "It matches only pure digits; +86, spaces, and dashes all fail to match.",
+      "The leading ^ and trailing $ require the whole string to be digits, not any text."
+    ]
+  },
+  "keyframe": {
+    "zh": [
+      "对。循环播放需要关键帧；过渡只在状态切换时播放一次，不会自己循环。",
+      "过渡由状态变化触发，只播一次；不会自动循环。",
+      "帧动画成本高且不流畅；一个旋转用关键帧即可表达。"
+    ],
+    "en": [
+      "Correct. Looping playback needs keyframes; a transition plays once on a state change and does not loop by itself.",
+      "A transition is triggered by state changes and plays once; it does not loop automatically.",
+      "Frame-by-frame images are costly and choppy; a rotation is expressed with keyframes."
+    ]
+  },
+  "prefers-reduced-motion": {
+    "zh": [
+      "对。读取设置后按设置改变动画；在系统设置里切换一次，是验证生效的直接方式。",
+      "按钮需要用户自己发现和点击；系统设置已经表达了偏好，页面应该自动响应。",
+      "加载和状态反馈动画仍有作用；应减弱装饰性动画，保留必要的反馈。"
+    ],
+    "en": [
+      "Correct. Read the setting and change animation accordingly; toggling the system setting once is the direct way to verify.",
+      "Buttons require users to find and click them; the system setting already expresses the preference and the page should respond automatically.",
+      "Loading and status feedback animations still serve a purpose; reduce decorative animation, keep necessary feedback."
+    ]
+  },
+  "semantic-html": {
+    "zh": [
+      "对。层级递进表达从属关系；两个 H1 和跳级都会让大纲混乱，影响机器和辅助技术理解。",
+      "标签决定结构语义；字号只是外观，机器按标签读大纲。",
+      "H1 是页面主标题的角色标记，不是“最大字号”的样式开关。"
+    ],
+    "en": [
+      "Correct. Descending levels express hierarchy; two H1s and skipped levels make the outline confusing for machines and assistive tech.",
+      "Tags decide structural semantics; font size is only appearance, and machines read the outline by tags.",
+      "H1 marks the role of the page's main heading; it is not a style switch for the biggest font."
+    ]
   }
 };

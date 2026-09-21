@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Webhook in Web Development Explained | VibeHub",
+    "h1": "Webhook",
+    "height": 2484.7,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 580,
+        "height": 460
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1086,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1483,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1827,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2023,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Webhook Copy as Markdown Copied ← → Webhook You might say How do I unlock membership automatically after a successful payment? A mechanism where the other party proactively notifies an address you configured when something happens·When events like successful payments or git pushes occur, the external platform immediately sends an HTTP request to your configured endpoint so your service can react. Compared to polling every few seconds, webhooks are instant and bandwidth-efficient; however, your endpoint must verify signatures against spoofing and deduplicate repeated retries. Know first API Webhook The same event: polling versus a webhook Poll on a schedule Webhook notification Resends and compensation The same event: polling versus a webhook Check orders every 30 seconds poll requests mostly no new payment unlock delay about 15 seconds on average request volume continuously consumed Evidence Polling delay depends on the interval Frequent polling wastes requests, and unloc",
+    "errors": []
+  },
+  "local": {
+    "title": "Webhook in Web Development Explained | VibeHub",
+    "h1": "Webhook",
+    "height": 2486.8,
+    "sections": [
+      {
+        "className": "extra-concept-stage special-section learning-section",
+        "y": 580,
+        "height": 460
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1086,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1483,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1827,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2023,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Webhook Copy as Markdown Copied ← → Webhook YOU MIGHT SAY How do I unlock membership automatically after a successful payment? A mechanism where the other party proactively notifies an address you configured when something happens · When events like successful payments or git pushes occur, the external platform immediately sends an HTTP request to your configured endpoint so your service can react. Compared to polling every few seconds, webhooks are instant and bandwidth-efficient; however, your endpoint must verify signatures against spoofing and deduplicate repeated retries. Know first API Webhook The same event: polling versus a webhook Poll on a schedule Webhook notification Resends and compensation The same event: polling versus a webhook Check orders every 30 seconds poll requests mostly no new payment unlock delay about 15 seconds on average request volume continuously consumed EVIDENCE Polling delay depends on the interval Frequent polling wastes requests, and unl",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

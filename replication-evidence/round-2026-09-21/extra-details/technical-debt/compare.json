@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Technical Debt in Product Management Explained | VibeHub",
+    "h1": "Technical Debt",
+    "height": 2491.2,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 580,
+        "height": 466.5
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1093,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1489,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1833,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2029,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Technical Debt Copy as Markdown Copied ← → Technical Debt You might say AI said to implement it this way for now and refactor later. What does that mean? The future cost left by shortcuts taken to deliver quickly, which grows the longer it stays·Taking quick shortcuts or hardcoding logic to meet tight deadlines leaves structural compromises that increase future maintenance costs. Technical debt is not an outright crash but a deliberate tradeoff; having to touch five separate files just to update one button style is the ongoing interest paid on early compromises. The longer it is deferred, the riskier and costlier refactoring becomes. Know first Component Technical Debt One debt from creation to payoff: the button style case Before failure home.css pricing.css blog.css docs.css app.css Shared component (not yet created) Button Referenced in 5 places 1 Before failure Changing one button means editing 5 files 2 What was added Move the repeated style into a shared component 3",
+    "errors": []
+  },
+  "local": {
+    "title": "Technical Debt in Product Management Explained | VibeHub",
+    "h1": "Technical Debt",
+    "height": 2493.3,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo debt-scene",
+        "y": 580,
+        "height": 466.5
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1093,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1489,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1833,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2029,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Technical Debt Copy as Markdown Copied ← → Technical Debt YOU MIGHT SAY AI said to implement it this way for now and refactor later. What does that mean? The future cost left by shortcuts taken to deliver quickly, which grows the longer it stays · Taking quick shortcuts or hardcoding logic to meet tight deadlines leaves structural compromises that increase future maintenance costs. Technical debt is not an outright crash but a deliberate tradeoff; having to touch five separate files just to update one button style is the ongoing interest paid on early compromises. The longer it is deferred, the riskier and costlier refactoring becomes. Know first Component Technical Debt One debt from creation to payoff: the button style case Before failure home.css pricing.css blog.css docs.css app.css → Shared component (not yet created) Button Referenced in 5 places 1 Before failure Changing one button means editing 5 files 2 What was added Move the repeated style into a shared compone",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

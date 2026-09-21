@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "Reasoning Model in AI Explained | VibeHub",
+    "h1": "Reasoning Model",
+    "height": 2760.4,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 657.9
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1255,
+        "height": 186.8
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1627,
+        "height": 328.6
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1996,
+        "height": 125.3
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 2167,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › Reasoning Model Copy as Markdown Copied ← → Reasoning Model You might say AI has been thinking for so long—is it stuck? A model that runs internal reasoning before answering, trading longer thinking time for accuracy on harder tasks·For multi-file bug investigations or complex step-by-step logic, reasoning models generate an internal thought process before delivering the final answer. This background deliberation increases wait time and token costs; using it for straightforward text edits or simple lookups is unnecessarily slow and expensive. Know first AI Application Basics Reasoning Model The same complex task: wait time and result of two model types General model (fast direct answer) Reasoning model (internal deduction) Debugging complex production failure: “Every night at 00:00, order submissions intermittently fail with 500 DB timeouts. Find the root cause.” ⏳ 11s · Deep reasoning Thought process (11 seconds) ▲ Step 1 · Check external traffic Traffic is stable at 00:",
+    "errors": []
+  },
+  "local": {
+    "title": "Reasoning Model in AI Explained | VibeHub",
+    "h1": "Reasoning Model",
+    "height": 2762.8,
+    "sections": [
+      {
+        "className": "extra-concept-stage concept-stage interactive-demo rm-scene",
+        "y": 551,
+        "height": 658
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1255,
+        "height": 211
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1627,
+        "height": 329
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1996,
+        "height": 125.3
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 2167,
+        "height": 90
+      }
+    ],
+    "text": "All entries › Reasoning Model Copy as Markdown Copied ← → Reasoning Model YOU MIGHT SAY AI has been thinking for so long—is it stuck? A model that runs internal reasoning before answering, trading longer thinking time for accuracy on harder tasks · For multi-file bug investigations or complex step-by-step logic, reasoning models generate an internal thought process before delivering the final answer. This background deliberation increases wait time and token costs; using it for straightforward text edits or simple lookups is unnecessarily slow and expensive. Know first AI Application Basics Reasoning Model The same complex task: wait time and result of two model types General model (fast direct answer) Reasoning model (internal deduction) DEPENDENCY DEBUGGING TASK Why did the production build fail after a package update? A multi-step failure needs evidence before a fix. Direct answer Try reinstalling dependencies. General models are fast, but a complex failure may need more deduction. ",
+    "errors": []
+  },
+  "heightDelta": 2.4
+}

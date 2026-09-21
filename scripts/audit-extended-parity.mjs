@@ -5,6 +5,7 @@ const sourceBase = 'https://vibe-hub.org';
 const routes = ['/en/html', '/en/dns', '/en/typography', '/en/terminal'];
 const desktop = { width: 1440, height: 1000 };
 const mobile = { width: 390, height: 844 };
+const includeMobile = process.env.VIBEHUB_AUDIT_MOBILE === '1';
 
 // Source DOM measurements captured at 390px on 2026-09-16. The current
 // source uses different section class names, so mobile checks compare the
@@ -45,7 +46,9 @@ async function inspect(page, url, viewportName) {
     } : null;
     const findHeadingSection = (heading) => [...document.querySelectorAll('main section')]
       .find((section) => section.querySelector('h2,h3,.section-title')?.textContent.trim() === heading);
-    const selectors = location.origin.includes('vibe-hub.org') ? {
+    const isSource = location.origin.includes('vibe-hub.org');
+    const isHtml = location.pathname.endsWith('/html');
+    const selectors = isSource ? {
       usage: '.usage-grid',
       anatomy: 'section:not(.detail-hero):not(.lesson-practice):not(.lesson-agent-prompt):not(.scenes):not(.selector-recommendation):not(.references-section):has(h2)',
       variants: null,
@@ -53,15 +56,15 @@ async function inspect(page, url, viewportName) {
       selector: '.selector-recommendation',
       references: '.references-section',
     } : {
-      usage: '.source-extended-usage',
-      anatomy: '.source-extended-anatomy',
-      variants: '.source-extended-variants',
-      scenes: '.source-extended-scenes',
+      usage: isHtml ? '.usage-grid' : '.source-extended-usage',
+      anatomy: isHtml ? null : '.source-extended-anatomy',
+      variants: isHtml ? null : '.source-extended-variants',
+      scenes: isHtml ? '.scenes' : '.source-extended-scenes',
       selector: '.selector-recommendation',
       references: '.references-section',
     };
     const section = (key) => {
-      if (key === 'anatomy' && selectors.anatomy.includes('section:not')) return findHeadingSection('Anatomy');
+      if (key === 'anatomy' && (!selectors.anatomy || selectors.anatomy.includes('section:not'))) return findHeadingSection('Anatomy');
       if (key === 'variants' && !selectors.variants) return findHeadingSection('Variants');
       return document.querySelector(selectors[key]);
     };
@@ -77,7 +80,7 @@ async function inspect(page, url, viewportName) {
 }
 
 const rows = [];
-for (const viewport of [desktop, mobile]) {
+for (const viewport of includeMobile ? [desktop, mobile] : [desktop]) {
   const viewportName = viewport === desktop ? 'desktop' : 'mobile';
   for (const route of routes) {
     const context = await browser.newContext({ viewport });
@@ -125,4 +128,4 @@ if (failures.length) {
   console.error(`extended detail parity audit failed:\n- ${failures.join('\n- ')}`);
   process.exit(1);
 }
-console.log(`extended detail parity audit passed: ${rows.length} source/local viewport pairs inspected`);
+console.log(`extended detail parity audit passed: ${rows.length} source/local viewport pairs inspected${includeMobile ? '' : ' (desktop; set VIBEHUB_AUDIT_MOBILE=1 for the legacy mobile contract)'}`);

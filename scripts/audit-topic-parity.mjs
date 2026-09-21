@@ -1,6 +1,7 @@
 import { chromium } from 'playwright';
+import fs from 'node:fs';
 
-const localBase = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const localBase = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 const sourceBase = 'https://vibe-hub.org';
 const topics = [
   ['frontend', 'frontend'],
@@ -72,7 +73,10 @@ for (const [sourceSlug, localSlug] of topics) {
 
 await browser.close();
 console.log(JSON.stringify(rows, null, 2));
-
+const reportDir = 'replication-evidence/round-2026-09-21';
+fs.mkdirSync(reportDir, { recursive: true });
+fs.writeFileSync(`${reportDir}/topic-parity.json`, JSON.stringify(rows, null, 2));
+console.log(JSON.stringify(rows, null, 2));
 const failures = rows.filter(({ source, local }) => (
   !source.h1 || !local.h1 || local.errorText || local.iframeCount > 0 || local.errors.length ||
   source.cardCount !== local.cardCount || source.cardHeightTotal !== local.cardHeightTotal ||

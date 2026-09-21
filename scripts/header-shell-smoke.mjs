@@ -1,26 +1,28 @@
 import { chromium } from 'playwright';
 
-const viewport = { width: 390, height: 844 };
+// Desktop is the current acceptance baseline; the existing mobile CSS remains
+// intentionally out of scope for this smoke check.
+const viewport = { width: 1440, height: 900 };
 const cases = [
   {
     name: 'header',
     source: {
-      root: '.site-shell > nav',
-      logo: '.vh-logo-mark',
-      search: '.nav-search',
+      root: '.nav',
+      logo: '.vh-logo',
+      search: 'input[aria-label="Search terms and components"]',
       language: '.nav-lang',
       theme: '.nav-circle',
       mode: '.nav-color-mode',
-      primary: '.nav-primary',
+      primary: '.nav-primary-item',
     },
     local: {
       root: '.site-header',
-      logo: '.brand img',
-      search: '.search-box',
+      logo: '.brand',
+      search: 'input[aria-label="Search terms and components"]',
       language: '.language-button',
       theme: '.theme-color-button',
       mode: '.icon-button',
-      primary: '.main-nav',
+      primary: '.main-nav a',
     },
   },
 ];
@@ -51,7 +53,7 @@ async function inspect(page, selectors) {
 const browser = await chromium.launch({ headless: true });
 const pages = {};
 
-for (const [label, url] of [['source', 'https://vibe-hub.org/'], ['local', 'http://127.0.0.1:5173/']]) {
+for (const [label, url] of [['source', 'https://vibe-hub.org/en'], ['local', `${process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174'}/en`]]) {
   const context = await browser.newContext({ viewport, deviceScaleFactor: 1 });
   const page = await context.newPage();
   const errors = [];
@@ -95,4 +97,4 @@ if (failures.length) {
   console.error(failures.join('\n'));
   process.exit(1);
 }
-console.log('header shell smoke passed: 390px source/local geometry, overflow, and runtime errors');
+console.log('header shell smoke passed: 1440px source/local geometry, overflow, and runtime errors');

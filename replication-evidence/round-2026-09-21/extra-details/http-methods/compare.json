@@ -1,0 +1,71 @@
+{
+  "source": {
+    "title": "HTTP Methods in Web Development Explained | VibeHub",
+    "h1": "HTTP Methods",
+    "height": 2431.4,
+    "sections": [
+      {
+        "className": "special-section concept-visual-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "special-section plain-explanation-section",
+        "y": 1057,
+        "height": 211.3
+      },
+      {
+        "className": "lesson-practice",
+        "y": 1429,
+        "height": 304.3
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1774,
+        "height": 149.8
+      },
+      {
+        "className": "special-section learning-section",
+        "y": 1969,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › HTTP Methods Copy as Markdown Copied ← → HTTP Methods You might say AI said to use POST instead of GET here. What does that mean? The verb in a request stating which kind of operation it performs: read, create, update, or delete·Browsers default to sending GET requests to read resources when opening pages, while form submissions and saves use POST to write changes. The HTTP method declares operational intent and side-effect safety; mistakenly using GET for destructive deletions can cause records to be wiped again upon a routine page refresh. Know first HTTP GET / POST What operation each common method corresponds to Inspect a save request Inspect a delete request 405 Method Not Allowed What operation each common method corresponds to Network panel · POST /api/save method POST · submit data request body carries the content to save meaning this creates or updates data Evidence The method states the operation type Seeing POST tells you this request submits data, not merely r",
+    "errors": []
+  },
+  "local": {
+    "title": "HTTP Methods in Web Development Explained | VibeHub",
+    "h1": "HTTP Methods",
+    "height": 2433.5,
+    "sections": [
+      {
+        "className": "extra-concept-stage special-section learning-section",
+        "y": 551,
+        "height": 460
+      },
+      {
+        "className": "extra-plain-explanation special-section",
+        "y": 1057,
+        "height": 211.3
+      },
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 1429,
+        "height": 304.3
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1774,
+        "height": 149.8
+      },
+      {
+        "className": "extra-learning-section special-section",
+        "y": 1969,
+        "height": 89.8
+      }
+    ],
+    "text": "All entries › HTTP Methods Copy as Markdown Copied ← → HTTP Methods YOU MIGHT SAY AI said to use POST instead of GET here. What does that mean? The verb in a request stating which kind of operation it performs: read, create, update, or delete · Browsers default to sending GET requests to read resources when opening pages, while form submissions and saves use POST to write changes. The HTTP method declares operational intent and side-effect safety; mistakenly using GET for destructive deletions can cause records to be wiped again upon a routine page refresh. Know first HTTP HTTP Methods What operation each common method corresponds to Inspect a save request Inspect a delete request 405 Method Not Allowed What operation each common method corresponds to Network panel · POST /api/save method POST · submit data request body carries the content to save meaning this creates or updates data EVIDENCE The method states the operation type Seeing POST tells you this request submits data, not mere",
+    "errors": []
+  },
+  "heightDelta": 2.1
+}

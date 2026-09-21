@@ -1,0 +1,41 @@
+{
+  "source": {
+    "title": "Git Merge Conflict Explained | VibeHub",
+    "h1": "Merge Conflict",
+    "height": 5236.2,
+    "sections": [
+      {
+        "className": "lesson-practice",
+        "y": 926,
+        "height": 344
+      },
+      {
+        "className": "lesson-agent-prompt",
+        "y": 1309,
+        "height": 125.3
+      }
+    ],
+    "text": "All entries › Merge Conflict Copy as Markdown Copied ← → Merge Conflict You might say After pulling, Git stopped with a conflict. Which file do I open, and which section do I change? When the same content was changed differently on two branches, Git cannot choose and a person must decide what to keep·When two branches edit the exact same lines differently, Git halts the merge and inserts both versions into the file marked with conflict delimiters. A conflict is not a system error but a point where diverging intentions require human judgment; resolving it involves reviewing both edits, reconciling the desired code, removing the conflict markers, and committing the resolution. Know first Merge Merge Conflict <<<<<<< HEAD (main) <h1>Xiaoli's homepage</h1> ======= <h1>Xiaoli’s photography homepage</h1> >>>>>>> feature/new-nav git status Both branches changed the same heading line, so Git wrote both versions into the file for you to choose. Open the conflicted file, delete the unwanted vers",
+    "errors": []
+  },
+  "local": {
+    "title": "Git Merge Conflict Explained | VibeHub",
+    "h1": "Merge Conflict",
+    "height": 5243.8,
+    "sections": [
+      {
+        "className": "quick-check lesson-practice extra-lesson-practice",
+        "y": 926,
+        "height": 344
+      },
+      {
+        "className": "source-agent-prompt lesson-agent-prompt",
+        "y": 1310,
+        "height": 125
+      }
+    ],
+    "text": "All entries › Merge Conflict Copy as Markdown Copied ← → Merge Conflict YOU MIGHT SAY After pulling, Git stopped with a conflict. Which file do I open, and which section do I change? When the same content was changed differently on two branches, Git cannot choose and a person must decide what to keep · When two branches edit the exact same lines differently, Git halts the merge and inserts both versions into the file marked with conflict delimiters. A conflict is not a system error but a point where diverging intentions require human judgment; resolving it involves reviewing both edits, reconciling the desired code, removing the conflict markers, and committing the resolution. Know first Merge Merge Conflict 📄 index.html · 1 conflict <<<<<<< HEAD (main) <h1>Xiaoli's homepage</h1> ======= <h1>Xiaoli’s photography homepage</h1> >>>>>>> feature/new-nav Git pauses so a person can choose Read both sides, remove the conflict markers, then test and commit the resolved file. Quick check Choos",
+    "errors": []
+  },
+  "heightDelta": 7.6
+}

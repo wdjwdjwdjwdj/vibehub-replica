@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 2,
+  "kind": "vibehub-runtime-parity",
+  "generatedAt": "2026-09-21T05:32:42.822Z",
+  "sourceBase": "https://vibe-hub.org",
+  "localBase": "http://127.0.0.1:5174",
+  "cases": {
+    "html": {
+      "source": {
+        "initial": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 0,
+          "scrollHeight": 5072,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 493.890625,
+          "mainHeight": 4889.1875,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "afterClose": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 0,
+          "scrollHeight": 5072,
+          "surveyVisible": false,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 493.890625,
+          "mainHeight": 4889.1875,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "afterAnswer": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 548,
+          "scrollHeight": 5157,
+          "surveyVisible": false,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": true,
+          "practiceFeedbackCorrect": true,
+          "practiceHeight": 413.78125,
+          "extrasHeight": 579.078125,
+          "mainHeight": 4974.375,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "afterScroll": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 1348,
+          "scrollHeight": 5157,
+          "surveyVisible": false,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": true,
+          "practiceFeedbackCorrect": true,
+          "practiceHeight": 413.78125,
+          "extrasHeight": 579.078125,
+          "mainHeight": 4974.375,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "diagnostics": {
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedResponses": []
+        }
+      },
+      "local": {
+        "initial": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 0,
+          "scrollHeight": 5072,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 493.890625,
+          "mainHeight": 4889.1875,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {}
+        },
+        "afterClose": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 0,
+          "scrollHeight": 5072,
+          "surveyVisible": false,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 493.890625,
+          "mainHeight": 4889.1875,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "afterAnswer": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 548,
+          "scrollHeight": 5157,
+          "surveyVisible": false,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": true,
+          "practiceFeedbackCorrect": true,
+          "practiceHeight": 413.78125,
+          "extrasHeight": 579.078125,
+          "mainHeight": 4974.375,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "afterScroll": {
+          "url": "/en/html",
+          "title": "HTML in Web Development Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 1348,
+          "scrollHeight": 5157,
+          "surveyVisible": false,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": true,
+          "practiceFeedbackCorrect": true,
+          "practiceHeight": 413.78125,
+          "extrasHeight": 579.078125,
+          "mainHeight": 4974.375,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "diagnostics": {
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedResponses": []
+        }
+      }
+    },
+    "button": {
+      "source": {
+        "initial": {
+          "url": "/en/button",
+          "title": "Button UI Component Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 0,
+          "scrollHeight": 3971,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 518.390625,
+          "mainHeight": 3788.484375,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "afterDelete": {
+          "url": "/en/button",
+          "title": "Button UI Component Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 2395,
+          "scrollHeight": 3971,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 518.390625,
+          "mainHeight": 3788.484375,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "diagnostics": {
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedResponses": []
+        }
+      },
+      "local": {
+        "initial": {
+          "url": "/en/button",
+          "title": "Button UI Component Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 0,
+          "scrollHeight": 3932,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 518.390625,
+          "mainHeight": 3748.53125,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {}
+        },
+        "afterDelete": {
+          "url": "/en/button",
+          "title": "Button UI Component Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 2357,
+          "scrollHeight": 3932,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 328.59375,
+          "extrasHeight": 518.390625,
+          "mainHeight": 3748.53125,
+          "buttonScenes": 4,
+          "buttonSceneClasses": [
+            "scene-item",
+            "scene-item",
+            "scene-item",
+            "scene-item"
+          ],
+          "sceneFeedbackVisible": false,
+          "apiStep": null,
+          "apiScene": null,
+          "apiStateClasses": [],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": false,
+          "storage": {}
+        },
+        "diagnostics": {
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedResponses": []
+        }
+      }
+    },
+    "api": {
+      "source": {
+        "initial": {
+          "url": "/en/api",
+          "title": "API in Web Development Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 0,
+          "scrollHeight": 2340,
+          "surveyVisible": true,
+          "practiceOptions": 0,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": null,
+          "extrasHeight": null,
+          "mainHeight": 2156.78125,
+          "buttonScenes": 0,
+          "buttonSceneClasses": [],
+          "sceneFeedbackVisible": false,
+          "apiStep": 1,
+          "apiScene": "input",
+          "apiStateClasses": [
+            "fj-scene",
+            "fj-api-card api-idle",
+            "fj-backend-panel backend-idle",
+            "fj-db-panel db-stale"
+          ],
+          "apiPreviousDisabled": true,
+          "apiNextDisabled": false,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "final": {
+          "url": "/en/api",
+          "title": "API in Web Development Explained | VibeHub",
+          "lang": "en-US",
+          "scrollY": 253,
+          "scrollHeight": 2340,
+          "surveyVisible": true,
+          "practiceOptions": 0,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": null,
+          "extrasHeight": null,
+          "mainHeight": 2156.78125,
+          "buttonScenes": 0,
+          "buttonSceneClasses": [],
+          "sceneFeedbackVisible": false,
+          "apiStep": 6,
+          "apiScene": "display",
+          "apiStateClasses": [
+            "fj-scene",
+            "fj-api-card api-response",
+            "fj-backend-panel backend-done",
+            "fj-db-panel db-saved"
+          ],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": true,
+          "storage": {
+            "vibehub-source-survey-shown-v1": "1"
+          }
+        },
+        "diagnostics": {
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedResponses": []
+        }
+      },
+      "local": {
+        "initial": {
+          "url": "/en/api",
+          "title": "API in Web Development Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 0,
+          "scrollHeight": 2340,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 359,
+          "extrasHeight": null,
+          "mainHeight": 2157.484375,
+          "buttonScenes": 0,
+          "buttonSceneClasses": [],
+          "sceneFeedbackVisible": false,
+          "apiStep": 1,
+          "apiScene": null,
+          "apiStateClasses": [
+            "flow-api-mini ",
+            "flow-backend-mini ",
+            "flow-db-mini db-stale"
+          ],
+          "apiPreviousDisabled": true,
+          "apiNextDisabled": false,
+          "storage": {}
+        },
+        "final": {
+          "url": "/en/api",
+          "title": "API in Web Development Explained | VibeHub",
+          "lang": "en",
+          "scrollY": 269,
+          "scrollHeight": 2340,
+          "surveyVisible": true,
+          "practiceOptions": 3,
+          "practiceFeedbackVisible": false,
+          "practiceFeedbackCorrect": false,
+          "practiceHeight": 359,
+          "extrasHeight": null,
+          "mainHeight": 2157.484375,
+          "buttonScenes": 0,
+          "buttonSceneClasses": [],
+          "sceneFeedbackVisible": false,
+          "apiStep": 6,
+          "apiScene": null,
+          "apiStateClasses": [
+            "flow-api-mini is-response",
+            "flow-backend-mini is-done",
+            "flow-db-mini db-saved"
+          ],
+          "apiPreviousDisabled": false,
+          "apiNextDisabled": true,
+          "storage": {}
+        },
+        "diagnostics": {
+          "consoleErrors": [],
+          "pageErrors": [],
+          "failedResponses": []
+        }
+      }
+    }
+  },
+  "diagnosticsPassed": true,
+  "comparable": {
+    "source": {
+      "html": {
+        "surveyVisible": true,
+        "practiceOptions": 3,
+        "answerChanged": true,
+        "surveyClosed": true,
+        "feedbackExpandsDocumentFlow": true,
+        "scrolled": true
+      },
+      "button": {
+        "initialScenes": 4,
+        "deleteHasNoStateSideEffect": true
+      },
+      "api": {
+        "initialStep": 1,
+        "finalStep": 6,
+        "initialPreviousDisabled": true,
+        "finalNextDisabled": true
+      }
+    },
+    "local": {
+      "html": {
+        "surveyVisible": true,
+        "practiceOptions": 3,
+        "answerChanged": true,
+        "surveyClosed": true,
+        "feedbackExpandsDocumentFlow": true,
+        "scrolled": true
+      },
+      "button": {
+        "initialScenes": 4,
+        "deleteHasNoStateSideEffect": true
+      },
+      "api": {
+        "initialStep": 1,
+        "finalStep": 6,
+        "initialPreviousDisabled": true,
+        "finalNextDisabled": true
+      }
+    }
+  },
+  "runtimeParityPassed": true
+}
