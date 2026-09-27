@@ -1,0 +1,26 @@
+{
+  "id": "cache",
+  "name": { "zh": "缓存", "en": "Cache" },
+  "aliases": { "zh": ["Cache"] },
+  "category": "数据与后端",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "同一个网站，第二次打开明显快了，快在哪？",
+      "explain": "缓存把用过的结果留在更近的地方：浏览器存过图片和文件，下次不再重新下载。代价是可能看到旧版本，所以要定失效规则。",
+      "say": "我改了样式但用户说页面还是旧的。请按顺序排查：浏览器缓存、CDN 缓存、部署产物各怎么确认，再看强制刷新、改文件名手段；别建议清空全部缓存。",
+      "quiz": {
+        "q": "网站换了新 Logo，部分用户仍看到旧图。最可能的原因？",
+        "options": ["旧图片被缓存，还没到失效时间", "Logo 文件没改对", "用户网络差"],
+        "answer": 0,
+        "explain": "缓存副本在失效前会继续使用；改文件名或调整缓存策略可强制更新。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "缓存存储资源副本，命中时省去重复请求。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching" },
+    { "claim": "Cache-Control 等响应头控制缓存的过期与校验。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

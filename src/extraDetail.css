@@ -647,6 +647,49 @@ main.extra-detail-page:is(.extra-rag,.extra-prompt-injection,.extra-temperature,
   .extra-detail-page .memory-layout { grid-template-columns: minmax(0,1fr); }
   .extra-detail-page .rag-pipeline-arrow { transform: rotate(90deg); padding: 5px 0; text-align: center; }
 }
+
+/* Dedicated AI detail extensions. Each page supplies its own anatomy, variants,
+   and scenario data; controls expose the selected state to keyboard and touch users. */
+.extra-ai-learning { display: grid; gap: 40px; margin-top: 40px; }
+.extra-ai-learning .special-section { margin: 0; }
+.extra-ai-anatomy-layout { display: grid; grid-template-columns: minmax(210px, .78fr) minmax(0, 1.22fr); gap: 16px; }
+.extra-ai-blueprint { position: relative; display: grid; min-height: 192px; align-content: center; gap: 8px; overflow: hidden; padding: 24px; border: 1px solid #b9caff; border-radius: 16px; color: #173b88; background: linear-gradient(145deg, #f4f7ff, #e7efff); }
+.extra-ai-blueprint::before, .extra-ai-blueprint::after { position: absolute; width: 116px; height: 116px; border: 1px solid #b9caff; border-radius: 50%; content: ''; }
+.extra-ai-blueprint::before { right: -37px; top: -42px; }
+.extra-ai-blueprint::after { left: -49px; bottom: -65px; }
+.extra-ai-blueprint > * { position: relative; z-index: 1; }
+.extra-ai-blueprint > span { color: #5175bf; font: 800 12px/1 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .12em; }
+.extra-ai-blueprint strong { max-width: 14ch; font-size: 25px; line-height: 1.2; }
+.extra-ai-blueprint small { color: #5d7095; font-size: 12px; }
+.extra-ai-part-list { display: grid; gap: 8px; }
+.extra-ai-part-list button { display: flex; gap: 12px; width: 100%; padding: 12px; border: 1px solid var(--extra-line); border-radius: 12px; color: #53637a; background: #fff; text-align: left; cursor: pointer; }
+.extra-ai-part-list button:hover, .extra-ai-part-list button.is-active { border-color: #b9caff; background: #f3f6ff; }
+.extra-ai-part-list b { display: grid; flex: 0 0 25px; height: 25px; place-items: center; border-radius: 50%; color: #fff; background: #5875b5; font-size: 12px; }
+.extra-ai-part-list span { display: grid; gap: 3px; }
+.extra-ai-part-list strong { color: var(--text); font-size: 14px; }
+.extra-ai-part-list small { font-size: 12px; line-height: 1.5; }
+.extra-ai-variant-tabs, .extra-ai-scene-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.extra-ai-variant-tabs button, .extra-ai-scene-tabs button { padding: 8px 11px; border: 1px solid var(--extra-line); border-radius: 999px; color: #53637a; background: #fff; font: 650 12px/1.4 inherit; cursor: pointer; }
+.extra-ai-variant-tabs button:hover, .extra-ai-variant-tabs button.is-active, .extra-ai-scene-tabs button:hover, .extra-ai-scene-tabs button.is-active { border-color: #9bb3ee; color: #21478e; background: #edf3ff; }
+.extra-ai-variant-result { margin-top: 12px; padding: 15px 16px; border-left: 3px solid #5875b5; border-radius: 0 12px 12px 0; background: #f8faff; }
+.extra-ai-variant-result strong { color: #21478e; font-size: 15px; }
+.extra-ai-variant-result p { margin: 6px 0 0; color: #53637a; font-size: 13px; line-height: 1.65; }
+.extra-ai-scene-display { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 16px; align-items: center; min-height: 140px; margin-top: 12px; padding: 18px; border: 1px solid var(--extra-line); border-radius: 16px; background: #fbfcfe; }
+.extra-ai-scene-pulse { position: relative; height: 88px; border: 1px solid #c4d1ec; border-radius: 12px; background: linear-gradient(135deg, #eaf0ff, #fff); }
+.extra-ai-scene-pulse::before { position: absolute; inset: 18px; border: 1px dashed #7593ce; border-radius: 8px; content: ''; }
+.extra-ai-scene-pulse i { position: absolute; z-index: 1; width: 10px; height: 10px; border-radius: 50%; background: #5276c5; box-shadow: 0 0 0 5px #dce7ff; }
+.extra-ai-scene-pulse i:nth-child(1) { left: 19px; top: 25px; }
+.extra-ai-scene-pulse i:nth-child(2) { right: 22px; top: 43px; background: #4b9b77; }
+.extra-ai-scene-pulse i:nth-child(3) { bottom: 16px; left: 45px; background: #9a78c9; }
+.extra-ai-scene-display > div:last-child { display: grid; gap: 5px; }
+.extra-ai-scene-display span { color: #7586a5; font-size: 11px; font-weight: 750; letter-spacing: .06em; text-transform: uppercase; }
+.extra-ai-scene-display strong { color: var(--text); font-size: 17px; }
+.extra-ai-scene-display p { margin: 0; color: #53637a; font-size: 13px; line-height: 1.65; }
+@media (max-width: 620px) {
+  .extra-ai-anatomy-layout, .extra-ai-scene-display { grid-template-columns: minmax(0, 1fr); }
+  .extra-ai-blueprint { min-height: 142px; }
+  .extra-ai-scene-pulse { width: 100%; }
+}
 .extra-learning-links a:hover { border-color: var(--extra-blue); background: var(--extra-blue-soft); }
 .extra-learning-links b { display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; color: #fff; background: var(--extra-blue); font-size: 11px; }
 .extra-learning-links span { color: var(--text); font-size: 13px; font-weight: 700; }

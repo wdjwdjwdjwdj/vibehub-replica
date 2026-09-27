@@ -1,0 +1,26 @@
+{
+  "id": "trust-section",
+  "name": { "zh": "信任说明区", "en": "Trust Section" },
+  "aliases": { "zh": ["信任区块", "安心承诺区"] },
+  "category": "官网区块实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "注册和付款按钮旁，放一行能打消顾虑的具体承诺。",
+      "explain": "信任说明区把安全、隐私、试用承诺摆在行动按钮旁：规则要具体可核实，不能只放“值得信赖”这类空话。",
+      "say": "我要在注册按钮旁加一句信任说明。请写清要不要信用卡、数据怎么处理、能否随时取消，并各自链到对应政策；没确认过的承诺别先写上去。",
+      "quiz": {
+        "q": "注册按钮旁写“银行级加密”，但产品并无此认证，这行字的问题是什么？",
+        "options": ["字号太小", "位置离按钮太近", "承诺不真实，信任文案必须可核实"],
+        "answer": 2,
+        "explain": "信任说明的前提是真实；编造背书比没有背书更伤信任。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "隐私最佳实践包括：不收集超出所需的数据，并清楚说明收集的数据将如何使用。", "source": "https://developer.mozilla.org/en-US/docs/Web/Privacy" },
+    { "claim": "WCAG 2.2 要求帮助机制在多个页面重复出现时，相对其他页面内容的次序保持一致。", "source": "https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

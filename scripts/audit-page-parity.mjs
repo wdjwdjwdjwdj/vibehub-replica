@@ -1,6 +1,6 @@
 import { chromium } from 'playwright';
 
-const localBase = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const localBase = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 const sourceBase = 'https://vibe-hub.org';
 const routes = [
   '/en',

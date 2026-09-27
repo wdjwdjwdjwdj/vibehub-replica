@@ -1,0 +1,26 @@
+{
+  "id": "environment-variable",
+  "name": { "zh": "环境变量", "en": "Environment Variable" },
+  "aliases": { "zh": ["env", "环境配置"] },
+  "category": "开发工具",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "同一份代码，本地和线上要连不同数据库，怎么切换？",
+      "explain": "环境变量就是「跟着环境变的量」：接口地址、密钥、开关都放在代码外面，换环境只换配置。写进源码的密钥会跟着仓库泄露，真正的秘密只能放服务器端。",
+      "say": "我要给项目配 API 密钥。请说明它放环境变量还是服务器端、前端打包后哪些文件人人可见、.env 怎么处理；别用真实密钥举例。",
+      "quiz": {
+        "q": "密钥写在前端代码里，打包上线后会发生什么？",
+        "options": ["没人能看到，代码是编译过的", "任何人打开浏览器开发者工具就能看到", "只有团队成员能看到"],
+        "answer": 1,
+        "explain": "前端代码原样送达每个浏览器，编译只是换了写法，密钥对所有人可见。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "配置应存储于环境变量，与代码严格分离。", "source": "https://12factor.net/config" },
+    { "claim": "Node.js 通过 process.env 属性读取用户环境变量。", "source": "https://nodejs.org/api/process.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

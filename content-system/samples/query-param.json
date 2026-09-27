@@ -1,0 +1,26 @@
+{
+  "id": "query-param",
+  "name": { "zh": "参数", "en": "Query Parameter" },
+  "aliases": { "zh": ["查询参数"] },
+  "category": "导航与结构",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "网址问号后面那串，是在跟服务器说什么？",
+      "explain": "参数把条件附在网址后：?page=2 第二页、& 连多个条件、utm 记来源；链接分享出去，结果跟着走。",
+      "say": "我在做商品列表页。请实现用 ?cat= 和 ?page= 两个参数控制筛选和翻页，改动时更新地址栏；先不做参数加密。",
+      "quiz": {
+        "q": "删掉网址里 ?page=2 再打开，通常发生什么？",
+        "options": ["报错", "回到该列表的默认第一页", "网站打不开"],
+        "answer": 1,
+        "explain": "没有参数就是默认状态；列表页会把无参数当作第一页。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "URLSearchParams 用于读写网址查询字符串里的参数。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams" },
+    { "claim": "Location 的 search 属性返回问号后的查询字符串。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Location" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

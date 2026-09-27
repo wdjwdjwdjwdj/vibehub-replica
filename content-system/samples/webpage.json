@@ -1,0 +1,25 @@
+{
+  "id": "webpage",
+  "name": { "zh": "网页", "en": "Web Page" },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "打开的每一页是网页，那网站又是什么？",
+      "explain": "网页是浏览器里打开的一个个具体页面；网站是它们的整体：首页、文章页、登录页用链接连起来，才叫一个站。",
+      "say": "网页和网站总被混着说。请拿一个新闻网站举例，指出首页、文章页这些单独的页和整个站的边界在哪里；别只给定义。",
+      "quiz": {
+        "q": "把一篇文章页从网站里单独发给别人，他打开的是什么？",
+        "options": ["一个网站", "一张网页", "一个浏览器"],
+        "answer": 1,
+        "explain": "单个地址打开的是一张网页；网站是许多网页连成的整体。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTML 文档在浏览器中呈现为网页内容。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { "claim": "a 元素的 href 让页面之间通过链接互相跳转。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

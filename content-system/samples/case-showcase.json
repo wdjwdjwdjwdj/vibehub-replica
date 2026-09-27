@@ -1,0 +1,26 @@
+{
+  "id": "case-showcase",
+  "name": { "zh": "案例展示", "en": "Case Showcase" },
+  "aliases": { "zh": ["客户案例区", "成功案例"] },
+  "category": "官网区块实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "漂亮的截图谁都会放，什么样的案例才真能让人信？",
+      "explain": "案例展示是一条证据链：问题怎么来、怎么解、结果如何，截图和数据都得来自真实项目；没口径的数字不算结果。",
+      "say": "我手上有份真实项目资料要做案例区。请按背景、做法、数字拆成三段各写一句示例，数据标明统计时间段；没有证据的效果不写。",
+      "quiz": {
+        "q": "案例区写“效率提升 300%”，最该补上什么？",
+        "options": ["统计口径和时间段", "更大的数字", "更多感叹号"],
+        "answer": 0,
+        "explain": "没有口径的数字无法核验；标清怎么测、测多久，结果才立得住。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "figure 表示自包含内容，可配 figcaption 说明，图、说明与内容作为一个单元被引用。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" },
+    { "claim": "figcaption 描述其父级 figure 其余内容的说明文字，并为 figure 提供可访问名称。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

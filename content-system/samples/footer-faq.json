@@ -1,0 +1,26 @@
+{
+  "id": "footer-faq",
+  "name": { "zh": "页脚 FAQ", "en": "Footer FAQ" },
+  "aliases": { "zh": ["常见问题区", "页脚问答"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "下单前还剩几个顾虑没解，翻到页底找谁问？",
+      "explain": "页脚 FAQ 回答下单前的疑虑：免费与否、能否取消、数据归谁、门槛多高；答案要短，长规则给链接，不写套话。",
+      "say": "我要在页脚前放一块 FAQ。请挑出最常拦住访客的六个问题，各配一句直接答案并按影响排序；再讲用什么结构把答案折叠起来。",
+      "quiz": {
+        "q": "FAQ 里“能退款吗”的答案，下面哪种合格？",
+        "options": ["我们始终以用户为中心", "大概率可以退", "未使用可在 14 天内全额退，细则见退款政策"],
+        "answer": 2,
+        "explain": "答案要给明确条件和细则去向；态度话与模糊回答都解不开犹豫。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "details 元素创建披露组件，信息默认收起，展开后才可见。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" },
+    { "claim": "summary 作为 details 的摘要标题，点击可在展开与收起之间切换。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

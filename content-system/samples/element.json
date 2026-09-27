@@ -1,0 +1,25 @@
+{
+  "id": "element",
+  "name": { "zh": "元素", "en": "Element" },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "标题、图片、按钮，凭什么都叫同一个名字？",
+      "explain": "元素是页面里最基本的内容单位：一段标题、一张图、一个按钮各是一个。标签标明它是什么，属性给它补充信息，浏览器照着把它画出来。",
+      "say": "我刚看到一段页面代码。请用一段只有标题、图片和按钮的代码，圈出每个元素的开始、内容和结束三段；先别讲 CSS。",
+      "quiz": {
+        "q": "<p>你好</p> 里，「你好」两个字是元素的哪部分？",
+        "options": ["标签", "内容", "属性"],
+        "answer": 1,
+        "explain": "开始标签和结束标签包住的是元素内容；标签名和附加信息在尖括号里。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTML 元素通常由开始标签、内容、结束标签组成。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element" },
+    { "claim": "p 元素表示一个段落，是最常见的内容元素之一。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

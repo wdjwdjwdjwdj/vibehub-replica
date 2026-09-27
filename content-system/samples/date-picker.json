@@ -1,0 +1,25 @@
+{
+  "id": "date-picker",
+  "name": { "zh": "日期选择器", "en": "Date Picker" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "让用户挑日期，别再手打格式。",
+      "explain": "日期选择器给用户日历点选，代替手打格式：订票、约时间。要限定可选范围，不可用的日期在日历上直接置灰。",
+      "say": "我在做预约页。请加日期选择器，只允许今天起 30 天内，过去和超期日期置灰；选中后显示完整年月日。",
+      "quiz": {
+        "q": "input type=\"date\" 在不同浏览器里长得不一样，为什么？",
+        "options": ["代码写错了", "日历弹层由浏览器自带组件渲染，各家样式不同", "日期格式不统一"],
+        "answer": 1,
+        "explain": "date 的日历界面由浏览器内置控件渲染，样式随平台而异，数据格式是统一的。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "input type=date 提供选择日期的输入界面。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date" },
+    { "claim": "min 与 max 可限定日期控件的可选范围。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -8,6 +8,7 @@ import { errorBody } from './http.js';
 import { healthRoutes } from './routes/health.js';
 import { favoritesRoutes } from './routes/favorites.js';
 import { practiceRoutes } from './routes/practice.js';
+import { courseRoutes } from './routes/courses.js';
 
 const isProd = process.env.NODE_ENV === 'production';
 
@@ -22,13 +23,19 @@ export const buildApp = async () => {
 
   await app.register(cookie);
 
-  const corsOrigin = (process.env.CORS_ORIGIN || 'http://127.0.0.1:5173,http://localhost:5173')
+  const corsOrigin = (process.env.CORS_ORIGIN || 'http://127.0.0.1:5174,http://localhost:5174')
     .split(',')
     .map((origin) => origin.trim())
     .filter(Boolean);
   await app.register(cors, {
-    origin: corsOrigin,
+    // 开发环境允许任意本机 Vite 端口，避免依赖固定端口（前端默认 5174）；
+    // 生产环境仍只接受显式配置的来源。
+    origin: (origin, callback) => {
+      const isLocalDevOrigin = !isProd && /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin || '');
+      callback(null, !origin || corsOrigin.includes(origin) || isLocalDevOrigin);
+    },
     credentials: true, // 必须：跨域下要携带会话 cookie
+    methods: ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   });
 
   /**
@@ -80,6 +87,7 @@ export const buildApp = async () => {
   await app.register(healthRoutes);
   await app.register(favoritesRoutes);
   await app.register(practiceRoutes);
+  await app.register(courseRoutes);
 
   // 优雅退出：关掉数据库连接，避免容器/进程被强杀时留下锁
   app.addHook('onClose', async () => {

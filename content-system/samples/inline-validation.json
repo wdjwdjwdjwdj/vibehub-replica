@@ -1,0 +1,25 @@
+{
+  "id": "inline-validation",
+  "name": { "zh": "行内校验", "en": "Inline Validation" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "表单提交失败，怎么让用户马上知道错在哪一栏？",
+      "explain": "行内校验把错误说明放在出错字段旁：格式不对、漏填、两次密码不一致。提示要说清怎么改，改对立即消失；只在页面顶部给笼统失败提示，用户得自己找错。",
+      "say": "我在做注册表单。请实现邮箱字段失焦时校验，错误文字显示在输入框下方；别在用户每敲一个字时就报错。",
+      "quiz": {
+        "q": "错误提示该什么时候出现？",
+        "options": ["刚点进输入框就开始报错", "离开该字段或提交时检查，错在哪儿就在哪儿提示", "只在整表提交失败后统一弹窗"],
+        "answer": 1,
+        "explain": "失焦或提交时校验，提示贴着出错字段；每敲一字就报错太吵，整表弹窗又让用户自己找错。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "blur 事件在元素失去焦点时触发，常用作离开字段那一刻的校验时机。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event" },
+    { "claim": "HTML 约束校验无需 JavaScript 即可检查 required、输入类型等基本约束，提交表单时由用户代理执行。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

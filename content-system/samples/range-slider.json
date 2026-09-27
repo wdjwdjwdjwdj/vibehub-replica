@@ -1,0 +1,25 @@
+{
+  "id": "range-slider",
+  "name": { "zh": "范围滑块", "en": "Range Slider" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "音量、价格区间这种，想拖一下就调。",
+      "explain": "范围滑块在连续区间里快速取值：音量、价格区间。拖动难精确到个位，旁边要同步显示当前数字。",
+      "say": "我在做音量控制。请用 range 滑块做 0 到 100，拖动时实时显示数值，键盘方向键也能调；不用额外进度条。",
+      "quiz": {
+        "q": "滑块选价格上限，用户要精确填 3999。最好？",
+        "options": ["让用户多试几次", "把滑块加长", "滑块旁配一个可输入的数字框"],
+        "answer": 2,
+        "explain": "拖动适合粗调，精确值交给数字输入；两者并排各管一半。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "input type=range 呈现为滑块，可用 min、max、step 限定。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range" },
+    { "claim": "output 元素常用于实时显示滑块等控件的计算结果。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

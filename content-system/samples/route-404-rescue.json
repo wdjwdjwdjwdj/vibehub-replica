@@ -1,0 +1,25 @@
+{
+  "id": "route-404-rescue",
+  "name": { "zh": "路由 404 急救", "en": "Route 404 Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点导航没问题，直接输子页面地址就 404？",
+      "explain": "子页 404 先查三处：路由地址、服务器是否把未知路径交回入口、部署平台重写规则。本地正常，线上未必配了。",
+      "say": "直接访问子页面 404。请按顺序查：路由路径、服务器回退到入口的配置、部署平台重写规则；别把所有 404 静默跳回首页。",
+      "quiz": {
+        "q": "本地一切正常，线上子页面 404。最可能缺什么？",
+        "options": ["路由代码", "部署平台的重写规则", "favicon"],
+        "answer": 1,
+        "explain": "单页应用靠重写规则把未知路径交回入口；线上没配，直接访问就 404。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "History API 允许单页应用在不刷新页面的情况下改变地址。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/History_API" },
+    { "claim": "静态托管的跳转与重写规则由部署平台配置决定。", "source": "https://developers.cloudflare.com/pages/configuration/redirects/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

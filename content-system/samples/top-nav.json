@@ -1,0 +1,26 @@
+{
+  "id": "top-nav",
+  "name": { "zh": "顶部导航栏", "en": "Top Navigation Bar" },
+  "aliases": { "zh": ["顶部导航", "主导航栏"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "一条横栏塞下品牌、栏目和登录，怎么摆不显拥挤？",
+      "explain": "顶部导航栏是横贯页面顶端的一排去向：品牌、主要栏目、登录和主操作按钮；窄屏把次要入口收进菜单，而不是整排硬缩小。",
+      "say": "我在排官网导航。请拿“左品牌、中栏目、右登录和主按钮”举例摆一条；顺便说明当前页怎么标识、手机上何时折进菜单按钮；先别讲下拉多级菜单。",
+      "quiz": {
+        "q": "手机屏幕上八个导航入口放不下，合适的做法是什么？",
+        "options": ["整排缩小字号硬塞进去", "次要入口收进可展开的菜单", "删掉登录入口"],
+        "answer": 1,
+        "explain": "窄屏收纳次要入口、保留主操作；硬缩小难点按，删登录会砍掉关键去向。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "nav 元素表示页面中用于提供导航链接的区块。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" },
+    { "claim": "header 表示介绍性内容，通常可包含标题、Logo 和导航辅助。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

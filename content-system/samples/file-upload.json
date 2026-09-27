@@ -1,0 +1,25 @@
+{
+  "id": "file-upload",
+  "name": { "zh": "文件上传", "en": "File Upload" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "用户要传头像和附件，还得别传错格式。",
+      "explain": "文件上传要两头把关：accept 限定格式，大小在代码里再查一道。选完先显示文件名和预览，失败保留重试入口。",
+      "say": "我在做头像上传。请用 accept 限定 PNG 和 JPG，单张 5MB 内；选完立即预览，超限就地说明原因，别只弹 alert。",
+      "quiz": {
+        "q": "accept=\"image/png\" 设置后，用户仍能传超大图片。为什么？",
+        "options": ["accept 只过滤格式，大小要代码另查", "accept 写错了", "浏览器 bug"],
+        "answer": 0,
+        "explain": "accept 只决定文件选择器默认列出什么类型；大小校验是另一道独立的检查。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "file 类型的 input 通过 accept 属性限定可选文件类型。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file" },
+    { "claim": "File 对象的 size 属性返回文件字节大小，可用于前端大小校验。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/File" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

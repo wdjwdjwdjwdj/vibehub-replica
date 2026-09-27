@@ -1,0 +1,25 @@
+{
+  "id": "required-optional",
+  "name": { "zh": "必填与选填", "en": "Required and Optional Fields" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "满页星号却没解释，用户只能一栏一栏试错。",
+      "explain": "必填与选填用统一记号标在标签旁：required 属性、星号加图例、“选填”。字段多时只标“选填”更清爽；规则要提交前看得见，别等报错才揭晓。",
+      "say": "我在精简一份注册表单。请逐栏判断哪些字段可删或改选填，标签旁统一标注并在页首说明规则；不要等提交后才告知哪些必填。",
+      "quiz": {
+        "q": "一张 15 栏的表单只有 2 栏选填，标记怎么做最直观？",
+        "options": ["两栏标“选填”，其余不用记号", "十五栏全放星号", "什么都不标，报错时再说"],
+        "answer": 0,
+        "explain": "选填是少数时只标这两栏，负担最小；全放星号制造噪音，报错才说明太晚。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "required 属性表示提交表单前必须给该字段填值，为空时触发 valueMissing 校验错误。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required" },
+    { "claim": "aria-required 向辅助技术明确传达该元素在表单提交前必填。", "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-required" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

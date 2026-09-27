@@ -1,0 +1,26 @@
+{
+  "id": "testimonials",
+  "name": { "zh": "用户评价", "en": "Testimonials" },
+  "aliases": { "zh": ["用户反馈区", "评价墙"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "自己夸自己没人信，怎么借真实用户的反馈说话？",
+      "explain": "用户评价是集中展示真实反馈的区块：保留原话、使用情境和可核验署名；细节具体胜过空泛夸奖，编造评价是红线。",
+      "say": "我刚拿到三条真实评价，要放上页面。请每条整理成一段引文，讲讲引用和署名分别用什么标签；没头像的用文字署名，别替用户补没说过的结论。",
+      "quiz": {
+        "q": "一条评价只写“超好用！”，没有署名，直接上官网的问题是什么？",
+        "options": ["没细节没身份，可信度立不住", "字太少显得页面空", "会被浏览器判为垃圾内容"],
+        "answer": 0,
+        "explain": "评价靠具体情境和可核验署名取信；空泛加匿名，读者无从判断真假。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "blockquote 表示引自他处的扩展引文；引文的署名信息要放在 blockquote 元素外部。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" },
+    { "claim": "cite 元素用于标注被引用创作作品的标题。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

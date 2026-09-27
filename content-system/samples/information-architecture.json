@@ -1,0 +1,25 @@
+{
+  "id": "information-architecture",
+  "name": { "zh": "信息架构", "en": "Information Architecture" },
+  "category": "导航与结构",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "内容攒了几十页，用户却总找不到东西，先改什么？",
+      "explain": "信息架构先于页面：有哪些内容、彼此什么关系、用户按什么路径找到。这三问没答清，后面每页都在为迷路打补丁。",
+      "say": "我在整理一个内容越来越多的站。请帮我从零列信息架构：先分内容大类，再画层级和入口路径；先别讨论任何页面样式。",
+      "quiz": {
+        "q": "信息架构和导航栏的关系是？",
+        "options": ["同一件事", "架构是内容分类图，导航栏是它露在页面的入口", "架构就是菜单"],
+        "answer": 1,
+        "explain": "架构决定内容怎么组织，导航栏只是组织结果的一层入口。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Nielsen Norman Group 将信息架构描述为内容组织原则与导航设计的总集。", "source": "https://www.nngroup.com/articles/ia-study-guide/" },
+    { "claim": "导航结构应让用户可以判断当前位置与去向。", "source": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

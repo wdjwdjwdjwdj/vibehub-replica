@@ -1,0 +1,25 @@
+{
+  "id": "page",
+  "name": { "zh": "页面", "en": "Page" },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "新页面从零开始，先画颜色还是先分块？",
+      "explain": "搭页面先分稳定的大块：顶部导航、主要内容、侧栏、页脚，再标出重复出现的卡片和按钮做成组件。分区定了，颜色和字体才有地方安放。",
+      "say": "我要搭一个商品详情页。请列出顶部到页脚的大块顺序，标出哪些块该做成组件；先别挑配色。",
+      "quiz": {
+        "q": "页面里反复出现的商品卡片，最好怎么处理？",
+        "options": ["每处重写一遍", "做成一个组件到处复用", "用截图代替"],
+        "answer": 1,
+        "explain": "重复结构做成组件，改一处全页生效；复制粘贴会越改越散。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "header 元素承载页面顶部的介绍性内容，如标题与导航。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" },
+    { "claim": "main 元素表示文档的主体内容，每页应只有一个。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

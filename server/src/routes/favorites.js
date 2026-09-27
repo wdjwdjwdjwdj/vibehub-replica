@@ -4,8 +4,9 @@ import { requireSession, okBody } from '../http.js';
 /**
  * 云端收藏接口。
  *
- * 设计：PUT 用「全量覆盖」语义而不是增删——收藏的自然操作单位是"我现在的收藏集合"，
- * 全量覆盖幂等、便于重试，前端也不需要算差量。上限 322 个术语，请求体 < 2KB。
+ * /api/favorites 的集合写入保留为兼容接口。新的前端同步应使用下面的
+ * /api/favorites/:termId 增量 PUT/DELETE，避免一台设备用旧快照覆盖另一台设备
+ * 刚刚产生的收藏。
  */
 export const favoritesRoutes = async (app) => {
   app.get('/api/favorites', async (request, reply) => {
@@ -64,4 +65,32 @@ export const favoritesRoutes = async (app) => {
       return okBody(termIds);
     },
   );
+
+  const termParams = {
+    schema: {
+      params: {
+        type: 'object',
+        required: ['termId'],
+        properties: { termId: { type: 'string', minLength: 1, maxLength: 64 } },
+      },
+    },
+  };
+
+  app.put('/api/favorites/:termId', termParams, async (request, reply) => {
+    const session = await requireSession(request, reply);
+    if (!session) return reply;
+    await prisma.userFavorite.upsert({
+      where: { userId_termId: { userId: session.user.id, termId: request.params.termId } },
+      update: {},
+      create: { userId: session.user.id, termId: request.params.termId },
+    });
+    return okBody({ termId: request.params.termId, saved: true });
+  });
+
+  app.delete('/api/favorites/:termId', termParams, async (request, reply) => {
+    const session = await requireSession(request, reply);
+    if (!session) return reply;
+    await prisma.userFavorite.deleteMany({ where: { userId: session.user.id, termId: request.params.termId } });
+    return okBody({ termId: request.params.termId, saved: false });
+  });
 };

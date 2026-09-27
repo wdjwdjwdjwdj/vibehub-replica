@@ -1,0 +1,25 @@
+{
+  "id": "font-rescue",
+  "name": { "zh": "字体失效急救", "en": "Font Fallback Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "设置的字体没出现，页面还是系统默认字？",
+      "explain": "字体没生效先查三处：文件是否下载、font-family 名称是否一致、字重和字符是否在覆盖范围。中文字体常缺部分字重。",
+      "say": "页面没用上我设置的字体。请按顺序查：字体资源加载、font-family 名称、当前字重和中文字符的覆盖情况；最后告诉我浏览器实际用了哪套。",
+      "quiz": {
+        "q": "英文字体生效，中文还是默认字，最可能原因？",
+        "options": ["字体文件只覆盖了英文字符", "中文不用设置字体", "浏览器出错"],
+        "answer": 0,
+        "explain": "不少字体只内置拉丁字符；中文字符不在覆盖范围就回退到系统字体。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "@font-face 用于声明并加载自定义字体。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" },
+    { "claim": "unicode-range 限定字体文件覆盖的字符范围。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/unicode-range" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

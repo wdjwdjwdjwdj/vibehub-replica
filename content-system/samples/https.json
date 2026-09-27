@@ -1,0 +1,26 @@
+{
+  "id": "https",
+  "name": { "zh": "HTTPS", "en": "HTTPS" },
+  "aliases": { "zh": ["安全超文本传输协议"] },
+  "category": "上线与安全",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "地址栏的小锁图标，到底在替你防什么？",
+      "explain": "HTTPS 在 HTTP 外加了一层加密：传输中的密码、内容旁人截获也读不懂，同时验证网站身份、防假冒站点。登录和支付页面必须由它保护。",
+      "say": "我分不清 HTTP 和 HTTPS 的实际差别。请演示同一份登录表单在两种协议下网络面板里各长什么样，指出哪里被加密了；先不讲证书链细节。",
+      "quiz": {
+        "q": "连接公共 Wi-Fi 时登录账号，为什么必须确认页面是 HTTPS？",
+        "options": ["速度更快", "HTTP 下密码明文传输，同网络的人可截获", "HTTPS 不会掉线"],
+        "answer": 1,
+        "explain": "同一 Wi-Fi 内可截获明文流量；HTTPS 的加密让截获者拿到也读不懂。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTTPS 是经 TLS 加密的 HTTP。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS" },
+    { "claim": "TLS 同时提供加密、身份验证与完整性保护。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/TLS" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

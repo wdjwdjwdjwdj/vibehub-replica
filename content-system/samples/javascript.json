@@ -1,0 +1,26 @@
+{
+  "id": "javascript",
+  "name": { "zh": "JavaScript", "en": "JavaScript" },
+  "aliases": { "zh": ["JS"] },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点一下按钮，菜单就弹出来，这一步是谁在干活？",
+      "explain": "JavaScript 是页面的行为层：接到点击、输入就改动页面——展开菜单、算价格、查表单。结构归 HTML，长相归 CSS。",
+      "say": "按钮点开后菜单为什么会收回去？请给最小的 HTML 加 JavaScript 示例，按顺序讲清点击后代码做了哪几步；先不用讲事件冒泡。",
+      "quiz": {
+        "q": "页面上的按钮点了没反应，最该先确认什么？",
+        "options": ["按钮颜色不够醒目", "点击事件有没有绑到这个按钮上", "网速太慢"],
+        "answer": 1,
+        "explain": "行为由事件监听驱动；先确认监听是否绑到了正确的元素上。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "JavaScript 使页面具有交互行为，可响应事件并修改文档。", "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { "claim": "事件监听通过 addEventListener 绑定到元素。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

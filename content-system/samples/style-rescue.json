@@ -1,0 +1,25 @@
+{
+  "id": "style-rescue",
+  "name": { "zh": "样式失效急救", "en": "Broken Style Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "颜色间距都改了，页面纹丝不动，从哪查起？",
+      "explain": "样式失效先查三处：样式文件是否加载、选择器是否命中、是否被内联或后面的规则覆盖。计算样式面板直接显示谁赢了。",
+      "say": "我的样式没生效。请按顺序查：文件加载、选择器命中、被谁覆盖，用计算样式面板指给我看；先别加 !important。",
+      "quiz": {
+        "q": "样式规则被另一条覆盖，最快确认方法？",
+        "options": ["在计算样式里看该属性被哪条规则划掉", "改 CSS 文件名", "加 !important"],
+        "answer": 0,
+        "explain": "计算样式面板直接展示生效与被划掉的规则，比猜优先级快。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "link 元素把外部样式表引入页面。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" },
+    { "claim": "getComputedStyle 返回元素最终生效的样式值。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "radio",
+  "name": { "zh": "单选按钮", "en": "Radio Button" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "配送方式三选一，选了就不能多选。",
+      "explain": "单选按钮用在同组只能挑一个的地方：支付方式、配送方式。同一个 name 的选项自动互斥，点选项文字也能选中。",
+      "say": "我在做结算页。请把配送方式做成一组单选按钮：同一个 name 保证互斥，点文字也能选中，选中态不只靠颜色。",
+      "quiz": {
+        "q": "同组的单选按钮选不互斥，最可能漏了什么？",
+        "options": ["name 不一致，浏览器当成两组", "没设 type", "没写 value"],
+        "answer": 0,
+        "explain": "互斥靠相同 name 分组；name 不同就是两组，各自都能选中一个。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "相同 name 的 radio 按钮构成一组，同组只能选中一个。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio" },
+    { "claim": "label 与控件关联后，点击文字即可操作控件。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

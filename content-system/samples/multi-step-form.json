@@ -1,0 +1,25 @@
+{
+  "id": "multi-step-form",
+  "name": { "zh": "多步骤表单", "en": "Multi-step Form" },
+  "category": "表单实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "申请表十几项铺满一整页，用户会直接走掉吗？",
+      "explain": "多步骤表单把长流程拆成几屏：基本信息、上传资料、确认提交。进度、返回、暂存已填内容缺一不可；提交前先给完整核对页，别让用户凭记忆确认。",
+      "say": "我想把报名表拆三步。请按步骤讲怎么暂存每步内容、返回不清空，每步单独校验；先别写进度条动画，从数据存取讲起。",
+      "quiz": {
+        "q": "用户在第 3 步点返回到第 2 步，第 1 步填的内容怎么办？",
+        "options": ["保留，返回不该清掉任何已填内容", "清空，返回等于重来", "只保留第 2 步的"],
+        "answer": 0,
+        "explain": "返回只是回看或修改，不是重新开始；已填内容全程保留，核对页才看得到完整信息。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "sessionStorage 的数据在页面刷新或恢复后仍保留，关闭标签页才结束会话并清除。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage" },
+    { "claim": "进度指示器显示当前进展、已完成多少、还剩多少，让用户对流程有掌控感。", "source": "https://www.nngroup.com/articles/progress-indicators/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "http",
+  "name": { "zh": "HTTP", "en": "HTTP" },
+  "aliases": { "zh": ["超文本传输协议"] },
+  "category": "网络与接口",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "浏览器向服务器要东西，凭什么总能对上话？",
+      "explain": "HTTP 规定浏览器和服务器怎么传消息：请求写明方法、地址和头信息，响应带回状态码和内容。加层加密就是 HTTPS。",
+      "say": "我刚碰到“HTTP”。请拿“提交登录表单”举例，逐段指出浏览器写了什么、服务器回了什么，状态码和头信息各在哪；先别讲协议历史。",
+      "quiz": {
+        "q": "提交表单后页面提示 404，最可能的问题在哪？",
+        "options": ["请求去的地址下没有这个东西", "网站整个挂了，等它恢复", "网络断了，检查网线"],
+        "answer": 0,
+        "explain": "404 指这个地址下没有内容，多半是地址写错。整站打不开或断网是另一种现象。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTTP 是请求-响应协议：请求含方法、URI、头部；响应含状态码、头部与内容。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
+    { "claim": "HTTPS 是经 TLS 加密的 HTTP。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

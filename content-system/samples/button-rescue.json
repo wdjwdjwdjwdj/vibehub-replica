@@ -1,0 +1,25 @@
+{
+  "id": "button-rescue",
+  "name": { "zh": "按钮失灵急救", "en": "Dead Button Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "按钮看得见，点下去却毫无反应，怎么排？",
+      "explain": "按钮失灵先查三处：是否被透明层挡住、监听是否绑定、函数是否报错或被禁用拦住。开发者工具里每步都能拿到证据。",
+      "say": "这个按钮点了没反应。请按顺序查：透明遮挡、事件绑定、函数报错、禁用状态，每步给我一个验证方法；别急着换实现。",
+      "quiz": {
+        "q": "元素面板显示按钮上方盖着一层透明遮罩，怎么办？",
+        "options": ["删除按钮重建", "把按钮改大", "查遮罩为什么留在那里、该不该收起"],
+        "answer": 2,
+        "explain": "遮罩挡住点击是定位结果，真正要修的是遮罩为何还在；重建按钮绕开了原因。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "addEventListener 把事件监听绑定到元素上。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" },
+    { "claim": "pointer-events 属性决定元素能否成为鼠标事件的目标。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

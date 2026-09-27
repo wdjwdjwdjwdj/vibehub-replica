@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 const BASE = process.env.TEST_BASE_URL || 'http://127.0.0.1:3000';
 // Better Auth 有 CSRF 保护：无 Origin 的写请求会被拒（MISSING_OR_NULL_ORIGIN）。
 // 这里模拟浏览器，发送服务端 trustedOrigins 里登记过的前端地址。
-const ORIGIN = process.env.TEST_ORIGIN || 'http://127.0.0.1:5173';
+const ORIGIN = process.env.TEST_ORIGIN || 'http://127.0.0.1:5174';
 
 // ---- 最小 cookie 容器（Node 的 fetch 不自动管理 cookie）----
 const jar = new Map();
@@ -76,6 +76,19 @@ test('未登录访问收藏返回 401', async () => {
 test('未登录写入收藏返回 401', async () => {
   const r = await api('/api/favorites', { method: 'PUT', body: { termIds: ['button'] } });
   assert.equal(r.status, 401);
+});
+
+test('浏览器 CORS 预检允许收藏 PUT', async () => {
+  const r = await fetch(`${BASE}/api/favorites`, {
+    method: 'OPTIONS',
+    headers: {
+      origin: ORIGIN,
+      'access-control-request-method': 'PUT',
+      'access-control-request-headers': 'content-type',
+    },
+  });
+  assert.equal(r.status, 204);
+  assert.match(r.headers.get('access-control-allow-methods') || '', /PUT/);
 });
 
 test('不存在的接口返回统一 404 格式', async () => {
@@ -152,6 +165,24 @@ test('收藏提交自动去重', async () => {
   assert.deepEqual(read.json.data, ['button']);
 });
 
+test('收藏增量 PUT/DELETE 幂等且不会覆盖其他收藏', async () => {
+  const add = await api('/api/favorites/modal', { method: 'PUT', body: {} });
+  assert.equal(add.status, 200);
+  assert.deepEqual(add.json.data, { termId: 'modal', saved: true });
+
+  const addAgain = await api('/api/favorites/modal', { method: 'PUT', body: {} });
+  assert.equal(addAgain.status, 200);
+  const afterAdd = await api('/api/favorites');
+  assert.ok(afterAdd.json.data.includes('modal'));
+
+  const remove = await api('/api/favorites/modal', { method: 'DELETE', body: {} });
+  assert.equal(remove.status, 200);
+  const removeAgain = await api('/api/favorites/modal', { method: 'DELETE', body: {} });
+  assert.equal(removeAgain.status, 200);
+  const afterRemove = await api('/api/favorites');
+  assert.ok(!afterRemove.json.data.includes('modal'));
+});
+
 test('收藏参数校验：termIds 缺失返回 400', async () => {
   const r = await api('/api/favorites', { method: 'PUT', body: {} });
   assert.equal(r.status, 400);
@@ -183,6 +214,50 @@ test('练习记录：最近条数上限为 12', async () => {
 test('练习参数校验：correct 必须是布尔', async () => {
   const r = await api('/api/practice/record', { method: 'POST', body: { termId: 'button', correct: 'yes' } });
   assert.equal(r.status, 400);
+});
+
+test('练习记录使用 clientEventId 幂等', async () => {
+  const body = { termId: 'button', correct: true, clientEventId: `event-${Date.now()}` };
+  const first = await api('/api/practice/record', { method: 'POST', body });
+  const retry = await api('/api/practice/record', { method: 'POST', body: { ...body, correct: false, termId: 'card' } });
+  assert.equal(first.status, 200);
+  assert.equal(retry.status, 200);
+  assert.equal(retry.json.data.id, first.json.data.id);
+  assert.equal(retry.json.data.termId, 'button');
+  assert.equal(retry.json.data.correct, true);
+  assert.equal(retry.json.data.clientEventId, body.clientEventId);
+});
+
+test('课程进度和继续阅读位置可以读取并更新', async () => {
+  const progress = await api('/api/courses/product-website/chapters/01/progress', {
+    method: 'PUT',
+    body: { completed: true },
+  });
+  assert.equal(progress.status, 200);
+  assert.equal(progress.json.data.courseId, 'product-website');
+  assert.equal(progress.json.data.chapterId, '01');
+  assert.equal(progress.json.data.completed, true);
+
+  const position = await api('/api/courses/product-website/position', {
+    method: 'PUT',
+    body: { chapterId: '01', anchor: 'page-structure' },
+  });
+  assert.equal(position.status, 200);
+  assert.equal(position.json.data.anchor, 'page-structure');
+
+  const read = await api('/api/courses/progress');
+  assert.equal(read.status, 200);
+  assert.deepEqual(read.json.data.chapters[0].completed, true);
+  assert.equal(read.json.data.positions[0].anchor, 'page-structure');
+});
+
+test('课程进度参数校验', async () => {
+  const r = await api('/api/courses/product-website/chapters/01/progress', {
+    method: 'PUT',
+    body: { completed: 'yes' },
+  });
+  assert.equal(r.status, 400);
+  assert.equal(r.json.error.code, 'VALIDATION_ERROR');
 });
 
 test('登出后会话失效', async () => {

@@ -1,6 +1,6 @@
 import { chromium } from 'playwright';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 const productChapterSlugs = ['01-page-structure', '02-visual-direction', '03-hero-cta', '04-content-structure', '05-evidence-pricing-faq', '06-layout-surface', '07-form-and-interaction', '08-responsive', '09-delivery-and-agent'];
 const gitChapterSlugs = ['01-working-tree-and-commit', '02-diff-and-gitignore', '03-branch-and-head', '04-merge-and-conflicts', '05-remote-and-collaboration', '06-restore-and-stash'];
 const routes = [

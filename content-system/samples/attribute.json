@@ -1,0 +1,25 @@
+{
+  "id": "attribute",
+  "name": { "zh": "属性", "en": "Attribute" },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "图片用哪张、链接去哪里，写在标签的哪里？",
+      "explain": "属性写在开始标签里，给元素补充信息：src 定图片、href 定去向。同一标签配不同属性，用法就不同。",
+      "say": "我在学 HTML 属性。请用 img、a、input 各举一个属性的例子，指出它写在标签的哪个位置、起了什么作用；先别讲 class 和样式。",
+      "quiz": {
+        "q": "同一个 img 标签换不同的 src，会怎样？",
+        "options": ["报错", "显示不同的图片", "变成链接"],
+        "answer": 1,
+        "explain": "src 决定加载哪张图；属性一换，元素的取材就换。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "img 的 src 属性指定要显示的图片地址。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" },
+    { "claim": "a 的 href 属性指定链接目标地址。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

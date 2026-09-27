@@ -1,5 +1,11 @@
 const configuredApiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim();
-const API_BASE_URL = configuredApiBaseUrl ? configuredApiBaseUrl.replace(/\/$/, '') : null;
+// Keep local Vite development usable without requiring a root .env file.
+// 同域生产部署直接使用相对路径；只有分离部署才需要显式 API origin。
+const API_BASE_URL = configuredApiBaseUrl
+  ? configuredApiBaseUrl.replace(/\/$/, '')
+  : import.meta.env.DEV
+    ? 'http://127.0.0.1:3000'
+    : '';
 
 export class ApiError extends Error {
   constructor(message, status = 0, code = 'API_ERROR') {
@@ -39,9 +45,15 @@ export const apiClient = {
   getSession: () => request('/api/auth/get-session'),
   signIn: (email, password) => request('/api/auth/sign-in/email', { method: 'POST', body: JSON.stringify({ email, password }) }),
   signUp: (name, email, password) => request('/api/auth/sign-up/email', { method: 'POST', body: JSON.stringify({ name, email, password }) }),
+  requestPasswordReset: (email, redirectTo = window.location.origin) => request('/api/auth/request-password-reset', { method: 'POST', body: JSON.stringify({ email, redirectTo }) }),
   signOut: () => request('/api/auth/sign-out', { method: 'POST', body: JSON.stringify({}) }),
   getFavorites: () => request('/api/favorites'),
   saveFavorites: (termIds) => request('/api/favorites', { method: 'PUT', body: JSON.stringify({ termIds }) }),
+  addFavorite: (termId) => request(`/api/favorites/${encodeURIComponent(termId)}`, { method: 'PUT' }),
+  removeFavorite: (termId) => request(`/api/favorites/${encodeURIComponent(termId)}`, { method: 'DELETE' }),
   getRecentPractice: () => request('/api/practice/recent'),
-  recordPractice: (termId, correct) => request('/api/practice/record', { method: 'POST', body: JSON.stringify({ termId, correct }) }),
+  recordPractice: (termId, correct, clientEventId) => request('/api/practice/record', { method: 'POST', body: JSON.stringify({ termId, correct, clientEventId }) }),
+  getCourseProgress: () => request('/api/courses/progress'),
+  setCourseChapterProgress: (courseId, chapterId, completed) => request(`/api/courses/${encodeURIComponent(courseId)}/chapters/${encodeURIComponent(chapterId)}/progress`, { method: 'PUT', body: JSON.stringify({ completed }) }),
+  setCoursePosition: (courseId, chapterId, anchor) => request(`/api/courses/${encodeURIComponent(courseId)}/position`, { method: 'PUT', body: JSON.stringify({ chapterId, anchor }) }),
 };

@@ -1,0 +1,25 @@
+{
+  "id": "api-rescue",
+  "name": { "zh": "接口失败急救", "en": "API Failure Triage" },
+  "category": "排错急救",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "请求失败，先看前端还是先看后端？",
+      "explain": "接口失败先查三处：地址与方法、状态码和返回体、服务端日志与权限。4 开头多在你这，5 开头多在那边。",
+      "say": "这个接口请求失败。请按顺序核对地址与方法、状态码与返回体、服务端日志，把证据摆出来再定改哪边；别上来就改代码。",
+      "quiz": {
+        "q": "状态码 401，返回体写着 unauthorized。先改哪边？",
+        "options": ["前端带鉴权信息的方式", "后端数据库", "随机重试"],
+        "answer": 0,
+        "explain": "401 是身份未通过：先确认请求有没有按约定携带鉴权信息，再谈服务端。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTTP 请求由方法、地址等组成，响应带回状态码。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
+    { "claim": "CORS 机制会拦截不符合规则的跨域请求。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

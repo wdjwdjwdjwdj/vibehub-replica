@@ -1,0 +1,25 @@
+{
+  "id": "anchor",
+  "name": { "zh": "锚点", "en": "Anchor" },
+  "category": "导航与结构",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点一下目录，页面自己滑到那一段，怎么做到的？",
+      "explain": "锚点是页面内部的定位标记：目录链接指向某个章节的 id，点击就滑到那里，不打开新页。长文档、长 FAQ 都靠它导航。",
+      "say": "我在写一篇长文档页。请做一个带锚点的目录：点标题滑到对应章节，地址栏里出现 # 记号；先不做高亮当前章节。",
+      "quiz": {
+        "q": "锚点跳转和打开新链接的区别是？",
+        "options": ["没区别", "锚点在同一页内定位，新链接换页面", "锚点更快"],
+        "answer": 1,
+        "explain": "锚点改的是同一页内的位置；新链接换的是整张页面。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "链接 href 中的 # 片段指向页内对应 id 的元素。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" },
+    { "claim": "scroll-behavior 属性让锚点跳转平滑滚动。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

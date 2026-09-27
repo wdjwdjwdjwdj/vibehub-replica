@@ -1,0 +1,26 @@
+{
+  "id": "api",
+  "name": { "zh": "API", "en": "API" },
+  "aliases": { "zh": ["接口", "应用程序接口"] },
+  "category": "数据与后端",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "页面上显示的商品数据，是找谁要来的？",
+      "explain": "API 是程序之间约定好的对话方式：前端按格式请求商品列表，后端按约定返回数据，谁也不必知道对方内部怎么写。",
+      "say": "我在学“API”。请拿“商品列表页”举例，把一次接口调用从头到尾走一遍：请求写了什么、返回长什么样、报错时谁的问题；别只讲概念。",
+      "quiz": {
+        "q": "调接口后页面显示“数据加载失败”，后端日志却没有任何请求记录。最可能说明什么？",
+        "options": ["请求根本没发出去，问题在前端或网络", "后端数据库坏了", "API 接口被删除了"],
+        "answer": 0,
+        "explain": "后端没收到请求，说明请求没发出或被拦下；先查前端调用和网络，再看后端。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "API 定义程序间交互的约定：调用方按格式请求，提供方按约定响应。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/API" },
+    { "claim": "Web API 泛指暴露给代码调用的浏览器或服务端接口。", "source": "https://developer.mozilla.org/en-US/docs/Web/API" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -3,7 +3,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 
 const sourceBase = process.env.VH_SOURCE || 'https://vibe-hub.org';
-const localBase = process.env.VH_LOCAL || 'http://127.0.0.1:5173';
+const localBase = process.env.VH_LOCAL || 'http://127.0.0.1:5174';
 const outDir = process.env.VH_RUNTIME_OUT || path.resolve('replication-evidence/vibehub-independent-runtime/runtime-parity');
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

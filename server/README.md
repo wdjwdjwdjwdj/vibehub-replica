@@ -1,6 +1,6 @@
 # VibeHub 后端服务
 
-前端（`../`，Vite + React）的配套后端：**邮箱密码认证 + 云端收藏 + 练习记录同步**。
+前端（`../`，Vite + React）的配套后端：**邮箱密码认证 + 云端收藏 + 练习记录 + 课程进度同步**。
 
 > 设计前提：**登录是可选的**。未登录时站点功能与纯静态版完全一致，后端不可用也不影响浏览。
 
@@ -47,19 +47,24 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
 | --- | --- | --- | --- |
 | GET | `/api/health` | 健康检查（含数据库连通性） | 否 |
 | GET | `/api/favorites` | 返回收藏的术语 id 数组 | 是 |
-| PUT | `/api/favorites` | **全量覆盖**收藏集合（幂等） | 是 |
-| GET | `/api/practice/recent` | 最近 12 条练习记录 | 是 |
-| POST | `/api/practice/record` | 追加一条练习记录 | 是 |
+| PUT | `/api/favorites` | 兼容旧客户端的全量覆盖集合接口 | 是 |
+| PUT | `/api/favorites/:termId` | 幂等添加单个收藏 | 是 |
+| DELETE | `/api/favorites/:termId` | 幂等取消单个收藏 | 是 |
+| GET | `/api/practice/recent` | 最近 12 条练习记录（含 `id` 与 `clientEventId`） | 是 |
+| POST | `/api/practice/record` | 追加练习记录；同一 `clientEventId` 重试不会重复写入 | 是 |
+| GET | `/api/courses/progress` | 返回章节完成状态和继续阅读位置 | 是 |
+| PUT | `/api/courses/:courseId/chapters/:chapterId/progress` | 更新章节完成状态 | 是 |
+| PUT | `/api/courses/:courseId/position` | 更新继续阅读章节及标题锚点 | 是 |
 
 响应统一形状：成功 `{ ok: true, data }`，失败 `{ error: { code, message } }`。
 
 ## 测试
 
 ```bash
-npm test        # 18 个接口用例（需先启动服务）
+npm test        # 接口用例（需先启动服务）
 ```
 
-覆盖：健康检查、鉴权拦截、注册/登录/登出、会话有效性、收藏全量覆盖与幂等与去重、参数校验、练习记录顺序与上限。
+覆盖：健康检查、鉴权拦截、注册/登录/登出、会话有效性、收藏全量和增量写入、幂等与去重、练习记录顺序/上限/幂等、课程进度和继续阅读位置、参数校验。
 
 ## 环境变量
 
@@ -75,11 +80,11 @@ npm test        # 18 个接口用例（需先启动服务）
 ## 切换到 PostgreSQL（部署时）
 
 1. 改 `prisma/schema.prisma` 的 `datasource.db.provider` 为 `"postgresql"`
-2. 改 `src/auth.js` 中 `prismaAdapter(prisma, { provider: 'postgresql' })`
-3. `.env` 的 `DATABASE_URL` 指向 PostgreSQL
-4. 重新生成迁移并部署：
+2. `.env` 的 `DATABASE_URL` 指向 PostgreSQL（认证适配器会按 URL 自动选择 provider）
+3. 重新生成 Prisma Client，再生成并部署 PostgreSQL 迁移：
 
 ```bash
+npx prisma generate
 npx prisma migrate diff --from-empty --to-schema-datamodel prisma/schema.prisma --script > prisma/migrations/xxx_init_postgres/migration.sql
 npm run db:deploy
 ```
@@ -90,4 +95,4 @@ npm run db:deploy
 
 - **不接 OAuth**：GitHub 的 callback URL 只接受域名或 localhost，不接受裸 IP。拿到域名后取消 `src/auth.js` 里 `socialProviders` 的注释即可。
 - **关闭邮箱验证**：服务器无 SMTP，开启会导致注册后收不到验证邮件、直接登不进去。接入邮件服务后再开。
-- **`useSecureCookies: false`**：当前用 `http://<IP>` 访问，开启 secure cookie 会导致浏览器拒写、登录态失效。接入 HTTPS 后改为 `true`。
+- **Secure Cookie**：开发环境使用 HTTP；`NODE_ENV=production` 会自动启用 Secure Cookie，生产必须配置 HTTPS 的 `BETTER_AUTH_URL`。

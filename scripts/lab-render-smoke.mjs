@@ -1,6 +1,6 @@
 import { chromium } from 'playwright';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 const routes = ['/vibehub-skill/lab', '/en/vibehub-skill/lab'];
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage();

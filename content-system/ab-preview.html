@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<title>A/B 对照 · v5 首验（HTTP / 状态）</title><style>
+  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:#f5f6f8;margin:0;padding:32px;color:#1c1e21}
+  header{max-width:1080px;margin:0 auto 24px}
+  h1{font-size:20px;margin:0 0 8px}
+  header p{color:#5a6068;font-size:14px;margin:0}
+  section{max-width:1080px;margin:0 auto 32px}
+  h2{font-size:16px;border-left:4px solid #2c6ecb;padding-left:10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:860px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid #e2e5ea;border-radius:14px;padding:18px 20px;position:relative}
+  .card.old{border-top:3px solid #9aa1ab}
+  .card.new{border-top:3px solid #2c6ecb}
+  .tag{position:absolute;top:-12px;right:12px;font-size:12px;padding:2px 10px;border-radius:99px;background:#fff;border:1px solid currentColor}
+  .old .tag{color:#6b7280}.new .tag{color:#2c6ecb}
+  .card-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+  .term{font-weight:700;font-size:17px}
+  .meta{color:#8a919b;font-size:12px}
+  .card-label{display:block;font-size:11px;color:#9aa1ab;margin:12px 0 4px;letter-spacing:.05em}
+  h3{font-size:16px;margin:0;line-height:1.5}
+  p{font-size:14px;margin:0;line-height:1.75}
+  .len{font-style:normal;font-size:11px;color:#b3b9c2;white-space:nowrap}
+  .say-block{margin-top:14px;background:#f6f8fb;border:1px dashed #d4dae2;border-radius:10px;padding:10px 14px}
+  .say-head b{font-size:12px;color:#5a6068}
+  .say-text{margin-top:4px;font-size:13px;color:#3d434b}
+  .sum{margin-top:12px;font-size:12px;color:#8a919b;text-align:right}
+  footer{max-width:1080px;margin:0 auto;color:#5a6068;font-size:13px;line-height:1.8;border-top:1px solid #e2e5ea;padding-top:16px}
+</style></head><body>
+<header><h1>A/B 对照 · v5 标准首验：HTTP 与 状态</h1>
+<p>左原站右新版。看三点：①扫读节奏是否一致（单卡三段、无展开）；②每 1 字信息量是否 ≥ 原站；③新版是否多给了东西（HTTP：状态码+请求/响应分工；状态：易失性+去向）。</p></header>
+<section><h2>HTTP</h2><div class="grid">
+
+  <article class="card old">
+    <div class="tag">原站版</div>
+    <div class="card-top"><span class="term">HTTP</span><span class="meta">入门 网络与接口</span></div>
+    <span class="card-label">大白话场景</span>
+    <h3>浏览器和服务器按什么规矩说话？ <em class="len">15字</em></h3>
+    <span class="card-label">一句话讲解</span>
+    <p>HTTP 是网络请求与响应的通用协议，规定方法、地址、头信息和内容怎样组织。HTTPS 则在其外面加上加密保护。 <em class="len">56字</em></p>
+    <div class="say-block"><div class="say-head"><b>跟 AI 说</b></div><p class="say-text">能围绕“HTTP”回答这个问题吗：浏览器和服务器按什么规矩说话？ 我想看一个具体场景，不要一串抽象术语。 <em class="len">52字</em></p></div>
+    <div class="sum">合计 123 字</div>
+  </article>
+
+  <article class="card new">
+    <div class="tag">v5 新版</div>
+    <div class="card-top"><span class="term">HTTP</span><span class="meta">入门 网络与接口</span></div>
+    <span class="card-label">大白话场景</span>
+    <h3>浏览器向服务器要东西，凭什么总能对上话？ <em class="len">20字</em></h3>
+    <span class="card-label">一句话讲解</span>
+    <p>HTTP 规定浏览器和服务器怎么传消息：请求写明方法、地址和头信息，响应带回状态码和内容。加层加密就是 HTTPS。 <em class="len">58字</em></p>
+    <div class="say-block"><div class="say-head"><b>跟 AI 说</b></div><p class="say-text">我刚碰到“HTTP”。请拿“提交登录表单”这一次请求举例，逐段指出浏览器写了什么、服务器回了什么，状态码和头信息各在哪里；先别讲协议历史。 <em class="len">69字</em></p></div>
+    <div class="sum">合计 147 字</div>
+  </article>
+  </div></section>
+<section><h2>状态</h2><div class="grid">
+
+  <article class="card old">
+    <div class="tag">原站版</div>
+    <div class="card-top"><span class="term">状态</span><span class="meta">入门 交互与体验</span></div>
+    <span class="card-label">大白话场景</span>
+    <h3>按钮为什么一会儿能点，一会儿变灰？ <em class="len">17字</em></h3>
+    <span class="card-label">一句话讲解</span>
+    <p>状态是界面此刻记住的情况：是否登录、输入了什么、数据是否加载。界面根据状态决定显示什么、允许什么操作。 <em class="len">51字</em></p>
+    <div class="say-block"><div class="say-head"><b>跟 AI 说</b></div><p class="say-text">我想真正理解“状态”。按钮为什么一会儿能点，一会儿变灰？ 能先给一句话结论，再展开举例吗？ <em class="len">45字</em></p></div>
+    <div class="sum">合计 113 字</div>
+  </article>
+
+  <article class="card new">
+    <div class="tag">v5 新版</div>
+    <div class="card-top"><span class="term">状态</span><span class="meta">入门 交互与体验</span></div>
+    <span class="card-label">大白话场景</span>
+    <h3>点赞变红、购物车加一，页面靠什么记住这些？ <em class="len">21字</em></h3>
+    <span class="card-label">一句话讲解</span>
+    <p>状态是页面此刻记住的数据：点赞数、输入框文字、是否登录。数据一变界面跟着重画；刷新即清零，长期保存交给后端。 <em class="len">54字</em></p>
+    <div class="say-block"><div class="say-head"><b>跟 AI 说</b></div><p class="say-text">我想真正理解“状态”。请用“点赞按钮”从点击到变红的全过程举例，说明数据存在哪、界面何时重画、按钮何时该变灰不可点；先别提框架名词。 <em class="len">66字</em></p></div>
+    <div class="sum">合计 141 字</div>
+  </article>
+  </div></section>
+<footer>深度方案：卡片保持三槽位节奏；深度出口 = a 的密度 + say 的指令（现场向 AI 取回）+ 独立知识点拆词条；quiz 字段留待第二阶段接入主站测验页。详见 content-system/AB-ROUND5.md 与 STYLE-GUIDE v5。</footer>
+</body></html>

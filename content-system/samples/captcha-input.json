@@ -1,0 +1,25 @@
+{
+  "id": "captcha-input",
+  "name": { "zh": "验证码输入", "en": "Code Input" },
+  "category": "表单实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "验证码一格一格跳，粘贴整串却填不进去，卡在哪？",
+      "explain": "验证码输入收短信或邮箱验证码，常把六个数字分格显示。分格只是外观：整串粘贴要一次填入，输一位自动前进，退格退回；倒计时从验证码确实发出才开始。",
+      "say": "我在做短信验证码输入。请给粘贴整串自动分格、自动前进的实现；不要做六个各自只收一位、互相抢焦点的框。",
+      "quiz": {
+        "q": "重新发送的倒计时该从什么时候开始走？",
+        "options": ["用户一点“发送验证码”就开始", "页面加载完就开始", "服务端确认验证码发出后才开始"],
+        "answer": 2,
+        "explain": "请求可能失败，倒计时走完用户却没收到码，只能干等；确认发出后开始才对。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "inputmode=numeric 提示浏览器弹出只收数字的虚拟键盘，但不产生任何校验约束。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/inputmode" },
+    { "claim": "paste 事件在用户发起粘贴操作时触发，可截获整串验证码再分格填入。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Element/paste_event" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

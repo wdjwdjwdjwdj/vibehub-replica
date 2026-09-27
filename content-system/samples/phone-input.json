@@ -1,0 +1,25 @@
+{
+  "id": "phone-input",
+  "name": { "zh": "电话输入", "en": "Phone Input" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "手机号带空格短横线，为什么不该算填错？",
+      "explain": "电话输入收号码：手机、座机、带国家区号的。type=tel 不做格式检查，只让手机弹电话键盘；空格和短横线照常收下，提交前再统一成系统要的格式。",
+      "say": "我在做手机号登记。请实现先选国家区码再填号码的输入区，示例写清格式，提交前去掉空格；别把带短横线的输入直接报错。",
+      "quiz": {
+        "q": "用户输入 138 0013 8000（带空格），系统该怎么处理？",
+        "options": ["报错要求重新输入", "立即把空格标红", "收下，提交前再统一格式"],
+        "answer": 2,
+        "explain": "分隔符是常见书写习惯，收下不拦；提交前统一成存库格式，两边都不吃亏。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "type=tel 的值不像 email 那样被自动校验格式，在带动态键盘的设备上会显示适合电话号码的键盘。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel" },
+    { "claim": "pattern 属性指定正则表达式，控件值与之不匹配即通不过约束校验。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

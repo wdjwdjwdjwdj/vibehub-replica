@@ -1,0 +1,125 @@
+{
+  "base": "http://127.0.0.1:5174",
+  "report": [
+    {
+      "route": "/en/rag",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/en/prompt-injection",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/en/temperature",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/en/fine-tuning",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/en/reasoning-model",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/en/agent-memory",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/rag",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/prompt-injection",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/temperature",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/fine-tuning",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/reasoning-model",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    },
+    {
+      "route": "/agent-memory",
+      "demoStateChanged": true,
+      "anatomyChanged": true,
+      "variantChanged": true,
+      "scenarioChanged": true,
+      "quizPassed": true,
+      "expectedChinese": true,
+      "errors": []
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
+const optionalSessionProbe = '/api/auth/get-session';
 const browser = await chromium.launch({ headless: true });
 const checks = [
   { route: '/en/topics/frontend', expected: ['stack-window', 'fc-component', 'fc-state', 'md-demo', 'html-demo', 'wf-css-card'] },
@@ -28,7 +29,14 @@ for (const { route, expected, allExpected } of checks) {
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', (error) => errors.push(`pageerror: ${error.message}`));
-  page.on('console', (message) => { if (message.type() === 'error') errors.push(`console: ${message.text()}`); });
+  page.on('requestfailed', (request) => {
+    if (new URL(request.url()).pathname !== optionalSessionProbe) errors.push(`requestfailed: ${request.url()}`);
+  });
+  page.on('console', (message) => {
+    // The catalog runs without the optional API server; requestfailed above still
+    // reports every unexpected resource failure with its URL.
+    if (message.type() === 'error' && message.text() !== 'Failed to load resource: net::ERR_CONNECTION_REFUSED') errors.push(`console: ${message.text()}`);
+  });
   await page.addInitScript(() => localStorage.setItem('vibehub-source-survey-shown-v1', '1'));
   await page.goto(`${base}${route}`, { waitUntil: 'domcontentloaded', timeout: 30000 });
   await page.waitForTimeout(700);
@@ -37,10 +45,11 @@ for (const { route, expected, allExpected } of checks) {
     return {
       cardCount: document.querySelectorAll('.term-card').length,
       firstSix: cards.map((card) => card.querySelector('.catalog-mini-demo')?.className || ''),
-      firstSixStructure: expectedClasses.map((selector) => Boolean(cards.some((card) => {
+      firstSixStructure: cards.map((card, index) => {
+        const selector = expectedClasses[index];
         const demo = card.querySelector('.catalog-mini-demo');
-        return demo?.classList.contains(selector) || Boolean(card.querySelector(`.catalog-mini-demo .${selector}`));
-      }))),
+        return Boolean(selector) && (demo?.classList.contains(selector) || Boolean(card.querySelector(`.catalog-mini-demo .${selector}`)));
+      }),
       allStructure: (allExpectedClasses || []).map((selector) => Boolean([...document.querySelectorAll('.term-card')].some((card) => {
         const demo = card.querySelector('.catalog-mini-demo');
         return demo?.classList.contains(selector) || Boolean(card.querySelector(`.catalog-mini-demo .${selector}`));
@@ -49,7 +58,7 @@ for (const { route, expected, allExpected } of checks) {
       overflow: document.documentElement.scrollWidth > window.innerWidth,
     };
   }, { expectedClasses: expected, allExpectedClasses: allExpected });
-  const expectedShape = result.firstSix.every((className) => className.includes('catalog-mini-demo')) && result.firstSixStructure.every(Boolean) && result.allStructure.every(Boolean);
+  const expectedShape = result.firstSix.length === expected.length && result.firstSix.every((className) => className.includes('catalog-mini-demo')) && result.firstSixStructure.every(Boolean) && result.allStructure.every(Boolean);
   if (result.cardCount < 6 || !expectedShape || result.iframeCount || result.overflow || errors.length) failures.push({ route, result, errors });
   await context.close();
 }

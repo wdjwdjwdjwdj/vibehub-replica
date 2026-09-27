@@ -1,0 +1,26 @@
+{
+  "id": "cookie",
+  "name": { "zh": "Cookie", "en": "Cookie" },
+  "aliases": { "zh": ["小甜饼", "浏览器 Cookie"] },
+  "category": "网络与接口",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "登录过一次，几天后打开网站还是已登录，靠什么？",
+      "explain": "Cookie 是网站存在浏览器里的小段数据，每次请求自动带上，用于维持登录、记住偏好；可能被冒用，敏感值要加安全属性、设短有效期。",
+      "say": "我想搞清 Cookie。请按一次登录的顺序讲：它由谁写入、何时带回、服务器怎么认人，HttpOnly 又挡住了什么；先不展开跨站攻击。",
+      "quiz": {
+        "q": "浏览器里删掉某网站的 Cookie，最可能发生什么？",
+        "options": ["该网站的登录状态失效，要重新登录", "网站打不开了", "电脑中毒了"],
+        "answer": 0,
+        "explain": "登录凭证常存在 Cookie 里；删掉后服务器认不出你，需要重新登录。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Cookie 随请求发送，用于会话管理、个性化与追踪。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies" },
+    { "claim": "HttpOnly 属性禁止 JavaScript 读取 Cookie。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

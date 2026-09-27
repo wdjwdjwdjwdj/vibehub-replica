@@ -1,0 +1,25 @@
+{
+  "id": "breadcrumb",
+  "name": { "zh": "面包屑", "en": "Breadcrumb" },
+  "category": "导航与结构",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "页顶那串「分类 / 当前页」的层级字，叫什么？",
+      "explain": "面包屑显示当前页在层级里的位置，每级都能点回去，商品站的「首页 / 手机 / 配件」就是典型。层级浅的网站别硬加。",
+      "say": "我在做商品分类页。请按「首页 / 分类 / 当前页」设计面包屑，说明每级链接去哪、哪层不可点；先别讲样式。",
+      "quiz": {
+        "q": "面包屑和浏览器后退按钮的分工是？",
+        "options": ["一模一样", "面包屑跨级跳，后退回上一步", "后退能跨级"],
+        "answer": 1,
+        "explain": "后退沿访问历史走一步；面包屑沿内容层级走，能一步跳回上两层。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "WAI APG 的面包屑模式约定了层级路径的结构与标注。", "source": "https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/" },
+    { "claim": "nav 元素适合包裹面包屑这类导航区块。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

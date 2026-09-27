@@ -1,0 +1,25 @@
+{
+  "id": "image-rescue",
+  "name": { "zh": "图片不显示急救", "en": "Broken Image Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "图片位置只剩空框或破图标，先看哪一步？",
+      "explain": "图片丢失先查三处：src 路径与大小写、请求状态码、真实格式与扩展名是否一致；空框和破图标指向的是不同答案。",
+      "say": "这张图显示不出来。请按顺序核对：src 路径和大小写、网络面板状态码、文件真实格式；用请求结果说话，别拿占位图糊弄。",
+      "quiz": {
+        "q": "路径正确、状态码 200，图片还是破图标，查什么？",
+        "options": ["再刷十次", "换张图", "文件真实格式与扩展名是否一致"],
+        "answer": 2,
+        "explain": "200 说明加载到了，破图标多半是内容解码失败，常见于格式与扩展名不符。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "img 的 src 决定图片来源，加载失败时显示 alt 或破图。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" },
+    { "claim": "404 状态码表示服务器找不到请求的资源。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

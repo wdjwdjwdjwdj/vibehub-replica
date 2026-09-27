@@ -32,6 +32,8 @@ model User {
   accounts  Account[]
   favorites UserFavorite[]
   practices PracticeRecord[]
+  courseProgress CourseChapterProgress[]
+  coursePositions CourseReadingPosition[]
 }
 
 model Session {
@@ -100,9 +102,39 @@ model PracticeRecord {
   userId    String
   termId    String
   correct   Boolean
+  clientEventId String
   createdAt DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
+  @@unique([userId, clientEventId])
   @@index([userId, createdAt])
+}
+
+/// 课程章节完成状态。完成与取消都由用户明确操作。
+model CourseChapterProgress {
+  userId      String
+  courseId    String
+  chapterId   String
+  completed   Boolean  @default(false)
+  updatedAt   DateTime @default(now()) @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, courseId, chapterId])
+  @@index([userId, courseId, updatedAt])
+}
+
+/// 课程继续阅读位置，只保存稳定的章节和标题锚点。
+model CourseReadingPosition {
+  userId    String
+  courseId  String
+  chapterId String
+  anchor    String?
+  updatedAt DateTime @default(now()) @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, courseId])
+  @@index([userId, updatedAt])
 }

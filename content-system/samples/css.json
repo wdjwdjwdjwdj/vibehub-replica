@@ -1,0 +1,26 @@
+{
+  "id": "css",
+  "name": { "zh": "CSS", "en": "CSS" },
+  "aliases": { "zh": ["层叠样式表"] },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "设计稿上的颜色、圆角、间距，代码里写在谁身上？",
+      "explain": "CSS 是一整套外观规则：颜色、字号、间距、圆角、阴影、排版都归它声明；一条规则能管全站。内容本身不归它改。",
+      "say": "我想把按钮从灰色改成品牌色。请给我最小的一段 CSS，指出选择器、属性、值各是哪一段，改完刷新能看到什么；先不解释盒子模型。",
+      "quiz": {
+        "q": "同一段 CSS 同时改了 20 个页面的按钮颜色，靠的是什么？",
+        "options": ["选择器按规则匹配同类元素", "每个页面各写一遍", "浏览器自动同步"],
+        "answer": 0,
+        "explain": "选择器把规则和元素匹配起来，同一类元素共用一条规则。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "CSS 描述元素在屏幕、纸张等媒介上的呈现方式。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { "claim": "选择器决定规则作用于哪些元素。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

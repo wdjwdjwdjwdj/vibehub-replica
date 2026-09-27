@@ -1,0 +1,25 @@
+{
+  "id": "text-input",
+  "name": { "zh": "文本输入框", "en": "Text Input" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "让用户填一句话能写完的内容，用哪个控件？",
+      "explain": "文本输入框收单行短文字：姓名、标题、搜索词都归它。标签要一直可见，手机上会按输入类型弹出合适的键盘。",
+      "say": "我要做一个填姓名的输入框。请给出标签常显、占位示例的单行输入框代码，说明占位符为什么不能替代标签；先不做校验。",
+      "quiz": {
+        "q": "输入框旁只有灰色占位文字「请输入姓名」，点进去就消失。问题是什么？",
+        "options": ["占位文字太长", "占位符不能替代标签，填完后就看不到要填什么", "输入框太小"],
+        "answer": 1,
+        "explain": "占位符输入即消失；常显标签让用户随时知道自己在填哪一栏。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "input 元素按 type 呈现为不同控件，默认 text 为单行文本。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" },
+    { "claim": "tel 类型会让移动设备弹出电话键盘。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

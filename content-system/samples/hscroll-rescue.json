@@ -1,0 +1,25 @@
+{
+  "id": "hscroll-rescue",
+  "name": { "zh": "横向滚动急救", "en": "Horizontal Scroll Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "手机上页面能左右晃，是谁撑宽的？",
+      "explain": "横向滚动先查三处：写死宽度的元素、不换行的长文本、超宽的图片和网格。在源头修，别在 body 上硬藏。",
+      "say": "手机页面能左右晃。请找出实际溢出的元素：固定宽度、不换行文本、超宽图片挨个查，修在源头；别用 overflow-x 藏掉了事。",
+      "quiz": {
+        "q": "只在 body 上写 overflow-x:hidden 会怎样？",
+        "options": ["彻底修复", "滚动条消失但内容被裁掉，问题还在", "页面变快"],
+        "answer": 1,
+        "explain": "藏滚动条只是看不到溢出，被裁掉的内容仍然丢失；要修的是溢出源。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "overflow-x 控制内容超出横向边界时的处理方式。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x" },
+    { "claim": "white-space 属性决定文本是否换行，nowrap 不换行。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/white-space" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

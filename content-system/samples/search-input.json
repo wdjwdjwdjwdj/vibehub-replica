@@ -1,0 +1,25 @@
+{
+  "id": "search-input",
+  "name": { "zh": "搜索输入框", "en": "Search Input" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "每敲一个字就发一次搜索请求，服务端扛得住吗？",
+      "explain": "搜索输入框收关键词并给出结果：商品、文章、联系人。回车提交、一键清空、结果条数反馈缺一不可；联想搜索等输入停顿再触发，不是每按一键就请求。",
+      "say": "我在给商品列表加搜索。请实现输入停顿 300 毫秒再请求、回车立即搜的搜索框，type=search 自带清空按钮；顺带补一条无结果提示。",
+      "quiz": {
+        "q": "搜索联想该什么时候发请求？",
+        "options": ["每按一个键就发一次，保证结果最新", "输入停顿约几百毫秒后再发", "等点搜索按钮才发，联想不能发请求"],
+        "answer": 1,
+        "explain": "每次按键都请求太频繁；停顿几百毫秒说明用户基本打完词，此时请求数量少结果也准。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "type=search 是专供输入搜索词的文本框，部分浏览器会显示清除搜索词的叉号图标。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search" },
+    { "claim": "input 事件在用户编辑文本值时逐次触发，监听它做联想搜索需配合停顿判断再发请求。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

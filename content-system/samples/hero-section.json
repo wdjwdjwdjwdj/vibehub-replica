@@ -1,0 +1,26 @@
+{
+  "id": "hero-section",
+  "name": { "zh": "Hero 主视觉", "en": "Hero Section" },
+  "aliases": { "zh": ["首屏主视觉", "Hero 区"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "打开网站第一屏的大块，怎么让人一眼看懂产品？",
+      "explain": "Hero 是落地第一屏的主区块：主标题一句话讲清产品给谁用、解什么难题，下配说明和一个主按钮；大图只管气氛，alt 描述不能空。",
+      "say": "我想给首页做一块 Hero。请从上到下讲清主标题、辅助说明和主按钮怎么安排层级；窄屏上先露出文字，图片别把首屏撑长；再讲怎么压缩大图不拖慢加载。",
+      "quiz": {
+        "q": "首页 Hero 只放一张全屏产品大图，没有标题和按钮，最直接的代价是什么？",
+        "options": ["访客看不懂产品给谁用、解什么难题", "网站会打不开", "图片一定会失真"],
+        "answer": 0,
+        "explain": "Hero 的职责是传达价值，缺了文字主张就断了；打不开是服务器问题，失真与职责无关。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "img 的 alt 属性提供图片的文字替代，屏幕阅读器会把值读给用户，图片无法显示时也靠它。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" },
+    { "claim": "LargestContentfulPaint 提供页面视口内最大图片或文本块绘制时间的计时信息。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/LargestContentfulPaint" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

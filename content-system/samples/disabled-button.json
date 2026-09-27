@@ -1,0 +1,25 @@
+{
+  "id": "disabled-button",
+  "name": { "zh": "禁用按钮状态", "en": "Disabled Button State" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "按钮一直灰着，用户却在猜哪里没填对。",
+      "explain": "禁用按钮是提交条件的开关：协议没勾、字段没填完、密码强度不够。灰掉能挡无效提交，旁边要讲清还差什么，满足后立即恢复；光变灰不说，用户只能猜。",
+      "say": "我在调注册按钮状态。请对比 disabled 与 aria-disabled 的差别，说明禁用期间在哪显示缺项；别只写一行变灰逻辑就交差。",
+      "quiz": {
+        "q": "字段较多的注册页没填完时，提交按钮怎么处理更好？",
+        "options": ["直接灰掉，什么都不用说", "把按钮藏起来", "保持可点，点击后在缺的字段旁集中提示"],
+        "answer": 2,
+        "explain": "允许点击后集中指出缺项，用户知道往哪补；无声变灰只能让人猜。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "disabled 属性让按钮不可编辑、不可聚焦，也不会随表单提交。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled" },
+    { "claim": "aria-disabled 在语义上暴露禁用状态但不改变可聚焦性，元素仍留在焦点顺序里。", "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-disabled" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

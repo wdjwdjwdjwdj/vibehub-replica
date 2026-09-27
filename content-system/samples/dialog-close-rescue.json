@@ -1,0 +1,25 @@
+{
+  "id": "dialog-close-rescue",
+  "name": { "zh": "弹窗关闭急救", "en": "Dialog Close Triage" },
+  "category": "排错急救",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "弹窗关不掉，背后页面还能点，哪里断线了？",
+      "explain": "弹窗关不掉先查三处：关闭按钮、Esc、遮罩是否连到同一关闭逻辑；焦点滚动是否成对恢复。dialog 自带一套。",
+      "say": "这个弹窗关不掉，背后还能点。请把关闭按钮、Esc、遮罩统一到一套关闭逻辑，检查焦点锁定和背景滚动，关闭后把焦点还给触发按钮。",
+      "quiz": {
+        "q": "点遮罩没反应、按 Esc 也没反应，但关闭按钮有用。说明？",
+        "options": ["浏览器不支持弹窗", "三种关闭方式没接到同一套逻辑", "关闭按钮写错了"],
+        "answer": 1,
+        "explain": "只有一条路能走，说明另外两条没接到同一套关闭逻辑；统一入口才能全部生效。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "dialog 元素以 showModal 打开时支持 Esc 关闭并自带顶层样式。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" },
+    { "claim": "WAI APG 的对话框模式约定了焦点与关闭行为。", "source": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

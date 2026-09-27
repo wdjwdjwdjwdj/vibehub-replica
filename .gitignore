@@ -23,6 +23,8 @@ scripts/html-detail-classes.txt
 .playwright/
 .qa-temp/
 .research-build-*/
+.mimosa/
+.v2c/
 
 # 工作区内部笔记（AI 协作记录，含项目内部约定，不对外公开）
 .workbuddy/

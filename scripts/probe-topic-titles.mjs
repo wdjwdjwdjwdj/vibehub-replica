@@ -3,7 +3,7 @@ import { chromium } from 'playwright';
 /** 主题页 title 对照探针：原站 vs 本地，逐个路由实测（不能套统一模板）。 */
 
 const SOURCE = 'https://vibe-hub.org';
-const LOCAL = process.env.VH_LOCAL || 'http://127.0.0.1:5173';
+const LOCAL = process.env.VH_LOCAL || 'http://127.0.0.1:5174';
 const TOPICS = [
   'frontend',
   'backend',

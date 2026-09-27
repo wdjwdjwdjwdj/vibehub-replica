@@ -4,7 +4,7 @@ import { chromium } from 'playwright';
 
 const route = process.argv[2] || '/button';
 const SOURCE = 'https://vibe-hub.org';
-const LOCAL = process.env.VH_LOCAL || 'http://127.0.0.1:5173';
+const LOCAL = process.env.VH_LOCAL || 'http://127.0.0.1:5174';
 
 const grab = async (page, url) => {
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });

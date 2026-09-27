@@ -1,0 +1,26 @@
+{
+  "id": "request",
+  "name": { "zh": "请求", "en": "Request" },
+  "aliases": { "zh": ["Request"] },
+  "category": "数据与后端",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "页面上一条商品数据，从发出到显示走了几步？",
+      "explain": "请求是浏览器向服务器发出的一次调用：写明想读还是想改、带什么数据，处理完返回结果。地址写错、网络中断、权限不够，都会让它失败。",
+      "say": "我想看懂一次真实请求。请在 DevTools 的 Network 里挑一条记录，讲清地址、方法、状态各是什么，失败时先看哪项；先不写代码。",
+      "quiz": {
+        "q": "Network 面板里一条请求显示 404，下一步看什么？",
+        "options": ["这条请求的地址和参数是否写对", "刷新页面", "换台电脑"],
+        "answer": 0,
+        "explain": "404 表示该地址下没有资源；先核对请求地址与参数是否正确。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "浏览器通过 HTTP 请求获取或提交资源。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
+    { "claim": "fetch 是发起请求的浏览器接口。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/fetch" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

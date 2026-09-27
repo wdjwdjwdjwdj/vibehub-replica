@@ -1,0 +1,26 @@
+{
+  "id": "dom",
+  "name": { "zh": "DOM", "en": "DOM" },
+  "aliases": { "zh": ["文档对象模型", "Document Object Model"] },
+  "category": "开始做网页",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "AI 要“操作 DOM”，到底在动页面的哪部分？",
+      "explain": "DOM 是浏览器把 HTML 整理成的节点树，每个元素对应一个节点。改 DOM 就是先找到节点，再改文字、样式或属性。",
+      "say": "我想亲眼看到 DOM。请在浏览器里演示：按 F12 查看元素树，用控制台改一段文字，说明节点被找到和被修改的过程；先不写完整程序。",
+      "quiz": {
+        "q": "改了 HTML 文件里的文字，页面没变，但 DevTools 里手动改 DOM 立刻生效。说明什么？",
+        "options": ["HTML 文件没保存", "浏览器坏了", "页面显示的是内存中的 DOM，不是源文件"],
+        "answer": 2,
+        "explain": "页面渲染依据运行时 DOM；源文件的改动要重新加载才会反映进来。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "DOM 是 HTML 文档的编程接口，把文档表示为节点树。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model" },
+    { "claim": "通过 document.querySelector 等方法查找元素。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

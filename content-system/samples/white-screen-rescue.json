@@ -1,0 +1,25 @@
+{
+  "id": "white-screen-rescue",
+  "name": { "zh": "白屏急救", "en": "White Screen Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "页面打开全白，第一分钟该按什么顺序查？",
+      "explain": "白屏先查三处：控制台第一条红色报错、入口 script 是否加载、根元素里有没有内容。三步对应三层：代码、资源、渲染。",
+      "say": "我的页面完全白屏。请按顺序查：控制台第一条报错、入口脚本加载、根元素渲染，先说卡在哪一层，再做最小修复；别一次改多处。",
+      "quiz": {
+        "q": "白屏但控制台没有任何红色报错，下一步先查什么？",
+        "options": ["入口脚本有没有成功加载", "直接重写入口文件", "把页面缩小"],
+        "answer": 0,
+        "explain": "没有报错说明问题多半在资源或渲染层；先确认脚本是否真的加载了。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "脚本运行时错误会触发 error 事件并可出现在控制台。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" },
+    { "claim": "script 元素负责向页面引入脚本，加载失败页面行为会缺失。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

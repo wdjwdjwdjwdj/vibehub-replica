@@ -1,6 +1,6 @@
 import { chromium } from 'playwright';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 const slugs = ['01-page-structure', '02-visual-direction', '03-hero-cta', '04-content-structure', '05-evidence-pricing-faq', '06-layout-surface', '07-form-and-interaction', '08-responsive', '09-delivery-and-agent'];
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({ viewport: { width: 390, height: 844 } });

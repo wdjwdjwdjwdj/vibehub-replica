@@ -1,0 +1,26 @@
+{
+  "id": "how-it-works",
+  "name": { "zh": "使用步骤", "en": "How It Works" },
+  "aliases": { "zh": ["步骤区", "使用流程区"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "访客还没注册就想知道用起来分几步，该看哪个区块？",
+      "explain": "使用步骤把首次上手要做的几个动作按顺序排开：常见三到五步，每步一个动作加一个看得见的结果；顺序一乱，读者就没法照着走。",
+      "say": "我在做新用户的步骤区。请拿“注册、建项目、邀请同事、导出”举例，每步标题写动作、说明写做完后的变化；宽屏横排、窄屏竖排，编号和阅读顺序怎么对齐。",
+      "quiz": {
+        "q": "步骤区第 3 步只写“耐心等待”，问题出在哪？",
+        "options": ["步骤总数太多", "编号该换成罗马数字", "没有可观察的结果，读者无法确认走没走对"],
+        "answer": 2,
+        "explain": "每步要有看得见的完成标志；纯状态描述没法对照执行。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "ol 表示有序列表，条目顺序有意义，调换顺序会改变含义。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" },
+    { "claim": "WCAG 1.3.2 要求内容顺序影响含义时，正确的阅读顺序可由程序判定。", "source": "https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "feature-highlights",
+  "name": { "zh": "功能亮点区", "en": "Feature Highlights" },
+  "aliases": { "zh": ["功能介绍区", "卖点区"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "功能列表很长，首页为什么只挑两三件事讲？",
+      "explain": "功能亮点区挑少数功能按用户任务讲：标题写得到的结果，正文给做法和界面截图；平铺一排名词清单，读者一条记不住。",
+      "say": "我从功能清单里挑了三项最能影响下单的。请每项按“卡在哪、怎么解、拿到什么”组织，并说明截图该截哪一屏；不要三段写得一样空。",
+      "quiz": {
+        "q": "功能亮点区的标题，下面哪种合格？",
+        "options": ["AI 引擎", "3 分钟汇总完一周数据", "更多功能等你发现"],
+        "answer": 1,
+        "explain": "标题要落在用户拿到的结果上；纯技术名词对不上任务，号召语没有信息。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "section 表示文档中的通用独立区块，应始终带有标题。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" },
+    { "claim": "h1–h6 表示六个层级的区块标题，不要跳级使用。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

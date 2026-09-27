@@ -1,0 +1,27 @@
+{
+  "id": "footer-nav",
+  "name": { "zh": "页脚导航", "en": "Footer Navigation" },
+  "aliases": { "zh": ["页脚链接区", "底部导航"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "版权行之外，页面最底下那几排链接该放什么？",
+      "explain": "页脚导航收拢产品、支持、公司、法务这类低频去向：分组要稳定，只放真实存在的页面；它不是顶部导航的复制品，重复入口只占地方。",
+      "say": "我在搭页脚导航。请列每组常见的链接项，讲讲怎么核对每个目标页面真实存在；手机上怎么堆着排不横滚，最后一行版权政策用什么标签。",
+      "quiz": {
+        "q": "页脚里一个链接点开是 404，这违背了什么？",
+        "options": ["页脚不该放链接", "页脚只该放真实存在的页面", "版权行必须每年更新"],
+        "answer": 1,
+        "explain": "死链暴露维护缺位；放上去之前先核对目标页面真实存在。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "footer 表示最近的祖先区块的页脚，通常包含作者、版权数据或相关文档链接。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" },
+    { "claim": "small 表示旁注和小字排印，如版权与法务文本。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" },
+    { "claim": "nav 只用于主要的导航链接区块，页脚这类普通链接列表不要求包进 nav。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

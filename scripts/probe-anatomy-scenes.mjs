@@ -32,7 +32,7 @@ const grab = async (base) => {
 
 try {
   const src = await grab('https://vibe-hub.org');
-  const loc = await grab('http://127.0.0.1:5173');
+  const loc = await grab('http://127.0.0.1:5174');
 
   for (const key of ['anatomy', 'scenes']) {
     console.log(`\n########## ${key} — 原站 (${src[key].length}) ##########`);

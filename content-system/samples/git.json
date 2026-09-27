@@ -1,0 +1,26 @@
+{
+  "id": "git",
+  "name": { "zh": "Git", "en": "Git" },
+  "aliases": { "zh": ["版本控制"] },
+  "category": "开发工具",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "代码改到一半改崩了，想回到昨天的版本，找谁？",
+      "explain": "Git 给项目记一本变化账：每次提交存下一个快照，随时能对比差异、回到任何一个旧版本；多人各自开分支修改，最后合并到一起。",
+      "say": "我第一次用 Git。请演示一次完整的保存流程：改动、暂存、提交分别发生什么，以及手滑改坏后怎么回到上一个提交；先不解释远程仓库。",
+      "quiz": {
+        "q": "昨天提交过的功能今天被改坏了。最快的恢复方式？",
+        "options": ["凭记忆重写", "删除整个项目重新开始", "回滚到昨天那次提交的版本"],
+        "answer": 2,
+        "explain": "提交过就有快照，回退即可；重写和删除都放弃了已有记录。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Git 记录项目快照，支持版本对比与回退。", "source": "https://git-scm.com/book/en/v2" },
+    { "claim": "分支让各人修改互不干扰，最终可合并。", "source": "https://git-scm.com/book/en/v2" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

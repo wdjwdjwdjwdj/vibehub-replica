@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 
 test('VibeHub core routes and interactions', async ({ page }) => {
   const errors = [];

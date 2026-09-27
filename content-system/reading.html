@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vibe Coding 术语图鉴 · 新内容试读（首批 10 条）</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1d1d1f;--muted:#6e6e73;--line:#e6e6e9;--blue:#0a6cff;--blue-soft:#eef4ff;--ok:#1a7f37;--ok-soft:#e9f6ec;--bad:#b3261e;--bad-soft:#fdeeec;--warn-soft:#fffbe8}
+html[data-theme="dark"]{--bg:#101012;--card:#1c1c1e;--ink:#f5f5f7;--muted:#a1a1a6;--line:#333336;--blue:#4da2ff;--blue-soft:#16233a;--ok:#4fbf6a;--ok-soft:#16281c;--bad:#ff6b5e;--bad-soft:#3a1c19;--warn-soft:#33290f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+header.top{position:sticky;top:0;z-index:9;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topin{max-width:860px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px}
+.brand{font-weight:800;font-size:16px}.brand b{color:var(--blue)}
+.topin .sp{flex:1}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 14px;font-size:13px;cursor:pointer}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+nav.toc{max-width:860px;margin:20px auto 0;padding:0 20px;display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:13px;color:var(--ink);text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 13px;display:inline-flex;gap:6px;align-items:baseline}
+nav.toc a small{color:var(--muted);font-size:11px}
+nav.toc a.active{border-color:var(--blue);color:var(--blue);background:var(--blue-soft)}
+main{max-width:860px;margin:0 auto;padding:8px 20px 90px}
+.term{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 30px;margin-top:24px;scroll-margin-top:80px}
+.term header{display:flex;gap:8px;margin-bottom:8px}
+.cat,.lv{font-size:12px;border-radius:6px;padding:1px 9px;background:var(--blue-soft);color:var(--blue)}
+.lv{background:transparent;border:1px solid var(--line);color:var(--muted)}
+h2{font-size:28px;margin:4px 0 16px;line-height:1.3}
+.en-name{color:var(--muted);font-size:18px;font-weight:600;margin-left:10px}
+h4{font-size:14px;color:var(--muted);letter-spacing:.05em;margin:26px 0 8px;font-weight:700}
+p{margin:0 0 10px}
+.one{font-size:19px;font-weight:700;line-height:1.6}
+.practice{background:var(--blue-soft);border-radius:12px;padding:14px 18px}
+.deeper{border:1px dashed var(--blue);border-radius:12px;padding:10px 16px;margin:14px 0}
+.deeper summary{cursor:pointer;color:var(--blue);font-size:14px;font-weight:600}
+.deeper p{margin-top:10px;font-size:15px}
+.mis{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin-bottom:10px}
+.mis .w{color:var(--bad);display:flex;gap:8px}.mis .r{color:var(--ok);display:flex;gap:8px;font-size:15px}
+.mis b{flex:none}
+.rels{display:flex;flex-wrap:wrap;gap:8px}
+.rel{display:inline-flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:14px;font-weight:600;color:var(--blue)}
+.rel small{font-weight:400;color:var(--muted);font-size:12px;line-height:1.5}
+.quiz .q{font-weight:600}
+.opt{display:block;width:100%;text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:9px 14px;margin-bottom:8px;font-size:15px;cursor:pointer;font-family:inherit}
+.opt:hover{border-color:var(--blue)}
+.opt.right{background:var(--ok-soft);border-color:var(--ok);color:var(--ok);font-weight:600}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad);color:var(--bad)}
+.qe{color:var(--muted);font-size:14px;background:var(--bg);border-radius:10px;padding:8px 14px}
+.saybox{position:relative;background:var(--warn-soft);border:1px solid color-mix(in srgb,var(--ink) 8%,transparent);border-radius:12px;padding:14px 90px 14px 18px}
+.saybox p{font-size:15px;margin:0}
+.copybtn{position:absolute;right:12px;top:12px;border:0;background:var(--blue);color:#fff;border-radius:8px;padding:5px 14px;font-size:13px;cursor:pointer}
+.copybtn.done{background:var(--ok)}
+.facts{margin-top:26px;border-top:1px solid var(--line);padding-top:12px}
+.facts summary{cursor:pointer;color:var(--muted);font-size:13px}
+.facts ul{padding-left:20px;font-size:13px;color:var(--muted)}
+.facts a{color:var(--blue);text-decoration:none;margin-left:6px}
+footer.site{max-width:860px;margin:0 auto;padding:30px 20px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:640px){.term{padding:20px 18px}h2{font-size:24px}.saybox{padding-right:18px;padding-top:44px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+  <span class="brand"><b>起站</b> · Vibe Coding 术语图鉴</span>
+  <span class="sp"></span>
+  <button class="btn" id="langBtn" onclick="toggleLang()">EN</button>
+  <button class="btn" id="themeBtn" onclick="toggleTheme()">🌙</button>
+</div></header>
+<nav class="toc"><a href="#t-api" data-id="api">API<small>API</small></a><a href="#t-component" data-id="component">Component<small>Component</small></a><a href="#t-context-window" data-id="context-window">Context Window<small>Context Window</small></a><a href="#t-deployment" data-id="deployment">Deployment<small>Deployment</small></a><a href="#t-environment-variable" data-id="environment-variable">Environment Variable<small>Environment Variable</small></a><a href="#t-http" data-id="http">HTTP<small>HTTP</small></a><a href="#t-mcp" data-id="mcp">MCP<small>MCP</small></a><a href="#t-prompt" data-id="prompt">Prompt<small>Prompt</small></a><a href="#t-state" data-id="state">State<small>State</small></a><a href="#t-token" data-id="token">Token<small>Token</small></a></nav>
+<main>
+<article class="term" id="t-api" data-id="api">
+    <header><span class="cat">网络与接口</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">API</span><span class="en-name">API</span></h2>
+    <div class="lzh">
+    <p class="one">程序之间的服务窗口：按约定的格式要，按约定的格式给。</p>
+    <h4>什么时候会碰到</h4><p>小程序取天气、网站用微信登录、前端拿后端数据——两个程序互相要东西，走的都是 API。</p>
+    <h4>讲透</h4><p>API 的本体不是那个网址，是约定：传什么参数、返回什么结构、错了给什么码，全写在接口文档里。所以字段拼错、类型不对，服务器直接拒单——多数「接口坏了」其实是「请求没按约定来」。还要注意 200 只代表送达，业务失败藏在响应正文里，得单独判断。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>「接口」不止是网址那一层：手机 App 调相机、读通讯录，走的也是 API。只要是两个程序之间约定好的调用方式，都算 API——Web API 只是新手最先打交道的那一种。看懂这层，以后看到「系统 API」「开放 API」就不会慌。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>先打开 api.github.com/users/octocat 亲眼看一次真实返回的 JSON。然后在 Claude Code 里说：用 fetch 请求这个接口渲染成卡片，失败时显示重试按钮——盯着它怎么写错误分支，对照文档核对。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>API 就是一个网址。</span></div><div class="r"><b>✓</b><span>网址是门，约定才是 API：参数、返回结构、错误码，全在文档里。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>返回 200 就是成功。</span></div><div class="r"><b>✓</b><span>200 只是 HTTP 层通了。密码错误这类业务失败写在正文里，要单独判断。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>API 是后端的事。</span></div><div class="r"><b>✓</b><span>前端天天在调：参数对不对、失败怎么兜底、加载中怎么展示，都是前端的活。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">http<small>API 请求走的就是 HTTP</small></span><span class="rel">json<small>多数 API 的请求和返回都是 JSON</small></span><span class="rel">http-methods<small>GET/POST/PUT/DELETE 是 API 的动词</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">调登录接口返回 200，但用户没登录上。最可能的原因？</p><div class="opts"><button class="opt" data-ok="false" data-q="api" onclick="pick(this)">A. 接口坏了等后端修</button><button class="opt" data-ok="true" data-q="api" onclick="pick(this)">B. HTTP 层通了，正文里写着业务失败</button><button class="opt" data-ok="false" data-q="api" onclick="pick(this)">C. 改成 POST 就好</button></div><p class="qe" data-q="api" hidden>200 只说明请求送达。密码错误这类失败在正文的字段里，要单独判断。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>这是接口文档和我的代码。帮我核对参数是否符合约定，并补上失败时的兜底处理。</p><button class="copybtn" data-say="这是接口文档和我的代码。帮我核对参数是否符合约定，并补上失败时的兜底处理。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">A service window between programs: ask in the agreed format, get the agreed format back.</p>
+    <h4>什么时候会碰到</h4><p>A mini-program pulling weather, a site logging in via WeChat, a frontend fetching user data — any time two programs trade data, an API is the contract.</p>
+    <h4>讲透</h4><p>The API is not the URL; it is the agreement — which parameters, what response shape, which error codes — all written in the docs. That is why a misspelled field gets your order rejected: most 'the API is broken' turns out to be 'the request broke the contract'. And 200 only means delivered; business failures hide in the body and need their own check.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>'Interface' reaches beyond URLs: when a phone app uses the camera or reads contacts, that is an API too. Any agreed way for two programs to call each other counts — Web APIs are simply the kind beginners meet first. Seeing this layer, 'system API' and 'open API' stop being intimidating.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Open api.github.com/users/octocat and look at a real JSON response first. Then ask Claude Code: fetch this endpoint, render it as a card, show a retry button on failure — and watch how it writes the error branches against the docs.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>An API is a URL.</span></div><div class="r"><b>✓</b><span>The URL is the door; the API is the contract — params, shape, error codes, all in the docs.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>A 200 means it worked.</span></div><div class="r"><b>✓</b><span>200 clears the HTTP layer only. Wrong-password lives in the body and needs its own check.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>APIs are backend work.</span></div><div class="r"><b>✓</b><span>Frontend calls them all day: params, failure fallbacks, loading states.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">http<small>API requests ride on HTTP</small></span><span class="rel">json<small>Most APIs exchange JSON</small></span><span class="rel">http-methods<small>GET/POST/PUT/DELETE are API verbs</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">A login call returns 200 but the user is not logged in. Most likely cause?</p><div class="opts"><button class="opt" data-ok="false" data-q="api" onclick="pick(this)">A. The API is broken</button><button class="opt" data-ok="true" data-q="api" onclick="pick(this)">B. The HTTP layer passed; the body reports a business failure</button><button class="opt" data-ok="false" data-q="api" onclick="pick(this)">C. POST would fix it</button></div><p class="qe" data-q="api" hidden>200 confirms delivery only. Business failures live in body fields and need a separate check.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>Here are the API docs and my code. Check my request against the contract and add failure handling.</p><button class="copybtn" data-say="Here are the API docs and my code. Check my request against the contract and add failure handling." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>API 是程序之间交互的接口定义，Web API 通过 HTTP 消息交换数据。<a href="https://developer.mozilla.org/en-US/docs/Glossary/API" target="_blank" rel="noopener">官方来源 ↗</a></li><li>客户端 Web API 通过请求-响应交换结构化数据（常见为 JSON）。<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-component" data-id="component">
+    <header><span class="cat">现代前端</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">Component</span><span class="en-name">Component</span></h2>
+    <div class="lzh">
+    <p class="one">界面上可复用的一块：写一次，换参数到处用。</p>
+    <h4>什么时候会碰到</h4><p>同一个按钮在 20 个页面出现，改圆角要手改 20 遍——该抽组件了。</p>
+    <h4>讲透</h4><p>组件把一块界面和它的行为打包，用参数决定显示什么：一个月饼模具，换馅压不同月饼。页面由组件拼成。什么时候抽？土标准：同一段结构被复制到第二处，就抽。拆过头参数爆炸、读代码要跳七八个文件，一句话说不清用途的别拆。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>也有不该抽的时候：只有一处使用、看不到复用前景的，抽出来只是多一层跳转。更稳的节奏是先让代码重复一次，第三次出现再抽——宁可晚抽，不要早抽。早抽的组件常常把参数猜错，返工更贵。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>让 Claude Code 把项目里重复三次以上的按钮抽成 Button 组件（参数：文字、类型、点击事件），迁移完再数一次：改个圆角要动几处代码。这个数字就是收益。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>一个组件必须一个文件。</span></div><div class="r"><b>✓</b><span>只是习惯。小组件同文件共存完全合法，文件边界不决定拆分粒度。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>组件是 React 专属。</span></div><div class="r"><b>✓</b><span>Vue、Svelte、Web Components 都有，写法不同，思想一样。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">state<small>组件内部会变的数据就是状态</small></span><span class="rel">frontend<small>组件是现代前端的组织单位</small></span><span class="rel">html<small>组件最终渲染成 HTML</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">同一按钮样式在 12 个页面，要求全改圆角。成本最低的做法？</p><div class="opts"><button class="opt" data-ok="false" data-q="component" onclick="pick(this)">A. 逐页手改 12 处</button><button class="opt" data-ok="true" data-q="component" onclick="pick(this)">B. 已是组件改一处；不是先抽再改</button><button class="opt" data-ok="false" data-q="component" onclick="pick(this)">C. 全局替换 border-radius</button></div><p class="qe" data-q="component" hidden>组件的价值在这一刻兑现：样式集中一处。字符串替换碰不到结构差异。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>这段按钮结构在多个页面重复。抽成组件（参数：文字/类型/点击），给迁移步骤。</p><button class="copybtn" data-say="这段按钮结构在多个页面重复。抽成组件（参数：文字/类型/点击），给迁移步骤。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">A reusable piece of UI: write once, re-parameterize everywhere.</p>
+    <h4>什么时候会碰到</h4><p>The same button on 20 pages and a radius change needs 20 hand edits — time to extract a component.</p>
+    <h4>讲透</h4><p>A component bundles a piece of interface with its behavior, props deciding what it shows: one mooncake mold, different fillings, different cakes. Pages are assembled from components. When to extract? The working rule: the moment the same structure gets copied a second time. Over-splitting explodes props and scatters reading across files — if you cannot describe it in one sentence, keep it merged.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>There is also a time not to extract: used once with no reuse in sight, a component merely adds a hop. The steadier rhythm is letting code repeat once and extracting on the third appearance — extract late, not early. Early components often guess their props wrong, and rework costs more.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Ask Claude Code to extract any button repeated three or more times into a Button component (props: label, variant, onClick), then count how many places a radius change touches. That number is the payoff.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>One component must equal one file.</span></div><div class="r"><b>✓</b><span>Just a habit. Small variants can share a file; file boundaries do not set granularity.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Components are React-only.</span></div><div class="r"><b>✓</b><span>Vue, Svelte, Web Components all have them — different syntax, same idea.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">state<small>Data a component changes over time is state</small></span><span class="rel">frontend<small>Components are the organizing unit of modern frontend</small></span><span class="rel">html<small>Components ultimately render HTML</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">One button style on 12 pages; design wants rounder corners everywhere. Cheapest path?</p><div class="opts"><button class="opt" data-ok="false" data-q="component" onclick="pick(this)">A. Edit 12 pages by hand</button><button class="opt" data-ok="true" data-q="component" onclick="pick(this)">B. Component exists: edit once; else extract first, then edit</button><button class="opt" data-ok="false" data-q="component" onclick="pick(this)">C. Find-and-replace border-radius</button></div><p class="qe" data-q="component" hidden>This is the payoff moment: the style lives in one place. String replace misses structural differences.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>This button markup repeats across pages. Extract it into a component (label/variant/onClick props) and give me the migration steps.</p><button class="copybtn" data-say="This button markup repeats across pages. Extract it into a component (label/variant/onClick props) and give me the migration steps." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>React 组件是独立可复用的 UI 单元，通过 props 接收输入。<a href="https://react.dev/learn/your-first-component" target="_blank" rel="noopener">官方来源 ↗</a></li><li>Web Components 是浏览器原生组件化标准，组件化不专属某个框架。<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-context-window" data-id="context-window">
+    <header><span class="cat">AI 协作</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">Context Window</span><span class="en-name">Context Window</span></h2>
+    <div class="lzh">
+    <p class="one">AI 一次能看到的全部内容上限：对话、文件、提问，挤同一个窗口。</p>
+    <h4>什么时候会碰到</h4><p>聊久了它忘了你开头定的要求、大文件总结报错、想让它读完整个项目被拒——都是窗口满了。</p>
+    <h4>讲透</h4><p>窗口是模型单次能处理的 token 总量，像一张书桌：摆得下的才看得见。你的消息、贴的文件、它的回答都在往桌上放；满了，最早放的先被收走。长对话「忘事」不是记性差，是那份资料出了视野。收拾办法只有两种：清掉不重要的，或把大文件压成摘要再放回。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>窗口大不等于能一口气塞下整个代码库：塞进十万个 token 的代码，模型看得过来但注意力会摊薄，关键处容易看漏。真正管用的思路不是「更大」，而是「更会挑」——先给相关文件，其余只给文件名让它自己开口要。这就是上下文工程的起点。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>在 Claude Code 让它读一个 50 行的文件答题，再换几千行的试一次，观察后者怎么应对。会话变长后跑一次 /compact（Claude Code 自带的整理命令），相当于主动收拾书桌。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>窗口大，记忆就无限。</span></div><div class="r"><b>✓</b><span>超出的部分被截断或压缩成摘要。「记得」只在窗口内成立。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>塞进窗口就都会被认真读。</span></div><div class="r"><b>✓</b><span>关键约束放开头或结尾，比埋在几千字中间可靠。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">token<small>窗口容量按 token 算</small></span><span class="rel">context-engineering<small>窗口是硬约束，上下文工程是应对方法</small></span><span class="rel">conversation-history<small>历史占窗口最快</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">AI 忘了你最初定的「只用 TypeScript」。最省事的有效做法？</p><div class="opts"><button class="opt" data-ok="false" data-q="context-window" onclick="pick(this)">A. 重开会话从头讲</button><button class="opt" data-ok="true" data-q="context-window" onclick="pick(this)">B. 重贴这条约束，或压缩上下文后继续</button><button class="opt" data-ok="false" data-q="context-window" onclick="pick(this)">C. 换个更大的模型</button></div><p class="qe" data-q="context-window" hidden>旧约束可能已出窗口。重贴或压缩把资料放回桌面；换模型找不回丢的内容。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>会话已经很长。下面几条是最关键的约束，先确认收到再继续；上下文吃紧就先总结进展。</p><button class="copybtn" data-say="会话已经很长。下面几条是最关键的约束，先确认收到再继续；上下文吃紧就先总结进展。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">How much an AI can see at once: history, files, and your question share one window.</p>
+    <h4>什么时候会碰到</h4><p>It forgets the rule you set at the start, chokes on a huge file, or refuses to read the whole project at once — the window filled up.</p>
+    <h4>讲透</h4><p>The window is the total tokens a model can process in one pass — a desk: whatever fits is what it can see. Your messages, pasted files, and its own replies keep landing on the desk; when it fills, the earliest items get cleared first. Long-chat amnesia is not bad memory, it is material leaving the desk. Two fixes only: clear what does not matter, or compress big files into summaries and put those back.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>A big window is not an invitation to stuff in the whole codebase: with a hundred thousand tokens of code, attention gets thin and key lines slip past. The working idea is not 'bigger' but 'pickier' — relevant files first, file names for the rest, and let the model ask. That is where context engineering starts.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>In Claude Code, have it answer questions about a 50-line file, then try a few-thousand-line one and watch how it copes. When sessions get long, run /compact — tidying the desk on purpose.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>Bigger window, unlimited memory.</span></div><div class="r"><b>✓</b><span>Overflow is truncated or summarized. 'Remembering' only holds inside the window.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Everything in the window gets read carefully.</span></div><div class="r"><b>✓</b><span>Key constraints at the start or end beat being buried mid-text.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">token<small>Capacity is counted in tokens</small></span><span class="rel">context-engineering<small>The window is the constraint; context engineering is the craft</small></span><span class="rel">conversation-history<small>History fills the window fastest</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">The AI forgot your early 'TypeScript only' rule. Cheapest effective fix?</p><div class="opts"><button class="opt" data-ok="false" data-q="context-window" onclick="pick(this)">A. Restart the session and restate everything</button><button class="opt" data-ok="true" data-q="context-window" onclick="pick(this)">B. Re-paste that rule, or compact the context and continue</button><button class="opt" data-ok="false" data-q="context-window" onclick="pick(this)">C. Switch to a bigger model</button></div><p class="qe" data-q="context-window" hidden>The rule likely left the window. Re-pasting or compacting puts it back; a bigger model cannot recover lost content.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>This session is long. Here are the constraints that matter most — confirm them first; if context is tight, summarize our progress.</p><button class="copybtn" data-say="This session is long. Here are the constraints that matter most — confirm them first; if context is tight, summarize our progress." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>上下文窗口是模型单次能处理的 token 上限，超出的内容无法被模型看到。<a href="https://docs.anthropic.com/en/docs/build-with-claude/context-windows" target="_blank" rel="noopener">官方来源 ↗</a></li><li>长对话会逼近窗口上限，需要精简历史或摘要管理。<a href="https://docs.anthropic.com/en/docs/build-with-claude/context-windows" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-deployment" data-id="deployment">
+    <header><span class="cat">部署上线</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">Deployment</span><span class="en-name">Deployment</span></h2>
+    <div class="lzh">
+    <p class="one">把你电脑上能跑的项目，变成别人打开网址就能用的服务。</p>
+    <h4>什么时候会碰到</h4><p>本地演示一切正常，发给朋友的链接打不开；作品要放进简历让人点开看——中间就差这一步。</p>
+    <h4>讲透</h4><p>部署是把构建产物发布到服务器：本地炒好的菜（项目）装进餐盒（npm run build 出的 dist 目录）、放上平台（托管服务），别人才点得到。规矩是改一次发一次——改了代码不重新构建发布，线上永远是旧版。静态页面交给静态托管就行；带后端的还要安排服务器、数据库和域名。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>「改一次发一次」靠人手容易忘，于是有了自动发布：代码一推送，服务器自己构建上线，这套流程叫 CI/CD。首次上线还有两道新手最常卡住的坎：域名解析和 HTTPS 证书——每个都值得单独学，本站都有对应词条。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>跑 npm run build，把 dist 目录交给静态托管（CloudBase 或 Netlify 都行），拿到公网地址用手机打开验证。再改一行文案重新发一次，亲身体会「改一次、发一次」的节奏。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>本地能跑，线上就能跑。</span></div><div class="r"><b>✓</b><span>环境不同：路径大小写、环境变量、接口地址都可能翻车，按线上配置验证一遍。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>把整个项目文件夹传上去就行。</span></div><div class="r"><b>✓</b><span>发的是 dist 不是源码。node_modules 又大又跑不起来。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">environment-variable<small>测试和生产的差异靠环境变量区分</small></span><span class="rel">backend<small>带后端的应用要多安排服务器和数据库</small></span><span class="rel">http<small>部署的终点是用户通过 HTTP 打开你的网址</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">同事说「代码早改好了，线上怎么还是旧的」。最可能的原因？</p><div class="opts"><button class="opt" data-ok="false" data-q="deployment" onclick="pick(this)">A. 浏览器缓存，重启电脑</button><button class="opt" data-ok="true" data-q="deployment" onclick="pick(this)">B. 只改了本地，没重新构建发布</button><button class="opt" data-ok="false" data-q="deployment" onclick="pick(this)">C. 服务器坏了</button></div><p class="qe" data-q="deployment" hidden>线上只认最后一次发布的产物。不重新构建发布，改多少遍本地都白搭。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>带我走一遍完整部署：构建、发布到静态托管、手机验证，并列出以后每次更新要重复的步骤。</p><button class="copybtn" data-say="带我走一遍完整部署：构建、发布到静态托管、手机验证，并列出以后每次更新要重复的步骤。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">Turning a project that runs on your machine into something anyone can open at a URL.</p>
+    <h4>什么时候会碰到</h4><p>The demo works on your laptop, the link you sent opens to nothing, and the portfolio piece needs a URL — deployment is that missing step.</p>
+    <h4>讲透</h4><p>Deployment publishes your build output to a server: the dish cooked at home (your project) goes into a takeout box (the dist folder from npm run build), onto a platform (a hosting service), and only then can anyone order it. The rule is ship once per change — edit without rebuilding and the live site stays old forever. Static pages only need static hosting; a backend app also needs a server, a database, and a domain.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>Shipping by hand on every change is forgettable, so automation exists: push the code and the server builds and ships by itself — that is CI/CD. First launches also hit two classic walls: domain DNS and the HTTPS certificate. Each deserves its own entry, and both are covered here.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Run npm run build, hand the dist folder to a static host (CloudBase or Netlify), open the public URL on your phone to verify. Then change one line of copy and republish — feel the 'change once, ship once' rhythm firsthand.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>Runs locally, runs online.</span></div><div class="r"><b>✓</b><span>Different environments: path case, env vars, API URLs can all break. Verify against production config.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Upload the whole project folder.</span></div><div class="r"><b>✓</b><span>You ship dist, not source. node_modules is huge and useless on the server.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">environment-variable<small>Staging vs production differences ride on env vars</small></span><span class="rel">backend<small>Full-stack deploys add a server and a database</small></span><span class="rel">http<small>The finish line is a user opening your URL</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">A teammate says the fix was made long ago but the live site is still old. Most likely cause?</p><div class="opts"><button class="opt" data-ok="false" data-q="deployment" onclick="pick(this)">A. Browser cache — restart</button><button class="opt" data-ok="true" data-q="deployment" onclick="pick(this)">B. Changed locally but never rebuilt and republished</button><button class="opt" data-ok="false" data-q="deployment" onclick="pick(this)">C. The server is down</button></div><p class="qe" data-q="deployment" hidden>The live site serves the last published build only. Without a rebuild and republish, local edits never land.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>Walk me through a full deployment: build, publish to static hosting, verify on mobile, and list the steps to repeat on every future update.</p><button class="copybtn" data-say="Walk me through a full deployment: build, publish to static hosting, verify on mobile, and list the steps to repeat on every future update." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>vite build 将源码构建为可发布的 dist 产物目录。<a href="https://vitejs.dev/guide/build" target="_blank" rel="noopener">官方来源 ↗</a></li><li>部署是让应用在服务器上供用户访问的过程，静态站点可直接用静态托管。<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Tools_and_testing/Understanding_client-side_tools/Deployment" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-environment-variable" data-id="environment-variable">
+    <header><span class="cat">部署上线</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">Environment Variable</span><span class="en-name">Environment Variable</span></h2>
+    <div class="lzh">
+    <p class="one">从代码外部注入的配置：同一份代码，不同环境不同设置。</p>
+    <h4>什么时候会碰到</h4><p>本地连测试库、线上连生产库；密钥不能进 Git；测试站和正式站接口地址不同——全靠环境变量。</p>
+    <h4>讲透</h4><p>环境变量是程序启动时从外部读的配置，像空调旋钮：机器一样，温度随房间调。前端有条特殊规矩：Vite 只把 VITE_ 开头的变量打进产物——所以前端变量是公开的，密钥只能放后端。另外改了变量要重启服务或重新构建才生效，改完没反应多半是这个原因。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>前端变量还有个时机关卡：注入发生在「构建」那一刻，不是用户访问那一刻——改了变量必须重新构建，线上才更新；后端是运行时读取，重启就生效。机制不同，排错路数也不同：前端变量不对劲，先问一句「重新构建了吗」。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>项目根建 .env，写 VITE_API_BASE_URL=http://127.0.0.1:3000，代码里用 import.meta.env 读取显示在页面；再把 .env 加进 .gitignore，跑 git status 确认不会被提交。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>密钥放前端环境变量里就安全了。</span></div><div class="r"><b>✓</b><span>前端变量会打进产物，访客打开浏览器全看得到。密钥只放后端。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>.env 提交到 Git 方便共享。</span></div><div class="r"><b>✓</b><span>仓库只放 .env.example 模板。真文件留在本地和 CI。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">deployment<small>测试与生产的差异就是环境变量的差异</small></span><span class="rel">backend<small>密钥的安全存放点是后端</small></span><span class="rel">git<small>.gitignore 决定 env 文件进不进仓库</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">第三方服务的 API Key 放哪里最安全？</p><div class="opts"><button class="opt" data-ok="false" data-q="environment-variable" onclick="pick(this)">A. 前端 .env 的 VITE_ 变量</button><button class="opt" data-ok="true" data-q="environment-variable" onclick="pick(this)">B. 后端环境变量，前端通过自己的后端转发</button><button class="opt" data-ok="false" data-q="environment-variable" onclick="pick(this)">C. 源代码常量</button></div><p class="qe" data-q="environment-variable" hidden>前端的一切最终都在访客手里。Key 放后端、前端只调自己的接口，泄露面最小。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>帮我设计前后端的环境变量方案：区分测试生产、密钥不进 Git，并检查现有配置有没有泄露风险。</p><button class="copybtn" data-say="帮我设计前后端的环境变量方案：区分测试生产、密钥不进 Git，并检查现有配置有没有泄露风险。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">Config injected from outside the code: one codebase, different settings per environment.</p>
+    <h4>什么时候会碰到</h4><p>Local talks to a test database while production uses the real one; an API key must never reach Git; staging and live URLs differ — env vars carry all of it.</p>
+    <h4>讲透</h4><p>An environment variable is config the program reads from outside at startup — the dial on an air conditioner: same machine, different setting per room. The frontend has a special rule: Vite only bundles variables prefixed with VITE_, so every frontend variable is public and secrets belong on the backend. One more gotcha: changes need a server restart or a rebuild to take effect — no reaction after editing is usually this.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>Frontend variables carry a timing trap: injection happens at build time, not when a user visits — so a change demands a rebuild before the live site moves. Backends read at runtime, where a restart suffices. Different mechanisms, different debugging: wrong frontend value, ask 'was it rebuilt?' first.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Create .env at the project root with VITE_API_BASE_URL=http://127.0.0.1:3000, read it via import.meta.env.VITE_API_BASE_URL and show it on the page; add .env to .gitignore, then run git status to confirm it will not be committed.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>Keys are safe in frontend env vars.</span></div><div class="r"><b>✓</b><span>Frontend variables ship in the bundle; any visitor can read them. Secrets live on the backend.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Commit .env for easy sharing.</span></div><div class="r"><b>✓</b><span>Commit a .env.example template only. Real files stay local and in CI.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">deployment<small>Staging vs production is exactly an env var difference</small></span><span class="rel">backend<small>The backend is the safe home for secrets</small></span><span class="rel">git<small>.gitignore decides whether env files enter the repo</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">Where should a third-party API key live?</p><div class="opts"><button class="opt" data-ok="false" data-q="environment-variable" onclick="pick(this)">A. A frontend .env VITE_ variable</button><button class="opt" data-ok="true" data-q="environment-variable" onclick="pick(this)">B. Backend env vars, frontend calls its own backend</button><button class="opt" data-ok="false" data-q="environment-variable" onclick="pick(this)">C. A source code constant</button></div><p class="qe" data-q="environment-variable" hidden>Everything in frontend code ends up in visitors' hands. Key on the backend, proxy through your own API — minimal exposure.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>Design my env var setup: separate staging and production, keys never in Git, and audit my current config for leaks.</p><button class="copybtn" data-say="Design my env var setup: separate staging and production, keys never in Git, and audit my current config for leaks." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>Vite 从 .env 文件加载环境变量，仅 VITE_ 前缀变量会暴露给客户端。<a href="https://vitejs.dev/guide/env-and-modes" target="_blank" rel="noopener">官方来源 ↗</a></li><li>密钥不应硬编码或提交版本库，应通过受控方式管理。<a href="https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-http" data-id="http">
+    <header><span class="cat">网络与接口</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">HTTP</span><span class="en-name">HTTP</span></h2>
+    <div class="lzh">
+    <p class="one">浏览器和网站服务器之间传消息的规矩：你发一个请求，它回一个响应。</p>
+    <h4>什么时候会碰到</h4><p>手机上列表刷不出来、提交表单报错、页面一片空白——想弄清哪一步出了岔子，都要从 HTTP 查起。</p>
+    <h4>讲透</h4><p>你每打开一个网页，浏览器都在和网站那台电脑一问一答：你这边发一个「请求」，写明想干什么（GET 是拿东西，POST 是交东西）、要哪里的东西；对方回一个「响应」，附带一个结果代码和内容。代码 200 是办成了，404 是这个地址没这个东西，500 是对方自己出错了。HTTPS 就是加了密的 HTTP——不加密的话，你输入的密码在网线上是裸奔的。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>「点餐」式一问一答有个天然短板：对方没法先开口找你。聊天软件的消息要靠服务器主动推——这正是 WebSocket 这类技术存在的原因。另外 HTTP 不记得你是谁，你每发一个请求都要重新亮明身份，登录状态靠 Cookie 这张「随身会员卡」另外维系。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>用电脑浏览器打开任意网站，按 F12（笔记本加 Fn）弹出开发面板，点 Network（网络）标签后刷新页面：瞬间冒出几十上百行记录，每行就是一笔「进出货」。点开带红色 4、5 开头数字的行，右侧就是服务器的原话。以后页面出错，第一件事来这看。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>404 就是网站挂了。</span></div><div class="r"><b>✓</b><span>404 只是你去的这个地址没东西，多半是链接写错。整个站都打不开才是对方服务器的事。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>提示 400，把提交方式换一下再试。</span></div><div class="r"><b>✓</b><span>400 的意思是「你交上来的东西本身有问题」，对方会在回复里写明哪个字段不对。换方式只是换一种错法。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>HTTPS 就是网址前面多了把锁。</span></div><div class="r"><b>✓</b><span>那把锁的意思是：内容被加密了、对方身份被核实过。没有它，登录密码等于明文广播。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">api<small>程序之间要数据，走的也是这套规矩</small></span><span class="rel">websocket<small>HTTP 做不到的「对方先开口」，它来补</small></span><span class="rel">backend<small>网站那台电脑上干活的人，天天就是在回应请求</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">改完昵称点保存，页面没反应。按 F12 打开面板，看到一条记录写着 400。下一步做什么？</p><div class="opts"><button class="opt" data-ok="false" data-q="http" onclick="pick(this)">A. 换个方式重交一次</button><button class="opt" data-ok="true" data-q="http" onclick="pick(this)">B. 点开这条记录，看对方在回复里写了什么</button><button class="opt" data-ok="false" data-q="http" onclick="pick(this)">C. 刷新页面等它自己好</button></div><p class="qe" data-q="http" hidden>回复里通常写明了哪个信息填错了。重交或刷新都绕开了原因。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>我提交信息后页面报错，下面是请求和回复的原文。请指出哪里不符合要求，并给我一份改好的版本。</p><button class="copybtn" data-say="我提交信息后页面报错，下面是请求和回复的原文。请指出哪里不符合要求，并给我一份改好的版本。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">The rules between your browser and the website's computer: you ask, it answers.</p>
+    <h4>什么时候会碰到</h4><p>A list that will not refresh, a form that errors, a blank page — when something breaks, HTTP is where the investigation starts.</p>
+    <h4>讲透</h4><p>Every page load is a question and an answer between your browser and the website's computer. You send a request saying what you want (GET to fetch, POST to submit) and where; it answers with a result code and content. 200 means done, 404 means nothing lives at that address, 500 means their side tripped. HTTPS is the same conversation with encryption — without it, passwords travel the wires in the open.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>The question-then-answer pattern has a built-in gap: the server cannot speak first. Chat apps need the server to push messages — that is exactly why WebSocket exists. HTTP also has no memory of who you are; every request re-states its identity, and login sessions ride on cookies, like a membership card you show each time.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Open any website in a desktop browser and press F12 — a developer panel appears. Click the Network tab and refresh: hundreds of rows appear, one per exchange. Click rows with red numbers starting 4 or 5 and read the server's reply on the right. This is step one whenever a page misbehaves.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>A 404 means the website is broken.</span></div><div class="r"><b>✓</b><span>404 means this particular address has nothing — usually a wrong link. The whole site being down is a different failure.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Got a 400? Just submit it differently.</span></div><div class="r"><b>✓</b><span>400 means what you submitted itself is wrong, and the reply usually names the field. Changing the method makes a different mistake.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>HTTPS is just a padlock icon.</span></div><div class="r"><b>✓</b><span>The lock means encrypted content and a verified identity. Without it, your password is broadcast in the open.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">api<small>Programs trade data using the same rules</small></span><span class="rel">websocket<small>It covers what HTTP cannot: the server speaking first</small></span><span class="rel">backend<small>Answering these requests is the daily work on that other computer</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">You save a nickname, nothing happens. You press F12 and see an entry marked 400. What next?</p><div class="opts"><button class="opt" data-ok="false" data-q="http" onclick="pick(this)">A. Resubmit it differently</button><button class="opt" data-ok="true" data-q="http" onclick="pick(this)">B. Open that entry and read what the reply says</button><button class="opt" data-ok="false" data-q="http" onclick="pick(this)">C. Refresh and wait</button></div><p class="qe" data-q="http" hidden>The reply usually names the wrong field. Resubmitting or refreshing skips the cause.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>My form submission fails. Here are the request and reply — point out what breaks the rules and give me a corrected version.</p><button class="copybtn" data-say="My form submission fails. Here are the request and reply — point out what breaks the rules and give me a corrected version." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（3 条官方文档）</summary><ul><li>HTTP 是请求-响应协议：请求含方法、URI、头部；响应含状态码、头部与内容。<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" target="_blank" rel="noopener">官方来源 ↗</a></li><li>HTTP 是无状态协议，会话状态需借助 Cookie 等机制维持。<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Session" target="_blank" rel="noopener">官方来源 ↗</a></li><li>WebSocket 提供服务器可主动发送消息的全双工通道。<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-mcp" data-id="mcp">
+    <header><span class="cat">AI 协作</span><span class="lv">进阶</span></header>
+    <h2><span class="zh-name">MCP</span><span class="en-name">MCP</span></h2>
+    <div class="lzh">
+    <p class="one">AI 连接外部工具和数据的标准协议：一个通用接口，谁都能插。</p>
+    <h4>什么时候会碰到</h4><p>想让 Claude 直接查你的数据库、操作浏览器、读内部文档；给团队统一配一套 AI 工具——用的都是 MCP。</p>
+    <h4>讲透</h4><p>MCP 是 Anthropic 开源的协议，规定 AI 应用怎么发现和调用外部工具，像 USB-C：统一一个口，设备即插即用。接上 MCP 服务器，AI 多了一双能动手的手——不是「知道」你的数据库，是真的能去查。它扩的是能力边界不是智商：工具接得再多，做推理的还是那个模型。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>「统一一个口」的想法历史上反复出现：USB、HTTP、浏览器插件，做的是同一件事。挑 MCP 服务器时看它的权限切得多细：靠谱的实现让你逐项批准每个动作，不靠谱的直接要一把全给——权限粒度就是你的安全底线。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>在 Claude Code 配一个 MCP 服务器（文件系统或浏览器控制），让它真的调一次：「列出我桌面上的文件」。配置报错先查路径和权限——这是装 MCP 最常踩的坑。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>装了 MCP，AI 就变聪明了。</span></div><div class="r"><b>✓</b><span>MCP 扩的是工具不是推理。能查库不等于会分析，质量还是看模型和提示词。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>MCP 服务器随便装都行。</span></div><div class="r"><b>✓</b><span>它碰得到你的文件和数据。来路不明的先审查，权限按最小够用给。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">tool-calling<small>MCP 是工具调用的标准化封装</small></span><span class="rel">ai-agent<small>Agent 靠工具动手，MCP 是接工具的口</small></span><span class="rel">api<small>两者解决的是同一类问题：程序调用程序</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">同事说「装上 MCP 服务器，代码质量就上去了」。怎么评价？</p><div class="opts"><button class="opt" data-ok="false" data-q="mcp" onclick="pick(this)">A. 对，MCP 直接提升模型能力</button><button class="opt" data-ok="true" data-q="mcp" onclick="pick(this)">B. MCP 只扩工具边界，质量看模型、提示词和流程</button><button class="opt" data-ok="false" data-q="mcp" onclick="pick(this)">C. 不对，MCP 会降低质量</button></div><p class="qe" data-q="mcp" hidden>MCP 让 AI 多了能调的工具，写代码的还是同一个模型。工具改变「能做什么」，不改变「做得多好」。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>我想让 Claude Code 通过 MCP 查我们的数据库。推荐合适的 MCP 服务器，给配置步骤和安全注意事项。</p><button class="copybtn" data-say="我想让 Claude Code 通过 MCP 查我们的数据库。推荐合适的 MCP 服务器，给配置步骤和安全注意事项。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">The standard protocol for AI to reach external tools and data: one universal port.</p>
+    <h4>什么时候会碰到</h4><p>You want Claude to query your database, drive a browser, or search internal docs; you want one tool setup for the whole team instead of per-vendor glue — MCP is the piece that makes both work.</p>
+    <h4>讲透</h4><p>MCP is an open-source protocol from Anthropic that defines how AI apps discover and call external tools — USB-C for AI: one port, devices plug in and just work. With an MCP server connected, the AI gains hands: it does not merely know about your database, it can actually query it. What MCP extends is the capability boundary, not the intelligence — attach ten tools and the same model still does the thinking.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>The 'one universal port' idea keeps reappearing in history: USB, HTTP, browser extensions — all the same move. When picking an MCP server, look at how finely it slices permissions: solid implementations ask you to approve each action; sketchy ones ask for everything at once. Permission granularity is your security line.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Configure one MCP server in Claude Code (filesystem or browser control) and make it really call something: 'list the files on my desktop'. When setup fails, check paths and permissions first — that is the most common pitfall.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>Install MCP and the AI gets smarter.</span></div><div class="r"><b>✓</b><span>MCP widens the tool boundary, not the reasoning. Query access is not analysis skill; quality still comes from model and prompt.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Any MCP server is safe to install.</span></div><div class="r"><b>✓</b><span>Servers can touch your files and data. Review unknown ones first and grant the minimum permissions that work.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">tool-calling<small>MCP is the standardized wrapper around tool calling</small></span><span class="rel">ai-agent<small>Agents act through tools; MCP is the port they plug into</small></span><span class="rel">api<small>Both solve the same class of problem: programs calling programs</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">A teammate says installing an MCP server will raise code quality. Fair?</p><div class="opts"><button class="opt" data-ok="false" data-q="mcp" onclick="pick(this)">A. Yes — MCP directly improves the model</button><button class="opt" data-ok="true" data-q="mcp" onclick="pick(this)">B. MCP only widens the tool boundary; quality depends on model, prompts, and process</button><button class="opt" data-ok="false" data-q="mcp" onclick="pick(this)">C. No — MCP lowers quality</button></div><p class="qe" data-q="mcp" hidden>MCP adds callable tools; the same model writes the code. Tools change what is possible, not how well it is done.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>I want Claude Code to query our database through MCP. Recommend a suitable MCP server with setup steps and security precautions.</p><button class="copybtn" data-say="I want Claude Code to query our database through MCP. Recommend a suitable MCP server with setup steps and security precautions." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>MCP 是连接 AI 应用与外部数据源和工具的开放协议。<a href="https://modelcontextprotocol.io/introduction" target="_blank" rel="noopener">官方来源 ↗</a></li><li>MCP 由 Anthropic 开源发布，目标是成为连接 AI 与数据源的通用标准。<a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-prompt" data-id="prompt">
+    <header><span class="cat">AI 协作</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">Prompt</span><span class="en-name">Prompt</span></h2>
+    <div class="lzh">
+    <p class="one">你发给 AI 的任务说明：四要素齐不齐，直接决定产出质量。</p>
+    <h4>什么时候会碰到</h4><p>生成的页面和预期差远、答非所问、格式每次漂移——先查任务说明，别急着怪模型。</p>
+    <h4>讲透</h4><p>把 AI 当实习生布置任务：只说「做个登录页」是抽奖；写清目标、背景（给谁用、在什么项目里）、约束（技术栈、禁区）、验收（什么算完成），产出立刻稳。四要素顺序随意，缺哪块哪块出问题。长期规则放系统提示（AI 的默认规矩），一次性任务放普通消息，别混。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>四要素之外还有一手：给样例。想让输出格式稳定，贴一个你满意的示范，比写十行格式要求都管用——模型模仿示例的本事远大于理解抽象规则。样例加四要素，日常九成任务够用。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>同一需求发两轮：第一轮只有「做个登录页」，第二轮补齐四要素。对比产出差距，再让 Claude Code 指出第二轮里哪句话影响最大——那句就是你第一轮缺的。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>提示词越长越客气越好。</span></div><div class="r"><b>✓</b><span>得分看要素齐不齐。客套话只烧 token。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>没做好就把原话再发一遍。</span></div><div class="r"><b>✓</b><span>同样输入只会得到同样产出。指出哪里不对，改完再试。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">system-prompt<small>长期规则的家</small></span><span class="rel">context-window<small>提示词是窗口里最该省着花的部分</small></span><span class="rel">structured-output<small>固定格式靠提示词里的验收标准</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">AI 生成的落地页和预期差很远。最有价值的下一步？</p><div class="opts"><button class="opt" data-ok="false" data-q="prompt" onclick="pick(this)">A. 多生成几次碰运气</button><button class="opt" data-ok="true" data-q="prompt" onclick="pick(this)">B. 对照四要素补缺，再生成</button><button class="opt" data-ok="false" data-q="prompt" onclick="pick(this)">C. 放弃 AI 手写 HTML</button></div><p class="qe" data-q="prompt" hidden>产出偏差多半是需求单缺项。补齐一轮就能逼近预期；运气不可复制。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>这是我的提示词和产出差距。指出缺了哪个要素（目标/背景/约束/验收），给改进版。</p><button class="copybtn" data-say="这是我的提示词和产出差距。指出缺了哪个要素（目标/背景/约束/验收），给改进版。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">The task sheet you hand the AI: four parts, and their completeness decides the output.</p>
+    <h4>什么时候会碰到</h4><p>The page misses expectations, answers go off-topic, format drifts every run — audit the task sheet before blaming the model.</p>
+    <h4>讲透</h4><p>Treat the AI like an intern: 'build a login page' is a lottery. State the goal, the context (who it is for, which project), the constraints (stack, no-gos), and the acceptance criteria (what done looks like), and output stabilizes. Order is free; a missing part fails exactly there. Standing rules go in the system prompt — the AI's default settings — one-off tasks in regular messages.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>Beyond the four parts, one more move: show a sample. For a stable output format, pasting one example you like beats ten lines of format rules — models imitate examples far better than they parse abstract specs. Samples plus the four parts cover most daily tasks.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Send the same need twice: round one is only 'build a login page'; round two fills in all four parts. Compare outputs, then ask Claude Code which sentence in round two moved the result most — that is what round one lacked.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>Longer and politer works better.</span></div><div class="r"><b>✓</b><span>Scoring is about completeness. Pleasantries burn tokens.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Bad output? Resend the same words.</span></div><div class="r"><b>✓</b><span>Same input, same output. Say what was wrong, fix the sheet, retry.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">system-prompt<small>Where standing rules live</small></span><span class="rel">context-window<small>The prompt is the window's most careful spend</small></span><span class="rel">structured-output<small>Fixed formats are acceptance criteria in writing</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">The AI's landing page is far off. Most valuable next step?</p><div class="opts"><button class="opt" data-ok="false" data-q="prompt" onclick="pick(this)">A. Generate a few more times</button><button class="opt" data-ok="true" data-q="prompt" onclick="pick(this)">B. Fill the missing part of the four, regenerate</button><button class="opt" data-ok="false" data-q="prompt" onclick="pick(this)">C. Drop the AI, write HTML by hand</button></div><p class="qe" data-q="prompt" hidden>Most misses are missing sheet items. One filled gap closes most of the distance; luck does not repeat.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>Here is my prompt and the gap between output and expectation. Name the missing part (goal/context/constraint/acceptance) and give me a fixed version.</p><button class="copybtn" data-say="Here is my prompt and the gap between output and expectation. Name the missing part (goal/context/constraint/acceptance) and give me a fixed version." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>清晰直接的指令（目标、背景、约束、验收）能显著改善模型输出。<a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">官方来源 ↗</a></li><li>系统提示设定整场会话的行为基调，与单次用户消息分工不同。<a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/system-prompts" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-state" data-id="state">
+    <header><span class="cat">现代前端</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">State</span><span class="en-name">State</span></h2>
+    <div class="lzh">
+    <p class="one">页面里会变的那部分数据：数据一变，界面跟着变。</p>
+    <h4>什么时候会碰到</h4><p>点赞后变红的爱心、购物车里加减的数字、你打字时输入框里的字——页面上所有会动的东西，背后都是状态在驱动。</p>
+    <h4>讲透</h4><p>把静态页面想成一张印刷品：印完就定，动不了。状态就是页面里那块「白板」——写上去能擦、擦了能再写，而且界面每次都按白板上的最新内容重画。有一条关键规矩：改状态必须走正规入口（React 里是专门的更新函数）。绕过它直接改，等于在白板背面偷偷写字——前台展示墙看不到。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>为什么直接改变量界面不刷新？React 像个只认登记处的记录员：只有走更新函数「登记」的改动，它才知道要重画屏幕；私下涂改它一概看不见。项目变大后白板还会不够用，于是拆成每个组件一块小白板、全局一块大白板——什么时候用哪块，是前端进阶的分水岭。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>打开 Claude Code，输入：帮我写一个最简单的计数器网页，一个数字，加一减一两个按钮。跑起来后让它故意改成 count = count + 1（不走更新函数），再点按钮——数字纹丝不动。改回正规写法再点，数字动了。亲手做这 10 分钟，胜过读十篇文章。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>状态就是数据库里的数据。</span></div><div class="r"><b>✓</b><span>状态刷新一下就没了。要长期保存的数据得写到后端，那是另一条路。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>所有数据都放进全局状态最好。</span></div><div class="r"><b>✓</b><span>只有跨页面共享的才进全局。全局越干净，后面越好维护。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">component<small>状态通常住在组件里</small></span><span class="rel">database<small>要长期保存的数据最终进数据库</small></span><span class="rel">frontend<small>状态驱动渲染是现代前端的发动机</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">点赞数字不变，代码写的是 likes = likes + 1。最可能的原因？</p><div class="opts"><button class="opt" data-ok="false" data-q="state" onclick="pick(this)">A. likes 类型不对</button><button class="opt" data-ok="true" data-q="state" onclick="pick(this)">B. 绕过了更新函数，界面没重画</button><button class="opt" data-ok="false" data-q="state" onclick="pick(this)">C. 按钮没绑点击事件</button></div><p class="qe" data-q="state" hidden>直接赋值只改了内存，React 不知道要重画。点击其实触发了，错在更新方式。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>我的计数器点了没反应，代码是直接给变量加一。请解释原因，并改成正规的状态更新写法。</p><button class="copybtn" data-say="我的计数器点了没反应，代码是直接给变量加一。请解释原因，并改成正规的状态更新写法。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">The part of a page that changes: when the data changes, the screen follows.</p>
+    <h4>什么时候会碰到</h4><p>A heart turning red, a cart number ticking, text appearing as you type — everything that moves on a page runs on state.</p>
+    <h4>讲透</h4><p>Picture a static page as a printout: fixed once printed. State is the whiteboard inside the page — write, erase, rewrite, and the screen redraws from whatever is on it now. One key rule: state changes must go through the official updater (a dedicated function in React). Editing the value directly is like scribbling on the back of the whiteboard — the front wall never shows it.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>Why does a direct edit not refresh? React is a clerk who only reads the registry: changes 'filed' through the updater trigger a repaint; secret edits are invisible to it. As projects grow, one whiteboard stops fitting — teams split into a small board per component plus one shared big board. Choosing which to use is the real dividing line of frontend skill.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Ask Claude Code: build me the simplest counter page — one number, plus and minus buttons. Then have it deliberately write count = count + 1 without the updater and click: nothing moves. Fix it, click again, and the number moves. Ten minutes hands-on beats ten articles.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>State is the data in the database.</span></div><div class="r"><b>✓</b><span>State dies on refresh. Long-lived data takes a separate path through a backend.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>Everything should go in global state.</span></div><div class="r"><b>✓</b><span>Only cross-page data earns the global board. The cleaner it stays, the easier maintenance gets.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">component<small>State usually lives inside a component</small></span><span class="rel">database<small>Long-lived data ends up in a database</small></span><span class="rel">frontend<small>State-driven rendering is the engine of modern frontend</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">The like count never changes; the code reads likes = likes + 1. Most likely cause?</p><div class="opts"><button class="opt" data-ok="false" data-q="state" onclick="pick(this)">A. likes has the wrong type</button><button class="opt" data-ok="true" data-q="state" onclick="pick(this)">B. It bypassed the updater, so nothing re-rendered</button><button class="opt" data-ok="false" data-q="state" onclick="pick(this)">C. The button has no click handler</button></div><p class="qe" data-q="state" hidden>The assignment only touched memory; React was never told to repaint. The click does fire — the update path is wrong.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>My counter does not respond to clicks; the code increments the variable directly. Explain why and rewrite it the proper way.</p><button class="copybtn" data-say="My counter does not respond to clicks; the code increments the variable directly. Explain why and rewrite it the proper way." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>状态是组件的记忆：通过 setState 类更新函数修改，更新会触发重新渲染。<a href="https://react.dev/learn/state-a-components-memory" target="_blank" rel="noopener">官方来源 ↗</a></li><li>React 要求状态更新走更新函数，直接修改外部变量不会触发渲染。<a href="https://react.dev/learn/managing-state" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+<article class="term" id="t-token" data-id="token">
+    <header><span class="cat">AI 协作</span><span class="lv">入门</span></header>
+    <h2><span class="zh-name">Token</span><span class="en-name">Token</span></h2>
+    <div class="lzh">
+    <p class="one">AI 读写的计量块：文字被切成小块处理，计费和上限都按块算。</p>
+    <h4>什么时候会碰到</h4><p>聊到一半提示上下文太长、账单随对话变长上涨、发现中文比英文占额度——都是 token 在起作用。</p>
+    <h4>讲透</h4><p>模型不按字读，先把文本切成块：常见汉字一到两块，生僻字和表情切得更碎。块数同时是两把尺子：API 按块计费，上下文窗口按块装量。同一段需求写得更省，就是直接省钱、省窗口，模型也更容易抓到重点——重复和废话稀释的不是 token，是你的关键要求。</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>切分不是按词也不是按字，是模型学出来的子词统计规律（BPE 类算法）：常见组合一块，生僻组合拆碎。所以同一段话换个写法 token 数就变——这既是省钱手段，也是长提示词输出不稳定的来源之一。</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>把「你好，世界」贴进 OpenAI Tokenizer（platform.openai.com/tokenizer）看它切成几块，再到 Anthropic 的 token 计数文档对比中英差异。一次实操建立的体感，胜过十篇解释。</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>一个汉字就是一个 token。</span></div><div class="r"><b>✓</b><span>常用字约一到两块，生僻字更碎。要准确数字就上计数工具，别靠猜。</span></div></div><div class="mis"><div class="w"><b>✗</b><span>token 喂得越多模型越聪明。</span></div><div class="r"><b>✓</b><span>窗口大只是装得多。质量看模型和提问，不看堆料。</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">context-window<small>token 是窗口的计量单位</small></span><span class="rel">prompt<small>提示词写省一点，就是在省 token</small></span><span class="rel">conversation-history<small>历史对话是 token 消耗大头</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">同一段需求，A 版 300 字有重复，B 版 120 字说清重点。发哪个？</p><div class="opts"><button class="opt" data-ok="false" data-q="token" onclick="pick(this)">A. A，信息多理解好</button><button class="opt" data-ok="true" data-q="token" onclick="pick(this)">B. B，省 token 也更聚焦</button><button class="opt" data-ok="false" data-q="token" onclick="pick(this)">C. 随便，token 不要钱</button></div><p class="qe" data-q="token" hidden>块数既计费也占窗口。重复内容花钱又稀释关键要求。</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>这段提示词大约多少 token？帮我压到一半，保留全部约束，说明删了哪些。</p><button class="copybtn" data-say="这段提示词大约多少 token？帮我压到一半，保留全部约束，说明删了哪些。" onclick="copySay(this)">复制</button></div></div>
+    <div class="len" hidden>
+    <p class="one">The chunks AI reads and writes in: billing and context limits are counted in them.</p>
+    <h4>什么时候会碰到</h4><p>A context-too-long warning mid-chat, a bill that grows with the conversation, Chinese costing more quota than English — that is token accounting at work.</p>
+    <h4>讲透</h4><p>Models do not read characters; they split text into tokens first. A common Chinese character runs one to two tokens; rare ones and emoji split finer. The count is two rulers at once: API billing counts tokens, and the context window holds tokens. A tighter brief directly saves money and window space, and helps the model catch your point — repetition dilutes not just tokens but your key requirements.</p>
+    <details class="deeper"><summary>想深挖？进阶层（类比边界 · 设计权衡）</summary><p>The split follows neither words nor characters — it is a learned subword routine (BPE-family statistics): frequent combos stay whole, rare ones shatter. That is why rewording the same paragraph changes the count — a money-saving lever, and one source of long-prompt instability.</p></details>
+    <h4>跟着做一遍</h4><div class="practice"><p>Paste 「你好，世界」 into OpenAI's Tokenizer (platform.openai.com/tokenizer) to see the real split, then compare Chinese-vs-English differences in Anthropic's token counting docs. One hands-on look beats ten explanations.</p></div>
+    <h4>常见误解与坑</h4><div class="mis"><div class="w"><b>✗</b><span>One Chinese character equals one token.</span></div><div class="r"><b>✓</b><span>Common characters run one to two; rare ones split further. Count with a tool instead of guessing.</span></div></div><div class="mis"><div class="w"><b>✗</b><span>More tokens make the model smarter.</span></div><div class="r"><b>✓</b><span>A bigger window only holds more. Quality comes from the model and the prompt, not the pile.</span></div></div>
+    <h4>接下来弄懂谁</h4><div class="rels"><span class="rel">context-window<small>The window is measured in tokens</small></span><span class="rel">prompt<small>A tighter prompt is cheaper</small></span><span class="rel">conversation-history<small>History is the biggest token sink</small></span></div>
+    <h4>快速自测</h4><div class="quiz"><p class="q">Same requirement: version A is 300 words with repetition, version B is 120 words and clear. Which to send?</p><div class="opts"><button class="opt" data-ok="false" data-q="token" onclick="pick(this)">A. A, more info helps</button><button class="opt" data-ok="true" data-q="token" onclick="pick(this)">B. B, cheaper and tighter</button><button class="opt" data-ok="false" data-q="token" onclick="pick(this)">C. Either, tokens are free</button></div><p class="qe" data-q="token" hidden>Tokens are billed and occupy window space; repetition costs money and dilutes your key ask.</p></div>
+    <h4>复制给 AI 的说法</h4>
+    <div class="saybox"><p>Roughly how many tokens does this prompt use? Halve it, keep every constraint, and list what you cut.</p><button class="copybtn" data-say="Roughly how many tokens does this prompt use? Halve it, keep every constraint, and list what you cut." onclick="copySay(this)">复制</button></div></div>
+    <details class="facts"><summary>事实来源（2 条官方文档）</summary><ul><li>大语言模型将文本切分为 token 处理，API 按 token 计量输入与输出。<a href="https://docs.anthropic.com/en/docs/build-with-claude/token-counting" target="_blank" rel="noopener">官方来源 ↗</a></li><li>主流模型使用 BPE 类子词切分算法，切分结果取决于训练出的词表。<a href="https://platform.openai.com/tokenizer" target="_blank" rel="noopener">官方来源 ↗</a></li></ul></details>
+  </article>
+</main>
+<footer class="site">新内容试读版 · 首批 10 词条 · 内容管线 term-author + validate.mjs 10/10 通过 · 2026-09-27</footer>
+<script>
+let lang='zh';
+function toggleLang(){lang=lang==='zh'?'en':'zh';document.documentElement.lang=lang==='zh'?'zh-CN':'en';
+  document.querySelectorAll('.lzh').forEach(e=>e.hidden=lang!=='zh');
+  document.querySelectorAll('.len').forEach(e=>e.hidden=lang!=='en');
+  document.getElementById('langBtn').textContent=lang==='zh'?'EN':'中';
+  document.querySelectorAll('.zh-name').forEach(e=>e.style.display=lang==='zh'?'':'none');
+  document.querySelectorAll('.en-name').forEach(e=>e.style.display=lang==='en'?'':'none');
+}
+function toggleTheme(){const h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';
+  document.getElementById('themeBtn').textContent=h.dataset.theme==='dark'?'☀️':'🌙';}
+function pick(btn){const q=btn.dataset.q;document.querySelectorAll('.opt[data-q="'+q+'"]').forEach(b=>{b.disabled=true;if(b.dataset.ok==='true')b.classList.add('right')});
+  if(btn.dataset.ok!=='true')btn.classList.add('wrong');document.querySelector('.qe[data-q="'+q+'"]').hidden=false;}
+function copySay(btn){const t=btn.dataset.say;(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{btn.textContent='已复制';btn.classList.add('done');setTimeout(()=>{btn.textContent='复制';btn.classList.remove('done')},1600)}).catch(()=>{const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');btn.textContent='已复制';btn.classList.add('done');setTimeout(()=>{btn.textContent='复制';btn.classList.remove('done')},1600)}catch(e){}ta.remove()});}
+const links=[...document.querySelectorAll('nav.toc a')];
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('active',l.dataset.id===e.target.dataset.id))}})},{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('article.term').forEach(a=>obs.observe(a));
+</script>
+</body></html>

@@ -1,0 +1,25 @@
+{
+  "id": "address-form",
+  "name": { "zh": "地址表单", "en": "Address Form" },
+  "category": "表单实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "收货地址一大排格子，手机上越填越烦，怎么精简？",
+      "explain": "地址表单按当地习惯拆字段：收件人、手机号、省市区、详细地址、邮编。autocomplete 标清用途好整组代填；别套别国格式，该减就减。",
+      "say": "我在做中国大陆收货地址页。请给手机单列的字段布局，错误贴着对应字段；autocomplete 的值逐栏标对，先别动视觉样式。",
+      "quiz": {
+        "q": "地址表单的邮编栏，用户常不确定填什么，最该做什么？",
+        "options": ["能从省市自动带出或标为选填", "保留必填，报错再说", "删掉邮编永远不收"],
+        "answer": 0,
+        "explain": "邮编能从省市自动带出时不必再问用户；拿不准就标选填，别用必填卡人。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "autocomplete 的地址类取值如 street-address、address-level1、postal-code 标明各字段用途，供浏览器自动填充，且行政区划级别因国家而异。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" },
+    { "claim": "type=tel 让移动浏览器显示适合输入电话号码的自定义键盘，地址表单常配手机号字段使用。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

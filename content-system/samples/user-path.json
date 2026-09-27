@@ -1,0 +1,25 @@
+{
+  "id": "user-path",
+  "name": { "zh": "用户路径", "en": "User Path" },
+  "category": "导航与结构",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "注册要填八项，用户在第几步跑了？",
+      "explain": "用户路径是从进站到完成目标的每一步。每多一次跳转、判断或填写，放弃的概率就涨一截；能合并的步骤不要拆开。",
+      "say": "我在收窄注册流程。请把现在的注册路径一步步列出来，标出哪几步可以合并或删掉，估算每删一步省多少；先别改页面。",
+      "quiz": {
+        "q": "注册从 5 步减到 3 步，最直接的预期收益？",
+        "options": ["服务器省流量", "中途放弃的人变少", "页面更好看"],
+        "answer": 1,
+        "explain": "每一步都是一个退出点；步骤越少，走到终点的人越多。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "旅程图刻画一个人完成目标所经历的完整过程。", "source": "https://www.nngroup.com/articles/journey-mapping-101/" },
+    { "claim": "多页流程应保持步骤简短清晰，减少用户负担。", "source": "https://www.w3.org/WAI/tutorials/forms/multi-page/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

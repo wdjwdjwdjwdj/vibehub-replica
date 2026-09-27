@@ -1,0 +1,25 @@
+{
+  "id": "form-reset",
+  "name": { "zh": "表单重置", "en": "Form Reset" },
+  "category": "表单实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "填了半页的表单，点错“重置”就全没了，怎么办？",
+      "explain": "表单重置把全部字段退回默认值：筛选栏、评论框、长申请表都可能放这个按钮。长表单上要放次要位置并加确认，写明会清掉哪些；筛选栏反而适合一键清空。",
+      "say": "我在给长申请表加清空。请做确认弹层：列出会被清空的字段，取消后不改任何内容，空表单不弹；先把 reset 与清空的语义差别讲清，再给代码。",
+      "quiz": {
+        "q": "input type=reset 按钮被点击后，字段值变成什么？",
+        "options": ["全部清空为空字符串", "恢复到 value 属性设定的默认值", "保持不变"],
+        "answer": 1,
+        "explain": "reset 是退回默认值，不是清空；默认值非空的字段会变回默认，容易踩坑。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTMLFormElement.reset() 把表单恢复为默认值，效果等同点击 input type=reset。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset" },
+    { "claim": "type=reset 的 input 渲染为按钮，默认 click 行为把表单里所有输入重置为初始值。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

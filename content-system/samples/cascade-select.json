@@ -1,0 +1,25 @@
+{
+  "id": "cascade-select",
+  "name": { "zh": "级联选择", "en": "Cascading Select" },
+  "category": "表单实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "选完省份，城市下拉就只剩这一省的城市。",
+      "explain": "级联选择把有从属关系的选项逐级串起来：省市区、品牌到车型、一级分类到二级分类。上级一改，下级候选要重算，已选的旧值也得清掉，不能留着失效组合。",
+      "say": "我在做省市区三级选择器。请给省改后清空市区、上级未选时下级禁用的实现代码；不要一进页面就把三级选项全部预载。",
+      "quiz": {
+        "q": "改了省份，市级下拉还留着上一个省的城市，会出什么问题？",
+        "options": ["用户可能提交一个不存在的省市组合", "城市列表顺序乱了", "省份选择被自动清空"],
+        "answer": 0,
+        "explain": "上级变化后下级旧值不清空，提交的数据就是失效组合；清空市区、重算候选才能保证数据成立。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "select 元素是提供选项菜单的控件，级联通常由多个 select 配合脚本实现。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" },
+    { "claim": "disabled 属性让控件不可编辑、不可聚焦，可用于上级未选时先禁用下级。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "jank-rescue",
+  "name": { "zh": "页面卡顿急救", "en": "Jank Triage" },
+  "category": "排错急救",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "滚动一点就卡一下，重活藏在哪里？",
+      "explain": "页面卡顿先查三处：脚本是否重复执行、长任务是否堵住主线程、列表是否一次渲染过多节点。先抓最大瓶颈。",
+      "say": "滚动和点击都卡。请用性能面板找出最长的任务和最大的资源，再看列表一次渲染了多少节点；先修最大的一项，别平均用力。",
+      "quiz": {
+        "q": "性能面板显示一个 800 毫秒的长任务，它的影响是？",
+        "options": ["网络变慢", "耗电增加", "主线程被占住，滚动点击都在等它"],
+        "answer": 2,
+        "explain": "长任务占住主线程期间，渲染和交互都得排队，表现就是卡。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "主线程一次处理一件事，长任务会阻塞渲染与交互。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/Main_thread" },
+    { "claim": "Long Tasks API 用于观测超过 50 毫秒的长任务。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceLongTaskTiming" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

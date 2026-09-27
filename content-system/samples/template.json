@@ -1,0 +1,25 @@
+{
+  "id": "template",
+  "name": { "zh": "模板", "en": "Template" },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "买来的模板换个 Logo，能直接当自己的网站吗？",
+      "explain": "模板是提前搭好的结构和样式：布局、配色、组件都现成。换上自己的内容只是第一步，信息层级和交互流程要按业务重查。",
+      "say": "我买了一个作品集模板。请逐块讲清哪些能直接用、哪些结构和交互必须按我的项目改，改完怎么自检；先别讲怎么挑模板。",
+      "quiz": {
+        "q": "模板换完文案就上线，最容易出问题的是？",
+        "options": ["配色不好看", "信息层级和交互流程没按自己业务核过", "域名太长"],
+        "answer": 1,
+        "explain": "模板的层级和流程是为别人业务设计的；内容换了，结构适配没做就会硌手。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "脚手架模板生成项目骨架，业务代码仍需自行开发。", "source": "https://vitejs.dev/guide/" },
+    { "claim": "HTML 的 template 元素用于存放页面加载时不渲染的可复用结构。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

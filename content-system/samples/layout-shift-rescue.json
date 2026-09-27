@@ -1,0 +1,25 @@
+{
+  "id": "layout-shift-rescue",
+  "name": { "zh": "页面错位急救", "en": "Layout Shift Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "一块内容突然跑偏或叠在一起，先看哪条规则？",
+      "explain": "页面错位先查三处：父容器布局、子元素定位尺寸、新加的间距或 transform。错位多半是最近那次改动带进来的。",
+      "say": "这块内容跑偏了。请从父容器的布局规则查到子元素定位，再看最近新增的间距和 transform，指出第一条造成偏移的规则；先别改别的。",
+      "quiz": {
+        "q": "刚给卡片加了 margin 就错位，先怀疑什么？",
+        "options": ["浏览器 bug", "这条新间距挤占了兄弟元素的位置", "网络延迟"],
+        "answer": 1,
+        "explain": "布局改动就近找因：新加的间距参与排布，挤开或叠压相邻元素。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Flexbox 沿主轴排列子项，容器规则决定子元素位置。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_Concepts_of_Flexbox" },
+    { "claim": "position 属性决定元素在文档中的定位方式。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/position" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

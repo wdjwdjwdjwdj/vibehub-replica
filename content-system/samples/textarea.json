@@ -1,0 +1,25 @@
+{
+  "id": "textarea",
+  "name": { "zh": "多行文本框", "en": "Textarea" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "反馈、简介这种要写好几行的内容，用什么收？",
+      "explain": "多行文本框收换行的长文字：评论、简介、反馈。配 maxlength 限制长度，并在输入时显示还能写多少字。",
+      "say": "我在做反馈表单。请加一个多行文本框，限 200 字并实时显示剩余字数，超出就地提示；别等提交后才报错。",
+      "quiz": {
+        "q": "用户想写 300 字，输入框限 200 字。最好的处理？",
+        "options": ["允许写到一半提示剩余字数，超出明确报错", "满了就输不进去", "提交后告诉用户超了"],
+        "answer": 0,
+        "explain": "边写边告知最省用户力气；提交后才报错等于让人重写。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "textarea 元素支持多行文本输入。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" },
+    { "claim": "maxlength 属性限制用户可输入的最大字符数。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/maxlength" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

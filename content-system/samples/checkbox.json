@@ -1,0 +1,25 @@
+{
+  "id": "checkbox",
+  "name": { "zh": "复选框", "en": "Checkbox" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "购物偏好可以同时勾好几个。",
+      "explain": "复选框收彼此不冲突的多选：兴趣标签、筛选项。互斥的选择要换单选按钮；重要授权不能默认勾上。",
+      "say": "我在做偏好设置。请把兴趣标签做成复选框组，键盘 Tab 加空格就能勾选和取消；默认全部不勾。",
+      "quiz": {
+        "q": "「同意隐私政策」这一项该用什么、默认什么状态？",
+        "options": ["复选框，默认勾上省事", "复选框，默认不勾让用户自己选", "单选按钮"],
+        "answer": 1,
+        "explain": "授权必须来自用户主动勾选；默认勾上不算有效同意。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "checkbox 允许在同一组中选中多个值。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox" },
+    { "claim": "checked 属性设置复选框的默认勾选状态。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

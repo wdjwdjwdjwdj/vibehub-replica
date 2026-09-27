@@ -1,0 +1,26 @@
+{
+  "id": "cta-section",
+  "name": { "zh": "CTA 行动区", "en": "CTA Section" },
+  "aliases": { "zh": ["行动召唤区", "CTA 区块"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "一段功能讲完，该把下一步动作递到读者眼前。",
+      "explain": "CTA 是把下一步动作和它能换到的结果摆在一起的区块：主按钮只留一个，写清做什么、能得到什么；只写“查看更多”，去向谁都猜不到。",
+      "say": "我在写落地页的行动区。请给主按钮和次要链接各写一句示例文案，说明标题怎么把所得结果讲在前头；再讲长页面要不要重复放行动区，先别扯 A/B 测试。",
+      "quiz": {
+        "q": "下面哪种主按钮文案合格？",
+        "options": ["查看更多", "点这里", "免费建好第一份周报"],
+        "answer": 2,
+        "explain": "按钮文字要说出动作和所得；“查看更多”“点这里”都没交代去向和收获。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "button 是可交互元素，用户激活后执行动作，如提交表单或打开对话框。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" },
+    { "claim": "WCAG 2.4.4 要求链接目的可由链接文字或程序化关联的上下文判定。", "source": "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

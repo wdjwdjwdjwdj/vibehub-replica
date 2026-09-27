@@ -1,0 +1,25 @@
+{
+  "id": "nav-bar",
+  "name": { "zh": "导航栏", "en": "Navigation Bar" },
+  "category": "导航与结构",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "栏目越加越多，顶栏怎么摆才不挤？",
+      "explain": "导航栏是全站的主路标：放最常去的地方，名称要一眼能懂。入口多时先分组收纳，而不是塞满一整排。",
+      "say": "我在整理官网导航。请把栏目按访问频率分成主次两层，给每项起一眼能懂的名字；先别加下拉多级。",
+      "quiz": {
+        "q": "导航已有 9 个一级入口还嫌不够，先做什么？",
+        "options": ["再加一排", "按访问频率分组或合并", "字号缩小"],
+        "answer": 1,
+        "explain": "入口的价值在好找不在全；分组和合并比继续加更有效。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "nav 元素用于包裹页面上的主要导航链接区块。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" },
+    { "claim": "header 元素承载页面顶部的介绍性内容。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

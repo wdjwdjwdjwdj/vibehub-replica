@@ -1,0 +1,26 @@
+{
+  "id": "deployment",
+  "name": { "zh": "部署", "en": "Deployment" },
+  "aliases": { "zh": ["上线"] },
+  "category": "上线与安全",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "网页在你电脑上好好的，朋友的手机怎么打开？",
+      "explain": "部署是把源码构建成可运行的文件，放到服务器上，得到一个网址，别人打开就能看。自查四件事：资源加载、路由回退、环境配置、手机表现。",
+      "say": "我要把第一个网站部署上线。请按步骤给我讲一遍：构建产物、托管平台、绑定域名各做什么，以及上线后最容易漏检查的三个地方；先不推荐具体平台。",
+      "quiz": {
+        "q": "上线后图片全部显示不出来，本地却正常。先查什么？",
+        "options": ["图片格式不对", "构建产物里有没有这些图片文件", "换个浏览器试试"],
+        "answer": 1,
+        "explain": "本地正常不代表产物齐全；先确认部署产物包含资源文件，再核对引用路径。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "静态站点部署通常包含构建产物上传与托管配置。", "source": "https://developers.cloudflare.com/pages/" },
+    { "claim": "自定义域名需在托管平台绑定并配置 DNS。", "source": "https://developers.cloudflare.com/pages/configuration/custom-domains/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

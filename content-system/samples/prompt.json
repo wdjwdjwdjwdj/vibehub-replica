@@ -1,0 +1,26 @@
+{
+  "id": "prompt",
+  "name": { "zh": "Prompt", "en": "Prompt" },
+  "aliases": { "zh": ["提示词", "任务说明"] },
+  "category": "AI 协作",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "同一句话让 AI 做事，别人得到的结果总比你好？",
+      "explain": "Prompt 是交给模型的任务说明：目标、背景、限制、输出格式。四样写清楚，模型就不用猜；少一样，它就替你编一样。",
+      "say": "我给 AI 的指令总得不到想要的回复。请把我的这段指令改写成含目标、背景、限制、格式的版本，并逐条指出原句缺什么；先别讲提示词技巧名词。",
+      "quiz": {
+        "q": "让 AI“写个介绍”，结果不满意。最先改什么？",
+        "options": ["换个更强的模型", "多试几遍碰运气", "补上目标、受众、限制和期望格式"],
+        "answer": 2,
+        "explain": "先补任务说明的四要素，模型不用猜就能对准；换模型不解决说明不清。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "提示词应包含任务目标、背景与输出要求等要素。", "source": "https://platform.openai.com/docs/guides/prompt-engineering" },
+    { "claim": "在提示词中提供示例（few-shot）能改变输出效果。", "source": "https://platform.openai.com/docs/guides/prompt-engineering" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

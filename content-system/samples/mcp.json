@@ -1,0 +1,26 @@
+{
+  "id": "mcp",
+  "name": { "zh": "MCP", "en": "MCP" },
+  "aliases": { "zh": ["模型上下文协议", "Model Context Protocol"] },
+  "category": "AI 协作",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "AI 编辑器想读你的数据库和文件，靠什么打通？",
+      "explain": "MCP 是规定 AI 怎么调用外部工具和数据的开放协议：数据库、文件、浏览器按同一套格式接入；能接什么、做多少，由各工具权限说了算。",
+      "say": "我想搞懂“MCP”解决了什么。请对比没有协议时每个工具各写一套对接的做法，说明统一协议省掉什么、接入一个 MCP 服务要配什么；先不写代码。",
+      "quiz": {
+        "q": "MCP 出现前，AI 工具接 5 个数据源要写 5 套对接代码；有了 MCP 之后？",
+        "options": ["按同一套协议接入，工具与模型解耦", "还是 5 套，只是换了写法", "必须把 5 个数据源合并成一个"],
+        "answer": 0,
+        "explain": "统一协议把对接方式标准化，模型与工具各自独立演化，接入成本降为一套。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "MCP 是连接 AI 系统与数据源、工具的开放标准。", "source": "https://modelcontextprotocol.io" },
+    { "claim": "MCP 采用客户端-服务器架构：宿主应用通过 MCP 客户端连接 MCP 服务器。", "source": "https://modelcontextprotocol.io/docs" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

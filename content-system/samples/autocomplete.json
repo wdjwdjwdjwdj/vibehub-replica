@@ -1,0 +1,25 @@
+{
+  "id": "autocomplete",
+  "name": { "zh": "自动补全", "en": "Autocomplete" },
+  "category": "表单实战",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "输入两个字，城市列表跟着缩小到几个。",
+      "explain": "自动补全按输入缩小候选：城市、联系人、标签。键盘上下选、回车确认要能用，没有结果时也得有话可说。",
+      "say": "我在做城市输入。请用 datalist 或组件实现自动补全：输入两个字出候选，上下键加回车可选中；别在没输满时每次按键都发请求。",
+      "quiz": {
+        "q": "自动补全列表偶尔为空，最该补什么？",
+        "options": ["隐藏输入框", "清空已输入内容", "显示「没有匹配的城市」并让用户继续输入"],
+        "answer": 2,
+        "explain": "空结果是正常状态，明确告知并保留输入，比隐藏控件或清空更不容易让用户卡住。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "datalist 元素为 input 提供预定义的候选列表。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" },
+    { "claim": "autocomplete 属性提示浏览器如何自动填充该字段。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

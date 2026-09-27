@@ -1,0 +1,25 @@
+{
+  "id": "stale-data-rescue",
+  "name": { "zh": "数据不更新急救", "en": "Stale Data Triage" },
+  "category": "排错急救",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "数据明明变了，页面还挂着旧内容，从哪断的？",
+      "explain": "旧值不走先查三处：状态是否更新、界面读的是否同一份数据、缓存或请求竞争是否写回旧值。让旧值交代从哪进来。",
+      "say": "数据变了界面还是旧值。请先记录更新前后的状态，再确认读的是同一份数据，最后查缓存和请求返回顺序；找出旧值从哪一步重新进来的。",
+      "quiz": {
+        "q": "两个请求先后返回，慢的后到覆盖了新数据，这叫？",
+        "options": ["请求竞争", "缓存命中", "内存泄漏"],
+        "answer": 0,
+        "explain": "先发后至的旧响应盖掉新数据，是典型的请求竞争，可用中止或序号比对解决。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "状态经更新函数修改后会触发重新渲染。", "source": "https://react.dev/learn/state-a-components-memory" },
+    { "claim": "AbortController 用于中止不再需要的请求，避免竞争覆盖。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

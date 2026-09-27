@@ -1,0 +1,26 @@
+{
+  "id": "component",
+  "name": { "zh": "组件", "en": "Component" },
+  "aliases": { "zh": ["Component"] },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "十张商品卡片长得一样，要复制十遍代码吗？",
+      "explain": "组件是能反复使用的小零件：商品卡片、导航栏、弹窗。结构写一次，传入不同数据就得到十张卡片；改一处，全站跟着更新。",
+      "say": "我不理解为什么总说“把商品卡片做成组件”。请指出卡片里哪部分结构被复用、哪些内容靠数据替换；顺带讲清改一处全站生效是怎么做到的。",
+      "quiz": {
+        "q": "导航栏在 8 个页面各出现一次，现要全站换 Logo。怎么改最快？",
+        "options": ["改一处导航栏组件，全站生效", "每页各改一遍", "把 8 个页面合并成一个"],
+        "answer": 0,
+        "explain": "组件只定义一次，各处引用同一份；改定义即可全站更新。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "组件是可复用的独立 UI 单元，通过属性接收数据输入。", "source": "https://react.dev/learn/your-first-component" },
+    { "claim": "Web Components 是浏览器原生的组件化方案。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

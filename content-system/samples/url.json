@@ -1,0 +1,25 @@
+{
+  "id": "url",
+  "name": { "zh": "URL", "en": "URL" },
+  "category": "导航与结构",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "地址栏里那串字符，每一段都在说什么？",
+      "explain": "URL 是资源在网络上的地址：协议、域名、路径、参数四段各管一段。清楚稳定的地址才好分享、收藏，搜索引擎也读得懂。",
+      "say": "我在检查一个带参数的网址。请把它按协议、域名、路径、参数拆开，逐段说明作用，指出哪段改了会到别的页面；先不讲解码转义。",
+      "quiz": {
+        "q": "改 URL 的哪一段最可能跳到别人的网站？",
+        "options": ["路径", "域名", "参数"],
+        "answer": 1,
+        "explain": "域名决定访问哪台服务器上的站点；路径和参数只在该站内变化。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "URL 由协议、域名、路径等部分组成，定位网络上的资源。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/URL" },
+    { "claim": "Location 对象把当前地址拆成可读取的各部分。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Location" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

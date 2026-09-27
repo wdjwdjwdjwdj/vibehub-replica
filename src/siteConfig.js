@@ -1,6 +1,6 @@
 const env = import.meta.env;
-const independent = env.VITE_SITE_INDEPENDENT === 'true';
-const siteName = env.VITE_SITE_NAME || 'VibeHub';
+const independent = env.VITE_SITE_INDEPENDENT !== 'false';
+const siteName = env.VITE_SITE_NAME || '起站';
 
 // 品牌字标：原站 Header 为 `Vibe` + 强调的 `Hub` 两段，hover 时切换到 tagline。
 // 品牌名未确认前保持原站基线；独立品牌可通过环境变量覆盖。
@@ -12,23 +12,23 @@ export const SITE = {
   brandTail: env.VITE_SITE_BRAND_TAIL || (vibeBrand ? vibeBrand[1] : ''),
   tagline: env.VITE_SITE_TAGLINE_ZH || 'Vibe Coding 术语图鉴',
   taglineEn: env.VITE_SITE_TAGLINE_EN || 'Your Vibe Coding Guide',
-  descriptor: env.VITE_SITE_DESCRIPTOR || 'Vibe Coding Terms',
-  description: env.VITE_SITE_DESCRIPTION || `${siteName} — a visual guide to Vibe Coding terms, practice, and working interface examples.`,
-  logoPath: env.VITE_SITE_LOGO || '/assets/vh-logo.png',
-  faviconPath: env.VITE_SITE_FAVICON || '/assets/vh-logo.png',
+  descriptor: env.VITE_SITE_DESCRIPTOR || 'Vibe Coding 术语图鉴',
+  description: env.VITE_SITE_DESCRIPTION || `${siteName} — Vibe Coding 术语图鉴，帮助初学者理解、查找和收藏开发术语。`,
+  logoPath: env.VITE_SITE_LOGO || '/assets/brand-mark.svg',
+  faviconPath: env.VITE_SITE_FAVICON || '/assets/brand-mark.svg',
   independent,
   footer: {
-    wordmark: env.VITE_SITE_FOOTER_WORDMARK || (independent ? siteName : 'oil'),
+    wordmark: env.VITE_SITE_FOOTER_WORDMARK || siteName,
     partner: {
-      name: env.VITE_SITE_PARTNER_NAME || (independent ? '' : 'oil 欧呦'),
-      headerName: env.VITE_SITE_PARTNER_HEADER_NAME || (independent ? (env.VITE_SITE_PARTNER_NAME || siteName) : 'Oil'),
-      url: env.VITE_SITE_PARTNER_URL || (independent ? '' : 'https://oiloil.org/'),
-      logoPath: env.VITE_SITE_PARTNER_LOGO || (independent ? '' : '/assets/oil-favicon.png'),
+      name: env.VITE_SITE_PARTNER_NAME || '',
+      headerName: env.VITE_SITE_PARTNER_HEADER_NAME || '',
+      url: env.VITE_SITE_PARTNER_URL || '',
+      logoPath: env.VITE_SITE_PARTNER_LOGO || '',
     },
-    github: env.VITE_SITE_GITHUB || (independent ? '' : 'https://github.com/oil-oil'),
-    githubLabel: env.VITE_SITE_GITHUB_LABEL || (independent ? '' : '@oil-oil'),
-    x: env.VITE_SITE_X || (independent ? '' : 'https://x.com/I_am_oil_oil'),
-    xiaohongshu: env.VITE_SITE_XIAOHONGSHU || (independent ? '' : 'https://www.xiaohongshu.com/user/profile/5f4dfecb000000000100571d'),
+    github: env.VITE_SITE_GITHUB || '',
+    githubLabel: env.VITE_SITE_GITHUB_LABEL || '',
+    x: env.VITE_SITE_X || '',
+    xiaohongshu: env.VITE_SITE_XIAOHONGSHU || '',
     // 原站 Footer 的小红书条目在中英双语下名称与说明文案不同
     xiaohongshuName: env.VITE_SITE_XIAOHONGSHU_NAME_ZH || (independent ? '' : '小红书'),
     xiaohongshuNameEn: env.VITE_SITE_XIAOHONGSHU_NAME_EN || (independent ? '' : 'Xiaohongshu'),

@@ -1,14 +1,16 @@
 # VibeHub 复刻持续交付记录（2026-09-21 第二轮 · `/en/html` 达标）
 
+> **2026-09-23 事后注**：`dev:vibehub` / `vite.vibehub.config.js` / `dist-vibehub-qa` 均已并入默认配置，现在用 `npm run dev`（端口 5174）即可；「起站」另一条产品线已归档到 `archive/qizhan-line-2026-09-23/`。下表保留当时的原始记录。
+
 ## 一、工程与运行入口
 
 | 项 | 值 |
 | --- | --- |
 | 工程目录 | `E:\vibe coding\网站复刻` |
-| VibeHub 开发命令 | `npm run dev:vibehub -- --host 127.0.0.1 --port 5174` |
+| VibeHub 开发命令（当时） | `npm run dev:vibehub -- --host 127.0.0.1 --port 5174`，现等价于 `npm run dev` |
 | 验收入口 | `http://127.0.0.1:5174/en/html` |
 | 5174 端口进程 | PID 24472，`vite --config vite.vibehub.config.js --host 127.0.0.1 --port 5174`（本工程 vibehub dev server，未终止/未覆盖） |
-| “起站”默认入口 | `index.html` / `src/launch*` / `launch-public/` / 默认 `vite.config.js`，本轮未改动 |
+| “起站”默认入口（当时） | `index.html` / `src/launch*` / `launch-public/` / 默认 `vite.config.js`，本轮未改动；**该线已于 2026-09-23 归档** |
 | 原站 | `https://vibe-hub.org/en/html` |
 
 ## 二、本轮改动文件

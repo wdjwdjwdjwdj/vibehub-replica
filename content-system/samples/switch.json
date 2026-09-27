@@ -1,0 +1,25 @@
+{
+  "id": "switch",
+  "name": { "zh": "开关", "en": "Switch" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "深色模式点一下就切，不要再来个保存按钮。",
+      "explain": "开关表达立即生效的开和关：通知、深色模式。要点一下就生效，不需要再提交；填完表单一起保存的选择，用复选框。",
+      "say": "我在做设置页。请给「接收消息提醒」加开关，点击立即切换；开启和关闭的状态图标要有区别，不只靠颜色。",
+      "quiz": {
+        "q": "「我同意服务条款」旁放开关合适吗？",
+        "options": ["不合适：条款要随表单提交确认，用复选框", "合适，开关更现代", "合适，只要颜色明显"],
+        "answer": 0,
+        "explain": "开关立即生效，而同意条款是提交行为的一部分，属于表单确认，该用复选框。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "switch role 向辅助技术表达二元开关状态。", "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/switch_role" },
+    { "claim": "W3C APG 的 Switch 模式定义了开关的键盘与状态约定。", "source": "https://www.w3.org/WAI/ARIA/apg/patterns/switch/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "pricing-table",
+  "name": { "zh": "定价表", "en": "Pricing Table" },
+  "aliases": { "zh": ["价格表", "套餐对比表"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "三档套餐并排放在一起，凭什么让人看出差别？",
+      "explain": "定价表是把免费版、专业版、团队版几档并排比较的区块：适合谁、含什么、有什么限制逐项对齐；推荐档可以突出，但不能靠藏条件显得划算。",
+      "say": "我需要做三档定价。请给每档列三行核心差异，写清按月还是按年计费；推荐档怎么突出而不抢戏，手机上怎么改成纵向排列。",
+      "quiz": {
+        "q": "推荐档可以强调，下面哪种做法越界了？",
+        "options": ["给推荐档换强调底色", "把“超量另收费”塞进深层帮助页，表里不提", "推荐档按钮大一号"],
+        "answer": 1,
+        "explain": "视觉强调合规，隐藏限制条件越界；限制要和价格摆在同一层可见。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "table 元素表示表格数据，即由行列单元格组成的二维信息。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" },
+    { "claim": "th 把单元格定义为表头，scope 属性声明它关联哪些单元格，显式写出有助于辅助技术理解。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

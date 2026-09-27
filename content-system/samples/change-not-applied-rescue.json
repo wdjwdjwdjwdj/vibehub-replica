@@ -1,0 +1,25 @@
+{
+  "id": "change-not-applied-rescue",
+  "name": { "zh": "改动未生效急救", "en": "Change Not Applied Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "代码明明保存了，浏览器还是旧版本，怪谁？",
+      "explain": "改了没反应先查三处：编辑的文件是否在运行、构建是否通过、缓存是否没刷新。逐层留证据，别盲刷。",
+      "say": "我保存了代码页面还是旧的。请按顺序确认：运行入口引用的是否这个文件、构建是否成功、浏览器和 Service Worker 缓存；别让我反复盲刷。",
+      "quiz": {
+        "q": "构建成功、文件正确，页面还是旧的，最后一个嫌疑？",
+        "options": ["编辑器", "浏览器或 Service Worker 缓存", "显示器"],
+        "answer": 1,
+        "explain": "文件和构建都排除后，剩下的就是缓存层：浏览器或 Service Worker 还在发旧版本。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Service Worker 可以代理并缓存页面请求。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" },
+    { "claim": "缓存副本在失效前会继续被使用。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

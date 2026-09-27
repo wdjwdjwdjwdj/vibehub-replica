@@ -1,0 +1,25 @@
+{
+  "id": "deploy-assets-rescue",
+  "name": { "zh": "部署资源急救", "en": "Deployed Asset Triage" },
+  "category": "排错急救",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "本地好好的，上线后图片脚本全丢，先查什么？",
+      "explain": "上线丢资源先查三处：构建产物里有没有这些文件、引用路径是否适合部署子目录、线上请求是否被大小写或缓存坑了。拿实际请求的结果判断。",
+      "say": "上线后资源 404。请按顺序确认：构建产物包含文件、公开路径与子目录匹配、线上大小写和缓存；用请求结果判断，不要猜。",
+      "quiz": {
+        "q": "资源在构建产物里存在，线上却 404，查什么？",
+        "options": ["重新构建一次", "请求 URL 的大小写和缓存", "换托管平台"],
+        "answer": 1,
+        "explain": "产物齐全还 404，疑点在请求本身：路径大小写服务器敏感，缓存可能返回旧结果。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "静态站点部署通常包含构建产物上传与托管配置。", "source": "https://developers.cloudflare.com/pages/" },
+    { "claim": "缓存副本在失效前会继续被使用，可能返回旧内容。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

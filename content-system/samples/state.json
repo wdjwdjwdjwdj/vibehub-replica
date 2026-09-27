@@ -1,0 +1,26 @@
+{
+  "id": "state",
+  "name": { "zh": "状态", "en": "State" },
+  "aliases": { "zh": ["State", "组件状态"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点赞变红、购物车加一，页面靠什么记住这些？",
+      "explain": "状态是页面此刻记住的数据：点赞数、输入框文字、是否登录。数据一变界面跟着重画；刷新即清零，长期保存交给后端。",
+      "say": "我想真正理解“状态”。请用“点赞按钮”从点击到变红的全过程举例，说明数据存在哪、界面何时重画、按钮何时该变灰不可点；先别提框架名词。",
+      "quiz": {
+        "q": "刷新页面后，刚勾选的筛选条件全没了。说明什么？",
+        "options": ["页面有 bug，要修", "这类选择只记在页面内存里，刷新即清零", "浏览器版本太旧"],
+        "answer": 1,
+        "explain": "状态随刷新清零；要记住选择，得把数据存到后端或本地存储。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "状态是组件的记忆：通过 setState 类更新函数修改，更新会触发重新渲染。", "source": "https://react.dev/learn/state-a-components-memory" },
+    { "claim": "页面刷新后内存中的状态不保留；跨会话持久化需 Web Storage 或服务端存储。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

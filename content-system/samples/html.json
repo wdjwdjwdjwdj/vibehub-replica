@@ -1,0 +1,26 @@
+{
+  "id": "html",
+  "name": { "zh": "HTML", "en": "HTML" },
+  "aliases": { "zh": ["超文本标记语言"] },
+  "category": "开始做网页",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "标题、段落、图片，浏览器靠什么分清它们？",
+      "explain": "HTML 用标签声明内容：<h1> 标题、<p> 段落、<img> 图片、<button> 按钮。标签只定结构和含义，不管样式。",
+      "say": "我刚看到一段 HTML 代码。请逐行指出每个标签各声明了什么，标签名和尖括号分别怎么读；顺便说明哪部分内容会显示在页面上。先别讲 CSS。",
+      "quiz": {
+        "q": "<img> 这个标签告诉浏览器什么？",
+        "options": ["画一个图片框占位", "给图片加滤镜", "这里要显示一张图片，地址在属性里"],
+        "answer": 2,
+        "explain": "img 标签声明图片元素，具体显示哪张由 src 属性指定。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTML 元素通过标签描述内容的结构与含义。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
+    { "claim": "<img> 通过 src 属性指定图片来源。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "form-submit-rescue",
+  "name": { "zh": "表单提交急救", "en": "Form Submit Triage" },
+  "category": "排错急救",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点提交没反应也没提示，从哪里断开的？",
+      "explain": "提交失败先查三处：submit 是否触发、校验是否拦截、请求是否发出。逐层放证据，断点一目了然。",
+      "say": "表单点提交没动静。请逐层加临时证据：submit 有没有触发、校验有没有拦、请求有没有发出，定位后移除；别一次全改。",
+      "quiz": {
+        "q": "submit 事件触发了，请求也发出了，但页面没变化。下一步？",
+        "options": ["再点几次", "清浏览器缓存", "看响应状态码和返回内容"],
+        "answer": 2,
+        "explain": "事件和请求都通了，剩下的疑点在响应：状态码和返回体决定页面该怎么接。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "表单提交时会在 form 上触发 submit 事件。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event" },
+    { "claim": "约束校验 API 让浏览器无需脚本即可检查字段合法性。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

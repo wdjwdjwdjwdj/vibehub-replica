@@ -2,7 +2,7 @@ import { chromium } from 'playwright';
 
 /** 对比原站与本地详情页「变体区」的实际 DOM。 */
 const SOURCE = 'https://vibe-hub.org';
-const LOCAL = 'http://127.0.0.1:5173';
+const LOCAL = 'http://127.0.0.1:5174';
 const ROUTE = process.argv[2] || '/button';
 
 const browser = await chromium.launch({ headless: true });

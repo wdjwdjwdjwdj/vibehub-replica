@@ -1,0 +1,25 @@
+{
+  "id": "number-stepper",
+  "name": { "zh": "数字步进器", "en": "Number Stepper" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "买三件还是五件，想让用户点加减就行。",
+      "explain": "数字步进器是输入框配加减按钮：改数量、人数一步到位。要设最小值和最大值，到边界时禁用对应按钮。",
+      "say": "我需要一个数量步进器：请做成减号、数字框、加号，最少 1 最多 99，到边界禁用按钮；手输超出时就地纠正。",
+      "quiz": {
+        "q": "步进器范围 1–99，用户手动输入 0，点加号后显示多少最合理？",
+        "options": ["0", "回到最小值 1 并说明范围", "99"],
+        "answer": 1,
+        "explain": "越界后回到最近合法值并告知范围，比静默取 0 或直接跳 99 都可预期。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "input type=number 只接受数值，可配 min、max、step。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number" },
+    { "claim": "min 与 max 属性限定数字输入的合法范围。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

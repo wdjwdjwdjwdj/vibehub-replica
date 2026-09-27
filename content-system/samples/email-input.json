@@ -1,0 +1,25 @@
+{
+  "id": "email-input",
+  "name": { "zh": "邮箱输入", "en": "Email Input" },
+  "category": "表单实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "邮箱填错格式，为什么不能在离开输入框时就指出？",
+      "explain": "邮箱输入用 type=email 收地址：订阅、注册、找回密码。浏览器会自动检查格式，不合格式交不出去；错误要说明缺什么，而不是只说格式不对。",
+      "say": "我在做订阅表单。请给 type=email 的代码：标签“邮箱”常显，占位写 you@example.com，失焦时指出缺什么，手机弹邮箱键盘。",
+      "quiz": {
+        "q": "用户在邮箱栏输入 abc 就点下一栏，提示何时出现最合适？",
+        "options": ["立刻标红，每敲一个字符都检查", "离开该栏或提交时指出缺了 @", "等整表提交失败后统一提示"],
+        "answer": 1,
+        "explain": "离开字段时校验不算打扰，指出缺什么用户能马上改；提交后统一提示太晚。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "type=email 会在表单提交前自动校验输入值，确保其为空或为格式正确的邮箱地址。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email" },
+    { "claim": "email 类型在带动态键盘的设备上会显示适配邮箱输入的键盘。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "routing",
+  "name": { "zh": "路由", "en": "Routing" },
+  "category": "导航与结构",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点不同栏目，网址跟着换，是谁在对号入座？",
+      "explain": "路由把网址对应到内容：/about 出介绍页，/cart 出购物车；单页应用换内容走它，整页不刷新。",
+      "say": "我在学前端路由。请按「点导航到网址变化到内容更换」的顺序讲一遍，并对比多页网站为什么整页刷新；先别讲路由库用法。",
+      "quiz": {
+        "q": "单页应用里点导航，网址变了但页面没白屏，因为？",
+        "options": ["缓存了所有页面", "路由只更换内容区域，不整页刷新", "网速快"],
+        "answer": 1,
+        "explain": "路由改地址并替换内容区域，浏览器不必重新加载整个页面。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "History API 允许单页应用改变地址而不刷新页面。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/History_API" },
+    { "claim": "单页应用（SPA）通过重写地址与局部更新来模拟多页体验。", "source": "https://developer.mozilla.org/en-US/docs/Glossary/SPA" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

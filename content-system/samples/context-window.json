@@ -1,0 +1,26 @@
+{
+  "id": "context-window",
+  "name": { "zh": "上下文窗口", "en": "Context Window" },
+  "aliases": { "zh": ["Context Window", "context length"] },
+  "category": "AI 协作",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "给 AI 贴了一整本文档，它反而答得更差？",
+      "explain": "上下文是对话里的全部内容，窗口是 AI 一次能装下的上限，以 token 计。塞太满重点被稀释，超出的看不到；先删无关材料，目标和约束放开头。",
+      "say": "我想搞懂“上下文窗口”。请说明它按什么计量、超出的内容会怎样，再给一个“塞太满漏重点”的真实案例和清理材料顺序；别只说“注意上下文”。",
+      "quiz": {
+        "q": "对话越拉越长，AI 开始忘记最初的要求。最直接的解法？",
+        "options": ["让它把全部历史再读一遍", "换一台更强的电脑", "开新会话，带上整理过的目标和关键材料"],
+        "answer": 2,
+        "explain": "窗口有限且材料过满会稀释重点；新会话加精选材料，让关键信息重新处于显眼位置。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "上下文窗口以 token 计量，超出窗口的内容不进入模型输入。", "source": "https://docs.anthropic.com/en/docs/build-with-claude/context-windows" },
+    { "claim": "窗口大小因模型而异，长材料会占用窗口空间。", "source": "https://docs.anthropic.com/en/docs/build-with-claude/context-windows" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dark-mode-rescue",
+  "name": { "zh": "深色模式急救", "en": "Dark Mode Triage" },
+  "category": "排错急救",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "切到深色模式，有些字突然看不清，谁的锅？",
+      "explain": "深色模式看不清先查三处：写死的浅色值、没有深色版本的语义变量、图片和半透明层上的对比度。自动反色不是解法，缺哪补哪。",
+      "say": "深色模式下部分内容看不清。请找出写死的颜色、补齐语义变量的深色值、测图片上的文字对比度；别用自动反色解决。",
+      "quiz": {
+        "q": "深色模式下写死 #ffffff 的文字会怎样？",
+        "options": ["自动变黑", "不受影响", "在深色背景上刺眼或看不清，要换成语义变量"],
+        "answer": 2,
+        "explain": "写死的颜色不随主题变；换成语义变量后，深浅色各配一套才稳定。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "prefers-color-scheme 媒体查询检测用户的深浅色偏好。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme" },
+    { "claim": "WCAG 对文本对比度有最低要求。", "source": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

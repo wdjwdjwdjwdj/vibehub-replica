@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import { catalogData } from '../src/catalogData.js';
 
-const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5173';
+const base = process.env.VIBEHUB_BASE_URL || 'http://127.0.0.1:5174';
 const terms = Object.values(catalogData)
   .flatMap((groups) => groups.flatMap((group) => group.items))
   .map((item) => item.length === 4 ? item[0] : item[2] || item[0]);

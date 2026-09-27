@@ -1,0 +1,26 @@
+{
+  "id": "logo-wall",
+  "name": { "zh": "合作 Logo 墙", "en": "Logo Wall" },
+  "aliases": { "zh": ["品牌墙", "客户标志墙"] },
+  "category": "官网区块实战",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "想把合作方的标志摆上首页，怎么排不算乱贴？",
+      "explain": "Logo 墙把合作客户的标志排成一排，证明谁在用它：视觉高度统一、不拉伸变形，alt 写清公司名；没授权的标志一个都不放。",
+      "say": "我刚拿到一批确认过授权的客户 Logo。请讲怎么排成品牌墙，标题只写可核实的事实，数量类说法要有出处；顺带讲要不要统一转成灰度。",
+      "quiz": {
+        "q": "一家只发过合作邮件、没谈成的品牌，能上 Logo 墙吗？",
+        "options": ["不能，未经确认的合作一个都不放", "能，缩小放边上", "能，标注“洽谈中”"],
+        "answer": 0,
+        "explain": "Logo 墙的可信度建立在真实授权上；意向合作放上去就是失实背书。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "ul 表示无序项目列表，各列表项之间顺序无关紧要。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" },
+    { "claim": "alt 属性为图片提供文字替代，屏幕阅读器会把值读给用户，图片加载失败时也依赖它。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}
