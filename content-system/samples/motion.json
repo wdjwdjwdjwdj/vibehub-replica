@@ -1,0 +1,26 @@
+{
+  "id": "motion",
+  "name": { "zh": "动效", "en": "Motion" },
+  "aliases": { "zh": ["动画"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "面板滑开比瞬间弹出多给了什么？",
+      "explain": "动效是让界面变化在极短时间完成的呈现，弹层滑入、按钮反馈都算。用途是解释变化、引导视线、确认操作，不为好看；要短，并尊重系统减少动效的设置。",
+      "say": "我想给购物车数量变化加动效。请先给一句该不该动的结论，再用一小段 transition 代码举例，说明系统减少动效时怎么办；别超十行代码。",
+      "quiz": {
+        "q": "弹窗动画两秒才飞完，且用户系统已开启减少动态效果。错在哪？",
+        "options": ["弹窗根本不该有动画", "动画必须配提示音", "时长偏长，也没理会减少动效的设置"],
+        "answer": 2,
+        "explain": "动效要短且服务于理解；系统设置减少动效时界面应收敛，两条同时违反。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "CSS transitions 让属性变化在一段时间内完成而非立即生效；transition-property 指定参与过渡的属性，transition-duration 指定时长。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions/Using_CSS_transitions" },
+    { "claim": "prefers-reduced-motion 检测用户是否开启减少非必要动态的设置，界面据此移除、减少或替换运动型动画。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

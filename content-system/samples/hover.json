@@ -1,0 +1,26 @@
+{
+  "id": "hover",
+  "name": { "zh": "Hover", "en": "Hover" },
+  "aliases": { "zh": ["悬停"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "电脑上移过去就变色，手机上移过去算什么？",
+      "explain": "Hover 是指针悬在元素上未点击的状态：变色、浮层提示、展开菜单由它触发。触屏没有稳定悬停，关键信息别只靠它；hover 媒体特性可区分设备。",
+      "say": "我在做导航栏。请讲一讲悬停效果在鼠标和手机上分别怎么表现，给一个用 CSS 媒体特性适配触屏的最小例子；别讲动画实现。",
+      "quiz": {
+        "q": "“删除”按钮只在鼠标悬停时显示，手机用户会遇到什么？",
+        "options": ["按钮自动变成常显", "长按即可，毫无影响", "没有稳定悬停，按钮等于不存在"],
+        "answer": 2,
+        "explain": "触屏没有稳定的悬停动作；关键操作必须有不依赖悬停的入口。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": ":hover 在用户以指针设备与元素交互、光标移到元素上但未按下时匹配。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" },
+    { "claim": "hover 媒体特性检测主输入机制能否悬停；hover: none 表示完全不能悬停，或只能不便地模拟（许多移动设备用长按模拟）。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

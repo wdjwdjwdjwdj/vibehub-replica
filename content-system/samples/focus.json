@@ -1,0 +1,26 @@
+{
+  "id": "focus",
+  "name": { "zh": "Focus", "en": "Focus" },
+  "aliases": { "zh": ["焦点"] },
+  "category": "交互与体验",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "按 Tab 键在表单里跳，那个亮框在说什么？",
+      "explain": "Focus 是控件接收键盘输入时的状态：Tab 一下，焦点就从输入框跳到按钮、链接。外框亮在哪，键盘用户就停在哪；抹掉焦点样式会让人迷路。",
+      "say": "我在做表单键盘自查。请解释 :focus-visible 与删掉 outline 的差别，鼠标点击和键盘 Tab 各是什么表现；别只给定义。",
+      "quiz": {
+        "q": "设计师嫌默认焦点框难看，把全站焦点样式去掉。受损最大的是？",
+        "options": ["只用键盘操作的用户，不知道焦点在哪", "用大屏幕的用户", "鼠标用户"],
+        "answer": 0,
+        "explain": "焦点外框是键盘用户的“当前位置”指示；去掉后只能盲猜，鼠标用户不受影响。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": ":focus-visible 在元素匹配 :focus 且 UA 判定应明显显示焦点时应用，许多浏览器此时默认显示焦点环。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible" },
+    { "claim": "能接收键盘焦点的元素都应有可见的焦点样式；页面要完全无障碍，必须可仅用键盘操作。", "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Keyboard" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

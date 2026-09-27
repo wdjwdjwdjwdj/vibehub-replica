@@ -1,0 +1,26 @@
+{
+  "id": "accessibility",
+  "name": { "zh": "无障碍", "en": "Accessibility" },
+  "aliases": { "zh": ["可访问性", "a11y"] },
+  "category": "交互与体验",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "同一张网页，读屏软件听到的是什么？",
+      "explain": "无障碍是让不同身体状况的用户都能用网页：对比度、键盘操作、图片替代文字、表单标签与语义。它同样惠及老年人、单手操作的人；不是加分项，是底线。",
+      "say": "我在给公司官网首页做无障碍自查。请按从标签、颜色对比到键盘走查的顺序列一份检查清单，标出哪些用工具查、哪些要手动试；不要只贴 WCAG 条款。",
+      "quiz": {
+        "q": "图片都配了替代文字，但提交按钮用键盘怎么也走不到。违反了 WCAG 四原则中的哪条？",
+        "options": ["可感知", "可操作", "可理解"],
+        "answer": 1,
+        "explain": "键盘走不到属于“可操作”问题；可感知管替代文字、对比度这类信息能否被接收。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Web 无障碍指网站、工具与技术被设计和开发得让残障人士能够使用：可感知、可理解、可导航、可交互，并让非残障人群同样受益。", "source": "https://www.w3.org/WAI/fundamentals/accessibility-intro/" },
+    { "claim": "WCAG 指南按四条原则组织：perceivable、operable、understandable、robust。", "source": "https://www.w3.org/WAI/standards-guidelines/wcag/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}
