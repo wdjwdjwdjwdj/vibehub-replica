@@ -2,7 +2,7 @@ import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const root = path.resolve(process.cwd(), process.argv[2] || 'replication-evidence/round-2026-09-20/html');
+const root = path.resolve(process.cwd(), process.argv[2] || 'replication-evidence/current/html');
 const suffix = process.argv[3] || '';
 fs.mkdirSync(root, { recursive: true });
 

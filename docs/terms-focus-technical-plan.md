@@ -4,7 +4,7 @@
 > 目标：把"复刻完成的全功能站点"裁剪为"仅保留术语界面的小白向术语产品"，并完成图片策略与新 Logo 落地。
 > 状态：待评审。本文档只出方案，不含代码实施。
 >
-> **2026-09-23 更新**：原「起站 · AI 建站入门」产品线已归档到 `archive/qizhan-line-2026-09-23/`，仓库只剩这一条线。原入口 `vibehub.html` 已改名为 `index.html`，`vite.vibehub.config.js` 已并入默认 `vite.config.js`，产物目录统一为 `dist/`。本文档中提及 `vibehub.html` / `dev:vibehub` / `dist-vibehub-qa` 的位置按上述新路径理解。
+> **2026-09-27 更新**：原「起站 · AI 建站入门」产品线已从活动树移除，可从 Git 提交 `573dc6a` 恢复；仓库只剩这一条线。原入口 `vibehub.html` 已改名为 `index.html`，`vite.vibehub.config.js` 已并入默认 `vite.config.js`，产物目录统一为 `dist/`。本文档中提及 `vibehub.html` / `dev:vibehub` / `dist-vibehub-qa` 的位置按上述新路径理解。
 
 ## 文档信息
 
@@ -13,7 +13,7 @@
 | 方案日期 | 2026-09-21（第三轮） |
 | 输入约束 | ① 仅保留术语界面；② 保留 3 张图片（过多则精简为仅第 1 张术语图片）；③ 图片风格不变；④ 重新设计 Logo |
 | 关联文档 | `docs/replication-status-2026-09-21-round2.md`（复刻验收）、`docs/page-inventory.md`（页面清单）、`docs/parity-ledger.md` |
-| 不影响的范围 | 无第二产品线。原「起站 · AI 建站入门」线已于 2026-09-23 归档至 `archive/qizhan-line-2026-09-23/`，不参与构建 |
+| 不影响的范围 | 无第二产品线。原「起站 · AI 建站入门」线已从活动树移除，仅保留于 Git 提交 `573dc6a`，不参与构建 |
 | 参考图 | 用户随任务粘贴的 435×174 浅色 UI 局部截图（`pasted-d56f8b7a-…-download.jpg`），判定为术语页局部截图；其中"第 1 张术语图片"按"术语界面呈现顺序的第一张图 = 页头品牌标"口径执行（见 2.3，口径可在评审时校正） |
 
 ## 〇、一页速览（供方案对比）
@@ -46,7 +46,7 @@
 | --- | --- | --- | --- | --- |
 | 术语复刻（唯一） | `index.html` → `src/main.jsx` | `public/` | `vite.config.js`（默认，端口 5174，产物 `dist/`） | 复刻已完成，本方案的改造对象 |
 
-已归档：`archive/qizhan-line-2026-09-23/`（原「起站 · AI 建站入门」试用版，含 `launchApp.jsx`、`src/launch/`、`launch-public/`、旧 `vite.config.js`、旧构建产物）。不参与构建、不进包。
+历史归档：Git 提交 `573dc6a` 中的 `archive/qizhan-line-2026-09-23/`（原「起站 · AI 建站入门」试用版，含 `launchApp.jsx`、`src/launch/`、`launch-public/`、旧 `vite.config.js`、旧构建产物）。不参与构建、不进包。
 
 复刻完成度（引自 round2 验收报告，均已落盘 `replication-evidence/round-2026-09-21/`）：
 
@@ -212,7 +212,7 @@
 
 - 不改术语内容数据（354 术语的文案、Demo、Anatomy 一律不动）。
 - 不做 `/en/html` 等已验收页面的视觉回退。
-- 不做公网部署（原部署清单已随起站线归档至 `archive/qizhan-line-2026-09-23/docs/deployment-checklist.md`，另行评审）。
+- 不做公网部署（原部署清单保存在 Git 提交 `573dc6a` 的 `archive/qizhan-line-2026-09-23/docs/deployment-checklist.md`，另行评审）。
 - 不做 CSS 全量 purge（`styles.css` 500KB 含被移除页面样式，清理收益低、回归风险高，列为可选后置项，用未使用类名扫描评估后再决定）。
 
 ---

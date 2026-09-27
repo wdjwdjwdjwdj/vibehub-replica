@@ -1,8 +1,0 @@
-{
-  "states": [
-    { "id": "initial", "localPath": "/en/html", "actions": [], "settleMs": 300 },
-    { "id": "hero-scroll", "localPath": "/en/html", "actions": [{ "type": "wheel", "deltaY": 800 }], "settleMs": 500 },
-    { "id": "survey-skip", "localPath": "/en/html", "actions": [{ "type": "click", "selector": "button.source-survey-close" }], "settleMs": 300 },
-    { "id": "quick-answer", "localPath": "/en/html", "actions": [{ "type": "click", "selector": "section.lesson-practice .lesson-practice-option:nth-child(2)" }], "settleMs": 300 }
-  ]
-}

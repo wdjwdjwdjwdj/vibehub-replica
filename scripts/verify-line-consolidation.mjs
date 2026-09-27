@@ -25,8 +25,9 @@ const FORBIDDEN = [
 const present = FORBIDDEN.filter((p) => fs.existsSync(path.join(root, p)));
 add(present.length === 0, '归档产品线残留', present.length ? `仍存在: ${present.join(', ')}` : '已清除（archive/ 内不算）');
 
-// 归档目录存在
-add(fs.existsSync(path.join(root, 'archive', 'qizhan-line-2026-09-23')), '归档目录存在', 'archive/qizhan-line-2026-09-23/');
+// 旧产品线已在 Git 历史中留档，不再占用活动工作树
+const retiredArchive = path.join(root, 'archive', 'qizhan-line-2026-09-23');
+add(!fs.existsSync(retiredArchive), '旧产品线已移出活动树', '可从 Git 提交 573dc6a 恢复');
 
 // 2) 记忆体系
 const memoryDir = path.join(root, '.workbuddy', 'memory');

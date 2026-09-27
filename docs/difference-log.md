@@ -106,7 +106,7 @@
 - 原站入口：`https://vibe-hub.org/`、`https://vibe-hub.org/en`
 - 原站路由清单来源：`https://vibe-hub.org/sitemap.xml`
 - 原站规则来源：`https://vibe-hub.org/robots.txt`
-- 历史本地视觉基线：`design/vibehub-concept.png`，只用于早期方向记录，不作为原站截图或页面内容替代。
+- 历史本地视觉基线已归档在 Git 提交 `573dc6a`，只用于早期方向记录，不作为原站截图或页面内容替代。
 - 本地实现截图：通过 Playwright Chromium 生成到系统临时目录，未写入仓库；验收依据仍是原站实时页面与对应本地截图。
 
 ## 已检查的对比点

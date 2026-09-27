@@ -7,7 +7,7 @@
  * 之前的实现用通用组件顶替，导致内容与插图与原站完全不一致。
  *
  * 本文件按原站真实 DOM 一比一重建这些区块：
- *   - 类名、层级、内联样式与原站一致（证据见 replication-evidence/round-2026-09-20/html/orig-*.pretty.html）
+ *   - 类名、层级、内联样式与原站一致（历史证据保存在 Git 提交 573dc6a）
  *   - 文案分 en / zh 两套，取自原站 /en/html 与 /html
  *   - 样式来自 src/htmlDetail.css（由 scripts/extract-original-css.mjs 从原站样式表提取，
  *     统一限定在 .vh-html-replica 作用域内）
@@ -386,7 +386,7 @@ function toPlainText(node) {
 
 /**
  * 原站「Copy as Markdown」复制的是整页的结构化 Markdown（见
- * replication-evidence/round-2026-09-20/html/original-clipboard.txt）。
+ * Git 提交 573dc6a 中的 original-clipboard.txt）。
  * 与原站逐段对应：Hero → 选择题 → Agent 提示 → When to use/NOT →
  * Anatomy → Variants → Typical use cases → Further reading。
  */

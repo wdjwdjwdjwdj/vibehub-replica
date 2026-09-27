@@ -6,7 +6,7 @@
 
 - **P1 缺陷**：已全部修复并通过 Playwright 验证（courseById / gitChapterById 原型链污染白屏、storage SecurityError 白屏、header 在 1024px / 320px 横向溢出）。
 - **路由健康**：`node scripts/route-smoke.mjs`（VIBEHUB_BASE_URL=http://127.0.0.1:5174）**710 条路由全部返回 200**，无 404 / 500 / 服务端崩溃。
-- **优先级页面 `/en/html`（HTML 术语详解页）几何已 1:1**：`replication-evidence/round-2026-09-20/html/compare.txt` 显示逐段包围盒与源站误差 ≤2px（scrollHeight 5075 vs 5073），hero / lessons / usage / anatomy / variants / scenes / selector / references / footer / survey 几何一致，文本一致。
+- **优先级页面 `/en/html`（HTML 术语详解页）几何已 1:1**：历史证据保存在 Git 提交 `573dc6a` 的 `replication-evidence/round-2026-09-20/html/`，其中逐段包围盒与源站误差 ≤2px（scrollHeight 5075 vs 5073），hero / lessons / usage / anatomy / variants / scenes / selector / references / footer / survey 几何一致，文本一致。
 - **剩余差距（均为 cosmetic / 内容层面，非断裂）**：
   - `.source-survey` 弹层高 418 vs 408（约 10px，由选项文案换行高度差异导致，content-driven）；
   - `.breadcrumb-link` textAlign 为 start，源站为 center（视觉影响极小）；
@@ -49,7 +49,7 @@
 
 ## 三、验证手段与阻塞
 
-- **几何/文本一致性**：`scripts/` + `replication-evidence/round-2026-09-20/html/`（orig-*.html、compare.txt、computed-diff.txt、interaction-report.json）。
+- **几何/文本一致性**：`scripts/` + Git 提交 `573dc6a` 中的 `replication-evidence/round-2026-09-20/html/`（orig-*.html、compare.txt、computed-diff.txt、interaction-report.json）。
 - **行为一致性**：`scripts/audit-runtime-parity-v2.mjs` 对比 `/en/html`、`/en/button`、`/en/api` 的交互行为，写入 `RUNTIME-PARITY.json`。
 - **当前浏览器能力**：本工作区 Chromium 已可启动，2026-09-23 的源站/本地截图、交互点击和路由验证均在本地完成；历史下载阻塞记录不再适用。
 

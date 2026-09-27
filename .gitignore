@@ -26,5 +26,12 @@ scripts/html-detail-classes.txt
 .mimosa/
 .v2c/
 
+# 可再生成的内容预览与 QA 证据默认不入库；需要保留的最终证据显式 git add -f
+/content-system/ab-preview.html
+/content-system/ab-gap.html
+/content-system/preview*.html
+/content-system/reading.html
+/replication-evidence/
+
 # 工作区内部笔记（AI 协作记录，含项目内部约定，不对外公开）
 .workbuddy/

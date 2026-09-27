@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-const outDir = 'replication-evidence/round-2026-09-20/html';
+const outDir = 'replication-evidence/current/html';
 const cssHrefs = JSON.parse(fs.readFileSync(path.join(outDir, 'orig-css-hrefs.json'), 'utf8'));
 
 const cacheDir = path.join(outDir, 'css');

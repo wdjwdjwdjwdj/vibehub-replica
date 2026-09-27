@@ -3,7 +3,7 @@
  *
  * 自动生成：node scripts/build-survey-marks.mjs
  * 数据来源：https://vibe-hub.org/en/html 的 section.source-survey（证据文件
- * replication-evidence/round-2026-09-20/html/orig-survey.html）。
+ * scripts/fixtures/source-survey.html）。
  * 请勿手工改动 path；原站更新后重新抓取并生成。
  */
 

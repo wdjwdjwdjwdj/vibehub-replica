@@ -5,7 +5,8 @@
  */
 import fs from 'node:fs';
 
-const src = fs.readFileSync('replication-evidence/round-2026-09-20/html/orig-survey.html', 'utf8');
+const fixturePath = new URL('./fixtures/source-survey.html', import.meta.url);
+const src = fs.readFileSync(fixturePath, 'utf8');
 const labels = [...src.matchAll(/<span class="source-survey-option-mark" aria-hidden="true">([\s\S]*?)<\/span>\s*<span>([^<]*)<\/span>/g)];
 if (labels.length !== 7) throw new Error(`expected 7 marks, got ${labels.length}`);
 
@@ -24,7 +25,7 @@ lines.push(' * 原站「One quick question」问卷弹层的渠道品牌标识�
 lines.push(' *');
 lines.push(' * 自动生成：node scripts/build-survey-marks.mjs');
 lines.push(' * 数据来源：https://vibe-hub.org/en/html 的 section.source-survey（证据文件');
-lines.push(' * replication-evidence/round-2026-09-20/html/orig-survey.html）。');
+lines.push(' * scripts/fixtures/source-survey.html）。');
 lines.push(' * 请勿手工改动 path；原站更新后重新抓取并生成。');
 lines.push(' */');
 lines.push('');

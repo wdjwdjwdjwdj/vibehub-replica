@@ -73,5 +73,5 @@ for (const sel of SELECTORS) {
   }
 }
 const text = lines.join('\n');
-fs.writeFileSync('replication-evidence/round-2026-09-20/html/computed-diff.txt', text);
+fs.writeFileSync('replication-evidence/current/html/computed-diff.txt', text);
 console.log(text || '(no differences)');

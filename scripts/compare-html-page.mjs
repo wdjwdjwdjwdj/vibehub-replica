@@ -11,7 +11,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { readPng, diffPng, writeDiffImage } from './lib/png-diff.mjs';
 
-const outDir = path.resolve(process.cwd(), process.argv[2] || 'replication-evidence/round-2026-09-20/html/cmp');
+const outDir = path.resolve(process.cwd(), process.argv[2] || 'replication-evidence/current/html/cmp');
 fs.mkdirSync(outDir, { recursive: true });
 
 const PIXEL_THRESHOLD = Number(process.env.PIXEL_THRESHOLD || '12');

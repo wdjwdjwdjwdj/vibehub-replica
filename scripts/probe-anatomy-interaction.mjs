@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
-const root = path.resolve(process.cwd(), 'replication-evidence/round-2026-09-20/html');
+const root = path.resolve(process.cwd(), 'replication-evidence/current/html');
 const browser = await chromium.launch();
 const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 1, locale: 'en-US', colorScheme: 'light' });
 const page = await context.newPage();

@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
-const root = path.resolve(process.cwd(), 'replication-evidence/round-2026-09-20/html');
+const root = path.resolve(process.cwd(), 'replication-evidence/current/html');
 const browser = await chromium.launch();
 const out = {};
 for (const url of ['https://vibe-hub.org/en/html', 'https://vibe-hub.org/html']) {

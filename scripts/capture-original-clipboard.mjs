@@ -5,7 +5,7 @@ import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const outDir = path.resolve('replication-evidence/round-2026-09-20/html');
+const outDir = path.resolve('replication-evidence/current/html');
 fs.mkdirSync(outDir, { recursive: true });
 
 const browser = await chromium.launch();

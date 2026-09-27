@@ -1,6 +1,6 @@
 # VibeHub 复刻持续交付记录（2026-09-21 第二轮 · `/en/html` 达标）
 
-> **2026-09-23 事后注**：`dev:vibehub` / `vite.vibehub.config.js` / `dist-vibehub-qa` 均已并入默认配置，现在用 `npm run dev`（端口 5174）即可；「起站」另一条产品线已归档到 `archive/qizhan-line-2026-09-23/`。下表保留当时的原始记录。
+> **2026-09-27 事后注**：`dev:vibehub` / `vite.vibehub.config.js` / `dist-vibehub-qa` 均已并入默认配置，现在用 `npm run dev`（端口 5174）即可；「起站」另一条产品线已从活动树移除，可从 Git 提交 `573dc6a` 恢复。下表保留当时的原始记录。
 
 ## 一、工程与运行入口
 
