@@ -1,0 +1,25 @@
+{
+  "id": "build-output",
+  "name": { "zh": "构建产物", "en": "Build Output" },
+  "category": "部署上线",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "部署时上传的，是源码还是另一份东西？",
+      "explain": "构建产物是源码经编译压缩后生成的可发布文件。上线传的是它，不是源码；改源码不重新构建，线上就不会变。",
+      "say": "我第一次跑构建。请讲清 npm run build 生成什么、放哪个目录、哪些文件该上传；先别讲部署平台。",
+      "quiz": {
+        "q": "改了源码直接刷新线上页面，会看到变化吗？",
+        "options": ["会", "不会，线上跑的是构建产物", "有时会"],
+        "answer": 1,
+        "explain": "线上服务的是构建那一刻的产物；源码改动要重新构建再发布才生效。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Vite 等构建工具把源码打包成可部署的产物文件。", "source": "https://vitejs.dev/guide/" },
+    { "claim": "静态站点部署上传的通常是构建产物而非源码。", "source": "https://developers.cloudflare.com/pages/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

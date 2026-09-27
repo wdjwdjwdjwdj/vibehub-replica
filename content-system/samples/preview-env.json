@@ -1,0 +1,25 @@
+{
+  "id": "preview-env",
+  "name": { "zh": "预览环境", "en": "Preview Environment" },
+  "category": "部署上线",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "上线前怎么让同事先点一遍新版本？",
+      "explain": "预览环境给每次改动一个独立网址：链接发出去，产品和测试先验收，不影响正式站。它要接近正式环境，但不放真实用户数据。",
+      "say": "我的改动要给同事看。请讲预览环境怎么开、链接怎么发、和正式站怎么隔离；先别讲正式发布步骤。",
+      "quiz": {
+        "q": "预览环境连接了真实用户数据库，风险是？",
+        "options": ["加载更快", "验收操作会动到真实用户的数据", "没有风险"],
+        "answer": 1,
+        "explain": "验收里包含各种试错操作；接真实数据等于拿用户数据冒险。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Cloudflare Pages 为每次部署提供独立的预览地址。", "source": "https://developers.cloudflare.com/pages/configuration/preview-deployments/" },
+    { "claim": "个人数据处理应遵循最小化原则。", "source": "https://developer.mozilla.org/en-US/docs/Web/Privacy" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

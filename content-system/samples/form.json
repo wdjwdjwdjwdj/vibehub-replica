@@ -1,0 +1,26 @@
+{
+  "id": "form",
+  "name": { "zh": "表单", "en": "Form" },
+  "aliases": { "zh": ["网页表单"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "注册、登录、下单，都在跟同一种结构打交道？",
+      "explain": "表单是收集用户输入并交出去的一组控件：注册、填地址、搜索都靠它完成。文本框、下拉选择、文件上传、按钮通常一起出现；纯展示的图文块不算表单。",
+      "say": "我在做一个留言收集页。请用“提交一条留言”举例，按用户从填到交的顺序讲表单里每个控件干了什么，并指出我最容易误会的一点；先别讲后端怎么存。",
+      "quiz": {
+        "q": "下面哪个页面区域不是表单？",
+        "options": ["文章正文和配图，只能看不能填", "搜索框加搜索按钮", "登录页的账号、密码框加登录按钮"],
+        "answer": 0,
+        "explain": "表单以收集并提交输入为目的；搜索和登录都在收集，纯浏览的正文不收集输入。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "form 元素代表文档中的一个区块，内含用于提交信息的交互控件。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" },
+    { "claim": "网页表单最常见的用途是收集用户数据，或让用户控制界面。", "source": "https://developer.mozilla.org/en-US/docs/Learn/Forms" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

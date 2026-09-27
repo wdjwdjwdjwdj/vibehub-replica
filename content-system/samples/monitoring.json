@@ -1,0 +1,25 @@
+{
+  "id": "monitoring",
+  "name": { "zh": "监控", "en": "Monitoring" },
+  "category": "部署上线",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "网站能打开，就等于线上一直正常吗？",
+      "explain": "监控盯着可用率、响应时间和错误量，异常在用户投诉前先冒头。指标要对着真实服务看：面板全绿但下单接口报错，等于没盯住。",
+      "say": "我要给网站加监控。请列出最小指标集：能不能打开、多快、报错多少，各自怎么测；先别推荐付费平台。",
+      "quiz": {
+        "q": "首页秒开但支付接口全部失败，监控该报什么？",
+        "options": ["什么都不报，首页正常", "按接口报错，而不是只看首页", "等用户投诉"],
+        "answer": 1,
+        "explain": "监控的单位是真实服务，不是某个页面；核心接口坏了就该响。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Performance API 可观测页面耗时与性能指标。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Performance" },
+    { "claim": "未捕获的运行时错误会触发 error 事件，可用于上报。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

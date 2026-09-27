@@ -1,0 +1,25 @@
+{
+  "id": "error-tracking",
+  "name": { "zh": "错误追踪", "en": "Error Tracking" },
+  "category": "部署上线",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "用户只说「闪退了」，怎么找到出错现场？",
+      "explain": "错误追踪自动收下每条异常的类型、页面、版本和调用栈，用户不用会描述，现场自己送上门。采集要避开个人信息，修复先排影响大的。",
+      "say": "用户反馈页面偶发白屏。请接一个错误上报方案，记录异常类型、页面、版本和调用栈；上报内容不要包含用户个人信息。",
+      "quiz": {
+        "q": "错误上报里附了用户的手机号，问题是？",
+        "options": ["排查更方便", "采集了与定位无关的个人信息，有合规风险", "上报变慢"],
+        "answer": 1,
+        "explain": "定位异常只需要技术现场；无关个人信息是多余的采集。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "未捕获的运行时错误会触发 error 事件。", "source": "https://developer.mozilla.org/en-US/docs/Web/API/Window/error_event" },
+    { "claim": "个人数据采集应遵循最小化原则。", "source": "https://developer.mozilla.org/en-US/docs/Web/Privacy" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "empty-state",
+  "name": { "zh": "空状态", "en": "Empty State" },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "搜索一条结果都没有，这块屏幕该显示什么？",
+      "explain": "空状态是内容为空时的说明画面：首次使用、搜索无结果、筛选后为空都算。要交代空着的原因和下一步动作，比如新建一项、放宽筛选；只留白不算完成。",
+      "say": "我在做一个收藏列表，用户还没收藏时页面全空。请比较空状态、加载中、出错三种画面分别该怎么显示，各给一句提示文案示例。",
+      "quiz": {
+        "q": "收藏夹还没有任何收藏，页面只显示一行“暂无数据”。缺了什么？",
+        "options": ["文字太少", "缺一个转圈加载动画", "没说明为什么空着，也没有下一步入口"],
+        "answer": 2,
+        "explain": "空状态要交代原因并给出路，比如引导去添加收藏；此时并没有加载，转圈反而误导。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "NN/g 建议空状态要说明为何没有内容（如“所选日期范围内无记录”），并提供直达关键任务的路径。", "source": "https://www.nngroup.com/articles/empty-state-interface-design" },
+    { "claim": "设计良好的空状态能提升用户信心、系统可学习性，帮助用户快速开始关键任务。", "source": "https://www.nngroup.com/videos/empty-states-in-application-design-guidelines/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

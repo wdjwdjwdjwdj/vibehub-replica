@@ -1,0 +1,25 @@
+{
+  "id": "skeleton-screen",
+  "name": { "zh": "骨架屏", "en": "Skeleton Screen" },
+  "category": "交互与体验",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "刷新信息流，灰块先出来再变正文，图什么？",
+      "explain": "骨架屏是加载时模拟真实排版的灰块占位画面：标题条、图片框先摆好，数据来了再填。位置早知道，内容冒出时不顶开页面；结构未知时不硬套。",
+      "say": "我刚看到列表页加载前先出现灰色占位块。请用一篇图文信息流举例，讲清骨架屏比转圈好在哪、什么时候反而该用转圈；别展开实现代码。",
+      "quiz": {
+        "q": "哪种内容适合用骨架屏占位？",
+        "options": ["内容完全不可预知的随机推荐位", "排版固定的文章列表", "永不加载新内容的静态页"],
+        "answer": 1,
+        "explain": "骨架屏要模仿真实排版才有意义，排版固定的列表最合适；结构未知时画不出形状。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "骨架屏用类似线框的视觉模拟页面布局，营造等待变短的错觉并降低认知负荷；动画版可能分散注意力甚至带来可访问性问题。", "source": "https://www.nngroup.com/articles/skeleton-screens/" },
+    { "claim": "界面毫无视觉变化时多数用户会以为操作未被受理而重试，进度类占位反馈能降低这种不确定感。", "source": "https://www.nngroup.com/articles/progress-indicators/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

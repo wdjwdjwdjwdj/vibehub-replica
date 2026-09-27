@@ -1,0 +1,26 @@
+{
+  "id": "validation",
+  "name": { "zh": "校验", "en": "Validation" },
+  "aliases": { "zh": ["表单校验"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "乱填的手机号，为什么还没到服务器就被退回？",
+      "explain": "校验在数据送出前检查必填和格式：邮箱少 @、手机号带字母都会被拦下。提示要指明错在哪栏、怎么改，只弹一句笼统的失败帮不上忙。",
+      "say": "我在做活动报名页。请按用户点提交后的顺序讲校验怎么跑：哪些检查浏览器自带、哪些要自己写，提示文字写在哪里；别只讲概念。",
+      "quiz": {
+        "q": "提交后页面顶部只冒出一句“操作失败”，用户最先被卡在哪？",
+        "options": ["网速太慢", "不知道错在哪一栏、该怎么改", "按钮坏掉了"],
+        "answer": 1,
+        "explain": "笼统的失败提示不定位错误；校验提示要指明出错字段和改法，用户才能继续。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "HTML 约束校验通过设置验证相关属性（如 required、pattern）即可描述基本约束，无需 JavaScript。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation" },
+    { "claim": "提交前应确保必填控件已填写且格式正确；浏览器里的校验叫客户端校验，服务器上的叫服务端校验。", "source": "https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

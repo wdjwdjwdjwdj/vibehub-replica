@@ -1,0 +1,26 @@
+{
+  "id": "loading-state",
+  "name": { "zh": "加载状态", "en": "Loading State" },
+  "aliases": { "zh": ["加载中"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "点击后那一两秒，界面拿什么证明自己在处理？",
+      "explain": "加载状态是等待结果时的即时反馈：转圈、进度条、按钮文案切换都算，证明请求在跑。超过一秒就该出现，更久要给进度；静默时用户多半会再点一次。",
+      "say": "我在等一个上传接口返回。请按点提交、请求发出、出结果前的顺序讲加载状态怎么做，说明转圈和进度条各适合什么耗时；不要只给一个转圈。",
+      "quiz": {
+        "q": "点“提交”后界面毫无变化，用户最可能做什么？",
+        "options": ["再点几次，怀疑没点上", "安静等结果", "刷新整个电脑"],
+        "answer": 0,
+        "explain": "没有反馈时用户会以为操作没生效而重复点击；按钮转圈或文字变化都能避免。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "0.1 秒是让用户感觉系统即时响应的极限；超过约 10 秒的操作应使用百分比进度指示。", "source": "https://www.nngroup.com/articles/response-times-3-important-limits/" },
+    { "claim": "进度指示让用户确信系统在正常运行并降低不确定感；系统毫无视觉变化时，多数用户会认为操作未被受理而再次尝试。", "source": "https://www.nngroup.com/articles/progress-indicators/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}
