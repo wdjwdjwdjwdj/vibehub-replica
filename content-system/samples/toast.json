@@ -1,0 +1,26 @@
+{
+  "id": "toast",
+  "name": { "zh": "Toast", "en": "Toast" },
+  "aliases": { "zh": ["轻提示", "吐司提示"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "保存成功的小条几秒后自己消失，这是什么设计？",
+      "explain": "Toast 是屏幕边缘弹出又自动消失的小提示：保存完成、复制成功这类轻量结果用它反馈；不打断手头操作，但重要告知别只靠它，错过就没了。",
+      "say": "我在给设置页加保存反馈。请说明 Toast 常出现在屏幕哪些位置、停留多久合适，以及错误提示要不要也用它；别推荐让用户手动点叉关闭的方案。",
+      "quiz": {
+        "q": "支付成功这类必须被用户确认的结果，只发一条几秒即逝的 Toast 够吗？",
+        "options": ["够，位置显眼", "够，配上声音就行", "不够，用户可能错过，要搭配页面内状态或确认步骤"],
+        "answer": 2,
+        "explain": "Toast 自动消失且不打断操作，重要结果别只靠它；应让结果停留在页面上或要求确认。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "被动型通知通常不紧急、应更少打扰，典型形态是屏幕角落的小型非模态浮层。", "source": "https://www.nngroup.com/articles/indicators-validations-notifications/" },
+    { "claim": "status 角色定义 live region，容纳不够格作为 alert 的提示信息（如“更改保存成功”），以 polite 方式播报。", "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/status_role" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

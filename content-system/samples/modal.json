@@ -1,0 +1,26 @@
+{
+  "id": "modal",
+  "name": { "zh": "Modal", "en": "Modal" },
+  "aliases": { "zh": ["弹窗", "模态框"] },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "删除前弹出的确认框，为什么非点不可？",
+      "explain": "Modal 是不处理完就回不去的弹层：确认删除、付款核对靠它强制确认。打开期间底下整页不可交互，Esc 能退出；什么都套弹层，用户会被反复打断。",
+      "say": "我在做删除确认。请用 dialog 元素给一个最小 Modal 示例，说明怎么打开、底下页面为什么点不动、Esc 怎么关；别给完整项目模板。",
+      "quiz": {
+        "q": "网站把“欢迎回来”也做成 Modal，每次进来都要点掉。问题在哪？",
+        "options": ["非关键信息不该用阻断式弹层，频繁打断操作", "弹窗出现的位置太靠中", "Modal 功能有故障"],
+        "answer": 0,
+        "explain": "Modal 该留给必须先处理的关键操作；可看可不看的欢迎语阻断流程，只会添堵。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "dialog 元素经 showModal() 显示为模态对话框，此时页面其余部分变为 inert、交互被阻断。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog" },
+    { "claim": "WAI APG 模态对话框模式规定：对话框底下的窗口是 inert 的，用户不能与其交互；Escape 用于关闭对话框。", "source": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "dropdown-menu",
+  "name": { "zh": "下拉菜单", "en": "Dropdown Menu" },
+  "category": "交互与体验",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "省份有三十几个，选择器该怎么摆得下？",
+      "explain": "下拉菜单是点开才展开的选择控件：国家、省份这类长列表靠它省地方。select 元素内嵌 option 列表；高频选项直接平铺更好，别全藏进菜单。",
+      "say": "我在做城市选择。请拿“选择所在城市”举例，对比下拉菜单和一排单选按钮各自适合多少个选项；别只讲 HTML 标签用法。",
+      "quiz": {
+        "q": "导航栏把“首页”“价格”平铺，把次要功能收进下拉。这个安排如何？",
+        "options": ["不对，应该全部平铺", "合理，高频入口直接可见、次要项收起省空间", "不对，应该全部收进下拉"],
+        "answer": 1,
+        "explain": "高频入口一眼可见，次要项收起；全平铺挤占版面，全收起则关键功能要多点几层。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "select 元素代表提供选项菜单的控件，每个选项由内嵌的 option 元素定义。", "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" },
+    { "claim": "WAI APG 菜单按钮模式：按钮被激活后打开菜单，菜单项由 role=menu 容器承载。", "source": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}
