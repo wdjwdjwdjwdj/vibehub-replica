@@ -19,8 +19,8 @@
     }
   },
   "facts": [
-    { "claim": "提示词应包含任务目标、背景与输出要求等要素。", "source": "https://platform.openai.com/docs/guides/prompt-engineering" },
-    { "claim": "在提示词中提供示例（few-shot）能改变输出效果。", "source": "https://platform.openai.com/docs/guides/prompt-engineering" }
+    { "claim": "提示词工程的核心是给模型清晰的目标、上下文与输出要求。", "source": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering" },
+    { "claim": "在提示词中提供示例（few-shot）是改变输出效果的常用手法。", "source": "https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering" }
   ],
   "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
 }
