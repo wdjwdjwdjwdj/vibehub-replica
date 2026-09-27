@@ -1,0 +1,25 @@
+{
+  "id": "visual-hierarchy",
+  "name": { "zh": "视觉层级", "en": "Visual Hierarchy" },
+  "category": "设计",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "一屏内容谁先被看见，靠字号还是位置？",
+      "explain": "视觉层级用字号、粗细、颜色、位置、留白排阅读顺序：主标题压得住、辅助信息退得后。什么都强调等于什么都不强调。",
+      "say": "我在排首页文案。请按视觉层级给主标题、副标题、正文和按钮各定字号和字重，说明为什么这么排；先不挑颜色。",
+      "quiz": {
+        "q": "页面上所有文字都加粗放大，结果是什么？",
+        "options": ["更醒目", "没有层级，用户不知道先看哪", "加载变慢"],
+        "answer": 1,
+        "explain": "层级来自差异；全部加粗等于没有重点，阅读顺序反而消失。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "font-weight 控制文字粗细，是层级手段之一。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" },
+    { "claim": "font-size 控制字号大小。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

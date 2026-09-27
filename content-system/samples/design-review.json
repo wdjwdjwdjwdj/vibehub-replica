@@ -1,0 +1,25 @@
+{
+  "id": "design-review",
+  "name": { "zh": "设计评审", "en": "Design Review" },
+  "category": "设计",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "评审会上各说各的审美，怎么吵出结果？",
+      "explain": "设计评审对事不对口味：围绕用户目标、信息层级、操作路径给证据，个人审美偏好单独放。每条意见落到能改的动作上，会才有产出。",
+      "say": "我要主持一次设计评审。请给一个发言模板：每条反馈必须带证据和改法，并示范怎么把「我觉得不好看」改写成可用性问题；先别讲工具。",
+      "quiz": {
+        "q": "「我喜欢蓝色」这类意见在评审里怎么处理？",
+        "options": ["直接否决", "记为偏好，另找用户目标层面的证据", "投票表决"],
+        "answer": 1,
+        "explain": "偏好不算错误也不算依据；评审要的是能指向改动的证据。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "Nielsen 的十项可用性启发式是评审常用的检查依据。", "source": "https://www.nngroup.com/articles/ten-usability-heuristics/" },
+    { "claim": "WCAG 提供可核查的可访问性标准，可作评审依据。", "source": "https://www.w3.org/WAI/WCAG22/quickref/" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

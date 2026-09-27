@@ -1,0 +1,25 @@
+{
+  "id": "mood-board",
+  "name": { "zh": "情绪板", "en": "Mood Board" },
+  "category": "设计",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "正式画页面前，怎么先对齐想要的气质？",
+      "explain": "情绪板把色彩、字体、摄影和参考界面放在一起先对齐方向：要清爽还是要厚重，一眼可见。它不是最终设计，代替不了真实布局。",
+      "say": "我在定新站的视觉方向。请帮我组一个情绪板：列该收哪几类素材、从哪里找参考、怎么判断方向对了；先别画具体页面。",
+      "quiz": {
+        "q": "情绪板可以直接当首页设计稿用吗？",
+        "options": ["可以，够漂亮就行", "不可以，它只对齐方向，布局要另做", "可以，换个标题就行"],
+        "answer": 1,
+        "explain": "情绪板回答「什么气质」，不回答「内容怎么摆」；两者是先后关系。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "font-family 决定页面使用哪套字体呈现。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" },
+    { "claim": "色彩对比度有可访问性最低要求。", "source": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

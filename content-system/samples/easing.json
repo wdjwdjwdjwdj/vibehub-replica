@@ -1,0 +1,25 @@
+{
+  "id": "easing",
+  "name": { "zh": "动效曲线", "en": "Easing Curve" },
+  "category": "设计",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "同样是半秒动画，为什么有的顺有的僵？",
+      "explain": "动效曲线决定速度怎么变化：进入减速、退出加速，比从头到尾匀速更接近真实物体的运动。匀速一动，机器味就出来了。",
+      "say": "我的弹窗动画很生硬。请对比 linear 和 ease-out 两条曲线的效果，说明进场该用哪种、退场该用哪种；先别写复杂动画。",
+      "quiz": {
+        "q": "从零加速再减速进场的动画，用的曲线更接近？",
+        "options": ["匀速 linear", "先快后慢的 ease-out", "直接跳变"],
+        "answer": 1,
+        "explain": "进场从静止起步再到位，减速收尾；匀速会显得突兀。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "animation-timing-function 决定动画速度的变化节奏。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" },
+    { "claim": "prefers-reduced-motion 允许为减少动态偏好的用户关闭动画。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "high-fidelity",
+  "name": { "zh": "高保真稿", "en": "High-Fidelity Mockup" },
+  "category": "设计",
+  "level": "入门",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "什么时候值得把稿子做到接近成品的效果？",
+      "explain": "高保真稿把字体、颜色、间距和交互状态都做到接近成品，用来确认细节和验收体验；流程还没想清楚就上高保真，是在给没定的方案抛光。",
+      "say": "我的注册流程稿子想做成高保真。请列出高保真稿必须包含的状态清单：默认、悬停、填错、禁用各长什么样；先别管配色细节。",
+      "quiz": {
+        "q": "页面流程还没定就先做高保真稿，最大风险？",
+        "options": ["颜色不好改", "给没定的方案抛光，返工最多", "文件太大"],
+        "answer": 1,
+        "explain": "方案没定，视觉投入越大返工越多；线框图先验证流程更便宜。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "成品的字号最终以 CSS font-size 等值落到页面。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" },
+    { "claim": "悬停、焦点等交互状态有对应的伪类选择器。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "design-handoff",
+  "name": { "zh": "设计交付", "en": "Design Handoff" },
+  "category": "设计",
+  "level": "进阶",
+  "updated": "2026-09-27",
+  "lang": {
+    "zh": {
+      "scene": "一张静态设计稿，开发为什么还是做不准？",
+      "explain": "设计交付要交状态和边界：悬停、报错、空数据各长什么样，窄屏怎么排，图标切图什么规格。只给一张理想截图，剩下的全靠开发猜。",
+      "say": "我要把设计稿交给开发。请帮我列交付清单：组件状态、响应式断点、切图规格各要写清什么；先别讲协作工具。",
+      "quiz": {
+        "q": "设计稿只有默认状态，开发最先遇到什么问题？",
+        "options": ["悬停、报错、禁用长什么样没人知道", "颜色对不上", "字体加载慢"],
+        "answer": 0,
+        "explain": "状态缺失是交付最常见的洞；开发只能自造，做出来各家不一。"
+      }
+    }
+  },
+  "facts": [
+    { "claim": "伪类选择器定义悬停、焦点等交互状态的样式。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" },
+    { "claim": "媒体查询让同一设计适配不同屏幕宽度。", "source": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries" }
+  ],
+  "qa": { "structure_ok": true, "ai_flavor_ok": true, "reviewed": false }
+}
